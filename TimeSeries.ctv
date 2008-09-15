@@ -1,0 +1,333 @@
+<CRANTaskView>
+
+<name>TimeSeries</name>
+<topic>Time Series Analysis</topic>
+<maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
+<version>2008-09-16</version>
+
+<info>
+
+<p>TODO: A brief intro to the task view...</p>
+
+<p>
+<strong>Basics</strong>
+<ul>
+  <li>Base R contains substantial infrastructure for representing and analyzing
+      time series data. The fundamental class is <code>"ts"</code> that can
+      represent regularly spaced time series (using numeric time stamps).
+      Hence, it is particularly well-suited for annual, monthly, quarterly
+      data, etc.</li>
+  <li>Methods for analyzing and modeling time series include ARIMA models in
+      <code>arima()</code>, AR(p) and VAR(p) models in <code>ar()</code>,
+      structural models in <code>StructTS()</code>,
+      visualization via <code>plot()</code>, (partial) autocorrelation
+      functions in <code>acf()</code> and <code>pacf()</code>, classical
+      decomposition in <code>decompose()</code>, STL decomposition
+      in <code>stl()</code>, moving average and autoregressive linear
+      filters in <code>filter()</code>, and basic Holt-Winters smoothing in
+      <code>HoltWinters()</code>.</li>
+</ul>
+</p>
+
+<p>
+<strong>Times and Dates</strong>
+<ul>
+  <li>Class <code>"ts"</code> can only deal with numeric time stamps,
+      but many more classes are available for storing time/date information
+      and computing with it. For an overview see <i>R Help Desk: Date and
+      Time Classes in R</i> by Gabor Grothendieck and Thomas Petzoldt in
+      <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2004-1.pdf" target="_top">R News 4(1)</a>,
+      29-32.</li>
+  <li>Classes <code>"yearmon"</code> and <code>"yearqtr"</code> from
+      <pkg>zoo</pkg> allow for more convenient computation with monthly
+      and quarterly observations, respectively.</li>
+  <li>Class <code>"Date"</code> from the base package is the basic class
+      for dealing with dates in daily data. The dates are internally stored
+      as the number of days since 1970-01-01.</li>
+  <li>The <pkg>chron</pkg> package provides classes for <code>dates()</code>,
+      <code>hours()</code> and date/time (intra-day) in <code>chron()</code>. There is no
+      support for time zones and daylight savings time. Internally,
+      <code>"chron"</code> objects are (fractional) days since 1970-01-01.</li>
+  <li>Classes <code>"POSIXct"</code> and <code>"POSIXlt"</code> implement
+      the POSIX standard for date/time (intra-day) information and also support time zones
+      and daylight savings time. However, the time zone computations require
+      some care and might be system-dependent. Internally, <code>"POSIXct"</code>
+      objects are the number of seconds since 1970-01-01 00:00:00 GMT.</li>
+  <li>Class <code>"timeDate"</code> is provided in the <pkg>fCalendar</pkg>
+      package. It is aimed at financial time/date information and deals with
+      time zones and daylight savings times via a new concept of "financial centers".
+      Internally, it stores all information in <code>"POSIXct"</code> and does
+      all computations in GMT only. Calendar functionality, e.g., including
+      information about weekends and holidays for various stock exchanges,
+      is also included.</li>
+  <li>The <pkg>fame</pkg> package provides the <code>"ti"</code> class for
+      time/date information.</li>
+</ul>
+</p>
+
+<p>
+<strong>Time Series Classes</strong>
+<ul>
+  <li>As mentioned above, <code>"ts"</code> is the basic class for
+      regularly spaced time series using numeric time stamps.</li>
+  <li>The <pkg>zoo</pkg> package provides infrastructure for regularly
+      and irregularly spaced time series using arbitrary classes for
+      the time stamps (i.e., allowing all classes from the previous section).
+      It is designed to be as consistent as possible with <code>"ts"</code>.
+      Coercion from and to <code>"zoo"</code> is available for all other
+      classes mentioned in this section.</li>
+  <li>The package <pkg>xts</pkg> is based on <pkg>zoo</pkg> and provides
+      uniform handling of R's different time-based data classes.</li>
+  <li>Various packages implement irregular time series based on <code>"POSIXct"</code>
+      time stamps, intended especially for financial applications. These include
+      <code>"its"</code> from <pkg>its</pkg>, <code>"irts"</code> from
+      <pkg>tseries</pkg>, and <code>"fts"</code> from <pkg>fts</pkg>.</li>
+  <li>The class <code>"timeSeries"</code> in <pkg>fSeries</pkg> implements
+      time series with <code>"timeDate"</code> time stamps.</li>
+  <li>The class <code>"tis"</code> in <pkg>fame</pkg> implements
+      time series with <code>"ti"</code> time stamps.</li>
+  <li>The package <pkg>tframe</pkg> contains infrastructure for setting
+      time frames in different formats.</li>
+</ul>
+</p>
+
+<p>
+<strong>Forecasting and Univariate Modeling</strong>
+<ul>
+  <li><i>Exponential smoothing</i>: <code>HoltWinters()</code> in stats,
+      <code>ets()</code> from the forecast package in the <pkg>forecasting</pkg>
+      bundle, ...more?</li>
+  <li><i>Autoregressive models</i>: <code>ar()</code> in stats (with model selection),
+      <pkg>FitAR</pkg> for subset AR models, and <pkg>partsm</pkg> and
+      <pkg>pear</pkg> for periodic autoregressive time series models.
+      ...more?</li>
+  <li><i>ARIMA models</i>: <code>arima()</code> in stats for ARIMA, SARIMA, ARIMAX,
+      and subset ARIMA models. Enhanced in forecast package (from <pkg>forecasting</pkg> bundle)
+      along with <code>auto.arima()</code> for automatic order selection.
+      <code>arma()</code> in <pkg>tseries</pkg> for ...
+      <code>armaFit()</code> interface in <pkg>fArma</pkg> for ...
+      <pkg>gsarima</pkg> for generalized SARIMA time series simulation</li>
+  <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> for basic GARCH models,
+      <code>garchFit()</code> from <pkg>fGarch</pkg> for ARIMA models with a wide class of GARCH
+      innovations. <pkg>bayesGARCH</pkg> for Bayesian estimation of the
+      GARCH(1,1) model with t innovations.</li>
+  <li><i>Miscellaneous</i>:       
+      <pkg>ltsa</pkg> contains methods for linear time series analysis,
+      <pkg>dlm</pkg> for Bayesian analysis of dynamic linear models,
+      <pkg>timsac</pkg> for time series analysis and control,
+      <pkg>BootPR</pkg> for bias-corrected forecasting and bootstrap
+      prediction intervals for autoregressive time series</li>
+</ul>
+</p>
+
+<p>
+<strong>Resampling</strong>
+<ul>
+  boot tsboot() Bootstrapping, including the block
+       bootstrap with several variants.
+meboot Maximum Entropy Bootstrap for Time
+       Series
+tseries tsbootstrap()
+</ul>
+</p>
+
+<p>
+<strong>Decomposition and Filtering</strong>
+<ul>
+ filter() in stats
+ robfilter Robust time series filters
+  mFilter Miscellaneous time series filters useful for
+           smoothing and extracting trend and
+           cyclical components.
+
+  decompose() and stl() in stats
+   ArDec Autoregressive decomposition
+   wmtsa Wavelet methods for time series analysis
+           based on Percival and Walden (2000)
+wavelets Computing wavelet filters, wavelet
+           transforms and multiresolution analyses
+signalextraction Real-time signal extraction
+           (direct filter approach)
+    bspec Bayesian inference on the discrete power
+           spectrum of time series
+</ul>
+</p>
+
+<p>
+<strong>Unit Roots and Cointegration</strong>
+<ul>
+tseries Unit root tests and methods for
+        computational finance.
+  urca Unit root and cointegration tests
+ uroot Unit root tests including methods for
+        seasonal time series
+</ul>
+</p>
+
+<p>
+<strong>Nonlinear Time Series Analysis</strong>
+<ul>
+         nlts R functions for (non)linear time
+              series analysis
+tseriesChaos Nonlinear time series analysis
+     RTisean Algorithms for time series analysis
+              from nonlinear dynamical systems
+              theory.
+       tsDyn Time series analysis based on
+              dynamical systems theory
+  BAYSTAR Bayesian analysis of threshold
+              autoregressive models
+  fNonlinear Nonlinear and Chaotic Time Series
+              Modelling
+bentcableAR Bent-Cable autoregression
+</ul>
+</p>
+
+<p>
+<strong>Dynamic Regression Models</strong>
+<ul>
+dynlm Dynamic linear models and time series
+       regression
+  dyn Time series regression
+   tpr Regression models with time-varying
+       coefficients.
+</ul>
+</p>
+
+<p>
+<strong>Multivariate Time Series Models</strong>
+<ul>
+      mAr Multivariate AutoRegressive analysis
+      vars VAR and VEC models
+ MSBVAR Markov-Switching Bayesian Vector
+           Autoregression Models
+      tsfa Time series factor analysis
+       dse Dynamic system equations including
+           multivariate ARMA and state space
+           models.
+brainwaver Wavelet analysis of multivariate
+           time series
+</ul>
+</p>
+
+<p>
+<strong>Time Series Data</strong>
+<ul>
+      fma from forecasting Data from Makridakis, Wheelwright and
+           Hyndman (1998) Forecasting: methods and
+           applications. Part of the forecasting bundle.
+expsmooth from forecasting Data from Hyndman, Koehler, Ord and Snyder
+           (2008) Forecasting with exponential smoothing.
+           Part of the forecasting bundle.
+   Mcomp from forecastingData from the M-competition and
+           M3-competition. Part of the forecasting bundle.
+    FinTS R companion to Tsay (2005) Analysis of financial
+           time series containing data sets, functions and
+           script files required to work some of the examples.
+     TSA R functions and datasets from Cryer and Chan
+           (2008) Time series analysis with applications in R
+    TSdbi Common interface to time series databases
+     fame Interface for FAME time series databases
+   fEcofin Ecofin - Economic and Financial Data Sets
+AER, Ecdat both packagescontain many data sets (including time series data)
+           from many econometrics text books
+</ul>
+</p>
+
+<p>
+<strong>Miscellaneous</strong>
+<ul>
+hydrosanity Graphical user interface for exploring
+             hydrological time series
+    pastecs Regulation, decomposition and
+             analysis of space-time series.
+     RSEIS Seismic time series analysis tools
+   paleoTS Modeling evolution in
+             paleontological time-series
+   GeneTS Microarray Time Series and Network
+             Analysis
+     fractal Fractal Time Series Modeling and
+             Analysis
+far Modelling Functional AutoRegressive
+    processes
+cts Continuous time autoregressive models
+sde Simulation and inference for stochastic
+    differential equations.
+</ul>
+</p>
+
+</info>
+
+<packagelist>
+  <pkg>AER</pkg>
+  <pkg>ArDec</pkg>
+  <pkg>bayesGARCH</pkg>
+  <pkg>BAYSTAR</pkg>
+  <pkg>bentcableAR</pkg>
+  <pkg>boot</pkg>
+  <pkg>BootPR</pkg>
+  <pkg>brainwaver</pkg>
+  <pkg>bspec</pkg>
+  <pkg>chron</pkg>
+  <pkg>cts</pkg>
+  <pkg>dlm</pkg>
+  <pkg>dse</pkg>
+  <pkg>dyn</pkg>
+  <pkg>dynlm</pkg>
+  <pkg>Ecdat</pkg>
+  <pkg>fame</pkg>
+  <pkg>far</pkg>
+  <pkg>fArma</pkg>
+  <pkg>fCalendar</pkg>
+  <pkg>fEcofin</pkg>
+  <pkg>fGarch</pkg>
+  <pkg>FinTS</pkg>
+  <pkg>FitAR</pkg>
+  <pkg>fNonlinear</pkg>
+  <pkg priority="core">forecasting</pkg>
+  <pkg>fractal</pkg>
+  <pkg>fSeries</pkg>
+  <pkg>fts</pkg>
+  <pkg>GeneTS</pkg>
+  <pkg>gsarima</pkg>
+  <pkg>hydrosanity</pkg>
+  <pkg>its</pkg>
+  <pkg>ltsa</pkg>
+  <pkg>mAr</pkg>
+  <pkg>meboot</pkg>
+  <pkg>mFilter</pkg>
+  <pkg>MSBVAR</pkg>
+  <pkg>nlts</pkg>
+  <pkg>paleoTS</pkg>
+  <pkg>partsm</pkg>
+  <pkg>pastecs</pkg>
+  <pkg>pear</pkg>
+  <pkg>robfilter</pkg>
+  <pkg>RSEIS</pkg>
+  <pkg>RTisean</pkg>
+  <pkg>sde</pkg>
+  <pkg>signalextraction</pkg>
+  <pkg>timsac</pkg>
+  <pkg>tpr</pkg>
+  <pkg>TSA</pkg>
+  <pkg>TSdbi</pkg>
+  <pkg>tsDyn</pkg>
+  <pkg priority="core">tseries</pkg>
+  <pkg>tseriesChaos</pkg>
+  <pkg>tsfa</pkg>
+  <pkg>urca</pkg>
+  <pkg>uroot</pkg>
+  <pkg>vars</pkg>
+  <pkg>wavelets</pkg>
+  <pkg>wmtsa</pkg>
+  <pkg>xts</pkg>
+  <pkg priority="core">zoo</pkg>
+</packagelist>
+
+<links>
+    <view>Finance</view>
+    <view>Econometrics</view>
+    <a href="http://www.robjhyndman.com/TSDL/" target="_top">Time Series Data Library</a> 
+</links>
+
+</CRANTaskView>
