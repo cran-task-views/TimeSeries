@@ -6,24 +6,26 @@
 <version>2008-10-13</version>
 
 <info>
-<p>Base R ships with a lot of functionality useful for time series,
-in particular in the stats package. This is complemented by many
-packages on CRAN, which are briefly summarized below. There is also
-a considerable overlap between the tools for time series and those
-in the <view>Econometrics</view> and <view>Finance</view> task views.
-The packages in this view can be roughly
-structured into the following topics. If you think that some package
-is missing from the list, please let us know. </p>
+<p>
+  Base R ships with a lot of functionality useful for time series,
+  in particular in the stats package. This is complemented by many
+  packages on CRAN, which are briefly summarized below. There is also
+  a considerable overlap between the tools for time series and those
+  in the <view>Econometrics</view> and <view>Finance</view> task views.
+  The packages in this view can be roughly
+  structured into the following topics. If you think that some package
+  is missing from the list, please let us know.
+</p>
 
 <p>
 <strong>Basics</strong>
 <ul>
-  <li>Base R contains substantial infrastructure for representing and analyzing
+  <li><i>Infrastructure</i>: Base R contains substantial infrastructure for representing and analyzing
       time series data. The fundamental class is <code>"ts"</code> that can
       represent regularly spaced time series (using numeric time stamps).
       Hence, it is particularly well-suited for annual, monthly, quarterly
       data, etc.</li>
-  <li>Methods for analyzing and modeling time series include ARIMA models in
+  <li><i>Modeling</i>: Methods for analyzing and modeling time series include ARIMA models in
       <code>arima()</code>, AR(p) and VAR(p) models in <code>ar()</code>,
       structural models in <code>StructTS()</code>,
       visualization via <code>plot()</code>, (partial) autocorrelation
@@ -103,7 +105,7 @@ is missing from the list, please let us know. </p>
   <li>The forecast package in the <pkg>forecasting</pkg> bundle
       provides a class and methods for univariate time series
       forecasts, and provides many functions implementing different
-      forecasting models including all those in the <pkg>stats</pkg>
+      forecasting models including all those in the stats
       package.</li>
   <li><i>Exponential smoothing</i>: <code>HoltWinters()</code> in stats
       provides some basic models with partial optimization,
@@ -141,17 +143,20 @@ is missing from the list, please let us know. </p>
 <p>
 <strong>Resampling</strong>
 <ul>
-  <li><i>Bootstrapping</i>: <code>tsbootstrap()</code> in
-      <pkg>tseries</pkg> for very fast stationary and block
-      bootstrapping.  <code>tsboot()</code> in <pkg>boot</pkg> for
-      bootstrapping, including the block bootstrap with several
-      variants.  <code>meboot</code> in <pkg>meboot</pkg> for the
-      maximum entropy bootstrap for time series.</li> </ul> </p>
+  <li><i>Bootstrapping</i>: The <pkg>boot</pkg> package provides
+      function <code>tsboot()</code> for time series bootstrapping,
+      including block bootstrap with several variants.
+      <code>tsbootstrap()</code> from <pkg>tseries</pkg> provides
+      fast stationary and block bootstrapping.
+      Maximum entropy bootstrap for time series is available in
+      <pkg>meboot</pkg>.</li>
+</ul>
+</p>
 
 <p>
 <strong>Decomposition and Filtering</strong>
 <ul>
-  <li><i>Filters</i>: <code>filter()</code> in <pkg>stats</pkg>
+  <li><i>Filters</i>: <code>filter()</code> in stats
       provides autoregressive and moving average linear filtering of
       multiple univariate time series. The <pkg>robfilter</pkg>
       package provides several robust time series filters, while
@@ -159,18 +164,18 @@ is missing from the list, please let us know. </p>
       useful for smoothing and extracting trend and cyclical
       components.</li>
 
-  <li><i>Seasonal/Trend Decomposition</i>: Classical decomposition
-      is provided via <code>decompose()</code> in the
-      <pkg>stats</pkg> package. More advanced and flexible
-      decomposition is available using <code>stl()</code>, also in
-      <pkg>stats</pkg>.</li>
+  <li><i>Decomposition</i>: Classical decomposition
+      is provided via <code>decompose()</code>, more advanced and flexible
+      decomposition is available using <code>stl()</code>, both from
+      the basic stats package.</li>
 
   <li><i>Wavelet methods</i>: The <pkg>wavelets</pkg> package
       includes computing wavelet filters, wavelet transforms and
       multiresolution analyses. Wavelet methods for time series
       analysis based on Percival and Walden (2000) are given in
-      <pkg>wmtsa</pkg>. <pkg>brainwaver</pkg> provides wavelet
-      analysis of multivariate time series</li>
+      <pkg>wmtsa</pkg>. Further wavelet methods can be found in
+      the packages <pkg>brainwaver</pkg>, <pkg>rwt</pkg>,
+      <pkg>waveslim</pkg>, and <pkg>wavethresh</pkg>.</li>
 
   <li><i>Miscellaneous</i>:
       <pkg>ArDec</pkg> implements autoregressive-based decomposition
@@ -182,16 +187,20 @@ is missing from the list, please let us know. </p>
 </ul>
 </p>
 
-<p> <strong>Unit Roots and Cointegration</strong>
+<p> <strong>Stationarity, Unit Roots, and Cointegration</strong>
 <ul>
-<li><pkg>tseries</pkg> provides various unit root tests including
+<li><i>Stationarity and unit roots</i>: <pkg>tseries</pkg> provides
+    various stationarity and unit root tests including
     Augmented Dickey-Fuller, Phillips-Perron, and KPSS. Alternative
     implementations of the ADF and KPSS tests are in the
-    <pkg>urca</pkg> package, which also includes the
-    Schmidt-Phillips and Zivot-Andrews tests. Unit root tests for
-    seasonal time seres are provided in <pkg>uroot</pkg>.</li>
-<li>The Phillips-Ouliaris cointegration test is implemented in
-    <pkg>tseries</pkg> and <pkg>urca</pkg>.</li>
+    <pkg>urca</pkg> package, which also includes further methods
+    such as Elliott-Rothenberg-Stock, Schmidt-Phillips and Zivot-Andrews
+    tests. Additional methods for seasonal unit roots are provided
+    in <pkg>uroot</pkg>.</li>
+<li><i>Cointegration</i>: The Engle-Granger two-step method with the Phillips-Ouliaris
+    cointegration test is implemented in <pkg>tseries</pkg> and <pkg>urca</pkg>.
+    The latter additionally contains functionality for the Johansen trace
+    and lambda-max tests.</li>
 </ul>
 </p>
 
@@ -236,8 +245,8 @@ likelihood, Kalman filtering/smoothing and Bayesian methods).</li>
 
 <p> <strong>Multivariate Time Series Models</strong>
 <ul>
-<li><i>Vector AutoRegressive (VAR) models</i> are provided via
-    <code>ar()</code> in the <pkg>stats</pkg> including order
+<li><i>Vector autoregressive (VAR) models</i> are provided via
+    <code>ar()</code> in the basic stats package including order
     selection via the AIC. These models are
     restricted to be stationary. Possibly non-stationary VAR models
     are fitted in the <pkg>mAr</pkg> package, which also allows
@@ -246,9 +255,9 @@ likelihood, Kalman filtering/smoothing and Bayesian methods).</li>
      <code>estVARXls()</code> in <pkg>dse</pkg> and a Bayesian approach
     is available in <pkg>MSBVAR</pkg>.</li>
 <li><i>VARIMA models</i> and <i>state space models</i> are provided
-in the <pkg>dse></pkg> package.</li>
-<li><i>Vector Error Correction models</i> are available via the
-<pkg>vars</pkg> package, including versions with structural
+in the <pkg>dse</pkg> package.</li>
+<li><i>Vector error correction models</i> are available via the
+<pkg>urca</pkg> and <pkg>vars</pkg> packages, including versions with structural
 constraints. </li>
 <li><i>Time series factor analysis</i> is provided in
 <pkg>tsfa</pkg>.</li>
@@ -280,25 +289,17 @@ constraints. </li>
 <p>
 <strong>Miscellaneous</strong>
 <ul>
-<li><pkg>hydrosanity</pkg> Graphical user interface for exploring
-             hydrological time series;</li>
-<li><pkg>pastecs</pkg> Regulation, decomposition and
-   analysis of space-time series;</li>
-<li><pkg>RSEIS</pkg> Seismic time series analysis tools;</li>
-<li><pkg>paleoTS</pkg> Modeling evolution in
-   paleontological time series;</li>
-<li><pkg>tsModel</pkg> Time series modelling for air pollution and health;</li>
-<li><pkg>ensembleBMA</pkg> Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and
-weather observations.</li>
-<li><pkg>GeneTS</pkg> Microarray time series and network
-   analysis;</li>
-<li><pkg>fractal</pkg> Fractal time series modeling and
-   analysis;</li>
-<li><pkg>far</pkg> Modelling Functional AutoRegressive
-   processes;</li>
-<li><pkg>cts</pkg> Continuous time autoregressive models;</li>
-<li><pkg>sde</pkg> Simulation and inference for stochastic
-   differential equations.</li>
+  <li><pkg>cts</pkg>: Continuous time autoregressive models.</li>
+  <li><pkg>ensembleBMA</pkg>: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.</li>
+  <li><pkg>far</pkg>: Modeling Functional AutoRegressive processes.</li>
+  <li><pkg>fractal</pkg>: Fractal time series modeling and analysis.</li>
+  <li><pkg>GeneTS</pkg>: Microarray time series and network analysis.</li>
+  <li><pkg>hydrosanity</pkg>: Graphical user interface for exploring hydrological time series.</li>
+  <li><pkg>paleoTS</pkg>: Modeling evolution in paleontological time series.</li>
+  <li><pkg>pastecs</pkg>: Regulation, decomposition and analysis of space-time series.</li>
+  <li><pkg>RSEIS</pkg>: Seismic time series analysis tools.</li>
+  <li><pkg>sde</pkg>: Simulation and inference for stochastic differential equations.</li>
+  <li><pkg>tsModel</pkg>: Time series modeling for air pollution and health.</li>
 </ul>
 </p>
 
@@ -352,6 +353,7 @@ weather observations.</li>
   <pkg>robfilter</pkg>
   <pkg>RSEIS</pkg>
   <pkg>RTisean</pkg>
+  <pkg>rwt</pkg>
   <pkg>sde</pkg>
   <pkg>signalextraction</pkg>
   <pkg>timsac</pkg>
@@ -367,6 +369,8 @@ weather observations.</li>
   <pkg>uroot</pkg>
   <pkg>vars</pkg>
   <pkg>wavelets</pkg>
+  <pkg>waveslim</pkg>
+  <pkg>wavethresh</pkg>	  
   <pkg>wmtsa</pkg>
   <pkg>xts</pkg>
   <pkg priority="core">zoo</pkg>
