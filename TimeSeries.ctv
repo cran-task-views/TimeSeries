@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2008-10-13</version>
+<version>2008-10-16</version>
 
 <info>
 <p>
@@ -117,14 +117,18 @@
       <pkg>partsm</pkg> and <pkg>pear</pkg> for periodic
       autoregressive time series models.</li>
   <li><i>ARIMA models</i>: <code>arima()</code> in stats is the basic
-      function for ARIMA,
-      SARIMA, ARIMAX, and subset ARIMA models. It is enhanced in the forecast
-      package (<pkg>forecasting</pkg> bundle) along with
-      <code>auto.arima()</code> for automatic order selection.
-      <code>armaFit()</code> from the <pkg>fArma</pkg> package is an interface for ARIMA
-      and ARFIMA models. <code>arma()</code> in the <pkg>tseries</pkg> package
-      provides different algorithms for ARMA and subset ARMA models. Package <pkg>gsarima</pkg>
-      contains functionality for generalized SARIMA time series simulation</li>
+      function for ARIMA, SARIMA, ARIMAX, and subset ARIMA models. 
+      It is enhanced in the forecast package (<pkg>forecasting</pkg> 
+      bundle) along with <code>auto.arima()</code> for automatic 
+      order selection. <code>arma()</code> in the <pkg>tseries</pkg> 
+      package provides different algorithms for ARMA and subset ARMA 
+      models. Extensive facilities for fractional differenced ARFIMA
+      models are provided in the <pkg>fracdiff</pkg> package.  
+      <code>armaFit()</code> from the <pkg>fArma</pkg> package is an 
+      interface for ARIMA and ARFIMA models. Package 
+      <pkg>gsarima</pkg> contains functionality for generalized 
+      SARIMA time series simulation.</li> 
+      
   <li><i>GARCH models</i>: <code>garch()</code> from
       <pkg>tseries</pkg> fits basic GARCH models,
       <code>garchFit()</code> from <pkg>fGarch</pkg> implements ARIMA
@@ -231,8 +235,9 @@
 <ul>
 <li><i>Dynamic linear models</i>: A convenient interface for fitting
 dynamic regression models via OLS is available in <pkg>dynlm</pkg>;
-a different approach that also works with other regression functions
-is implemented in <pkg>dyn</pkg>. More advanced dynamic system
+an enhanced approach that also works with other regression functions
+and more time series classes is implemented in <pkg>dyn</pkg>.
+More advanced dynamic system
 equations can be fitted using <pkg>dse</pkg>. Gaussian linear state
 space models can be fitted using <pkg>dlm</pkg> (via maximum
 likelihood, Kalman filtering/smoothing and Bayesian methods).</li>
@@ -241,6 +246,8 @@ likelihood, Kalman filtering/smoothing and Bayesian methods).</li>
 <pkg>tpr</pkg> package.</li>
 </ul>
 </p>
+
+
 
 
 <p> <strong>Multivariate Time Series Models</strong>
@@ -280,6 +287,7 @@ constraints. </li>
 <li>Data from Cryer and Chan (2008) <i>Time series analysis with applications in R</i> are in the  <pkg>TSA</pkg> package.</li>
 <li><pkg>TSdbi</pkg> provides a common interface to time series databases.</li>
 <li><pkg>fame</pkg> provides an interface for FAME time series databases</li>
+<li><pkg>VhayuR</pkg> provides an interface to he Vhayu Velocity time series database</li>
 <li><pkg>fEcofin</pkg> Economic and Financial Data Sets</li>
 <li><pkg>AER</pkg> and <pkg>Ecdat</pkg> both contain many data sets (including time series data)
            from many econometrics text books</li>
@@ -332,6 +340,7 @@ constraints. </li>
   <pkg>FinTS</pkg>
   <pkg>FitAR</pkg>
   <pkg>fNonlinear</pkg>
+  <pkg>fracdiff</pkg>
   <pkg priority="core">forecasting</pkg>
   <pkg>fractal</pkg>
   <pkg>fSeries</pkg>
@@ -368,6 +377,7 @@ constraints. </li>
   <pkg>urca</pkg>
   <pkg>uroot</pkg>
   <pkg>vars</pkg>
+  <pkg>VhayuR</pkg>
   <pkg>wavelets</pkg>
   <pkg>waveslim</pkg>
   <pkg>wavethresh</pkg>	  
