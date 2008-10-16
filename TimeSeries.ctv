@@ -340,8 +340,8 @@ constraints. </li>
   <pkg>FinTS</pkg>
   <pkg>FitAR</pkg>
   <pkg>fNonlinear</pkg>
-  <pkg>fracdiff</pkg>
   <pkg priority="core">forecasting</pkg>
+  <pkg>fracdiff</pkg>
   <pkg>fractal</pkg>
   <pkg>fSeries</pkg>
   <pkg>fts</pkg>
