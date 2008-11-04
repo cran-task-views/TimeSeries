@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2008-11-03</version>
+<version>2008-11-04</version>
 
 <info>
 <p>
@@ -61,16 +61,13 @@
       and daylight savings time. However, the time zone computations require
       some care and might be system-dependent. Internally, <code>"POSIXct"</code>
       objects are the number of seconds since 1970-01-01 00:00:00 GMT.</li>
-  <li>Class <code>"timeDate"</code> is provided in the <pkg>fCalendar</pkg>
-      package. It is aimed at financial time/date information and deals with
+  <li>Class <code>"timeDate"</code> is provided in the <pkg>timeDate</pkg>
+      package (previously: fCalendar). It is aimed at financial time/date information and deals with
       time zones and daylight savings times via a new concept of "financial centers".
       Internally, it stores all information in <code>"POSIXct"</code> and does
       all computations in GMT only. Calendar functionality, e.g., including
       information about weekends and holidays for various stock exchanges,
       is also included.</li>
-  <li>The <pkg>timeSeries</pkg> package provides the S4 time series class 
-      <code>"timeSeries"</code> for regular and irregular time series, and 
-	  some tools or working with objects of this class.</li>
   <li>The <pkg>fame</pkg> package provides the <code>"ti"</code> class for
       time/date information.</li>
 </ul>
@@ -93,8 +90,8 @@
       time stamps, intended especially for financial applications. These include
       <code>"its"</code> from <pkg>its</pkg>, <code>"irts"</code> from
       <pkg>tseries</pkg>, and <code>"fts"</code> from <pkg>fts</pkg>.</li>
-  <li>The class <code>"timeSeries"</code> in <pkg>fSeries</pkg> implements
-      time series with <code>"timeDate"</code> time stamps.</li>
+  <li>The class <code>"timeSeries"</code> in <pkg>timeSeries</pkg> (previously: fSeries)
+      implements time series with <code>"timeDate"</code> time stamps.</li>
   <li>The class <code>"tis"</code> in <pkg>fame</pkg> implements
       time series with <code>"ti"</code> time stamps.</li>
   <li>The package <pkg>tframe</pkg> contains infrastructure for setting
@@ -198,8 +195,8 @@
       implementations of the ADF and KPSS tests are in the
       <pkg>urca</pkg> package, which also includes further methods
       such as Elliott-Rothenberg-Stock, Schmidt-Phillips and Zivot-Andrews
-      tests. The <pkg>fUnitRoots</pkg> package also provides the MacKinnon test.	
-	  Additional methods for seasonal unit roots are provided
+      tests. The <pkg>fUnitRoots</pkg> package also provides the MacKinnon test.
+      Additional methods for seasonal unit roots are provided
       in <pkg>uroot</pkg>.</li> 
   <li><i>Cointegration</i>: The Engle-Granger two-step method with the Phillips-Ouliaris
       cointegration test is implemented in <pkg>tseries</pkg> and <pkg>urca</pkg>.
@@ -326,7 +323,6 @@
   <pkg>fame</pkg>
   <pkg>far</pkg>
   <pkg>fArma</pkg>
-  <pkg>fCalendar</pkg>
   <pkg>fEcofin</pkg>
   <pkg>fGarch</pkg>
   <pkg>FinTS</pkg>
@@ -335,7 +331,6 @@
   <pkg priority="core">forecasting</pkg>
   <pkg>fracdiff</pkg>
   <pkg>fractal</pkg>
-  <pkg>fSeries</pkg>
   <pkg>fUnitRoots</pkg>
   <pkg>fts</pkg>
   <pkg>GeneTS</pkg>
@@ -359,6 +354,7 @@
   <pkg>sde</pkg>
   <pkg>signalextraction</pkg>
   <pkg>timsac</pkg>
+  <pkg>timeDate</pkg>
   <pkg>timeSeries</pkg>
   <pkg>tpr</pkg>
   <pkg>TSA</pkg>
