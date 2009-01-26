@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2008-11-04</version>
+<version>2009-01-26</version>
 
 <info>
 <p>
@@ -289,7 +289,7 @@
   <li><pkg>ensembleBMA</pkg>: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.</li>
   <li><pkg>far</pkg>: Modeling Functional AutoRegressive processes.</li>
   <li><pkg>fractal</pkg>: Fractal time series modeling and analysis.</li>
-  <li><pkg>GeneTS</pkg>: Microarray time series and network analysis.</li>
+  <li><pkg>GeneCycle</pkg> and <pkg>GeneNet</pkg>: Microarray time series and network analysis.</li>
   <li><pkg>hydrosanity</pkg>: Graphical user interface for exploring hydrological time series.</li>
   <li><pkg>paleoTS</pkg>: Modeling evolution in paleontological time series.</li>
   <li><pkg>pastecs</pkg>: Regulation, decomposition and analysis of space-time series.</li>
@@ -333,7 +333,8 @@
   <pkg>fractal</pkg>
   <pkg>fUnitRoots</pkg>
   <pkg>fts</pkg>
-  <pkg>GeneTS</pkg>
+  <pkg>GeneCycle</pkg>
+  <pkg>GeneNet</pkg>
   <pkg>gsarima</pkg>
   <pkg>hydrosanity</pkg>
   <pkg>its</pkg>
