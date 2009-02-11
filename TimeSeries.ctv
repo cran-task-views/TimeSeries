@@ -17,8 +17,7 @@
   is missing from the list, please let us know.
 </p>
 
-<p>
-<strong>Basics</strong>
+<p><strong>Basics</strong></p>
 <ul>
   <li><i>Infrastructure</i>: Base R contains substantial infrastructure for representing and analyzing
       time series data. The fundamental class is <code>"ts"</code> that can
@@ -35,10 +34,8 @@
       filters in <code>filter()</code>, and basic Holt-Winters forecasting in
       <code>HoltWinters()</code>.</li>
 </ul>
-</p>
 
-<p>
-<strong>Times and Dates</strong>
+<p><strong>Times and Dates</strong></p>
 <ul>
   <li>Class <code>"ts"</code> can only deal with numeric time stamps,
       but many more classes are available for storing time/date information
@@ -71,10 +68,8 @@
   <li>The <pkg>fame</pkg> package provides the <code>"ti"</code> class for
       time/date information.</li>
 </ul>
-</p>
 
-<p>
-<strong>Time Series Classes</strong>
+<p><strong>Time Series Classes</strong></p>
 <ul>
   <li>As mentioned above, <code>"ts"</code> is the basic class for
       regularly spaced time series using numeric time stamps.</li>
@@ -97,10 +92,8 @@
   <li>The package <pkg>tframe</pkg> contains infrastructure for setting
       time frames in different formats.</li>
 </ul>
-</p>
 
-<p>
-<strong>Forecasting and Univariate Modeling</strong>
+<p><strong>Forecasting and Univariate Modeling</strong></p>
 <ul>
   <li>The forecast package in the <pkg>forecasting</pkg> bundle
       provides a class and methods for univariate time series
@@ -141,10 +134,8 @@
       bias-corrected forecasting and bootstrap prediction intervals
       for autoregressive time series</li>
 </ul>
-</p>
 
-<p>
-<strong>Resampling</strong>
+<p><strong>Resampling</strong></p>
 <ul>
   <li><i>Bootstrapping</i>: The <pkg>boot</pkg> package provides
       function <code>tsboot()</code> for time series bootstrapping,
@@ -154,10 +145,8 @@
       Maximum entropy bootstrap for time series is available in
       <pkg>meboot</pkg>.</li>
 </ul>
-</p>
 
-<p>
-<strong>Decomposition and Filtering</strong>
+<p><strong>Decomposition and Filtering</strong></p>
 <ul>
   <li><i>Filters</i>: <code>filter()</code> in stats
       provides autoregressive and moving average linear filtering of
@@ -185,9 +174,8 @@
       <pkg>bspec</pkg> for Bayesian inference on the discrete power
         spectrum of time series. </li>
 </ul>
-</p>
 
-<p> <strong>Stationarity, Unit Roots, and Cointegration</strong>
+<p><strong>Stationarity, Unit Roots, and Cointegration</strong></p>
 <ul>
   <li><i>Stationarity and unit roots</i>: <pkg>tseries</pkg> provides
       various stationarity and unit root tests including
@@ -203,10 +191,8 @@
       The latter additionally contains functionality for the Johansen trace
       and lambda-max tests.</li>
 </ul>
-</p>
 
-<p>
-<strong>Nonlinear Time Series Analysis</strong>
+<p><strong>Nonlinear Time Series Analysis</strong></p>
 <ul>
   <li><i>Nonlinear autoregression</i>: Various forms of nonlinear
       autoregression are available in <pkg>tsDyn</pkg> including
@@ -224,9 +210,8 @@
   <li><i>Tests</i>: Various tests for nonlinearity are provided in
       <pkg>fNonlinear</pkg>.</li>
 </ul>
-</p>
 
-<p> <strong>Dynamic Regression Models</strong>
+<p><strong>Dynamic Regression Models</strong></p>
 <ul>
   <li><i>Dynamic linear models</i>: A convenient interface for fitting
       dynamic regression models via OLS is available in <pkg>dynlm</pkg>;
@@ -238,9 +223,8 @@
   <li><i>Time-varying parameter</i> models can be fitted using the
       <pkg>tpr</pkg> package.</li>
 </ul>
-</p>
 
-<p> <strong>Multivariate Time Series Models</strong>
+<p><strong>Multivariate Time Series Models</strong></p>
 <ul>
   <li><i>Vector autoregressive (VAR) models</i> are provided via
       <code>ar()</code> in the basic stats package including order
@@ -257,10 +241,8 @@
       constraints. </li>
   <li><i>Time series factor analysis</i> is provided in <pkg>tsfa</pkg>.</li>
 </ul>
-</p>
 
-<p>
-<strong>Time Series Data</strong>
+<p><strong>Time Series Data</strong></p>
 <ul>
   <li>Data from Makridakis, Wheelwright and Hyndman (1998) <i>Forecasting: methods and
        applications</i> are provided in the fma package from the <pkg>forecasting</pkg> bundle.</li>
@@ -279,10 +261,8 @@
   <li><pkg>AER</pkg> and <pkg>Ecdat</pkg> both contain many data sets (including time series data)
        from many econometrics text books</li>
 </ul>
-</p>
 
-<p>
-<strong>Miscellaneous</strong>
+<p><strong>Miscellaneous</strong></p>
 <ul>
   <li><pkg>cts</pkg>: Continuous time autoregressive models.</li>
   <li><pkg>dtw</pkg>: Dynamic time warping algorithms for computing and plotting pairwise alignments between time series.</li>
@@ -297,7 +277,6 @@
   <li><pkg>sde</pkg>: Simulation and inference for stochastic differential equations.</li>
   <li><pkg>tsModel</pkg>: Time series modeling for air pollution and health.</li>
 </ul>
-</p>
 
 </info>
 
