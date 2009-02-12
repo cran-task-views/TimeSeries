@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2009-01-26</version>
+<version>2009-02-13</version>
 
 <info>
 <p>
@@ -121,12 +121,9 @@
       interface for ARIMA and ARFIMA models. Package 
       <pkg>gsarima</pkg> contains functionality for generalized 
       SARIMA time series simulation.</li> 
-  <li><i>GARCH models</i>: <code>garch()</code> from
-      <pkg>tseries</pkg> fits basic GARCH models,
-      <code>garchFit()</code> from <pkg>fGarch</pkg> implements ARIMA
-      models with a wide class of GARCH innovations.
-      <pkg>bayesGARCH</pkg> estimates a Bayesian
-      GARCH(1,1) model with t innovations.</li>
+  <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models, <code>garchFit()</code> 
+      from <pkg>fGarch</pkg> implements ARIMA models with a wide class of GARCH innovations. <pkg>bayesGARCH</pkg> estimates a Bayesian
+      GARCH(1,1) model with t innovations. <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.</li>
   <li><i>Miscellaneous</i>: <pkg>ltsa</pkg> contains methods for
       linear time series analysis, <pkg>dlm</pkg> for Bayesian
       analysis of dynamic linear models, <pkg>timsac</pkg> for time
@@ -240,6 +237,9 @@
       <pkg>urca</pkg> and <pkg>vars</pkg> packages, including versions with structural
       constraints. </li>
   <li><i>Time series factor analysis</i> is provided in <pkg>tsfa</pkg>.</li>
+  <li><i>Multivariate state space models</i> are implemented in the <pkg>FKF</pkg> (Fast Kalman Filter) package. This provides relatively
+  flexible state space models via the <code>fkf()</code> comment: state-space parameters are allowed to be time-varying and intercepts are included in both equations. 
+  However, the error terms are assumed uncorrelated. There is a plot function for the fitted model.</li>
 </ul>
 
 <p><strong>Time Series Data</strong></p>
@@ -306,6 +306,7 @@
   <pkg>fGarch</pkg>
   <pkg>FinTS</pkg>
   <pkg>FitAR</pkg>
+  <pkg>FKF</pkg>
   <pkg>fNonlinear</pkg>
   <pkg priority="core">forecasting</pkg>
   <pkg>fracdiff</pkg>
@@ -314,6 +315,7 @@
   <pkg>fts</pkg>
   <pkg>GeneCycle</pkg>
   <pkg>GeneNet</pkg>
+  <pkg>gogarch</pkg>
   <pkg>gsarima</pkg>
   <pkg>hydrosanity</pkg>
   <pkg>its</pkg>
