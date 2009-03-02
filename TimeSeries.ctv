@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2009-02-13</version>
+<version>2009-03-02</version>
 
 <info>
 <p>
@@ -231,6 +231,7 @@
       VAR models in principal component space. More elaborate models
       are provided in package <pkg>vars</pkg>, <code>estVARXls()</code> 
 	  in <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>.</li>
+  <li><i>Markov-switching VAR</i> models are available in <pkg>MSVAR</pkg>.</li>
   <li><i>VARIMA models</i> and <i>state space models</i> are provided
       in the <pkg>dse</pkg> package.</li>
   <li><i>Vector error correction models</i> are available via the
@@ -324,6 +325,7 @@
   <pkg>meboot</pkg>
   <pkg>mFilter</pkg>
   <pkg>MSBVAR</pkg>
+  <pkg>MSVAR</pkg>
   <pkg>nlts</pkg>
   <pkg>paleoTS</pkg>
   <pkg>partsm</pkg>
