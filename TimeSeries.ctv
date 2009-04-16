@@ -169,7 +169,7 @@
       <pkg>signalextraction</pkg> for real-time signal extraction
         (direct filter approach).
       <pkg>bspec</pkg> for Bayesian inference on the discrete power
-        spectrum of time series. </li>
+        spectrum of time series.
       <pkg>kza</pkg> provides Kolmogorov-Zurbenko Adaptive Filters including break detection, spectral analysis, 
         wavelets and KZ Fourier Transforms.</li>
 </ul>
