@@ -170,6 +170,8 @@
         (direct filter approach).
       <pkg>bspec</pkg> for Bayesian inference on the discrete power
         spectrum of time series. </li>
+      <pkg>kza</pkg> provides Kolmogorov-Zurbenko Adaptive Filters including break detection, spectral analysis, 
+        wavelets and KZ Fourier Transforms.</li>
 </ul>
 
 <p><strong>Stationarity, Unit Roots, and Cointegration</strong></p>
@@ -322,6 +324,7 @@
   <pkg>hydrosanity</pkg>
   <pkg>its</pkg>
   <pkg>ltsa</pkg>
+  <pkg>kza</pkg>
   <pkg>mAr</pkg>
   <pkg>meboot</pkg>
   <pkg>mFilter</pkg>
