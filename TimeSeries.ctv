@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2009-04-16</version>
+<version>2009-06-22</version>
 
 <info>
 <p>
@@ -107,8 +107,7 @@
       models and facilities with full optimization.</li>
   <li><i>Autoregressive models</i>: <code>ar()</code> in stats (with
       model selection), <pkg>FitAR</pkg> for subset AR models, and
-      <pkg>partsm</pkg> and <pkg>pear</pkg> for periodic
-      autoregressive time series models.</li>
+      <pkg>pear</pkg> for periodic autoregressive time series models.</li>
   <li><i>ARIMA models</i>: <code>arima()</code> in stats is the basic
       function for ARIMA, SARIMA, ARIMAX, and subset ARIMA models. 
       It is enhanced in the forecast package (<pkg>forecasting</pkg> 
@@ -182,9 +181,7 @@
       implementations of the ADF and KPSS tests are in the
       <pkg>urca</pkg> package, which also includes further methods
       such as Elliott-Rothenberg-Stock, Schmidt-Phillips and Zivot-Andrews
-      tests. The <pkg>fUnitRoots</pkg> package also provides the MacKinnon test.
-      Additional methods for seasonal unit roots are provided
-      in <pkg>uroot</pkg>.</li> 
+      tests. The <pkg>fUnitRoots</pkg> package also provides the MacKinnon test.</li> 
   <li><i>Cointegration</i>: The Engle-Granger two-step method with the Phillips-Ouliaris
       cointegration test is implemented in <pkg>tseries</pkg> and <pkg>urca</pkg>.
       The latter additionally contains functionality for the Johansen trace
@@ -332,7 +329,6 @@
   <pkg>MSVAR</pkg>
   <pkg>nlts</pkg>
   <pkg>paleoTS</pkg>
-  <pkg>partsm</pkg>
   <pkg>pastecs</pkg>
   <pkg>pear</pkg>
   <pkg>robfilter</pkg>
@@ -354,7 +350,6 @@
   <pkg>tsModel</pkg>
   <pkg>tsfa</pkg>
   <pkg>urca</pkg>
-  <pkg>uroot</pkg>
   <pkg>vars</pkg>
   <pkg>VhayuR</pkg>
   <pkg>wavelets</pkg>
