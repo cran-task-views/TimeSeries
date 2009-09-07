@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2009-06-22</version>
+<version>2009-09-07</version>
 
 <info>
 <p>
@@ -95,23 +95,22 @@
 
 <p><strong>Forecasting and Univariate Modeling</strong></p>
 <ul>
-  <li>The forecast package in the <pkg>forecasting</pkg> bundle
+  <li>The <pkg>forecast</pkg> package
       provides a class and methods for univariate time series
       forecasts, and provides many functions implementing different
       forecasting models including all those in the stats
       package.</li>
   <li><i>Exponential smoothing</i>: <code>HoltWinters()</code> in stats
       provides some basic models with partial optimization,
-      <code>ets()</code> from the forecast package
-      (<pkg>forecasting</pkg> bundle) provides a larger set of
+      <code>ets()</code> from the <pkg>forecast</pkg> package provides a larger set of
       models and facilities with full optimization.</li>
   <li><i>Autoregressive models</i>: <code>ar()</code> in stats (with
       model selection), <pkg>FitAR</pkg> for subset AR models, and
       <pkg>pear</pkg> for periodic autoregressive time series models.</li>
   <li><i>ARIMA models</i>: <code>arima()</code> in stats is the basic
       function for ARIMA, SARIMA, ARIMAX, and subset ARIMA models. 
-      It is enhanced in the forecast package (<pkg>forecasting</pkg> 
-      bundle) along with <code>auto.arima()</code> for automatic 
+      It is enhanced in the <pkg>forecast</pkg> package 
+      along with <code>auto.arima()</code> for automatic 
       order selection. <code>arma()</code> in the <pkg>tseries</pkg> 
       package provides different algorithms for ARMA and subset ARMA 
       models. Extensive facilities for fractional differenced ARFIMA
@@ -246,11 +245,11 @@
 <p><strong>Time Series Data</strong></p>
 <ul>
   <li>Data from Makridakis, Wheelwright and Hyndman (1998) <i>Forecasting: methods and
-       applications</i> are provided in the fma package from the <pkg>forecasting</pkg> bundle.</li>
+       applications</i> are provided in the <pkg>fma</pkg> package.</li>
   <li>Data from Hyndman, Koehler, Ord and Snyder (2008) <i>Forecasting
-       with exponential smoothing</i>  are in the expsmooth
-       package (<pkg>forecasting</pkg> bundle).</li>
-  <li>Data from the M-competition and M3-competition are provided in the Mcomp package (<pkg>forecasting</pkg> bundle).</li>
+       with exponential smoothing</i>  are in the <pkg>expsmooth</pkg>
+       package.</li>
+  <li>Data from the M-competition and M3-competition are provided in the <pkg>Mcomp</pkg> package.</li>
   <li>Data from Tsay (2005) <i>Analysis of financial
        time series</i> are in the <pkg>FinTS</pkg> package, along with some functions and
        script files required to work some of the examples.</li>
@@ -300,6 +299,7 @@
   <pkg>dynlm</pkg>
   <pkg>Ecdat</pkg>
   <pkg>ensembleBMA</pkg>
+  <pkg>expsmooth</pkg>
   <pkg>fame</pkg>
   <pkg>far</pkg>
   <pkg>fArma</pkg>
@@ -308,8 +308,9 @@
   <pkg>FinTS</pkg>
   <pkg>FitAR</pkg>
   <pkg>FKF</pkg>
+  <pkg>fma</pkg>
   <pkg>fNonlinear</pkg>
-  <pkg priority="core">forecasting</pkg>
+  <pkg priority="core">forecast</pkg>
   <pkg>fracdiff</pkg>
   <pkg>fractal</pkg>
   <pkg>fUnitRoots</pkg>
@@ -323,6 +324,7 @@
   <pkg>ltsa</pkg>
   <pkg>kza</pkg>
   <pkg>mAr</pkg>
+  <pkg>Mcomp</pkg>
   <pkg>meboot</pkg>
   <pkg>mFilter</pkg>
   <pkg>MSBVAR</pkg>
