@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2009-09-07</version>
+<version>2009-09-09</version>
 
 <info>
 <p>
@@ -118,7 +118,7 @@
       <code>armaFit()</code> from the <pkg>fArma</pkg> package is an 
       interface for ARIMA and ARFIMA models. Package 
       <pkg>gsarima</pkg> contains functionality for generalized 
-      SARIMA time series simulation.</li> 
+      SARIMA time series simulation. The <pkg>mar1s</pkg> package handles multiplicative AR(1) with seasonal processes/</li> 
   <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models, <code>garchFit()</code> 
       from <pkg>fGarch</pkg> implements ARIMA models with a wide class of GARCH innovations. <pkg>bayesGARCH</pkg> estimates a Bayesian
       GARCH(1,1) model with t innovations. <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.</li>
@@ -218,6 +218,7 @@
       likelihood, Kalman filtering/smoothing and Bayesian methods).</li>
   <li><i>Time-varying parameter</i> models can be fitted using the
       <pkg>tpr</pkg> package.</li>
+  <li><i>Distributed lag non-linear models</i> are handled via the <pkg>dlnm</pkg> package.</li>
 </ul>
 
 <p><strong>Multivariate Time Series Models</strong></p>
@@ -237,9 +238,12 @@
       <pkg>urca</pkg> and <pkg>vars</pkg> packages, including versions with structural
       constraints. </li>
   <li><i>Time series factor analysis</i> is provided in <pkg>tsfa</pkg>.</li>
-  <li><i>Multivariate state space models</i> are implemented in the <pkg>FKF</pkg> (Fast Kalman Filter) package. This provides relatively
-  flexible state space models via the <code>fkf()</code> comment: state-space parameters are allowed to be time-varying and intercepts are included in both equations. 
-  However, the error terms are assumed uncorrelated. There is a plot function for the fitted model.</li>
+  <li><i>Multivariate state space models</i> are implemented in the <pkg>FKF</pkg> (Fast Kalman Filter) package. 
+      This provides relatively flexible state space models via the <code>fkf()</code> comment: state-space 
+	  parameters are allowed to be time-varying and intercepts are included in both equations. 
+      An alternative implementation is provided by the <pkg>KFAS</pkg> package which provides a 
+	  fast multivariate Kalman filter, smoother, simulation smoother and forecasting. 
+	  Both packages assume uncorrelated error terms.</li>
 </ul>
 
 <p><strong>Time Series Data</strong></p>
@@ -269,12 +273,14 @@
   <li><pkg>ensembleBMA</pkg>: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.</li>
   <li><pkg>far</pkg>: Modeling Functional AutoRegressive processes.</li>
   <li><pkg>fractal</pkg>: Fractal time series modeling and analysis.</li>
+  <li><pkg>fractalrock</pkg>: Generate fractal time series with non-normal returns distribution.</li>
   <li><pkg>GeneCycle</pkg> and <pkg>GeneNet</pkg>: Microarray time series and network analysis.</li>
   <li><pkg>hydrosanity</pkg>: Graphical user interface for exploring hydrological time series.</li>
   <li><pkg>paleoTS</pkg>: Modeling evolution in paleontological time series.</li>
   <li><pkg>pastecs</pkg>: Regulation, decomposition and analysis of space-time series.</li>
   <li><pkg>RSEIS</pkg>: Seismic time series analysis tools.</li>
   <li><pkg>sde</pkg>: Simulation and inference for stochastic differential equations.</li>
+  <li><pkg>tiger</pkg>: Temporally resolved groups of typical differences (errors) between two time series are determined and visualized.</li>
   <li><pkg>tsModel</pkg>: Time series modeling for air pollution and health.</li>
 </ul>
 
@@ -293,6 +299,7 @@
   <pkg>chron</pkg>
   <pkg>cts</pkg>
   <pkg>dlm</pkg>
+  <pkg>dlnm</pkg>
   <pkg>dse</pkg>
   <pkg>dtw</pkg>
   <pkg>dyn</pkg>
@@ -313,6 +320,7 @@
   <pkg priority="core">forecast</pkg>
   <pkg>fracdiff</pkg>
   <pkg>fractal</pkg>
+  <pkg>fractalrock</pkg>
   <pkg>fUnitRoots</pkg>
   <pkg>fts</pkg>
   <pkg>GeneCycle</pkg>
@@ -322,8 +330,10 @@
   <pkg>hydrosanity</pkg>
   <pkg>its</pkg>
   <pkg>ltsa</pkg>
+  <pkg>KFAS</pkg>
   <pkg>kza</pkg>
   <pkg>mAr</pkg>
+  <pkg>mar1s</pkg>
   <pkg>Mcomp</pkg>
   <pkg>meboot</pkg>
   <pkg>mFilter</pkg>
@@ -339,6 +349,7 @@
   <pkg>rwt</pkg>
   <pkg>sde</pkg>
   <pkg>signalextraction</pkg>
+  <pkg>tiger</pkg>
   <pkg>timsac</pkg>
   <pkg>timeDate</pkg>
   <pkg>timeSeries</pkg>
