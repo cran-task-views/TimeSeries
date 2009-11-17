@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2009-10-28</version>
+<version>2009-11-17</version>
 
 <info>
 <p>
@@ -193,9 +193,7 @@
 <ul>
   <li><i>Nonlinear autoregression</i>: Various forms of nonlinear
       autoregression are available in <pkg>tsDyn</pkg> including
-      additive AR, neural nets, SETAR and LSTAR models. Nonparametric
-      autoregression is also provided by  <pkg>nlts</pkg> (including
-      order estimation through cross-validation).   <pkg>bentcableAR</pkg>
+      additive AR, neural nets, SETAR and LSTAR models. <pkg>bentcableAR</pkg>
       implements Bent-Cable autoregression. <pkg>BAYSTAR</pkg> provides Bayesian analysis of threshold
       autoregressive models.</li>
   <li>The <i><a
@@ -343,7 +341,6 @@
   <pkg>mFilter</pkg>
   <pkg>MSBVAR</pkg>
   <pkg>MSVAR</pkg>
-  <pkg>nlts</pkg>
   <pkg>paleoTS</pkg>
   <pkg>pastecs</pkg>
   <pkg>pear</pkg>
