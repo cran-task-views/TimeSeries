@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2009-11-17</version>
+<version>2009-11-19</version>
 
 <info>
 <p>
@@ -213,7 +213,7 @@
       an enhanced approach that also works with other regression functions
       and more time series classes is implemented in <pkg>dyn</pkg>.
       The <pkg>tslars</pkg> package applies a dynamic variable selection procedure using an extension of the LARS
-      algorithm. More advanced dynamic system equations can be fitted using <pkg>EvalEst</pkg>. Gaussian linear state
+      algorithm. More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Gaussian linear state
       space models can be fitted using <pkg>dlm</pkg> (via maximum
       likelihood, Kalman filtering/smoothing and Bayesian methods).</li>
   <li><i>Time-varying parameter</i> models can be fitted using the
@@ -230,10 +230,12 @@
       are fitted in the <pkg>mAr</pkg> package, which also allows
       VAR models in principal component space. More elaborate models
       are provided in package <pkg>vars</pkg>, <code>estVARXls()</code> 
-	  in <pkg>EvalEst</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>.</li>
+	  in <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>.
+	  </li>
   <li><i>Markov-switching VAR</i> models are available in <pkg>MSVAR</pkg>.</li>
   <li><i>VARIMA models</i> and <i>state space models</i> are provided
-      in the <pkg>EvalEst</pkg> package.</li>
+      in the <pkg>dse</pkg> package. <pkg>EvalEst</pkg> facilitates Monte Carlo experiments to 
+	  evaluate the associated estimation methods.</li>
   <li><i>Vector error correction models</i> are available via the
       <pkg>urca</pkg> and <pkg>vars</pkg> packages, including versions with structural
       constraints. </li>
@@ -302,6 +304,7 @@
   <pkg>cts</pkg>
   <pkg>dlm</pkg>
   <pkg>dlnm</pkg>
+  <pkg>dse</pkg>
   <pkg>dtw</pkg>
   <pkg>dyn</pkg>
   <pkg>dynlm</pkg>
