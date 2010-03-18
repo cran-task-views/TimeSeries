@@ -188,16 +188,6 @@
       The latter additionally contains functionality for the Johansen trace
       and lambda-max tests.</li>
 </ul>
-
-<p><strong>Nonstationary (Locally Stationary) Time Series</strong></p>
-<ul>
-  <li><i>Locally stationary wavelet models for nonstationary time series 
-      are provided in the <pkg>wavethresh</pkg> package. The package enables the estimation 
-      of an evolutionary time varying spectrum, plotting of such a spectrum and 
-      simulation of such a process from a known spectrum. The package also consists 
-      of functionality to develop wavelet packet transfer function models.</li>
-</ul>
-
 <p><strong>Nonlinear Time Series Analysis</strong></p>
 <ul>
   <li><i>Nonlinear autoregression</i>: Various forms of nonlinear
@@ -293,6 +283,8 @@
   <li><pkg>sde</pkg>: Simulation and inference for stochastic differential equations.</li>
   <li><pkg>tiger</pkg>: Temporally resolved groups of typical differences (errors) between two time series are determined and visualized.</li>
   <li><pkg>tsModel</pkg>: Time series modeling for air pollution and health.</li>
+  <li><pkg>wavethresh</pkg>: Locally stationary wavelet models for nonstationary time series
+      (including estimation, plotting, and simulation functionality for time-varying spectrums).</li>
 </ul>
 
 </info>
