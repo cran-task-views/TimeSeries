@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2009-12-10</version>
+<version>2010-03-18</version>
 
 <info>
 <p>
@@ -187,6 +187,15 @@
       cointegration test is implemented in <pkg>tseries</pkg> and <pkg>urca</pkg>.
       The latter additionally contains functionality for the Johansen trace
       and lambda-max tests.</li>
+</ul>
+
+<p><strong>Nonstationary (Locally Stationary) Time Series</strong></p>
+<ul>
+  <li><i>Locally stationary wavelet models for nonstationary time series 
+      are provided in the <pkg>wavethresh</pkg> package. The package enables the estimation 
+      of an evolutionary time varying spectrum, plotting of such a spectrum and 
+      simulation of such a process from a known spectrum. The package also consists 
+      of functionality to develop wavelet packet transfer function models.</li>
 </ul>
 
 <p><strong>Nonlinear Time Series Analysis</strong></p>
