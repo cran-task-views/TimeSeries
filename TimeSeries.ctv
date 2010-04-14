@@ -243,8 +243,9 @@
       This provides relatively flexible state space models via the <code>fkf()</code> comment: state-space 
 	  parameters are allowed to be time-varying and intercepts are included in both equations. 
       An alternative implementation is provided by the <pkg>KFAS</pkg> package which provides a 
-	  fast multivariate Kalman filter, smoother, simulation smoother and forecasting. 
-	  Both packages assume uncorrelated error terms.</li>
+	  fast multivariate Kalman filter, smoother, simulation smoother and forecasting. Yet another implementation
+	  is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models
+	  into state space form. All three packages assume uncorrelated error terms.</li>
 </ul>
 
 <p><strong>Time Series Data</strong></p>
