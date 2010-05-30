@@ -68,7 +68,7 @@
   <li>The <pkg>tis</pkg> package provides the <code>"ti"</code> class for
       time/date information.</li>
   <li>The <pkg>rtv</pkg> package allows for the representation, manipulation and 
-      visualisation of random time variables.
+      visualisation of random time variables.</li>
 </ul>
 
 <p><strong>Time Series Classes</strong></p>
