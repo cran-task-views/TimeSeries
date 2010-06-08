@@ -68,7 +68,7 @@
   <li>The <pkg>tis</pkg> package provides the <code>"ti"</code> class for
       time/date information.</li>
   <li>The <code>"mondate"</code> class from the <pkg>mondate</pkg> package
-      allows to keep compute with dates in terms of months.</li>
+      facilitates computing with dates in terms of months.</li>
   <li>The <pkg>rtv</pkg> package allows for the representation, manipulation and 
       visualisation of random time variables.</li>
 </ul>
