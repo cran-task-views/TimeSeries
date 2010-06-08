@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2010-05-30</version>
+<version>2010-06-08</version>
 
 <info>
 <p>
@@ -67,6 +67,8 @@
       is also included.</li>
   <li>The <pkg>tis</pkg> package provides the <code>"ti"</code> class for
       time/date information.</li>
+  <li>The <code>"mondate"</code> class from the <pkg>mondate</pkg> package
+      allows to keep compute with dates in terms of months.</li>
   <li>The <pkg>rtv</pkg> package allows for the representation, manipulation and 
       visualisation of random time variables.</li>
 </ul>
@@ -344,6 +346,7 @@
   <pkg>Mcomp</pkg>
   <pkg>meboot</pkg>
   <pkg>mFilter</pkg>
+  <pkg>mondate</pkg>
   <pkg>MSBVAR</pkg>
   <pkg>MSVAR</pkg>
   <pkg>paleoTS</pkg>
