@@ -71,7 +71,7 @@
       facilitates computing with dates in terms of months.</li>
   <li>The <pkg>rtv</pkg> package allows for the representation, manipulation and 
       visualisation of random time variables.</li>
-  <li><pkg>TSAgg</pkg> provides functions for aggregation of incomplete time series data.
+  <li><pkg>TSAgg</pkg> provides functions for aggregation of incomplete time series data.</li>
 </ul>
 
 <p><strong>Time Series Classes</strong></p>
