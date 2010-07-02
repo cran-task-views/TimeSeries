@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2010-06-08</version>
+<version>2010-07-02</version>
 
 <info>
 <p>
@@ -71,6 +71,7 @@
       facilitates computing with dates in terms of months.</li>
   <li>The <pkg>rtv</pkg> package allows for the representation, manipulation and 
       visualisation of random time variables.</li>
+  <li><pkg>TSAgg</pkg> provides functions for aggregation of incomplete time series data.
 </ul>
 
 <p><strong>Time Series Classes</strong></p>
@@ -234,6 +235,8 @@
       VAR models in principal component space. More elaborate models
       are provided in package <pkg>vars</pkg>, <code>estVARXls()</code> 
 	  in <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>.
+	  <pkg>MARSS</pkg> fits constrained and unconstrained linear multivariate 
+	  autoregressive state-space (MARSS) models. 
 	  </li>
   <li><i>Markov-switching VAR</i> models are available in <pkg>MSVAR</pkg>.</li>
   <li><i>VARIMA models</i> and <i>state space models</i> are provided
@@ -343,6 +346,7 @@
   <pkg>kza</pkg>
   <pkg>mAr</pkg>
   <pkg>mar1s</pkg>
+  <pkg>MARSS</pkg>
   <pkg>Mcomp</pkg>
   <pkg>meboot</pkg>
   <pkg>mFilter</pkg>
@@ -367,6 +371,7 @@
   <pkg>tis</pkg>
   <pkg>tpr</pkg>
   <pkg>TSA</pkg>
+  <pkg>TSAgg</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsDyn</pkg>
   <pkg>tslars</pkg>
