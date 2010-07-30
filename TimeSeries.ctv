@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2010-07-02</version>
+<version>2010-07-30</version>
 
 <info>
 <p>
@@ -164,7 +164,7 @@
       multiresolution analyses. Wavelet methods for time series
       analysis based on Percival and Walden (2000) are given in
       <pkg>wmtsa</pkg>. Further wavelet methods can be found in
-      the packages <pkg>brainwaver</pkg>, <pkg>rwt</pkg>,
+      the packages <pkg>rwt</pkg>,
       <pkg>waveslim</pkg>, and <pkg>wavethresh</pkg>.</li>
   <li><i>Miscellaneous</i>:
       <pkg>ArDec</pkg> implements autoregressive-based decomposition
@@ -238,7 +238,6 @@
 	  <pkg>MARSS</pkg> fits constrained and unconstrained linear multivariate 
 	  autoregressive state-space (MARSS) models. 
 	  </li>
-  <li><i>Markov-switching VAR</i> models are available in <pkg>MSVAR</pkg>.</li>
   <li><i>VARIMA models</i> and <i>state space models</i> are provided
       in the <pkg>dse</pkg> package. <pkg>EvalEst</pkg> facilitates Monte Carlo experiments to 
 	  evaluate the associated estimation methods.</li>
@@ -266,7 +265,6 @@
   <li>Data from Tsay (2005) <i>Analysis of financial
        time series</i> are in the <pkg>FinTS</pkg> package, along with some functions and
        script files required to work some of the examples.</li>
-  <li>Data from Cryer and Chan (2008) <i>Time series analysis with applications in R</i> are in the  <pkg>TSA</pkg> package.</li>
   <li><pkg>TSdbi</pkg> provides a common interface to time series databases.</li>
   <li><pkg>fame</pkg> provides an interface for FAME time series databases</li>
   <li><pkg>VhayuR</pkg> provides an interface to he Vhayu Velocity time series database</li>
@@ -277,7 +275,6 @@
 
 <p><strong>Miscellaneous</strong></p>
 <ul>
-  <li><pkg>cts</pkg>: Continuous time autoregressive models.</li>
   <li><pkg>dtw</pkg>: Dynamic time warping algorithms for computing and plotting pairwise alignments between time series.</li>
   <li><pkg>ensembleBMA</pkg>: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.</li>
   <li><pkg>fractal</pkg>: Fractal time series modeling and analysis.</li>
@@ -305,11 +302,9 @@
   <pkg>bentcableAR</pkg>
   <pkg>boot</pkg>
   <pkg>BootPR</pkg>
-  <pkg>brainwaver</pkg>
   <pkg>bspec</pkg>
   <pkg>CADFtest</pkg>
   <pkg>chron</pkg>
-  <pkg>cts</pkg>
   <pkg>dlm</pkg>
   <pkg>dlnm</pkg>
   <pkg>dse</pkg>
@@ -352,7 +347,6 @@
   <pkg>mFilter</pkg>
   <pkg>mondate</pkg>
   <pkg>MSBVAR</pkg>
-  <pkg>MSVAR</pkg>
   <pkg>paleoTS</pkg>
   <pkg>pastecs</pkg>
   <pkg>pear</pkg>
@@ -370,7 +364,6 @@
   <pkg>timeSeries</pkg>
   <pkg>tis</pkg>
   <pkg>tpr</pkg>
-  <pkg>TSA</pkg>
   <pkg>TSAgg</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsDyn</pkg>
