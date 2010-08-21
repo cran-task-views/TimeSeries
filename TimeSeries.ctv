@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2010-07-30</version>
+<version>2010-08-21</version>
 
 <info>
 <p>
@@ -252,6 +252,8 @@
 	  fast multivariate Kalman filter, smoother, simulation smoother and forecasting. Yet another implementation
 	  is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models
 	  into state space form. All three packages assume uncorrelated error terms.</li>
+  <li><i>Partially-observed Markov processes</i> are a generalization of the usual linear multivariate state 
+  space models, allowing non-Gaussian and non-linear models. These are implemented in the <pkg>pomp</pkg> package.</li>
 </ul>
 
 <p><strong>Time Series Data</strong></p>
@@ -350,6 +352,7 @@
   <pkg>paleoTS</pkg>
   <pkg>pastecs</pkg>
   <pkg>pear</pkg>
+  <pkg>pomp</pkg>
   <pkg>ptw</pkg>
   <pkg>robfilter</pkg>
   <pkg>RSEIS</pkg>
