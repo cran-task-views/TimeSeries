@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2010-08-21</version>
+<version>2010-08-30</version>
 
 <info>
 <p>
@@ -126,7 +126,10 @@
       SARIMA time series simulation. The <pkg>mar1s</pkg> package handles multiplicative AR(1) with seasonal processes/</li> 
   <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models, <code>garchFit()</code> 
       from <pkg>fGarch</pkg> implements ARIMA models with a wide class of GARCH innovations. <pkg>bayesGARCH</pkg> estimates a Bayesian
-      GARCH(1,1) model with t innovations. <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.</li>
+      GARCH(1,1) model with t innovations. <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.
+      The R-Forge package <rforge>rgarch</rforge>
+      aims to provide a flexible and rich GARCH modelling and testing environment. Its
+      <a href="http://rgarch.R-Forge.R-project.org/">webpage</a> has extensive information and examples.</li>
   <li><i>Miscellaneous</i>: <pkg>ltsa</pkg> contains methods for
       linear time series analysis, <pkg>dlm</pkg> for Bayesian
       analysis of dynamic linear models, <pkg>timsac</pkg> for time
@@ -389,6 +392,7 @@
 <links>
     <view>Finance</view>
     <view>Econometrics</view>
+    <rforge>rgarch</rforge>
     <a href="http://www.robjhyndman.com/TSDL/" target="_top">Time Series Data Library</a>
     <a href="http://www.mpipks-dresden.mpg.de/~tisean/">TISEAN Project</a>
 </links>
