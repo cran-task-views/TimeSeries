@@ -285,7 +285,6 @@
   <li><pkg>fractal</pkg>: Fractal time series modeling and analysis.</li>
   <li><pkg>fractalrock</pkg>: Generate fractal time series with non-normal returns distribution.</li>
   <li><pkg>GeneCycle</pkg> and <pkg>GeneNet</pkg>: Microarray time series and network analysis.</li>
-  <li><pkg>hydrosanity</pkg>: Graphical user interface for exploring hydrological time series.</li>
   <li><pkg>paleoTS</pkg>: Modeling evolution in paleontological time series.</li>
   <li><pkg>pastecs</pkg>: Regulation, decomposition and analysis of space-time series.</li>
   <li><pkg>ptw</pkg>: Parametric time warping.</li>
@@ -339,7 +338,6 @@
   <pkg>GeneNet</pkg>
   <pkg>gogarch</pkg>
   <pkg>gsarima</pkg>
-  <pkg>hydrosanity</pkg>
   <pkg>its</pkg>
   <pkg>ltsa</pkg>
   <pkg>KFAS</pkg>
