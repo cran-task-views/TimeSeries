@@ -2,8 +2,8 @@
 
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
-<maintainer email="Rob.Hyndman@buseco.monash.edu.au">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2010-09-17</version>
+<maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman and Achim Zeileis</maintainer>
+<version>2011-03-09</version>
 
 <info>
 <p>
@@ -289,6 +289,7 @@
   <li><pkg>pastecs</pkg>: Regulation, decomposition and analysis of space-time series.</li>
   <li><pkg>ptw</pkg>: Parametric time warping.</li>
   <li><pkg>RSEIS</pkg>: Seismic time series analysis tools.</li>
+  <li><pkg>season</pkg>: Seasonal analysis of health data including regression models, time-stratified case-crossover, plotting functions and residual checks.</li>
   <li><pkg>sde</pkg>: Simulation and inference for stochastic differential equations.</li>
   <li><pkg>tiger</pkg>: Temporally resolved groups of typical differences (errors) between two time series are determined and visualized.</li>
   <li><pkg>tsModel</pkg>: Time series modeling for air pollution and health.</li>
@@ -361,6 +362,7 @@
   <pkg>rtv</pkg>
   <pkg>rwt</pkg>
   <pkg>sde</pkg>
+  <pkg>season</pkg>
   <pkg>signalextraction</pkg>
   <pkg>tiger</pkg>
   <pkg>timsac</pkg>
