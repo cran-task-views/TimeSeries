@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2011-03-15</version>
+<version>2011-05-13</version>
 
 <info>
 <p>
@@ -118,15 +118,18 @@
       along with <code>auto.arima()</code> for automatic 
       order selection. <code>arma()</code> in the <pkg>tseries</pkg> 
       package provides different algorithms for ARMA and subset ARMA 
-      models. Extensive facilities for fractional differenced ARFIMA
+      models. <pkg>FitARMA</pkg> implements a fast MLE algorithm for ARMA models.
+      Extensive facilities for fractional differenced ARFIMA
       models are provided in the <pkg>fracdiff</pkg> package.  
       <code>armaFit()</code> from the <pkg>fArma</pkg> package is an 
       interface for ARIMA and ARFIMA models. Package 
       <pkg>gsarima</pkg> contains functionality for generalized 
       SARIMA time series simulation. The <pkg>mar1s</pkg> package handles multiplicative AR(1) with seasonal processes/</li> 
   <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models, <code>garchFit()</code> 
-      from <pkg>fGarch</pkg> implements ARIMA models with a wide class of GARCH innovations. <pkg>bayesGARCH</pkg> estimates a Bayesian
-      GARCH(1,1) model with t innovations. <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.
+      from <pkg>fGarch</pkg> implements ARIMA models with a wide class of GARCH innovations. 
+      <pkg>bayesGARCH</pkg> estimates a Bayesian GARCH(1,1) model with t innovations. 
+      <pkg>egarch</pkg> provides functions for simulating and fitting EGARCH models, and 
+      <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.
       The R-Forge package <rforge>rgarch</rforge>
       aims to provide a flexible and rich GARCH modelling and testing environment. Its
       <a href="http://rgarch.R-Forge.R-project.org/">webpage</a> has extensive information and examples.</li>
@@ -239,6 +242,8 @@
       VAR models in principal component space. More elaborate models
       are provided in package <pkg>vars</pkg>, <code>estVARXls()</code> 
 	  in <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>.
+      <pkg>fastVAR</pkg> uses fast implementations to estimate VAR models (possibly with 
+      exogenous inputs and sparse coefficient matrices).
 	  <pkg>MARSS</pkg> fits constrained and unconstrained linear multivariate 
 	  autoregressive state-space (MARSS) models. 
 	  </li>
@@ -318,15 +323,18 @@
   <pkg>dyn</pkg>
   <pkg>dynlm</pkg>
   <pkg>Ecdat</pkg>
+  <pkg>egarch</pkg>
   <pkg>ensembleBMA</pkg>
   <pkg>EvalEst</pkg>
   <pkg>expsmooth</pkg>
   <pkg>fame</pkg>
   <pkg>fArma</pkg>
+  <pkg>fastVAR</pkg>
   <pkg>fEcofin</pkg>
   <pkg>fGarch</pkg>
   <pkg>FinTS</pkg>
   <pkg>FitAR</pkg>
+  <pkg>FitARMA</pkg>
   <pkg>FKF</pkg>
   <pkg>fma</pkg>
   <pkg>fNonlinear</pkg>
