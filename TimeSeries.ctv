@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2011-05-13</version>
+<version>2011-05-16</version>
 
 <info>
 <p>
@@ -57,7 +57,9 @@
       the POSIX standard for date/time (intra-day) information and also support time zones
       and daylight savings time. However, the time zone computations require
       some care and might be system-dependent. Internally, <code>"POSIXct"</code>
-      objects are the number of seconds since 1970-01-01 00:00:00 GMT.</li>
+      objects are the number of seconds since 1970-01-01 00:00:00 GMT.
+      Package <pkg>lubridate</pkg> provides functions that facilitate
+      certain POSIX-based computations.</li>
   <li>Class <code>"timeDate"</code> is provided in the <pkg>timeDate</pkg>
       package (previously: fCalendar). It is aimed at financial time/date information and deals with
       time zones and daylight savings times via a new concept of "financial centers".
@@ -352,6 +354,7 @@
   <pkg>ltsa</pkg>
   <pkg>KFAS</pkg>
   <pkg>kza</pkg>
+  <pkg>lubridate</pkg>
   <pkg>mAr</pkg>
   <pkg>mar1s</pkg>
   <pkg>MARSS</pkg>
