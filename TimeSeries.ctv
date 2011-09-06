@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2011-08-11</version>
+<version>2011-09-06</version>
 
 <info>
 <p>
@@ -306,6 +306,7 @@
   <li><pkg>tsModel</pkg>: Time series modeling for air pollution and health.</li>
   <li><pkg>wavethresh</pkg>: Locally stationary wavelet models for nonstationary time series
       (including estimation, plotting, and simulation functionality for time-varying spectrums).</li>
+  <li><pkg>wq</pkq>: Exploring water quality time series.</li>
 </ul>
 
 </info>
@@ -403,6 +404,7 @@
   <pkg>waveslim</pkg>
   <pkg>wavethresh</pkg>	  
   <pkg>wmtsa</pkg>
+  <pkg>wq</pkg>
   <pkg>xts</pkg>
   <pkg priority="core">zoo</pkg>
 </packagelist>
