@@ -306,7 +306,7 @@
   <li><pkg>tsModel</pkg>: Time series modeling for air pollution and health.</li>
   <li><pkg>wavethresh</pkg>: Locally stationary wavelet models for nonstationary time series
       (including estimation, plotting, and simulation functionality for time-varying spectrums).</li>
-  <li><pkg>wq</pkq>: Exploring water quality time series.</li>
+  <li><pkg>wq</pkg>: Exploring water quality time series.</li>
 </ul>
 
 </info>
@@ -322,8 +322,8 @@
   <pkg>bspec</pkg>
   <pkg>CADFtest</pkg>
   <pkg>chron</pkg>
-	<pkg>cts</pkg>
-	<pkg>ctarma</pkg>
+  <pkg>cts</pkg>
+  <pkg>ctarma</pkg>
   <pkg>dlm</pkg>
   <pkg>dlnm</pkg>
   <pkg>dse</pkg>
