@@ -174,8 +174,6 @@
       the packages <pkg>rwt</pkg>,
       <pkg>waveslim</pkg>, and <pkg>wavethresh</pkg>.</li>
   <li><i>Miscellaneous</i>:
-      <pkg>ArDec</pkg> implements autoregressive-based decomposition
-        of a time series.
       <pkg>signalextraction</pkg> for real-time signal extraction
         (direct filter approach).
       <pkg>bspec</pkg> for Bayesian inference on the discrete power
@@ -313,7 +311,6 @@
 
 <packagelist>
   <pkg>AER</pkg>
-  <pkg>ArDec</pkg>
   <pkg>bayesGARCH</pkg>
   <pkg>BAYSTAR</pkg>
   <pkg>bentcableAR</pkg>
