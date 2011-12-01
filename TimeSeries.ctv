@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2011-11-02</version>
+<version>2011-12-01</version>
 
 <info>
 <p>
@@ -121,8 +121,9 @@
       order selection. <code>arma()</code> in the <pkg>tseries</pkg> 
       package provides different algorithms for ARMA and subset ARMA 
       models. <pkg>FitARMA</pkg> implements a fast MLE algorithm for ARMA models.
-      Extensive facilities for fractional differenced ARFIMA
-      models are provided in the <pkg>fracdiff</pkg> package.  
+      Some facilities for fractional differenced ARFIMA
+      models are provided in the <pkg>fracdiff</pkg> package.
+      <pkg>afmtools</pkg> handles estimation, diagnostics and forecasting for ARFIMA models.
 <!--  <code>armaFit()</code> from the <pkg>fArma</pkg> package is an interface for ARIMA and ARFIMA models. -->
       Package <pkg>gsarima</pkg> contains functionality for generalized 
       SARIMA time series simulation. The <pkg>mar1s</pkg> package handles multiplicative AR(1) with seasonal processes/</li> 
@@ -311,6 +312,7 @@
 
 <packagelist>
   <pkg>AER</pkg>
+  <pkg>afmtools</pkg>
   <pkg>bayesGARCH</pkg>
   <pkg>BAYSTAR</pkg>
   <pkg>bentcableAR</pkg>
