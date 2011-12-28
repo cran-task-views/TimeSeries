@@ -289,7 +289,7 @@
 
 <p><strong>Miscellaneous</strong></p>
 <ul>
-  <li><pkg>deseasonlize</pkg>: Optimal deseasonalization for geophysical time series using AR fitting.</li>
+  <li><pkg>deseasonalize</pkg>: Optimal deseasonalization for geophysical time series using AR fitting.</li>
   <li><pkg>dtw</pkg>: Dynamic time warping algorithms for computing and plotting pairwise alignments between time series.</li>
   <li><pkg>ensembleBMA</pkg>: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.</li>
   <li><pkg>fractal</pkg>: Fractal time series modeling and analysis.</li>
@@ -324,7 +324,7 @@
   <pkg>chron</pkg>
   <pkg>cts</pkg>
   <pkg>ctarma</pkg>
-  <pkg>deseasonlize</pkg>
+  <pkg>deseasonalize</pkg>
   <pkg>dlm</pkg>
   <pkg>dlnm</pkg>
   <pkg>dse</pkg>
