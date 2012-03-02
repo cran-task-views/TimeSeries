@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2011-12-28</version>
+<version>2011-03-02</version>
 
 <info>
 <p>
@@ -294,11 +294,13 @@
   <li><pkg>ensembleBMA</pkg>: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.</li>
   <li><pkg>fractal</pkg>: Fractal time series modeling and analysis.</li>
   <li><pkg>fractalrock</pkg>: Generate fractal time series with non-normal returns distribution.</li>
-  <li><pkg>hydroTSM</pkg> and <pkg>hydroGOF</pkg> provide functions for analysing and modelling time series in hydrology and related environmental sciences.</li>
   <li><pkg>GeneCycle</pkg> and <pkg>GeneNet</pkg>: Microarray time series and network analysis.</li>
+  <li><pkg>hydroTSM</pkg> and <pkg>hydroGOF</pkg> provide functions for analysing and modelling time series in hydrology and related environmental sciences.</li>
+  <li><pkg>Interpol.T</pkg> makes hourly interpolation of daily minimum and maximum temperature series. It is useful in climatology when hourly time-series must be downscaled from the daily information.</li>
   <li><pkg>paleoTS</pkg>: Modeling evolution in paleontological time series.</li>
   <li><pkg>pastecs</pkg>: Regulation, decomposition and analysis of space-time series.</li>
   <li><pkg>ptw</pkg>: Parametric time warping.</li>
+  <li><pkg>RMAWGEN</pkg> is set of S3 and S4   functions for spatial multi-site stochastic generation of daily time-series of temperature and precipitation making use of VAR models. The package can be used in climatology and statistical hydrology.</li>
   <li><pkg>RSEIS</pkg>: Seismic time series analysis tools.</li>
   <li><pkg>season</pkg>: Seasonal analysis of health data including regression models, time-stratified case-crossover, plotting functions and residual checks.</li>
   <li><pkg>sde</pkg>: Simulation and inference for stochastic differential equations.</li>
@@ -358,6 +360,7 @@
   <pkg>gsarima</pkg>
   <pkg>hydroGOF</pkg>
   <pkg>hydroTSM</pkg>
+  <pkg>Interpol.T</pkg>
   <pkg>its</pkg>
   <pkg>ltsa</pkg>
   <pkg>KFAS</pkg>
@@ -376,6 +379,7 @@
   <pkg>pear</pkg>
   <pkg>pomp</pkg>
   <pkg>ptw</pkg>
+  <pkg>RMAWGEN</pkg>
   <pkg>robfilter</pkg>
   <pkg>RSEIS</pkg>
   <pkg>Rssa</pkg>
