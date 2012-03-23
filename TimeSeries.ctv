@@ -262,7 +262,7 @@
   space models, allowing non-Gaussian and non-linear models. These are implemented in the <pkg>pomp</pkg> package.</li>
 </ul>
 
-<p><strong>Continuous time models</strong></p>
+<p><strong>Continuous Time Models</strong></p>
 <ul>
 	<li><i>Continuous time autoregressive modelling</i> is provided in <pkg>cts</pkg>.</li>
 	<li><i>Continuous time ARMA model</i> estimation and simulation is available in <pkg>ctarma</pkg>.</li>
