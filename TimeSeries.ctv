@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2011-03-02</version>
+<version>2011-04-18</version>
 
 <info>
 <p>
@@ -74,6 +74,7 @@
   <li>The <pkg>rtv</pkg> package allows for the representation, manipulation and 
       visualisation of random time variables.</li>
   <li><pkg>TSAgg</pkg> provides functions for aggregation of incomplete time series data.</li>
+  <li>The <pkg>tempdisagg</pkg> package includes methods for temporal disaggregation and interpolation of a low frequency time series to a higher frequency series.</li>
 </ul>
 
 <p><strong>Time Series Classes</strong></p>
@@ -132,8 +133,8 @@
       <pkg>bayesGARCH</pkg> estimates a Bayesian GARCH(1,1) model with t innovations. 
       <pkg>egarch</pkg> provides functions for simulating and fitting EGARCH models, and 
       <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.
-      The R-Forge package <rforge>rgarch</rforge>
-      aims to provide a flexible and rich GARCH modelling and testing environment. Its
+      The R-Forge project <rforge>rgarch</rforge>
+      aims to provide a flexible and rich GARCH modelling and testing environment including univariate and multivariate GARCH packages. Its
       <a href="http://rgarch.R-Forge.R-project.org/">webpage</a> has extensive information and examples.</li>
   <li><i>Miscellaneous</i>: <pkg>ltsa</pkg> contains methods for
       linear time series analysis, <pkg>dlm</pkg> for Bayesian
@@ -181,6 +182,7 @@
         spectrum of time series.
       <pkg>kza</pkg> provides Kolmogorov-Zurbenko Adaptive Filters including break detection, spectral analysis, 
         wavelets and KZ Fourier Transforms.
+      <pkg>quantspec</pkg> includes methods to compute and plot Laplace periodograms for univariate time series.
       <pkg>Rssa</pkg> provides a fast implementation of Singular Spectrum Analysis for decomposition of a time series.</li>
 </ul>
 
@@ -262,7 +264,7 @@
   space models, allowing non-Gaussian and non-linear models. These are implemented in the <pkg>pomp</pkg> package.</li>
 </ul>
 
-<p><strong>Continuous Time Models</strong></p>
+<p><strong>Continuous time models</strong></p>
 <ul>
 	<li><i>Continuous time autoregressive modelling</i> is provided in <pkg>cts</pkg>.</li>
 	<li><i>Continuous time ARMA model</i> estimation and simulation is available in <pkg>ctarma</pkg>.</li>
@@ -379,6 +381,7 @@
   <pkg>pear</pkg>
   <pkg>pomp</pkg>
   <pkg>ptw</pkg>
+  <pkg>quantspec</pkg>
   <pkg>RMAWGEN</pkg>
   <pkg>robfilter</pkg>
   <pkg>RSEIS</pkg>
@@ -389,6 +392,7 @@
   <pkg>sde</pkg>
   <pkg>season</pkg>
   <pkg>signalextraction</pkg>
+  <pkg>tempdisagg</pkg>
   <pkg>tiger</pkg>
   <pkg>timsac</pkg>
   <pkg>timeDate</pkg>
