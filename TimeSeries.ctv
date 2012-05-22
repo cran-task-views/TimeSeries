@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2012-04-25</version>
+<version>2012-05-22</version>
 
 <info>
 <p>
@@ -131,7 +131,7 @@
   <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models, <code>garchFit()</code> 
       from <pkg>fGarch</pkg> implements ARIMA models with a wide class of GARCH innovations. 
       <pkg>bayesGARCH</pkg> estimates a Bayesian GARCH(1,1) model with t innovations. 
-      <pkg>egarch</pkg> provides functions for simulating and fitting EGARCH models, and 
+<!--  <pkg>egarch</pkg> provides functions for simulating and fitting EGARCH models, and -->
       <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.
       The R-Forge project <rforge>rgarch</rforge>
       aims to provide a flexible and rich GARCH modelling and testing environment including univariate and multivariate GARCH packages. Its
@@ -336,7 +336,6 @@
   <pkg>dyn</pkg>
   <pkg>dynlm</pkg>
   <pkg>Ecdat</pkg>
-  <pkg>egarch</pkg>
   <pkg>ensembleBMA</pkg>
   <pkg>EvalEst</pkg>
   <pkg>expsmooth</pkg>
