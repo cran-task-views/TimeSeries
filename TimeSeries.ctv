@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2012-05-22</version>
+<version>2012-06-09</version>
 
 <info>
 <p>
@@ -125,7 +125,7 @@
       Some facilities for fractional differenced ARFIMA
       models are provided in the <pkg>fracdiff</pkg> package.
       <pkg>afmtools</pkg> handles estimation, diagnostics and forecasting for ARFIMA models.
-<!--  <code>armaFit()</code> from the <pkg>fArma</pkg> package is an interface for ARIMA and ARFIMA models. -->
+      <code>armaFit()</code> from the <pkg>fArma</pkg> package is an interface for ARIMA and ARFIMA models.
       Package <pkg>gsarima</pkg> contains functionality for generalized 
       SARIMA time series simulation. The <pkg>mar1s</pkg> package handles multiplicative AR(1) with seasonal processes/</li> 
   <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models, <code>garchFit()</code> 
@@ -340,6 +340,7 @@
   <pkg>EvalEst</pkg>
   <pkg>expsmooth</pkg>
   <pkg>fame</pkg>
+  <pkg>fArma</pkg>
   <pkg>fastVAR</pkg>
   <pkg>fEcofin</pkg>
   <pkg>fGarch</pkg>
