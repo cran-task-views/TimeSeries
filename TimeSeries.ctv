@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2012-06-09</version>
+<version>2012-06-18</version>
 
 <info>
 <p>
@@ -284,7 +284,6 @@
   <li><pkg>TSdbi</pkg> provides a common interface to time series databases.</li>
   <li><pkg>fame</pkg> provides an interface for FAME time series databases</li>
   <li><pkg>VhayuR</pkg> provides an interface to he Vhayu Velocity time series database</li>
-  <li><pkg>fEcofin</pkg> Economic and Financial Data Sets</li>
   <li><pkg>AER</pkg> and <pkg>Ecdat</pkg> both contain many data sets (including time series data)
        from many econometrics text books</li>
 </ul>
@@ -342,7 +341,6 @@
   <pkg>fame</pkg>
   <pkg>fArma</pkg>
   <pkg>fastVAR</pkg>
-  <pkg>fEcofin</pkg>
   <pkg>fGarch</pkg>
   <pkg>FinTS</pkg>
   <pkg>FitAR</pkg>
