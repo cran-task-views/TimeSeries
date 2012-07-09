@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman and Achim Zeileis</maintainer>
-<version>2012-06-18</version>
+<version>2012-07-09</version>
 
 <info>
 <p>
@@ -71,8 +71,6 @@
       time/date information.</li>
   <li>The <code>"mondate"</code> class from the <pkg>mondate</pkg> package
       facilitates computing with dates in terms of months.</li>
-  <li>The <pkg>rtv</pkg> package allows for the representation, manipulation and 
-      visualisation of random time variables.</li>
   <li><pkg>TSAgg</pkg> provides functions for aggregation of incomplete time series data.</li>
   <li>The <pkg>tempdisagg</pkg> package includes methods for temporal disaggregation and interpolation of a low frequency time series to a higher frequency series.</li>
 </ul>
@@ -385,7 +383,6 @@
   <pkg>RSEIS</pkg>
   <pkg>Rssa</pkg>
   <pkg>RTisean</pkg>
-  <pkg>rtv</pkg>
   <pkg>rwt</pkg>
   <pkg>sde</pkg>
   <pkg>season</pkg>
