@@ -299,7 +299,6 @@
        script files required to work some of the examples.</li>
   <li><pkg>TSdbi</pkg> provides a common interface to time series databases.</li>
   <li><pkg>fame</pkg> provides an interface for FAME time series databases</li>
-  <li><pkg>VhayuR</pkg> provides an interface to he Vhayu Velocity time series database</li>
   <li><pkg>AER</pkg> and <pkg>Ecdat</pkg> both contain many data sets (including time series data)
        from many econometrics text books</li>
 </ul>
@@ -429,7 +428,6 @@
   <pkg>tsfa</pkg>
   <pkg>urca</pkg>
   <pkg>vars</pkg>
-  <pkg>VhayuR</pkg>
   <pkg>wavelets</pkg>
   <pkg>waveslim</pkg>
   <pkg>wavethresh</pkg>
