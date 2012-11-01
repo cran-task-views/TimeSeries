@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2012-10-07</version>
+<version>2012-11-01</version>
 
 <info>
 <p>
@@ -179,8 +179,6 @@
   <li><i>Miscellaneous</i>:
       <pkg>signalextraction</pkg> for real-time signal extraction
         (direct filter approach).
-      <pkg>bspec</pkg> for Bayesian inference on the discrete power
-        spectrum of time series.
       <pkg>kza</pkg> provides Kolmogorov-Zurbenko Adaptive Filters including break detection, spectral analysis,
         wavelets and KZ Fourier Transforms.
       <pkg>quantspec</pkg> includes methods to compute and plot Laplace periodograms for univariate time series.
@@ -338,7 +336,6 @@
   <pkg>bfast</pkg>
   <pkg>boot</pkg>
   <pkg>BootPR</pkg>
-  <pkg>bspec</pkg>
   <pkg>CADFtest</pkg>
   <pkg>chron</pkg>
   <pkg>CommonTrend</pkg>
