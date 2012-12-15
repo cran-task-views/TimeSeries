@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2012-11-01</version>
+<version>2012-12-15</version>
 
 <info>
 <p>
@@ -304,7 +304,6 @@
 <ul>
   <li><pkg>dtw</pkg>: Dynamic time warping algorithms for computing and plotting pairwise alignments between time series.</li>
   <li><pkg>ensembleBMA</pkg>: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.</li>
-  <li><pkg>fractal</pkg>: Fractal time series modeling and analysis.</li>
   <li><pkg>fractalrock</pkg>: Generate fractal time series with non-normal returns distribution.</li>
   <li><pkg>GeneCycle</pkg> and <pkg>GeneNet</pkg>: Microarray time series and network analysis.</li>
   <li><pkg>hydroTSM</pkg> and <pkg>hydroGOF</pkg> provide functions for analysing and modelling time series in hydrology and related environmental sciences.</li>
@@ -366,7 +365,6 @@
   <pkg>ForeCA</pkg>
   <pkg priority="core">forecast</pkg>
   <pkg>fracdiff</pkg>
-  <pkg>fractal</pkg>
   <pkg>fractalrock</pkg>
   <pkg>fUnitRoots</pkg>
   <pkg>fts</pkg>
