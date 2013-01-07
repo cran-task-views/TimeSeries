@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2012-12-21</version>
+<version>2013-01-07</version>
 
 <info>
 <p>
@@ -73,6 +73,7 @@
       facilitates computing with dates in terms of months.</li>
   <li><pkg>TSAgg</pkg> provides functions for aggregation of incomplete time series data.</li>
   <li>The <pkg>tempdisagg</pkg> package includes methods for temporal disaggregation and interpolation of a low frequency time series to a higher frequency series.</li>
+  <li><pkg>TimeProjection</pkg> extracts useful time components of a date object, such as day of week, weekend, holiday, day of month, etc, and put it in a data frame.</li>
 </ul>
 
 <p><strong>Time Series Classes</strong></p>
@@ -112,7 +113,7 @@
       models and facilities with full optimization.</li>
   <li><i>Autoregressive models</i>: <code>ar()</code> in stats (with
       model selection), <pkg>FitAR</pkg> for subset AR models, and
-      <pkg>pear</pkg> for periodic autoregressive time series models. 
+      <pkg>pear</pkg> for periodic autoregressive time series models.
     </li>
   <li><i>ARIMA models</i>: <code>arima()</code> in stats is the basic
       function for ARIMA, SARIMA, ARIMAX, and subset ARIMA models.
@@ -121,26 +122,26 @@
       order selection. <code>arma()</code> in the <pkg>tseries</pkg>
       package provides different algorithms for ARMA and subset ARMA
       models. <pkg>FitARMA</pkg> implements a fast MLE algorithm for ARMA models.
-      Package <pkg>gsarima</pkg> contains functionality for Generalized SARIMA time series 
-      simulation. The <pkg>mar1s</pkg> package handles multiplicative AR(1) with seasonal processes. 
+      Package <pkg>gsarima</pkg> contains functionality for Generalized SARIMA time series
+      simulation. The <pkg>mar1s</pkg> package handles multiplicative AR(1) with seasonal processes.
       <pkg>TSTutorial</pkg> provides an interactive tutorial for Box-Jenkins modelling.
     </li>
   <li><i>ARFIMA models</i>: Some facilities for fractional differenced ARFIMA
-      models are provided in the <pkg>fracdiff</pkg> package. The <pkg>arfima</pkg> package 
+      models are provided in the <pkg>fracdiff</pkg> package. The <pkg>arfima</pkg> package
       has more advanced and general facilities for ARFIMA and ARIMA models, including dynamic
-      regression (transfer function) models. <pkg>afmtools</pkg> handles estimation, diagnostics 
+      regression (transfer function) models. <pkg>afmtools</pkg> handles estimation, diagnostics
       and forecasting for ARFIMA models. <code>armaFit()</code> from the <pkg>fArma</pkg> package
-      is an interface for ARIMA and ARFIMA models. Fractional Gaussian noise and simple models for 
+      is an interface for ARIMA and ARFIMA models. Fractional Gaussian noise and simple models for
       hyperbolic decay time series are handled in the <pkg>FGN</pkg> package.
       </li>
-  <li><i>Transfer function</i> models are provided by the <code>arimax</code> function in the 
+  <li><i>Transfer function</i> models are provided by the <code>arimax</code> function in the
       <pkg>TSA</pkg> package, and the <code>arfima</code> function in the <pkg>arfima</pkg> package.</li>
   <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models, <code>garchFit()</code>
       from <pkg>fGarch</pkg> implements ARIMA models with a wide class of GARCH innovations.
       <pkg>bayesGARCH</pkg> estimates a Bayesian GARCH(1,1) model with t innovations.
 <!--  <pkg>egarch</pkg> provides functions for simulating and fitting EGARCH models, and -->
       <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.
-      The R-Forge project <rforge>rgarch</rforge> aims to provide a flexible and rich GARCH modelling 
+      The R-Forge project <rforge>rgarch</rforge> aims to provide a flexible and rich GARCH modelling
       and testing environment including univariate and multivariate GARCH packages. Its
       <a href="http://rgarch.R-Forge.R-project.org/">webpage</a> has extensive information and examples.</li>
   <li><i>Miscellaneous</i>: <pkg>ltsa</pkg> contains methods for
@@ -183,7 +184,7 @@
       compute the wavelet spectra, cross-wavelet spectra, and wavelet
       coherence of non-stationary time series. It also includes functions
       to cluster time series based on the (dis)similarities in their spectrum.
-      Further wavelet methods can be found in the packages <pkg>brainwaver</pkg>, 
+      Further wavelet methods can be found in the packages <pkg>brainwaver</pkg>,
       <pkg>rwt</pkg>, <pkg>waveslim</pkg>, and <pkg>wavethresh</pkg>.</li>
   <li><i>Miscellaneous</i>:
       <pkg>signalextraction</pkg> for real-time signal extraction
@@ -298,7 +299,7 @@
       applications</i> are provided in the <pkg>fma</pkg> package.</li>
   <li>Data from Hyndman, Koehler, Ord and Snyder (2008) <i>Forecasting
       with exponential smoothing</i>  are in the <pkg>expsmooth</pkg> package.</li>
-  <li>Data from Hyndman and Athanasopoulos (2013) <i>Forecasting: principles and practice</i> 
+  <li>Data from Hyndman and Athanasopoulos (2013) <i>Forecasting: principles and practice</i>
       are in the <pkg>fpp</pkg> package.</li>
   <li>Data from the M-competition and M3-competition are provided in the <pkg>Mcomp</pkg> package.</li>
   <li>Data from Cryer and Chan (2010) are in the <pkg>TSA</pkg> package.</li>
@@ -316,6 +317,7 @@
 <ul>
   <li><pkg>dtw</pkg>: Dynamic time warping algorithms for computing and plotting pairwise alignments between time series.</li>
   <li><pkg>ensembleBMA</pkg>: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.</li>
+  <li><pkg>events</pkg>: turns machine-extracted event data into regular aggregated multivariate time series.</li>
   <li><pkg>fractalrock</pkg>: Generate fractal time series with non-normal returns distribution.</li>
   <li><pkg>GeneCycle</pkg> and <pkg>GeneNet</pkg>: Microarray time series and network analysis.</li>
   <li><pkg>hydroTSM</pkg> and <pkg>hydroGOF</pkg> provide functions for analysing and modelling time series in hydrology and related environmental sciences.</li>
@@ -367,6 +369,7 @@
   <pkg>Ecdat</pkg>
   <pkg>ensembleBMA</pkg>
   <pkg>EvalEst</pkg>
+  <pkg>events</pkg>
   <pkg>expsmooth</pkg>
   <pkg>fame</pkg>
   <pkg>fArma</pkg>
@@ -430,6 +433,7 @@
   <pkg>timsac</pkg>
   <pkg>timeDate</pkg>
   <pkg>timeSeries</pkg>
+  <pkg>TimeProjection</pkg>
   <pkg>tis</pkg>
   <pkg>tpr</pkg>
   <pkg>TSA</pkg>
