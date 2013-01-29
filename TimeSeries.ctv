@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-01-09</version>
+<version>2013-01-29</version>
 
 <info>
 <p>
@@ -197,7 +197,7 @@
 
 <p><strong>Seasonality</strong></p>
 <ul>
-  <li><i>Seasonal decomposition</i>: the <pkg>stats</pkg> package provides classical
+  <li><i>Seasonal decomposition</i>: the stats package provides classical
       decomposition in <code>decompose()</code>, and STL decomposition in <code>stl()</code>.
      <pkg>x12</pkg> provides a wrapper for the <a href="http://www.census.gov/srd/www/x12a/">X12 binaries</a> which have to be installed first. <pkg>x12GUI</pkg> provides a graphical user interface for <pkg>x12</pkg>.</li>
   <li><i>Analysis of seasonality</i>: the <pkg>bfast</pkg> package provides methods for detecting and characterizing abrupt changes within the trend and seasonal components obtained from a decomposition. <pkg>Peak2Trough</pkg> estimates the peak-to-trough ratio of a seasonal component.</li>
@@ -431,6 +431,7 @@
   <pkg>signalextraction</pkg>
   <pkg>surveillance</pkg>
   <pkg>tempdisagg</pkg>
+  <pkg>tframe</pkg>
   <pkg>tiger</pkg>
   <pkg>timsac</pkg>
   <pkg>timeDate</pkg>
