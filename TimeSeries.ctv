@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-01-29</version>
+<version>2013-02-19</version>
 
 <info>
 <p>
@@ -149,7 +149,8 @@
       analysis of dynamic linear models, <pkg>timsac</pkg> for time
       series analysis and control, <pkg>BootPR</pkg> for
       bias-corrected forecasting and bootstrap prediction intervals
-      for autoregressive time series. </li>
+      for autoregressive time series, <pkg>partsm</pkg> for periodic
+      autoregressive models. </li>
 </ul>
 
 <p><strong>Resampling</strong></p>
@@ -412,6 +413,7 @@
   <pkg>MSBVAR</pkg>
   <pkg>nlts</pkg>
   <pkg>paleoTS</pkg>
+  <pkg>partsm</pkg>
   <pkg>pastecs</pkg>
   <pkg>Peak2Trough</pkg>
   <pkg>pear</pkg>
