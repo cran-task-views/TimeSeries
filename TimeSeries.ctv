@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-02-19</version>
+<version>2013-02-20</version>
 
 <info>
 <p>
@@ -222,14 +222,15 @@
   <li><i>Cointegration</i>: The Engle-Granger two-step method with the Phillips-Ouliaris
       cointegration test is implemented in <pkg>tseries</pkg> and <pkg>urca</pkg>.
       The latter additionally contains functionality for the Johansen trace
-      and lambda-max tests. <pkg>CommonTrend</pkg> provides tools to extract and plot common trends from a cointegration system.</li>
+      and lambda-max tests. <pkg>tsDyn</pkg> provides Johansen's test and AIC/BIC simultaneous rank-lag selection. 
+      <pkg>CommonTrend</pkg> provides tools to extract and plot common trends from a cointegration system.</li>
 </ul>
 
 <p><strong>Nonlinear Time Series Analysis</strong></p>
 <ul>
   <li><i>Nonlinear autoregression</i>: Various forms of nonlinear
       autoregression are available in <pkg>tsDyn</pkg> including
-      additive AR, neural nets, SETAR and LSTAR models. <pkg>bentcableAR</pkg>
+      additive AR, neural nets, SETAR and LSTAR models, threshold VAR and VECM. <pkg>bentcableAR</pkg>
       implements Bent-Cable autoregression. <pkg>BAYSTAR</pkg> provides Bayesian analysis of threshold
       autoregressive models.  <pkg>nlts</pkg> provides functions for estimating the order of
       a nonlinear autoregression.
@@ -267,7 +268,7 @@
       restricted to be stationary. Possibly non-stationary VAR models
       are fitted in the <pkg>mAr</pkg> package, which also allows
       VAR models in principal component space. More elaborate models
-      are provided in package <pkg>vars</pkg>, <code>estVARXls()</code>
+      are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>, <code>estVARXls()</code>
 	  in <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>.
       <pkg>fastVAR</pkg> uses fast implementations to estimate VAR models (possibly with
       exogenous inputs and sparse coefficient matrices).	  </li>
@@ -275,8 +276,8 @@
       in the <pkg>dse</pkg> package. <pkg>EvalEst</pkg> facilitates Monte Carlo experiments to
 	  evaluate the associated estimation methods.</li>
   <li><i>Vector error correction models</i> are available via the
-      <pkg>urca</pkg> and <pkg>vars</pkg> packages, including versions with structural
-      constraints. </li>
+      <pkg>urca</pkg>, <pkg>vars</pkg> and <pkg>tsDyn</pkg> packages, including versions with structural
+      constraints and thresholding. </li>
   <li><i>Time series component analysis</i>: Time series factor analysis is provided in <pkg>tsfa</pkg>. <pkg>ForeCA</pkg> implements forecatable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.</li>
   <li><i>Multivariate state space models</i> are implemented in the <pkg>FKF</pkg> (Fast Kalman Filter) package.
       This provides relatively flexible state space models via the <code>fkf()</code> comment: state-space
