@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-02-20</version>
+<version>2013-03-02</version>
 
 <info>
 <p>
@@ -147,9 +147,7 @@
   <li><i>Miscellaneous</i>: <pkg>ltsa</pkg> contains methods for
       linear time series analysis, <pkg>dlm</pkg> for Bayesian
       analysis of dynamic linear models, <pkg>timsac</pkg> for time
-      series analysis and control, <pkg>BootPR</pkg> for
-      bias-corrected forecasting and bootstrap prediction intervals
-      for autoregressive time series, <pkg>partsm</pkg> for periodic
+      series analysis and control, <pkg>partsm</pkg> for periodic
       autoregressive models. </li>
 </ul>
 
@@ -354,7 +352,6 @@
   <pkg>biwavelet</pkg>
   <pkg>bfast</pkg>
   <pkg>boot</pkg>
-  <pkg>BootPR</pkg>
   <pkg>brainwaver</pkg>
   <pkg>CADFtest</pkg>
   <pkg>chron</pkg>
