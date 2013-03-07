@@ -333,6 +333,7 @@
   <li><pkg>paleoTS</pkg>: Modeling evolution in paleontological time series.</li>
   <li><pkg>pastecs</pkg>: Regulation, decomposition and analysis of space-time series.</li>
   <li><pkg>ptw</pkg>: Parametric time warping.</li>
+  <li><pkg>PVAclone</pkg>: Population growth models using data cloning.</li>
   <li><pkg>RMAWGEN</pkg> is set of S3 and S4   functions for spatial multi-site stochastic generation of daily time-series of temperature and precipitation making use of VAR models. The package can be used in climatology and statistical hydrology.</li>
   <li><pkg>RSEIS</pkg>: Seismic time series analysis tools.</li>
   <li><pkg>rts</pkg>: Raster time series analysis (e.g., time series of satellite images).</li>
@@ -429,6 +430,7 @@
   <pkg>perARMA</pkg>
   <pkg>pomp</pkg>
   <pkg>ptw</pkg>
+  <pkg>PVAclone</pkg>
   <pkg>quantspec</pkg>
   <pkg>RMAWGEN</pkg>
   <pkg>robfilter</pkg>
