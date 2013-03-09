@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-03-07</version>
+<version>2013-03-09</version>
 
 <info>
 <p>
@@ -307,6 +307,8 @@
   <li>Data from Hyndman and Athanasopoulos (2013) <i>Forecasting: principles and practice</i>
       are in the <pkg>fpp</pkg> package.</li>
   <li>Data from the M-competition and M3-competition are provided in the <pkg>Mcomp</pkg> package.</li>
+  <li>Data from the Quandl online portal to financial, economical and social datasets can
+      be queried interactively using the <pkg>Quandl</pkg> package.</li>
   <li>Data from Cryer and Chan (2010) are in the <pkg>TSA</pkg> package.</li>
   <li>Data from Shumway and Stoffer (2011) are in the <pkg>astsa</pkg> package.</li>
   <li>Data from Tsay (2005) <i>Analysis of financial
@@ -431,6 +433,7 @@
   <pkg>pomp</pkg>
   <pkg>ptw</pkg>
   <pkg>PVAClone</pkg>
+  <pkg>Quandl</pkg>
   <pkg>quantspec</pkg>
   <pkg>RMAWGEN</pkg>
   <pkg>robfilter</pkg>
@@ -485,5 +488,6 @@
     <rforge>rgarch</rforge>
     <a href="http://data.is/TSDLdemo" target="_top">Time Series Data Library</a>
     <a href="http://www.mpipks-dresden.mpg.de/~tisean/">TISEAN Project</a>
+    <a href="http://www.quandl.com/">Quandl</a>
 </links>
 </CRANTaskView>
