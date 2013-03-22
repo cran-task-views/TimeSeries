@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-03-10</version>
+<version>2013-03-22</version>
 
 <info>
 <p>
@@ -222,8 +222,7 @@
       autoregression are available in <pkg>tsDyn</pkg> including
       additive AR, neural nets, SETAR and LSTAR models, threshold VAR and VECM. <pkg>bentcableAR</pkg>
       implements Bent-Cable autoregression. <pkg>BAYSTAR</pkg> provides Bayesian analysis of threshold
-      autoregressive models.  <pkg>nlts</pkg> provides functions for estimating the order of
-      a nonlinear autoregression.
+      autoregressive models. 
     </li>
   <li>The <i><a
       href="http://www.mpipks-dresden.mpg.de/~tisean/">TISEAN</a>
@@ -232,7 +231,7 @@
       an R interface to the algorithms and <pkg>tseriesChaos</pkg>
       provides an R implementation of the algorithms.</li>
   <li><i>Tests</i>: Various tests for nonlinearity are provided in
-      <pkg>fNonlinear</pkg> and <pkg>nlts</pkg>.</li>
+      <pkg>fNonlinear</pkg>.</li>
 </ul>
 
 <p><strong>Dynamic Regression Models</strong></p>
@@ -424,7 +423,6 @@
   <pkg>mondate</pkg>
   <pkg>MSBVAR</pkg>
   <pkg>nets</pkg>
-  <pkg>nlts</pkg>
   <pkg>paleoTS</pkg>
   <pkg>partsm</pkg>
   <pkg>pastecs</pkg>
