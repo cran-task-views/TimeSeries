@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-03-22</version>
+<version>2013-03-23</version>
 
 <info>
 <p>
@@ -145,8 +145,7 @@
       <a href="http://rgarch.R-Forge.R-project.org/">webpage</a> has extensive information and examples.</li>
     <li><i>Stochastic volatility</i> models are handled by <pkg>stochvol</pkg> in a Bayesian framework.</li>
   <li><i>Miscellaneous</i>: <pkg>ltsa</pkg> contains methods for
-      linear time series analysis, <pkg>dlm</pkg> for Bayesian
-      analysis of dynamic linear models, <pkg>timsac</pkg> for time
+      linear time series analysis, <pkg>timsac</pkg> for time
       series analysis and control, and <pkg>tsbugs</pkg> for time series BUGS models. </li>
 </ul>
 
@@ -241,9 +240,7 @@
       an enhanced approach that also works with other regression functions
       and more time series classes is implemented in <pkg>dyn</pkg>. <pkg>dlmodeler</pkg> provides functions for fitting, analysing and forecasting generalized dynamic linear models.
       The <pkg>tslars</pkg> package applies a dynamic variable selection procedure using an extension of the LARS
-      algorithm. More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Gaussian linear state
-      space models can be fitted using <pkg>dlm</pkg> (via maximum
-      likelihood, Kalman filtering/smoothing and Bayesian methods).</li>
+      algorithm. More advanced dynamic system equations can be fitted using <pkg>dse</pkg>.</li>
   <li><i>Time-varying parameter</i> models can be fitted using the
       <pkg>tpr</pkg> package.</li>
   <li><i>Distributed lag non-linear models</i> are handled via the <pkg>dlnm</pkg> package.</li>
@@ -272,9 +269,8 @@
       This provides relatively flexible state space models via the <code>fkf()</code> comment: state-space
 	  parameters are allowed to be time-varying and intercepts are included in both equations.
       An alternative implementation is provided by the <pkg>KFAS</pkg> package which provides a
-	  fast multivariate Kalman filter, smoother, simulation smoother and forecasting. Yet another implementation
-	  is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models
-	  into state space form. <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm. All four packages assume the observational and state error terms are uncorrelated.</li>
+	  fast multivariate Kalman filter, smoother, simulation smoother and forecasting.
+	  <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm. All four packages assume the observational and state error terms are uncorrelated.</li>
   <li><i>Partially-observed Markov processes</i> are a generalization of the usual linear multivariate state
   space models, allowing non-Gaussian and non-linear models. These are implemented in the <pkg>pomp</pkg> package.</li>
 </ul>
@@ -371,7 +367,6 @@
   <pkg>cts</pkg>
   <pkg>ctarma</pkg>
   <pkg>deseasonalize</pkg>
-  <pkg>dlm</pkg>
   <pkg>dlmodeler</pkg>
   <pkg>dlnm</pkg>
   <pkg>dse</pkg>
