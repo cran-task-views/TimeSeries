@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-03-31</version>
+<version>2013-04-05</version>
 
 <info>
 <p>
@@ -342,7 +342,6 @@
   <li><pkg>sde</pkg>: Simulation and inference for stochastic differential equations.</li>
   <li><pkg>surveillance</pkg>: Temporal and spatio-temporal modeling and monitoring of epidemic phenomena.</li>
   <li><pkg>tiger</pkg>: Temporally resolved groups of typical differences (errors) between two time series are determined and visualized.</li>
-  <li><pkg>tsModel</pkg>: Time series modeling for air pollution and health.</li>
   <li><pkg>wavethresh</pkg>: Locally stationary wavelet models for nonstationary time series
       (including estimation, plotting, and simulation functionality for time-varying spectrums).</li>
   <li><pkg>wq</pkg>: Exploring water quality time series.</li>
@@ -466,7 +465,6 @@
   <pkg>tseriesChaos</pkg>
   <pkg>tsfa</pkg>
   <pkg>tslars</pkg>
-  <pkg>tsModel</pkg>
   <pkg>TSTutorial</pkg>
   <pkg>urca</pkg>
   <pkg>vars</pkg>
