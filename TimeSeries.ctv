@@ -246,7 +246,6 @@
       likelihood, Kalman filtering/smoothing and Bayesian methods).</li>
   <li><i>Time-varying parameter</i> models can be fitted using the
       <pkg>tpr</pkg> package.</li>
-  <li><i>Distributed lag non-linear models</i> are handled via the <pkg>dlnm</pkg> package.</li>
 </ul>
 
 <p><strong>Multivariate Time Series Models</strong></p>
@@ -372,7 +371,6 @@
   <pkg>deseasonalize</pkg>
   <pkg>dlm</pkg>
   <pkg>dlmodeler</pkg>
-  <pkg>dlnm</pkg>
   <pkg>dse</pkg>
   <pkg>dtw</pkg>
   <pkg>dyn</pkg>
