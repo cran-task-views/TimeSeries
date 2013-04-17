@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-04-05</version>
+<version>2013-04-17</version>
 
 <info>
 <p>
@@ -321,7 +321,6 @@
 
 <p><strong>Miscellaneous</strong></p>
 <ul>
-<li><pkg>ares</pkg>: Environment air pollution epidemiology using generalized additive models for time series including models with polynomial distributed lags.</li>
   <li><pkg>dtw</pkg>: Dynamic time warping algorithms for computing and plotting pairwise alignments between time series.</li>
   <li><pkg>ensembleBMA</pkg>: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.</li>
   <li><pkg>events</pkg>: turns machine-extracted event data into regular aggregated multivariate time series.</li>
@@ -352,7 +351,6 @@
 <packagelist>
   <pkg>AER</pkg>
   <pkg>afmtools</pkg>
-  <pkg>ares</pkg>
   <pkg>arfima</pkg>
   <pkg>astsa</pkg>
   <pkg>bayesGARCH</pkg>
