@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-05-31</version>
+<version>2013-06-21</version>
 
 <info>
 <p>
@@ -262,9 +262,7 @@
       are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>, <code>estVARXls()</code>
 	  in <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>.
     <pkg>StVAR</pkg> allows for heteroskedastic Student's t VAR models with specified degrees
-    of freedom and lag length.
-      <pkg>fastVAR</pkg> uses fast implementations to estimate VAR models (possibly with
-      exogenous inputs and sparse coefficient matrices).	  </li>
+    of freedom and lag length.</li>
   <li><i>VARIMA models</i> and <i>state space models</i> are provided
       in the <pkg>dse</pkg> package. <pkg>EvalEst</pkg> facilitates Monte Carlo experiments to
 	  evaluate the associated estimation methods.</li>
@@ -390,7 +388,6 @@
   <pkg>expsmooth</pkg>
   <pkg>fame</pkg>
   <pkg>fArma</pkg>
-  <pkg>fastVAR</pkg>
   <pkg>fGarch</pkg>
   <pkg>FGN</pkg>
   <pkg>FinTS</pkg>
