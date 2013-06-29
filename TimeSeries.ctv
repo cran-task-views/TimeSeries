@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-06-21</version>
+<version>2013-06-29</version>
 
 <info>
 <p>
@@ -285,7 +285,6 @@
 <p><strong>Continuous time models</strong></p>
 <ul>
 	<li><i>Continuous time autoregressive modelling</i> is provided in <pkg>cts</pkg>.</li>
-	<li><i>Continuous time ARMA model</i> estimation and simulation is available in <pkg>ctarma</pkg>.</li>
 </ul>
 
 <p><strong>Resampling</strong></p>
@@ -373,7 +372,6 @@
   <pkg>chron</pkg>
   <pkg>CommonTrend</pkg>
   <pkg>cts</pkg>
-  <pkg>ctarma</pkg>
   <pkg>deseasonalize</pkg>
   <pkg>dlm</pkg>
   <pkg>dlmodeler</pkg>
