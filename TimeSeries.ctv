@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-06-29</version>
+<version>2013-07-26</version>
 
 <info>
 <p>
@@ -128,8 +128,7 @@
   <li><i>ARFIMA models</i>: Some facilities for fractional differenced ARFIMA
       models are provided in the <pkg>fracdiff</pkg> package. The <pkg>arfima</pkg> package
       has more advanced and general facilities for ARFIMA and ARIMA models, including dynamic
-      regression (transfer function) models. <pkg>afmtools</pkg> handles estimation, diagnostics
-      and forecasting for ARFIMA models. <code>armaFit()</code> from the <pkg>fArma</pkg> package
+      regression (transfer function) models. <code>armaFit()</code> from the <pkg>fArma</pkg> package
       is an interface for ARIMA and ARFIMA models. Fractional Gaussian noise and simple models for
       hyperbolic decay time series are handled in the <pkg>FGN</pkg> package.
       </li>
@@ -358,7 +357,6 @@
 <packagelist>
   <pkg>AER</pkg>
   <pkg>ArDec</pkg>
-  <pkg>afmtools</pkg>
   <pkg>arfima</pkg>
   <pkg>astsa</pkg>
   <pkg>bayesGARCH</pkg>
