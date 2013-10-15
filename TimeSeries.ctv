@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-07-26</version>
+<version>2013-10-15</version>
 
 <info>
 <p>
@@ -65,7 +65,7 @@
       Internally, it stores all information in <code>"POSIXct"</code> and does
       all computations in GMT only. Calendar functionality, e.g., including
       information about weekends and holidays for various stock exchanges,
-      is also included.</li>
+      is also included. </li>
   <li>The <pkg>tis</pkg> package provides the <code>"ti"</code> class for
       time/date information.</li>
   <li>The <code>"mondate"</code> class from the <pkg>mondate</pkg> package
@@ -134,14 +134,13 @@
       </li>
   <li><i>Transfer function</i> models are provided by the <code>arimax</code> function in the
       <pkg>TSA</pkg> package, and the <code>arfima</code> function in the <pkg>arfima</pkg> package.</li>
-  <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models, <code>garchFit()</code>
-      from <pkg>fGarch</pkg> implements ARIMA models with a wide class of GARCH innovations.
-      <pkg>bayesGARCH</pkg> estimates a Bayesian GARCH(1,1) model with t innovations.
+  <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models. 
+    Many variations on GARCH models are provided by <pkg>rugarch</pkg>. Other univariate GARCH packages 
+    include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations, and
+      <pkg>bayesGARCH</pkg> which estimates a Bayesian GARCH(1,1) model with t innovations.
 <!--  <pkg>egarch</pkg> provides functions for simulating and fitting EGARCH models, and -->
       <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.
-      The R-Forge project <rforge>rgarch</rforge> aims to provide a flexible and rich GARCH modelling
-      and testing environment including univariate and multivariate GARCH packages. Its
-      <a href="http://rgarch.R-Forge.R-project.org/">webpage</a> has extensive information and examples.</li>
+    </li>
     <li><i>Stochastic volatility</i> models are handled by <pkg>stochvol</pkg> in a Bayesian framework.</li>
   <li><i>Miscellaneous</i>: <pkg>ltsa</pkg> contains methods for
       linear time series analysis, <pkg>dlm</pkg> for Bayesian
@@ -234,6 +233,7 @@
       provides an R implementation of the algorithms.</li>
   <li><i>Tests</i>: Various tests for nonlinearity are provided in
       <pkg>fNonlinear</pkg>.</li>
+  <li>Additional functions for nonlinear time series are available in <pkg>nlts</pkg> and <pkg>nonlinearTseries</pkg>.</li>
 </ul>
 
 <p><strong>Dynamic Regression Models</strong></p>
@@ -246,8 +246,11 @@
       algorithm. More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Gaussian linear state
       space models can be fitted using <pkg>dlm</pkg> (via maximum
       likelihood, Kalman filtering/smoothing and Bayesian methods).</li>
+  <li><i>Dynamic generalized linear models</i> are provided by <pkg>sspir</pkg>.</li>
   <li><i>Time-varying parameter</i> models can be fitted using the
       <pkg>tpr</pkg> package.</li>
+  <li><i>MIDAS regression</i> and other econometric methods for mixed frequency time series data analysis are provided by <pkg>midasr</pkg>.</li>
+
 </ul>
 
 <p><strong>Multivariate Time Series Models</strong></p>
@@ -294,7 +297,8 @@
       <code>tsbootstrap()</code> from <pkg>tseries</pkg> provides
       fast stationary and block bootstrapping.
       Maximum entropy bootstrap for time series is available in
-      <pkg>meboot</pkg>.</li>
+      <pkg>meboot</pkg>. <pkg>timesboot</pkg> computes the bootstrap CI for the sample ACF and periodogram.
+      </li>
 </ul>
 
 
@@ -327,6 +331,7 @@
   <li><pkg>ensembleBMA</pkg>: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.</li>
   <li><pkg>events</pkg>: turns machine-extracted event data into regular aggregated multivariate time series.</li>
   <li><pkg>fractalrock</pkg>: Generate fractal time series with non-normal returns distribution.</li>
+  <li><pkg>FeedbackTS</pkg>: Analysis of fragmented time directionality to investigate feedback in time series. </li>
   <li><pkg>GeneCycle</pkg> and <pkg>GeneNet</pkg>: Microarray time series and network analysis.</li>
   <li><pkg>hydroTSM</pkg> and <pkg>hydroGOF</pkg> provide functions for analysing and modelling time series in hydrology and related environmental sciences.</li>
   <li><pkg>Interpol.T</pkg> makes hourly interpolation of daily minimum and maximum temperature series. It is useful in climatology when hourly time-series must be downscaled from the daily information.</li>
@@ -344,8 +349,10 @@
   <li><pkg>SparseTSCGM</pkg>: Sparse time series chain graphical models.</li>
   <li><pkg>spTimer</pkg>: Spatio-temporal Bayesian modelling.</li>
   <li><pkg>surveillance</pkg>: Temporal and spatio-temporal modeling and monitoring of epidemic phenomena.</li>
+  <li><pkg>Tides</pkg>: Functions to calculate characteristics of quasi periodic time series, e.g. observed estuarine water levels.</li>
   <li><pkg>tiger</pkg>: Temporally resolved groups of typical differences (errors) between two time series are determined and visualized.</li>
   <li><pkg>TSclust</pkg>: Time series clustering utilities. </li>
+  <li><pkg>tsModel</pkg>: Time series modeling for air pollution and health.</li>
   <li><pkg>wavethresh</pkg>: Locally stationary wavelet models for nonstationary time series
       (including estimation, plotting, and simulation functionality for time-varying spectrums).</li>
   <li><pkg>wq</pkg>: Exploring water quality time series.</li>
@@ -384,6 +391,7 @@
   <pkg>expsmooth</pkg>
   <pkg>fame</pkg>
   <pkg>fArma</pkg>
+  <pkg>FeedbackTS</pkg>
   <pkg>fGarch</pkg>
   <pkg>FGN</pkg>
   <pkg>FinTS</pkg>
@@ -418,9 +426,12 @@
   <pkg>Mcomp</pkg>
   <pkg>meboot</pkg>
   <pkg>mFilter</pkg>
+  <pkg>midasr</pkg>
   <pkg>mondate</pkg>
   <pkg>MSBVAR</pkg>
   <pkg>nets</pkg>
+  <pkg>nlts</pkg>
+  <pkg>nonlinearTseries</pkg>
   <pkg>paleoTS</pkg>
   <pkg>partsm</pkg>
   <pkg>pastecs</pkg>
@@ -442,6 +453,7 @@
   <pkg>Rssa</pkg>
   <pkg>RTisean</pkg>
   <pkg>rts</pkg>
+  <pkg>rugarch</pkg>
   <pkg>rwt</pkg>
   <pkg>SDD</pkg>
   <pkg>sde</pkg>
@@ -451,14 +463,17 @@
   <pkg>sltl</pkg>
   <pkg>SparseTSCGM</pkg>
   <pkg>spTimer</pkg>
+  <pkg>sspir</pkg>
   <pkg>stochvol</pkg>
   <pkg>StVAR</pkg>
   <pkg>surveillance</pkg>
   <pkg>tempdisagg</pkg>
   <pkg>tframe</pkg>
+  <pkg>Tides</pkg>
   <pkg>tiger</pkg>
   <pkg>timsac</pkg>
   <pkg>timeDate</pkg>
+  <pkg>timesboot</pkg>
   <pkg>timeSeries</pkg>
   <pkg>TimeProjection</pkg>
   <pkg>tis</pkg>
@@ -473,6 +488,7 @@
   <pkg>tseriesChaos</pkg>
   <pkg>tsfa</pkg>
   <pkg>tslars</pkg>
+  <pkg>tsModel</pkg>
   <pkg>TSTutorial</pkg>
   <pkg>urca</pkg>
   <pkg>vars</pkg>
@@ -491,7 +507,6 @@
 <links>
     <view>Finance</view>
     <view>Econometrics</view>
-    <rforge>rgarch</rforge>
     <a href="http://data.is/TSDLdemo" target="_top">Time Series Data Library</a>
     <a href="http://www.mpipks-dresden.mpg.de/~tisean/">TISEAN Project</a>
     <a href="http://www.quandl.com/">Quandl</a>
