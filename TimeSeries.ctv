@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-10-15</version>
+<version>2013-12-10</version>
 
 <info>
 <p>
@@ -137,7 +137,6 @@
   <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models. 
     Many variations on GARCH models are provided by <pkg>rugarch</pkg>. Other univariate GARCH packages 
     include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations, and
-      <pkg>bayesGARCH</pkg> which estimates a Bayesian GARCH(1,1) model with t innovations.
 <!--  <pkg>egarch</pkg> provides functions for simulating and fitting EGARCH models, and -->
       <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.
     </li>
@@ -366,7 +365,6 @@
   <pkg>ArDec</pkg>
   <pkg>arfima</pkg>
   <pkg>astsa</pkg>
-  <pkg>bayesGARCH</pkg>
   <pkg>bentcableAR</pkg>
   <pkg>biwavelet</pkg>
   <pkg>bfast</pkg>
