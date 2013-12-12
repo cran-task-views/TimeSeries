@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-12-10</version>
+<version>2013-12-12</version>
 
 <info>
 <p>
@@ -222,7 +222,8 @@
   <li><i>Nonlinear autoregression</i>: Various forms of nonlinear
       autoregression are available in <pkg>tsDyn</pkg> including
       additive AR, neural nets, SETAR and LSTAR models, threshold VAR and VECM. <pkg>bentcableAR</pkg>
-      implements Bent-Cable autoregression.
+      implements Bent-Cable autoregression. <pkg>BAYSTAR</pkg> provides Bayesian analysis of threshold
+      autoregressive models.
     </li>
   <li>The <i><a
       href="http://www.mpipks-dresden.mpg.de/~tisean/">TISEAN</a>
@@ -365,6 +366,7 @@
   <pkg>ArDec</pkg>
   <pkg>arfima</pkg>
   <pkg>astsa</pkg>
+  <pkg>BAYSTAR</pkg>
   <pkg>bentcableAR</pkg>
   <pkg>biwavelet</pkg>
   <pkg>bfast</pkg>
