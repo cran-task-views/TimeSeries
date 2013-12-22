@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2013-12-12</version>
+<version>2013-12-22</version>
 
 <info>
 <p>
@@ -192,7 +192,7 @@
   <li><i>Seasonal decomposition</i>: the stats package provides classical
       decomposition in <code>decompose()</code>, and STL decomposition in <code>stl()</code>.
      <pkg>x12</pkg> provides a wrapper for the <a href="http://www.census.gov/srd/www/x12a/">X12 binaries</a> which have to be installed first. <pkg>x12GUI</pkg> provides a graphical user interface for <pkg>x12</pkg>.</li>
-  <li><i>Analysis of seasonality</i>: the <pkg>bfast</pkg> package provides methods for detecting and characterizing abrupt changes within the trend and seasonal components obtained from a decomposition. <pkg>Peak2Trough</pkg> estimates the peak-to-trough ratio of a seasonal component.</li>
+  <li><i>Analysis of seasonality</i>: the <pkg>bfast</pkg> package provides methods for detecting and characterizing abrupt changes within the trend and seasonal components obtained from a decomposition.</li>
   <li><pkg>season</pkg>: Seasonal analysis of health data including regression models, time-stratified case-crossover, plotting functions and residual checks.</li>
   <li><pkg>seas</pkg>: Seasonal analysis and graphics, especially for climatology.</li>
   <li><pkg>deseasonalize</pkg>: Optimal deseasonalization for geophysical time series using AR fitting.</li>
@@ -435,7 +435,6 @@
   <pkg>paleoTS</pkg>
   <pkg>partsm</pkg>
   <pkg>pastecs</pkg>
-  <pkg>Peak2Trough</pkg>
   <pkg>pear</pkg>
   <pkg>perARMA</pkg>
   <pkg>pomp</pkg>
