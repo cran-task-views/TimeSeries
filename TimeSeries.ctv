@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-01-31</version>
+<version>2014-02-08</version>
 
 <info>
 <p>
@@ -241,7 +241,7 @@
   <li><i>Dynamic linear models</i>: A convenient interface for fitting
       dynamic regression models via OLS is available in <pkg>dynlm</pkg>;
       an enhanced approach that also works with other regression functions
-      and more time series classes is implemented in <pkg>dyn</pkg>. <pkg>dlmodeler</pkg> provides functions for fitting, analysing and forecasting generalized dynamic linear models.
+      and more time series classes is implemented in <pkg>dyn</pkg>. 
       The <pkg>tslars</pkg> package applies a dynamic variable selection procedure using an extension of the LARS
       algorithm. More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Gaussian linear state
       space models can be fitted using <pkg>dlm</pkg> (via maximum
@@ -376,7 +376,6 @@
   <pkg>cts</pkg>
   <pkg>deseasonalize</pkg>
   <pkg>dlm</pkg>
-  <pkg>dlmodeler</pkg>
   <pkg>dse</pkg>
   <pkg>dtw</pkg>
   <pkg>dyn</pkg>
