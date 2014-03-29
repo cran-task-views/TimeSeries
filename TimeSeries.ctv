@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-02-28</version>
+<version>2014-03-29</version>
 
 <info>
 <p>
@@ -109,7 +109,8 @@
   <li><i>Exponential smoothing</i>: <code>HoltWinters()</code> in stats
       provides some basic models with partial optimization,
       <code>ets()</code> from the <pkg>forecast</pkg> package provides a larger set of
-      models and facilities with full optimization.</li>
+      models and facilities with full optimization. The <pkg>MAPA</pkg> package combines exponential smoothing models at different
+      levels of temporal aggregation to improve forecast accuracy.      </li>
   <li><i>Structural models</i> are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>.
 <pkg>KFKSDS</pkg> provides a naive implementation of the Kalman filter and smoothers for univariate state space models.</li>
 <li>Non-Gaussian time series can be handled with GLARMA state space models via the <pkg>glarma</pkg> package.</li>
@@ -138,8 +139,10 @@
       <pkg>TSA</pkg> package, and the <code>arfima</code> function in the <pkg>arfima</pkg> package.</li>
   <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models. 
     Many variations on GARCH models are provided by <pkg>rugarch</pkg>. Other univariate GARCH packages 
-    include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations, and
-      <pkg>bayesGARCH</pkg> which estimates a Bayesian GARCH(1,1) model with t innovations.
+    include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations, <pkg>lgarch</pkg> for log-GARCH mdoels 
+    and
+      <pkg>bayesGARCH</pkg> which estimates a Bayesian GARCH(1,1) model with t innovations. <pkg>GEVStableGarch</pkg>
+      provides for ARMA-GARCH or ARMA-APARCH models with GEV and stable conditional distributions.
       <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.
     </li>
     <li><i>Stochastic volatility</i> models are handled by <pkg>stochvol</pkg> in a Bayesian framework.</li>
@@ -185,7 +188,7 @@
       decomposition is available using <code>stl()</code>, both from
       the basic stats package. <pkg>sltl</pkg> provides time series decomposition
       using loess and harmonic regression.
-      Autoregressive-based decomposition is provided by <pkg>ArDec</pkg>.
+      Autoregressive-based decomposition is provided by <pkg>ArDec</pkg>. <pkg>rmaf</pkg> uses a refined moving average filter for decomposition.
       </li>
   <li><i>Singular Spectrum Analysis</i> is implemented in <pkg>Rssa</pkg>.</li>
 </ul>
@@ -238,6 +241,8 @@
       nonlinear dynamical systems theory. <pkg>RTisean</pkg> provides
       an R interface to the algorithms and <pkg>tseriesChaos</pkg>
       provides an R implementation of the algorithms.</li>
+  <li>Autoregression Markov switching models are provided in <pkg>MSwM</pkg>, while dependent mixtures of latent Markov models 
+  are given in <pkg>depmix</pkg> and <pkg>depmixS4</pkg> for categorical and continuous time series.</li>
   <li><i>Tests</i>: Various tests for nonlinearity are provided in
       <pkg>fNonlinear</pkg>.</li>
   <li>Additional functions for nonlinear time series are available in <pkg>nlts</pkg> and <pkg>nonlinearTseries</pkg>.</li>
@@ -266,7 +271,8 @@
   <li><i>Vector autoregressive (VAR) models</i> are provided via
       <code>ar()</code> in the basic stats package including order
       selection via the AIC. These models are
-      restricted to be stationary. Possibly non-stationary VAR models
+      restricted to be stationary. <pkg>MTS</pkg> is an all-purpose toolkit for analyzing multivariate time series including VAR, VARMA, seasonal VARMA, VAR models with exogenous variables, multivariate regression with time series errors, and much more. 
+      Possibly non-stationary VAR models
       are fitted in the <pkg>mAr</pkg> package, which also allows
       VAR models in principal component space. More elaborate models
       are provided in package <pkg>vars</pkg>, <!-- <pkg>tsDyn</pkg>, -->
@@ -321,6 +327,7 @@
   <li>Data from Hyndman and Athanasopoulos (2013) <i>Forecasting: principles and practice</i>
       are in the <pkg>fpp</pkg> package.</li>
   <li>Data from the M-competition and M3-competition are provided in the <pkg>Mcomp</pkg> package.</li>
+  <li><pkg>pdfetch</pkg> provides facilities for downloading economic and financial time series from public sources.</li>
   <li>Data from the Quandl online portal to financial, economical and social datasets can
       be queried interactively using the <pkg>Quandl</pkg> package.</li>
   <li>Data from the Datamarket online portal can be fetched using the <pkg>rdatamarket</pkg> package.</li>
@@ -344,6 +351,7 @@
   <li><pkg>GeneCycle</pkg> and <pkg>GeneNet</pkg>: Microarray time series and network analysis.</li>
   <li><pkg>hydroTSM</pkg> and <pkg>hydroGOF</pkg> provide functions for analysing and modelling time series in hydrology and related environmental sciences.</li>
   <li><pkg>Interpol.T</pkg> makes hourly interpolation of daily minimum and maximum temperature series. It is useful in climatology when hourly time-series must be downscaled from the daily information.</li>
+  <li><pkg>LPStimeSeries</pkg> aims to find "learned pattern similarity" for time series.</li>
   <li><pkg>MAR1</pkg> provides tools for preparing ecological community time series data for multivariate AR modeling.</li>
   <li><pkg>nets</pkg>: routines for the estimation of sparse long run partial correlation networks for time series data.</li>
   <li><pkg>paleoTS</pkg>: Modeling evolution in paleontological time series.</li>
@@ -387,6 +395,8 @@
   <pkg>chron</pkg>
   <pkg>CommonTrend</pkg>
   <pkg>cts</pkg>
+  <pkg>depmix</pkg>
+  <pkg>depmixS4</pkg>
   <pkg>deseasonalize</pkg>
   <pkg>dlm</pkg>
   <pkg>dse</pkg>
@@ -419,6 +429,7 @@
   <pkg>fts</pkg>
   <pkg>GeneCycle</pkg>
   <pkg>GeneNet</pkg>
+  <pkg>GEVStableGarch</pkg>
   <pkg>glarma</pkg>
   <pkg>gogarch</pkg>
   <pkg>gsarima</pkg>
@@ -430,9 +441,12 @@
   <pkg>KFAS</pkg>
   <pkg>KFKSDS</pkg>
   <pkg>kza</pkg>
+  <pkg>lgarch</pkg>
+  <pkg>LPStimeSeries</pkg>
   <pkg>locits</pkg>
   <pkg>lomb</pkg>
   <pkg>lubridate</pkg>
+  <pkg>MAPA</pkg>
   <pkg>mAr</pkg>
   <pkg>MAR1</pkg>
   <pkg>mar1s</pkg>
@@ -443,6 +457,8 @@
   <pkg>midasr</pkg>
   <pkg>mondate</pkg>
   <pkg>MSBVAR</pkg>
+  <pkg>MSwM</pkg>
+  <pkg>MTS</pkg>
   <pkg>mvcwt</pkg>
   <pkg>nets</pkg>
   <pkg>nlts</pkg>
@@ -451,6 +467,7 @@
   <pkg>paleoTS</pkg>
   <pkg>partsm</pkg>
   <pkg>pastecs</pkg>
+  <pkg>pdfetch</pkg>
   <pkg>pear</pkg>
   <pkg>perARMA</pkg>
   <pkg>pomp</pkg>
@@ -461,6 +478,7 @@
   <pkg>Quandl</pkg>
   <pkg>quantspec</pkg>
   <pkg>rdatamarket</pkg>
+  <pkg>rmaf</pkg>
   <pkg>RMAWGEN</pkg>
   <pkg>rmgarch</pkg>
   <pkg>robfilter</pkg>
