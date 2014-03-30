@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-03-29</version>
+<version>2014-03-30</version>
 
 <info>
 <p>
@@ -223,15 +223,15 @@
       cointegration test is implemented in <pkg>tseries</pkg> and <pkg>urca</pkg>.
       The latter additionally contains functionality for the Johansen trace
       and lambda-max tests.
-<!--      <pkg>tsDyn</pkg> provides Johansen's test and AIC/BIC simultaneous rank-lag selection. -->
+      <pkg>tsDyn</pkg> provides Johansen's test and AIC/BIC simultaneous rank-lag selection.
       <pkg>CommonTrend</pkg> provides tools to extract and plot common trends from a cointegration system.</li>
 </ul>
 
 <p><strong>Nonlinear Time Series Analysis</strong></p>
 <ul>
   <li><i>Nonlinear autoregression</i>: 
-<!--      Various forms of nonlinear autoregression are available in <pkg>tsDyn</pkg> including
-      additive AR, neural nets, SETAR and LSTAR models, threshold VAR and VECM. -->
+      Various forms of nonlinear autoregression are available in <pkg>tsDyn</pkg> including
+      additive AR, neural nets, SETAR and LSTAR models, threshold VAR and VECM.
       <pkg>bentcableAR</pkg> implements Bent-Cable autoregression.
       <pkg>BAYSTAR</pkg> provides Bayesian analysis of threshold autoregressive models.
     </li>
@@ -275,7 +275,7 @@
       Possibly non-stationary VAR models
       are fitted in the <pkg>mAr</pkg> package, which also allows
       VAR models in principal component space. More elaborate models
-      are provided in package <pkg>vars</pkg>, <!-- <pkg>tsDyn</pkg>, -->
+      are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>,
       <code>estVARXls()</code> in <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>.
     <pkg>StVAR</pkg> allows for heteroskedastic Student's t VAR models with specified degrees
     of freedom and lag length.</li>
@@ -283,7 +283,7 @@
       in the <pkg>dse</pkg> package. <pkg>EvalEst</pkg> facilitates Monte Carlo experiments to
 	  evaluate the associated estimation methods.</li>
   <li><i>Vector error correction models</i> are available via the
-      <pkg>urca</pkg>, <pkg>vars</pkg> <!-- and <pkg>tsDyn</pkg> -->
+      <pkg>urca</pkg>, <pkg>vars</pkg> and <pkg>tsDyn</pkg>
       packages, including versions with structural constraints and thresholding. </li>
   <li><i>Multivariate GARCH models</i> including DCC, GO-GARCH and Copula-GARCH are available in <pkg>rmgarch</pkg>.</li>
   <li><i>Time series component analysis</i>: Time series factor analysis is provided in <pkg>tsfa</pkg>. <pkg>ForeCA</pkg> implements forecatable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.</li>
@@ -518,6 +518,7 @@
   <pkg>tsbugs</pkg>
   <pkg>TSclust</pkg>
   <pkg>TSdbi</pkg>
+  <pkg>tsDyn</pkg>
   <pkg priority="core">tseries</pkg>
   <pkg>tseriesChaos</pkg>
   <pkg>tsfa</pkg>
