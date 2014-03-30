@@ -363,7 +363,6 @@
   <li><pkg>RSEIS</pkg>: Seismic time series analysis tools.</li>
   <li><pkg>rts</pkg>: Raster time series analysis (e.g., time series of satellite images).</li>
   <li><pkg>sde</pkg>: Simulation and inference for stochastic differential equations.</li>
-  <li><pkg>SparseTSCGM</pkg>: Sparse time series chain graphical models.</li>
   <li><pkg>spTimer</pkg>: Spatio-temporal Bayesian modelling.</li>
   <li><pkg>surveillance</pkg>: Temporal and spatio-temporal modeling and monitoring of epidemic phenomena.</li>
   <li><pkg>Tides</pkg>: Functions to calculate characteristics of quasi periodic time series, e.g. observed estuarine water levels.</li>
@@ -495,7 +494,6 @@
   <pkg>seasonal</pkg>
   <pkg>signalextraction</pkg>
   <pkg>sltl</pkg>
-  <pkg>SparseTSCGM</pkg>
   <pkg>spTimer</pkg>
   <pkg>stochvol</pkg>
   <pkg>stsm</pkg>
