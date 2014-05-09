@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-03-30</version>
+<version>2014-05-09</version>
 
 <info>
 <p>
@@ -190,7 +190,7 @@
       using loess and harmonic regression.
       Autoregressive-based decomposition is provided by <pkg>ArDec</pkg>. <pkg>rmaf</pkg> uses a refined moving average filter for decomposition.
       </li>
-  <li><i>Singular Spectrum Analysis</i> is implemented in <pkg>Rssa</pkg>.</li>
+  <li><i>Singular Spectrum Analysis</i> is implemented in <pkg>Rssa</pkg> and <pkg>spectral.methods</pkg>.</li>
 </ul>
 
 <p><strong>Seasonality</strong></p>
@@ -276,7 +276,8 @@
       are fitted in the <pkg>mAr</pkg> package, which also allows
       VAR models in principal component space. More elaborate models
       are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>,
-      <code>estVARXls()</code> in <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>.
+      <code>estVARXls()</code> in <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>. Another implementation with
+      bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
     <pkg>StVAR</pkg> allows for heteroskedastic Student's t VAR models with specified degrees
     of freedom and lag length.</li>
   <li><i>VARIMA models</i> and <i>state space models</i> are provided
@@ -293,7 +294,7 @@
     An alternative implementation is provided by the <pkg>KFAS</pkg> package which provides a
 	  fast multivariate Kalman filter, smoother, simulation smoother and forecasting. Yet another implementation
 	  is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models
-	  into state space form. 
+	  into state space form.  <pkg>dlmodeler</pkg> provides a unified interface for <pkg>dlm</pkg>, <pkg>KFAS</pkg> and <pkg>FKF</pkg>.
     <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm. All of these
     packages assume the observational and state error terms are uncorrelated.</li>
   <li><i>Partially-observed Markov processes</i> are a generalization of the usual linear multivariate state
@@ -303,6 +304,7 @@
 <p><strong>Continuous time models</strong></p>
 <ul>
 	<li><i>Continuous time autoregressive modelling</i> is provided in <pkg>cts</pkg>.</li>
+  <li><pkg>Sim.DiffProc</pkg> simulates and models stochastic differential equations.</li>
 </ul>
 
 <p><strong>Resampling</strong></p>
@@ -313,7 +315,7 @@
       <code>tsbootstrap()</code> from <pkg>tseries</pkg> provides
       fast stationary and block bootstrapping.
       Maximum entropy bootstrap for time series is available in
-      <pkg>meboot</pkg>. <pkg>timesboot</pkg> computes the bootstrap CI for the sample ACF and periodogram.
+      <pkg>meboot</pkg>. <pkg>timesboot</pkg> computes the bootstrap CI for the sample ACF and periodogram. <pkg>BootPR</pkg> computes bias-corrected forecasting and boostrap prediction intervals for autoregressive time series.
       </li>
 </ul>
 
@@ -346,6 +348,7 @@
 <ul>
   <li><pkg>dtw</pkg>: Dynamic time warping algorithms for computing and plotting pairwise alignments between time series.</li>
   <li><pkg>ensembleBMA</pkg>: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.</li>
+  <li><pkg>earlywarnings</pkg>: Early warnings signals toolbox for detecting critical transitions in time series</li>
   <li><pkg>events</pkg>: turns machine-extracted event data into regular aggregated multivariate time series.</li>
   <li><pkg>FeedbackTS</pkg>: Analysis of fragmented time directionality to investigate feedback in time series. </li>
   <li><pkg>GeneCycle</pkg> and <pkg>GeneNet</pkg>: Microarray time series and network analysis.</li>
@@ -388,6 +391,7 @@
   <pkg>biwavelet</pkg>
   <pkg>bfast</pkg>
   <pkg>boot</pkg>
+  <pkg>BootPR</pkg>
   <pkg>brainwaver</pkg>
   <pkg>bspec</pkg>
   <pkg>CADFtest</pkg>
@@ -398,10 +402,12 @@
   <pkg>depmixS4</pkg>
   <pkg>deseasonalize</pkg>
   <pkg>dlm</pkg>
+  <pkg>dlmodeler</pkg>
   <pkg>dse</pkg>
   <pkg>dtw</pkg>
   <pkg>dyn</pkg>
   <pkg>dynlm</pkg>
+  <pkg>earlywarnings</pkg>
   <pkg>Ecdat</pkg>
   <pkg>ensembleBMA</pkg>
   <pkg>EvalEst</pkg>
@@ -493,7 +499,9 @@
   <pkg>season</pkg>
   <pkg>seasonal</pkg>
   <pkg>signalextraction</pkg>
+  <pkg>Sim.DiffProc</pkg>
   <pkg>sltl</pkg>
+  <pkg>spectral.methods</pkg>
   <pkg>spTimer</pkg>
   <pkg>stochvol</pkg>
   <pkg>stsm</pkg>
@@ -524,6 +532,7 @@
   <pkg>tsModel</pkg>
   <pkg>TSTutorial</pkg>
   <pkg>urca</pkg>
+  <pkg>VAR.etp</pkg>
   <pkg>vars</pkg>
   <pkg>wavelets</pkg>
   <pkg>waveslim</pkg>
