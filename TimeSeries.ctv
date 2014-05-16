@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-05-09</version>
+<version>2014-05-16</version>
 
 <info>
 <p>
@@ -275,8 +275,8 @@
       Possibly non-stationary VAR models
       are fitted in the <pkg>mAr</pkg> package, which also allows
       VAR models in principal component space. More elaborate models
-      are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>,
-      <code>estVARXls()</code> in <pkg>dse</pkg> and a Bayesian approach is available in <pkg>MSBVAR</pkg>. Another implementation with
+      are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>, and
+      <code>estVARXls()</code> in <pkg>dse</pkg>. Another implementation with
       bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
     <pkg>StVAR</pkg> allows for heteroskedastic Student's t VAR models with specified degrees
     of freedom and lag length.</li>
@@ -461,7 +461,6 @@
   <pkg>mFilter</pkg>
   <pkg>midasr</pkg>
   <pkg>mondate</pkg>
-  <pkg>MSBVAR</pkg>
   <pkg>MSwM</pkg>
   <pkg>MTS</pkg>
   <pkg>mvcwt</pkg>
