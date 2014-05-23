@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-05-16</version>
+<version>2014-05-23</version>
 
 <info>
 <p>
@@ -235,12 +235,9 @@
       <pkg>bentcableAR</pkg> implements Bent-Cable autoregression.
       <pkg>BAYSTAR</pkg> provides Bayesian analysis of threshold autoregressive models.
     </li>
-  <li>The <i><a
+  <li><pkg>tseriesChaos</pkg> provides an R implementation of the algorithms from the <i><a
       href="http://www.mpipks-dresden.mpg.de/~tisean/">TISEAN</a>
-      project</i> provided algorithms for time series analysis from
-      nonlinear dynamical systems theory. <pkg>RTisean</pkg> provides
-      an R interface to the algorithms and <pkg>tseriesChaos</pkg>
-      provides an R implementation of the algorithms.</li>
+      project</i>.</li>
   <li>Autoregression Markov switching models are provided in <pkg>MSwM</pkg>, while dependent mixtures of latent Markov models 
   are given in <pkg>depmix</pkg> and <pkg>depmixS4</pkg> for categorical and continuous time series.</li>
   <li><i>Tests</i>: Various tests for nonlinearity are provided in
@@ -488,7 +485,6 @@
   <pkg>robfilter</pkg>
   <pkg>RSEIS</pkg>
   <pkg>Rssa</pkg>
-  <pkg>RTisean</pkg>
   <pkg>rts</pkg>
   <pkg>rugarch</pkg>
   <pkg>rwt</pkg>
