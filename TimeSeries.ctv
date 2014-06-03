@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-05-31</version>
+<version>2014-06-03</version>
 
 <info>
 <p>
@@ -148,7 +148,8 @@
     <li><i>Stochastic volatility</i> models are handled by <pkg>stochvol</pkg> in a Bayesian framework.</li>
   <li><i>Miscellaneous</i>: <pkg>ltsa</pkg> contains methods for
       linear time series analysis, <pkg>dlm</pkg> for Bayesian
-      analysis of dynamic linear models, and <pkg>tsbugs</pkg> for time series BUGS models. </li>
+      analysis of dynamic linear models, <pkg>timsac</pkg> for time
+      series analysis and control, and <pkg>tsbugs</pkg> for time series BUGS models.</li>
 </ul>
 
 <p><strong>Frequency analysis</strong></p>
@@ -510,6 +511,7 @@
   <pkg>timesboot</pkg>
   <pkg>timeSeries</pkg>
   <pkg>TimeProjection</pkg>
+  <pkg>timsac</pkg>
   <pkg>tis</pkg>
   <pkg>tpr</pkg>
   <pkg>TSA</pkg>
