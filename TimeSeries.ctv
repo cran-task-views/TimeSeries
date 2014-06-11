@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-06-03</version>
+<version>2014-06-11</version>
 
 <info>
 <p>
@@ -139,7 +139,7 @@
       <pkg>TSA</pkg> package, and the <code>arfima</code> function in the <pkg>arfima</pkg> package.</li>
   <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models. 
     Many variations on GARCH models are provided by <pkg>rugarch</pkg>. Other univariate GARCH packages 
-    include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations, <pkg>lgarch</pkg> for log-GARCH mdoels 
+    include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations, <pkg>lgarch</pkg> for log-GARCH models 
     and
       <pkg>bayesGARCH</pkg> which estimates a Bayesian GARCH(1,1) model with t innovations. <pkg>GEVStableGarch</pkg>
       provides for ARMA-GARCH or ARMA-APARCH models with GEV and stable conditional distributions.
@@ -256,7 +256,8 @@
       The <pkg>tslars</pkg> package applies a dynamic variable selection procedure using an extension of the LARS
       algorithm. More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Gaussian linear state
       space models can be fitted using <pkg>dlm</pkg> (via maximum
-      likelihood, Kalman filtering/smoothing and Bayesian methods).</li>
+      likelihood, Kalman filtering/smoothing and Bayesian methods).
+      Functions for distributed lag non-linear modelling are provided in <pkg>dlnm</pkg>. </li>
   <li><i>Time-varying parameter</i> models can be fitted using the
       <pkg>tpr</pkg> package.</li>
   <li><i>MIDAS regression</i> and other econometric methods for mixed frequency time series data analysis are provided by <pkg>midasr</pkg>.</li>
@@ -365,9 +366,11 @@
   <li><pkg>sde</pkg>: Simulation and inference for stochastic differential equations.</li>
   <li><pkg>spTimer</pkg>: Spatio-temporal Bayesian modelling.</li>
   <li><pkg>surveillance</pkg>: Temporal and spatio-temporal modeling and monitoring of epidemic phenomena.</li>
+  <li><pkg>TED</pkg>: Turbulence time series Event Detection and classification.</li>
   <li><pkg>Tides</pkg>: Functions to calculate characteristics of quasi periodic time series, e.g. observed estuarine water levels.</li>
   <li><pkg>tiger</pkg>: Temporally resolved groups of typical differences (errors) between two time series are determined and visualized.</li>
   <li><pkg>TSclust</pkg>: Time series clustering utilities. </li>
+  <li><pkg>TSdist</pkg>: Distance measures for time series data.</li>
   <li><pkg>tsModel</pkg>: Time series modeling for air pollution and health.</li>
   <li><pkg>wavethresh</pkg>: Locally stationary wavelet models for nonstationary time series
       (including estimation, plotting, and simulation functionality for time-varying spectrums).</li>
@@ -400,6 +403,7 @@
   <pkg>deseasonalize</pkg>
   <pkg>dlm</pkg>
   <pkg>dlmodeler</pkg>
+  <pkg>dlnm</pkg>
   <pkg>dse</pkg>
   <pkg>dtw</pkg>
   <pkg>dyn</pkg>
@@ -504,6 +508,7 @@
   <pkg>stsm.class</pkg>
   <pkg>StVAR</pkg>
   <pkg>surveillance</pkg>
+  <pkg>TED</pkg>
   <pkg>tempdisagg</pkg>
   <pkg>tframe</pkg>
   <pkg>Tides</pkg>
@@ -519,6 +524,7 @@
   <pkg>TSAgg</pkg>
   <pkg>tsbugs</pkg>
   <pkg>TSclust</pkg>
+  <pkg>TSdist</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsDyn</pkg>
   <pkg priority="core">tseries</pkg>
