@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-06-11</version>
+<version>2014-06-28</version>
 
 <info>
 <p>
@@ -112,7 +112,7 @@
       models and facilities with full optimization. The <pkg>MAPA</pkg> package combines exponential smoothing models at different
       levels of temporal aggregation to improve forecast accuracy.      </li>
   <li><i>Structural models</i> are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>.
-<pkg>KFKSDS</pkg> provides a naive implementation of the Kalman filter and smoothers for univariate state space models.</li>
+<pkg>KFKSDS</pkg> provides a naive implementation of the Kalman filter and smoothers for univariate state space models. Bayesian structural time series models are implemented in <pkg>bsts</pkg>.</li>
 <li>Non-Gaussian time series can be handled with GLARMA state space models via the <pkg>glarma</pkg> package.</li>
   <li><i>Autoregressive models</i>: <code>ar()</code> in stats (with
       model selection) and <pkg>FitAR</pkg> for subset AR models.</li>
@@ -136,7 +136,8 @@
       hyperbolic decay time series are handled in the <pkg>FGN</pkg> package.
       </li>
   <li><i>Transfer function</i> models are provided by the <code>arimax</code> function in the
-      <pkg>TSA</pkg> package, and the <code>arfima</code> function in the <pkg>arfima</pkg> package.</li>
+      <pkg>TSA</pkg> package, and the <code>arfima</code> function in the <pkg>arfima</pkg> package. </li>
+   <li>Outlier detection following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.  </li>
   <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models. 
     Many variations on GARCH models are provided by <pkg>rugarch</pkg>. Other univariate GARCH packages 
     include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations, <pkg>lgarch</pkg> for log-GARCH models 
@@ -146,9 +147,9 @@
       <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.
     </li>
     <li><i>Stochastic volatility</i> models are handled by <pkg>stochvol</pkg> in a Bayesian framework.</li>
+    <li><pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series.</li>
   <li><i>Miscellaneous</i>: <pkg>ltsa</pkg> contains methods for
-      linear time series analysis, <pkg>dlm</pkg> for Bayesian
-      analysis of dynamic linear models, <pkg>timsac</pkg> for time
+      linear time series analysis, <pkg>timsac</pkg> for time
       series analysis and control, and <pkg>tsbugs</pkg> for time series BUGS models.</li>
 </ul>
 
@@ -217,8 +218,9 @@
       such as Elliott-Rothenberg-Stock, Schmidt-Phillips and Zivot-Andrews
       tests. The <pkg>fUnitRoots</pkg> package also provides the MacKinnon test.
       <pkg>CADFtest</pkg> provides implementations of both the standard ADF
-      and a covariate-augmented ADF (CADF) test. <pkg>locits</pkg> provides a test of local stationarity and computes 
-      the localized autocovariance.</li>
+      and a covariate-augmented ADF (CADF) test.</li>
+  <li><i>Local stationarity</i>:  <pkg>locits</pkg> provides a test of local stationarity and computes the localized autocovariance. Time series costationarity determination is provided by <pkg>costat</pkg>. 
+  Locally stationary wavelet models for nonstationary time series are implemented in <pkg>wavethresh</pkg> (including estimation, plotting, and simulation functionality for time-varying spectrums).</li>
   <li><i>Cointegration</i>: The Engle-Granger two-step method with the Phillips-Ouliaris
       cointegration test is implemented in <pkg>tseries</pkg> and <pkg>urca</pkg>.
       The latter additionally contains functionality for the Johansen trace
@@ -256,7 +258,7 @@
       The <pkg>tslars</pkg> package applies a dynamic variable selection procedure using an extension of the LARS
       algorithm. More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Gaussian linear state
       space models can be fitted using <pkg>dlm</pkg> (via maximum
-      likelihood, Kalman filtering/smoothing and Bayesian methods).
+      likelihood, Kalman filtering/smoothing and Bayesian methods), or using <pkg>bsts</pkg> which uses MCMC.
       Functions for distributed lag non-linear modelling are provided in <pkg>dlnm</pkg>. </li>
   <li><i>Time-varying parameter</i> models can be fitted using the
       <pkg>tpr</pkg> package.</li>
@@ -372,8 +374,6 @@
   <li><pkg>TSclust</pkg>: Time series clustering utilities. </li>
   <li><pkg>TSdist</pkg>: Distance measures for time series data.</li>
   <li><pkg>tsModel</pkg>: Time series modeling for air pollution and health.</li>
-  <li><pkg>wavethresh</pkg>: Locally stationary wavelet models for nonstationary time series
-      (including estimation, plotting, and simulation functionality for time-varying spectrums).</li>
   <li><pkg>wq</pkg>: Exploring water quality time series.</li>
   <li><pkg>WeightedPortTest</pkg> provides weighted portmanteau statistics for time series goodness-of-fit testing.</li>
 </ul>
@@ -394,9 +394,11 @@
   <pkg>BootPR</pkg>
   <pkg>brainwaver</pkg>
   <pkg>bspec</pkg>
+  <pkg>bsts</pkg>
   <pkg>CADFtest</pkg>
   <pkg>chron</pkg>
   <pkg>CommonTrend</pkg>
+  <pkg>costat</pkg>
   <pkg>cts</pkg>
   <pkg>depmix</pkg>
   <pkg>depmixS4</pkg>
@@ -448,8 +450,8 @@
   <pkg>KFKSDS</pkg>
   <pkg>kza</pkg>
   <pkg>lgarch</pkg>
-  <pkg>LPStimeSeries</pkg>
   <pkg>locits</pkg>
+  <pkg>LPStimeSeries</pkg>
   <pkg>lomb</pkg>
   <pkg>lubridate</pkg>
   <pkg>MAPA</pkg>
@@ -523,6 +525,8 @@
   <pkg>TSA</pkg>
   <pkg>TSAgg</pkg>
   <pkg>tsbugs</pkg>
+  <pkg>tsintermittent</pkg>
+  <pkg>tsoutliers</pkg>
   <pkg>TSclust</pkg>
   <pkg>TSdist</pkg>
   <pkg>TSdbi</pkg>
