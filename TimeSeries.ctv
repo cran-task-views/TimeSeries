@@ -40,7 +40,7 @@
       but many more classes are available for storing time/date information
       and computing with it. For an overview see <i>R Help Desk: Date and
       Time Classes in R</i> by Gabor Grothendieck and Thomas Petzoldt in
-      <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2004-1.pdf" target="_top">R News 4(1)</a>,
+      <a href="http://CRAN.R-project.org/doc/Rnews/Rnews_2004-1.pdf">R News 4(1)</a>,
       29-32.</li>
   <li>Classes <code>"yearmon"</code> and <code>"yearqtr"</code> from
       <pkg>zoo</pkg> allow for more convenient computation with monthly
@@ -555,7 +555,7 @@
 <links>
     <view>Finance</view>
     <view>Econometrics</view>
-    <a href="http://data.is/TSDLdemo" target="_top">Time Series Data Library</a>
+    <a href="http://data.is/TSDLdemo">Time Series Data Library</a>
     <a href="http://www.mpipks-dresden.mpg.de/~tisean/">TISEAN Project</a>
     <a href="http://www.quandl.com/">Quandl</a>
 </links>
