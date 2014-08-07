@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-06-28</version>
+<version>2014-08-08</version>
 
 <info>
 <p>
@@ -278,8 +278,7 @@
       are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>,
       <code>estVARXls()</code> in <pkg>dse</pkg>, and a Bayesian approach is available in <pkg>MSBVAR</pkg>. Another implementation with
       bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
-    <pkg>StVAR</pkg> allows for heteroskedastic Student's t VAR models with specified degrees
-    of freedom and lag length.</li>
+    </li>
   <li><i>VARIMA models</i> and <i>state space models</i> are provided
       in the <pkg>dse</pkg> package. <pkg>EvalEst</pkg> facilitates Monte Carlo experiments to
 	  evaluate the associated estimation methods.</li>
@@ -508,7 +507,6 @@
   <pkg>stochvol</pkg>
   <pkg>stsm</pkg>
   <pkg>stsm.class</pkg>
-  <pkg>StVAR</pkg>
   <pkg>surveillance</pkg>
   <pkg>TED</pkg>
   <pkg>tempdisagg</pkg>
