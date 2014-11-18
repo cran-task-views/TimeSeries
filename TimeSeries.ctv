@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-08-26</version>
+<version>2014-11-18</version>
 
 <info>
 <p>
@@ -261,6 +261,7 @@
   <li><i>Time-varying parameter</i> models can be fitted using the
       <pkg>tpr</pkg> package.</li>
   <li><i>MIDAS regression</i> and other econometric methods for mixed frequency time series data analysis are provided by <pkg>midasr</pkg>.</li>
+  <li><pkg>gets</pkg> provides GEneral-To-Specific (GETS) model selection for either ARX models with log-ARCH-X errors, or a log-ARCH-X model of the log variance.</li>
 
 </ul>
 
@@ -434,6 +435,7 @@
   <pkg>fts</pkg>
   <pkg>GeneCycle</pkg>
   <pkg>GeneNet</pkg>
+  <pkg>gets</pkg>
   <pkg>GEVStableGarch</pkg>
   <pkg>glarma</pkg>
   <pkg>gogarch</pkg>
