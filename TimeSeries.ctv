@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-11-18</version>
+<version>2014-12-07</version>
 
 <info>
 <p>
@@ -70,7 +70,6 @@
       time/date information.</li>
   <li>The <code>"mondate"</code> class from the <pkg>mondate</pkg> package
       facilitates computing with dates in terms of months.</li>
-  <li><pkg>TSAgg</pkg> provides functions for aggregation of incomplete time series data.</li>
   <li>The <pkg>tempdisagg</pkg> package includes methods for temporal disaggregation and interpolation of a low frequency time series to a higher frequency series.</li>
   <li><pkg>TimeProjection</pkg> extracts useful time components of a date object, such as day of week, weekend, holiday, day of month, etc, and put it in a data frame.</li>
 </ul>
@@ -519,7 +518,6 @@
   <pkg>tis</pkg>
   <pkg>tpr</pkg>
   <pkg>TSA</pkg>
-  <pkg>TSAgg</pkg>
   <pkg>tsbugs</pkg>
   <pkg>tsintermittent</pkg>
   <pkg>tsoutliers</pkg>
