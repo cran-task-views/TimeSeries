@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-12-07</version>
+<version>2014-12-23</version>
 
 <info>
 <p>
@@ -230,7 +230,7 @@
 <ul>
   <li><i>Nonlinear autoregression</i>: 
       Various forms of nonlinear autoregression are available in <pkg>tsDyn</pkg> including
-      additive AR, neural nets, SETAR and LSTAR models, threshold VAR and VECM.
+      additive AR, neural nets, SETAR and LSTAR models, threshold VAR and VECM. Neural network autoregression is also provided in <pkg>GMDH</pkg>. 
       <pkg>bentcableAR</pkg> implements Bent-Cable autoregression.
       <pkg>BAYSTAR</pkg> provides Bayesian analysis of threshold autoregressive models.
     </li>
@@ -261,7 +261,7 @@
       <pkg>tpr</pkg> package.</li>
   <li><i>MIDAS regression</i> and other econometric methods for mixed frequency time series data analysis are provided by <pkg>midasr</pkg>.</li>
   <li><pkg>gets</pkg> provides GEneral-To-Specific (GETS) model selection for either ARX models with log-ARCH-X errors, or a log-ARCH-X model of the log variance.</li>
-
+  <li><pkg>orderedLasso</pkg> fits a sparse linear model with an order constraint on the coefficients in order to handle lagged regressors where the coefficients decay as the lag increases.</li>
 </ul>
 
 <p><strong>Multivariate Time Series Models</strong></p>
@@ -302,6 +302,7 @@
 <ul>
 	<li><i>Continuous time autoregressive modelling</i> is provided in <pkg>cts</pkg>.</li>
   <li><pkg>Sim.DiffProc</pkg> simulates and models stochastic differential equations.</li>
+  <li>Simulation and inference for stochastic differential equations is provided by <pkg>sde</pkg> and <pkg>yuima</pkg>.</li>
 </ul>
 
 <p><strong>Resampling</strong></p>
@@ -362,7 +363,6 @@
   <li><pkg>RMAWGEN</pkg> is set of S3 and S4   functions for spatial multi-site stochastic generation of daily time-series of temperature and precipitation making use of VAR models. The package can be used in climatology and statistical hydrology.</li>
   <li><pkg>RSEIS</pkg>: Seismic time series analysis tools.</li>
   <li><pkg>rts</pkg>: Raster time series analysis (e.g., time series of satellite images).</li>
-  <li><pkg>sde</pkg>: Simulation and inference for stochastic differential equations.</li>
   <li><pkg>spTimer</pkg>: Spatio-temporal Bayesian modelling.</li>
   <li><pkg>surveillance</pkg>: Temporal and spatio-temporal modeling and monitoring of epidemic phenomena.</li>
   <li><pkg>TED</pkg>: Turbulence time series Event Detection and classification.</li>
@@ -437,6 +437,7 @@
   <pkg>gets</pkg>
   <pkg>GEVStableGarch</pkg>
   <pkg>glarma</pkg>
+  <pkg>GMDH</pkg>
   <pkg>gogarch</pkg>
   <pkg>gsarima</pkg>
   <pkg>hydroGOF</pkg>
@@ -470,6 +471,7 @@
   <pkg>nlts</pkg>
   <pkg>nonlinearTseries</pkg>
   <pkg>npst</pkg>
+  <pkg>orderedLasso</pkg>
   <pkg>paleoTS</pkg>
   <pkg>partsm</pkg>
   <pkg>pastecs</pkg>
@@ -543,6 +545,7 @@
   <pkg>x12</pkg>
   <pkg>x12GUI</pkg>
   <pkg>xts</pkg>
+  <pkg>yuima</pkg>
   <pkg priority="core">zoo</pkg>
 </packagelist>
 
