@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J. Hyndman</maintainer>
-<version>2014-12-23</version>
+<version>2015-03-03</version>
 
 <info>
 <p>
@@ -188,7 +188,7 @@
       the basic stats package.
       Autoregressive-based decomposition is provided by <pkg>ArDec</pkg>. <pkg>rmaf</pkg> uses a refined moving average filter for decomposition.
       </li>
-  <li><i>Singular Spectrum Analysis</i> is implemented in <pkg>Rssa</pkg> and <pkg>spectral.methods</pkg>.</li>
+  <li><i>Singular Spectrum Analysis</i> is implemented in <pkg>Rssa</pkg>.</li>
 </ul>
 
 <p><strong>Seasonality</strong></p>
@@ -501,7 +501,6 @@
   <pkg>season</pkg>
   <pkg>seasonal</pkg>
   <pkg>Sim.DiffProc</pkg>
-  <pkg>spectral.methods</pkg>
   <pkg>spTimer</pkg>
   <pkg>stochvol</pkg>
   <pkg>stsm</pkg>
