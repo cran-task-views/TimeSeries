@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2015-04-08</version>
+<version>2015-05-03</version>
 
 <info>
 <p>
@@ -112,6 +112,8 @@
       <code>ets()</code> from the <pkg>forecast</pkg> package provides a larger set of
       models and facilities with full optimization. The <pkg>MAPA</pkg> package combines exponential smoothing models at different
       levels of temporal aggregation to improve forecast accuracy.      </li>
+  <li>The theta method is implemented in the <code>thetaf</code> function from the <pkg>forecast</pkg> package. An alternative and extended implementation is provided in
+    <pkg>forecTheta</pkg>.</li>
   <li><i>Structural models</i> are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>.
 <pkg>KFKSDS</pkg> provides a naive implementation of the Kalman filter and smoothers for univariate state space models. Bayesian structural time series models are implemented in <pkg>bsts</pkg>.</li>
 <li>Non-Gaussian time series can be handled with GLARMA state space models via the <pkg>glarma</pkg> package.</li>
@@ -437,6 +439,7 @@
   <pkg>fNonlinear</pkg>
   <pkg>ForeCA</pkg>
   <pkg priority="core">forecast</pkg>
+  <pkg>forecTheta</pkg>
   <pkg>fpp</pkg>
   <pkg>fracdiff</pkg>
   <pkg>fractal</pkg>
