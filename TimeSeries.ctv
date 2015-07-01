@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2015-06-18</version>
+<version>2015-06-30</version>
 
 <info>
 <p>
@@ -32,7 +32,7 @@
       <pkg>SDD</pkg> provides more general serial dependence diagrams.
       Seasonal displays are obtained using
       <code>monthplot()</code> in stats and <code>seasonplot</code> in <pkg>forecast</pkg>.
-      <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library.
+      <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library. Basic fan plots of forecast distributions are provided by <pkg>forecast</pkg> and <pkg>vars</pkg>. More flexible fan plots of any sequential distributions are implemented in <pkg>fanplot</pkg>.
       </li>
 </ul>
 
@@ -284,6 +284,7 @@
       are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>,
       <code>estVARXls()</code> in <pkg>dse</pkg>, and a Bayesian approach is available in <pkg>MSBVAR</pkg>. Another implementation with
       bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
+      <pkg>mlVAR</pkg> provides multi-level  vector autoregression.
     </li>
   <li><i>VARIMA models</i> and <i>state space models</i> are provided
       in the <pkg>dse</pkg> package. <pkg>EvalEst</pkg> facilitates Monte Carlo experiments to
@@ -380,6 +381,7 @@
   <li><pkg>TED</pkg>: Turbulence time series Event Detection and classification.</li>
   <li><pkg>Tides</pkg>: Functions to calculate characteristics of quasi periodic time series, e.g. observed estuarine water levels.</li>
   <li><pkg>tiger</pkg>: Temporally resolved groups of typical differences (errors) between two time series are determined and visualized.</li>
+  <li><pkg>TSMining</pkg>: Mining Univariate and Multivariate Motifs in Time-Series Data</li>
   <li><pkg>tsModel</pkg>: Time series modeling for air pollution and health.</li>
   <li><pkg>wq</pkg>: Exploring water quality time series.</li>
   
@@ -429,6 +431,7 @@
   <pkg>events</pkg>
   <pkg>expsmooth</pkg>
   <pkg>fame</pkg>
+  <pkg>fanplot</pkg>
   <pkg>fArma</pkg>
   <pkg>FeedbackTS</pkg>
   <pkg>fGarch</pkg>
@@ -477,6 +480,7 @@
   <pkg>meboot</pkg>
   <pkg>mFilter</pkg>
   <pkg>midasr</pkg>
+  <pkg>mlVAR</pkg>
   <pkg>mondate</pkg>
   <pkg>MSBVAR</pkg>
   <pkg>MSwM</pkg>
@@ -550,6 +554,7 @@
   <pkg>tsfa</pkg>
   <pkg>tsintermittent</pkg>
   <pkg>tslars</pkg>
+  <pkg>TSMining</pkg>
   <pkg>tsModel</pkg>
   <pkg>tsoutliers</pkg>
   <pkg>TSTutorial</pkg>
