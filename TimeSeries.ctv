@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2015-06-30</version>
+<version>2015-07-01</version>
 
 <info>
 <p>
@@ -260,8 +260,7 @@
       dynamic regression models via OLS is available in <pkg>dynlm</pkg>;
       an enhanced approach that also works with other regression functions
       and more time series classes is implemented in <pkg>dyn</pkg>. 
-      The <pkg>tslars</pkg> package applies a dynamic variable selection procedure using an extension of the LARS
-      algorithm. More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Gaussian linear state
+      More advanced dynamic system equations can be fitted using <pkg>dse</pkg>. Gaussian linear state
       space models can be fitted using <pkg>dlm</pkg> (via maximum
       likelihood, Kalman filtering/smoothing and Bayesian methods), or using <pkg>bsts</pkg> which uses MCMC.
       Functions for distributed lag non-linear modelling are provided in <pkg>dlnm</pkg>. </li>
@@ -553,7 +552,6 @@
   <pkg>tseriesChaos</pkg>
   <pkg>tsfa</pkg>
   <pkg>tsintermittent</pkg>
-  <pkg>tslars</pkg>
   <pkg>TSMining</pkg>
   <pkg>tsModel</pkg>
   <pkg>tsoutliers</pkg>
