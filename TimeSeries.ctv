@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2015-07-01</version>
+<version>2015-07-06</version>
 
 <info>
 <p>
@@ -190,13 +190,14 @@
       <pkg>mFilter</pkg> includes miscellaneous time series filters
       useful for smoothing and extracting trend and cyclical
       components.</li>
-  <li><i>Decomposition</i>: Classical decomposition
+  <li><i>Decomposition</i>: Classical (seasonal/trend) decomposition
       is provided via <code>decompose()</code>, more advanced and flexible
       decomposition is available using <code>stl()</code>, both from
       the basic stats package.
       Autoregressive-based decomposition is provided by <pkg>ArDec</pkg>. <pkg>rmaf</pkg> uses a refined moving average filter for decomposition.
       </li>
   <li><i>Singular Spectrum Analysis</i> is implemented in <pkg>Rssa</pkg> and <pkg>spectral.methods</pkg>.</li>
+  <li><i>Empirical Mode Decomposition</i> (EMD) and Hilbert spectral analysis is provided by <pkg>EMD</pkg>. Additional tools, including ensemble EMD, are available in <pkg>hht</pkg>. An alternative implementation of ensemble EMD and its complete variant are available in <pkg>Rlibeemd</pkg>.</li>
 </ul>
 
 <p><strong>Seasonality</strong></p>
@@ -248,7 +249,8 @@
   <li>Autoregression Markov switching models are provided in <pkg>MSwM</pkg>, while dependent mixtures of latent Markov models 
   are given in <pkg>depmix</pkg> and <pkg>depmixS4</pkg> for categorical and continuous time series.</li>
   <li><i>Tests</i>: Various tests for nonlinearity are provided in
-      <pkg>fNonlinear</pkg>.</li>
+      <pkg>fNonlinear</pkg>.
+      <pkg>tseriesEntropy</pkg> tests for nonlinear serial dependence based on entropy metrics. </li>
   <li>Additional functions for nonlinear time series are available in <pkg>nlts</pkg> and <pkg>nonlinearTseries</pkg>.</li>
   <li>Fractal time series modeling and analysis is provided by <pkg>fractal</pkg>. <pkg>fractalrock</pkg> generates 
   fractal time series with non-normal returns distributions.</li>
@@ -279,7 +281,9 @@
       restricted to be stationary. <pkg>MTS</pkg> is an all-purpose toolkit for analyzing multivariate time series including VAR, VARMA, seasonal VARMA, VAR models with exogenous variables, multivariate regression with time series errors, and much more. 
       Possibly non-stationary VAR models
       are fitted in the <pkg>mAr</pkg> package, which also allows
-      VAR models in principal component space. More elaborate models
+      VAR models in principal component space. 
+      Automated VAR models and networks are available in <pkg>autovarCore</pkg>.
+      More elaborate models
       are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>,
       <code>estVARXls()</code> in <pkg>dse</pkg>, and a Bayesian approach is available in <pkg>MSBVAR</pkg>. Another implementation with
       bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
@@ -394,6 +398,7 @@
   <pkg>ArDec</pkg>
   <pkg>arfima</pkg>
   <pkg>astsa</pkg>
+  <pkg>autovarCore</pkg>
   <pkg>bayesDccGarch</pkg>
   <pkg>bayesGARCH</pkg>
   <pkg>BAYSTAR</pkg>
@@ -425,6 +430,7 @@
   <pkg>dynlm</pkg>
   <pkg>earlywarnings</pkg>
   <pkg>Ecdat</pkg>
+  <pkg>EMD</pkg>
   <pkg>ensembleBMA</pkg>
   <pkg>EvalEst</pkg>
   <pkg>events</pkg>
@@ -458,6 +464,7 @@
   <pkg>gsarima</pkg>
   <pkg>gtop</pkg>
   <pkg>HarmonicRegression</pkg>
+  <pkg>hht</pkg>
   <pkg>hts</pkg>
   <pkg>hwwntest</pkg>
   <pkg>its</pkg>
@@ -505,6 +512,7 @@
   <pkg>quantspec</pkg>
   <pkg>rdatamarket</pkg>
   <pkg>RGENERATE</pkg>
+  <pkg>Rlibeemd</pkg>
   <pkg>rmaf</pkg>
   <pkg>RMAWGEN</pkg>
   <pkg>rmgarch</pkg>
@@ -550,6 +558,7 @@
   <pkg>tsDyn</pkg>
   <pkg priority="core">tseries</pkg>
   <pkg>tseriesChaos</pkg>
+  <pkg>tseriesEntropy</pkg>
   <pkg>tsfa</pkg>
   <pkg>tsintermittent</pkg>
   <pkg>TSMining</pkg>
