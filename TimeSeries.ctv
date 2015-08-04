@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2015-07-18</version>
+<version>2015-08-04</version>
 
 <info>
 <p>
@@ -143,17 +143,13 @@
    <li>Outlier detection following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.  </li>
   <li><i>GARCH models</i>: <code>garch()</code> from <pkg>tseries</pkg> fits basic GARCH models. 
     Many variations on GARCH models are provided by <pkg>rugarch</pkg>. Other univariate GARCH packages 
-    include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations, <pkg>lgarch</pkg> for log-GARCH models, 
-      <pkg>bayesGARCH</pkg> which estimates a Bayesian GARCH(1,1) model with t innovations and <pkg>bayesDccGarch</pkg> for Bayesian estimation of DCC-GARCH(1,1) models.
-      <pkg>GEVStableGarch</pkg>
-      provides for ARMA-GARCH or ARMA-APARCH models with GEV and stable conditional distributions.
-      <pkg>gogarch</pkg> implements Generalized Orthogonal GARCH (GO-GARCH) models.
-    </li>
+    include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations. There are many more GARCH packages described in the <view>Finance</view> task view.   </li>
     <li><i>Stochastic volatility</i> models are handled by <pkg>stochvol</pkg> in a Bayesian framework.</li>
     <li><i>Count time series</i> models are handled in the <pkg>tscount</pkg> and <pkg>acp</pkg> packages. <pkg>ZIM</pkg> provides for Zero-Inflated Models for count time series.  <pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series. </li>
     <li><i>Censored time series</i> can be modelled using <pkg>cents</pkg>.</li>
   <li><i>Portmanteau tests</i> are provided via <code>Box.test()</code> in the stats package. Additional tests are given by <pkg>portes</pkg> and <pkg>WeightedPortTest</pkg>.</li>
   <li><i>Change point detection</i> is provided in <pkg>strucchange</pkg> (using linear regression models) and <pkg>trend</pkg> (using nonparametric tests).</li>
+  <li><i>Time series imputation</i> is provided by the <pkg>imputeTS</pkg> package. Some more limited facilities are available using <code>na.interp()</code> from the <pkg>forecast</pkg> package.</li>
   <li><i>Miscellaneous</i>: <pkg>ltsa</pkg> contains methods for
       linear time series analysis, <pkg>timsac</pkg> for time
       series analysis and control, and <pkg>tsbugs</pkg> for time series BUGS models.</li>
@@ -293,7 +289,6 @@
   <li><i>Vector error correction models</i> are available via the
       <pkg>urca</pkg>, <pkg>vars</pkg> and <pkg>tsDyn</pkg>
       packages, including versions with structural constraints and thresholding. </li>
-  <li><i>Multivariate GARCH models</i> including DCC, GO-GARCH and Copula-GARCH are available in <pkg>rmgarch</pkg>.</li>
   <li><i>Time series component analysis</i>: Time series factor analysis is provided in <pkg>tsfa</pkg>. <pkg>ForeCA</pkg> implements forecatable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.</li>
   <li><i>Multivariate state space models</i> are implemented in the <pkg>FKF</pkg> (Fast Kalman Filter) package.    
     This provides relatively flexible state space models via the <code>fkf()</code> function: state-space  
@@ -310,7 +305,7 @@
 
 <p><strong>Analysis of large groups of time series</strong></p>
 <ul>
-  <li><i>Time series clustering</i> is implemented in <pkg>TSclust</pkg> and <pkg>BNPTSclust</pkg>.  </li>
+  <li><i>Time series clustering</i> is implemented in <pkg>TSclust</pkg>, <pkg>dtwclust</pkg> and <pkg>BNPTSclust</pkg>.  </li>
   <li><pkg>TSdist</pkg> provides distance measures for time series data.</li>
   <li>Methods for plotting and forecasting collections of hierarchical and grouped time series are provided by <pkg>hts</pkg>. An alternative approach to reconciling forecasts of hierarchical time series is provided by <pkg>gtop</pkg>.</li>
 </ul>
@@ -397,8 +392,6 @@
   <pkg>arfima</pkg>
   <pkg>astsa</pkg>
   <pkg>autovarCore</pkg>
-  <pkg>bayesDccGarch</pkg>
-  <pkg>bayesGARCH</pkg>
   <pkg>BAYSTAR</pkg>
   <pkg>bentcableAR</pkg>
   <pkg>bfast</pkg>
@@ -423,6 +416,7 @@
   <pkg>dlnm</pkg>
   <pkg>dse</pkg>
   <pkg>dtw</pkg>
+  <pkg>dtwclust</pkg>
   <pkg>dygraphs</pkg>
   <pkg>dyn</pkg>
   <pkg>dynlm</pkg>
@@ -454,21 +448,19 @@
   <pkg>fractalrock</pkg>
   <pkg>fts</pkg>
   <pkg>fUnitRoots</pkg>
-  <pkg>GEVStableGarch</pkg>
   <pkg>glarma</pkg>
   <pkg>GMDH</pkg>
-  <pkg>gogarch</pkg>
   <pkg>gsarima</pkg>
   <pkg>gtop</pkg>
   <pkg>HarmonicRegression</pkg>
   <pkg>hht</pkg>
   <pkg>hts</pkg>
   <pkg>hwwntest</pkg>
+  <pkg>imputeTS</pkg>
   <pkg>its</pkg>
   <pkg>KFAS</pkg>
   <pkg>KFKSDS</pkg>
   <pkg>kza</pkg>
-  <pkg>lgarch</pkg>
   <pkg>locits</pkg>
   <pkg>lomb</pkg>
   <pkg>LPStimeSeries</pkg>
@@ -511,7 +503,6 @@
   <pkg>Rlibeemd</pkg>
   <pkg>rmaf</pkg>
   <pkg>RMAWGEN</pkg>
-  <pkg>rmgarch</pkg>
   <pkg>robfilter</pkg>
   <pkg>RSEIS</pkg>
   <pkg>Rssa</pkg>
