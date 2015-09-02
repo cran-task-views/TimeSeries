@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2015-08-04</version>
+<version>2015-09-02</version>
 
 <info>
 <p>
@@ -31,8 +31,9 @@
       along with a combination display using <code>tsdisplay()</code>.
       <pkg>SDD</pkg> provides more general serial dependence diagrams.
       Seasonal displays are obtained using
-      <code>monthplot()</code> in stats and <code>seasonplot</code> in <pkg>forecast</pkg>.
-      <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library. Basic fan plots of forecast distributions are provided by <pkg>forecast</pkg> and <pkg>vars</pkg>. More flexible fan plots of any sequential distributions are implemented in <pkg>fanplot</pkg>.
+      <code>monthplot()</code> in stats and <code>seasonplot</code> in <pkg>forecast</pkg>. <pkg>Wats</pkg> implements wrap-around time series graphics.
+      <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library. 
+      Basic fan plots of forecast distributions are provided by <pkg>forecast</pkg> and <pkg>vars</pkg>. More flexible fan plots of any sequential distributions are implemented in <pkg>fanplot</pkg>.
       </li>
 </ul>
 
@@ -148,7 +149,7 @@
     <li><i>Count time series</i> models are handled in the <pkg>tscount</pkg> and <pkg>acp</pkg> packages. <pkg>ZIM</pkg> provides for Zero-Inflated Models for count time series.  <pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series. </li>
     <li><i>Censored time series</i> can be modelled using <pkg>cents</pkg>.</li>
   <li><i>Portmanteau tests</i> are provided via <code>Box.test()</code> in the stats package. Additional tests are given by <pkg>portes</pkg> and <pkg>WeightedPortTest</pkg>.</li>
-  <li><i>Change point detection</i> is provided in <pkg>strucchange</pkg> (using linear regression models) and <pkg>trend</pkg> (using nonparametric tests).</li>
+  <li><i>Change point detection</i> is provided in <pkg>strucchange</pkg> (using linear regression models), in <pkg>trend</pkg> (using nonparametric tests), and in <pkg>wbsts</pkg> (using wild binary segmentation).</li>
   <li><i>Time series imputation</i> is provided by the <pkg>imputeTS</pkg> package. Some more limited facilities are available using <code>na.interp()</code> from the <pkg>forecast</pkg> package.</li>
   <li><i>Miscellaneous</i>: <pkg>ltsa</pkg> contains methods for
       linear time series analysis, <pkg>timsac</pkg> for time
@@ -289,7 +290,10 @@
   <li><i>Vector error correction models</i> are available via the
       <pkg>urca</pkg>, <pkg>vars</pkg> and <pkg>tsDyn</pkg>
       packages, including versions with structural constraints and thresholding. </li>
-  <li><i>Time series component analysis</i>: Time series factor analysis is provided in <pkg>tsfa</pkg>. <pkg>ForeCA</pkg> implements forecatable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.</li>
+  <li><i>Time series component analysis</i>: Time series factor analysis is provided in <pkg>tsfa</pkg>. 
+  <pkg>ForeCA</pkg> implements forecatable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible. 
+  <pkg>PCA4TS</pkg> finds a linear transformation of a multivariate time series giving lower-dimensional subseries that are uncorrelated with each other.
+  </li>
   <li><i>Multivariate state space models</i> are implemented in the <pkg>FKF</pkg> (Fast Kalman Filter) package.    
     This provides relatively flexible state space models via the <code>fkf()</code> function: state-space  
     parameters are allowed to be time-varying and intercepts are included in both equations.  
@@ -489,6 +493,7 @@
   <pkg>paleoTS</pkg>
   <pkg>partsm</pkg>
   <pkg>pastecs</pkg>
+  <pkg>PCA4TS</pkg>
   <pkg>pdfetch</pkg>
   <pkg>pear</pkg>
   <pkg>perARMA</pkg>
@@ -555,9 +560,11 @@
   <pkg>urca</pkg>
   <pkg>VAR.etp</pkg>
   <pkg>vars</pkg>
+  <pkg>Wats</pkg>
   <pkg>wavelets</pkg>
   <pkg>waveslim</pkg>
   <pkg>wavethresh</pkg>
+  <pkg>wbsts</pkg>
   <pkg>WeightedPortTest</pkg>
   <pkg>wmtsa</pkg>
   <pkg>wq</pkg>
