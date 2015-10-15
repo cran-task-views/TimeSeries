@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2015-09-02</version>
+<version>2015-10-16</version>
 
 <info>
 <p>
@@ -149,7 +149,9 @@
     <li><i>Count time series</i> models are handled in the <pkg>tscount</pkg> and <pkg>acp</pkg> packages. <pkg>ZIM</pkg> provides for Zero-Inflated Models for count time series.  <pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series. </li>
     <li><i>Censored time series</i> can be modelled using <pkg>cents</pkg>.</li>
   <li><i>Portmanteau tests</i> are provided via <code>Box.test()</code> in the stats package. Additional tests are given by <pkg>portes</pkg> and <pkg>WeightedPortTest</pkg>.</li>
-  <li><i>Change point detection</i> is provided in <pkg>strucchange</pkg> (using linear regression models), in <pkg>trend</pkg> (using nonparametric tests), and in <pkg>wbsts</pkg> (using wild binary segmentation).</li>
+  <li><i>Change point detection</i> is provided in <pkg>strucchange</pkg> (using linear regression models), in <pkg>trend</pkg> (using nonparametric tests), and in <pkg>wbsts</pkg> (using wild binary segmentation). 
+  The <pkg>changepoint</pkg> package provides many popular changepoint methods, and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
+  </li>
   <li><i>Time series imputation</i> is provided by the <pkg>imputeTS</pkg> package. Some more limited facilities are available using <code>na.interp()</code> from the <pkg>forecast</pkg> package.</li>
   <li><i>Miscellaneous</i>: <pkg>ltsa</pkg> contains methods for
       linear time series analysis, <pkg>timsac</pkg> for time
@@ -408,6 +410,7 @@
   <pkg>bsts</pkg>
   <pkg>CADFtest</pkg>
   <pkg>cents</pkg>
+  <pkg>changepoint</pkg>
   <pkg>chron</pkg>
   <pkg>CommonTrend</pkg>
   <pkg>costat</pkg>
@@ -426,6 +429,7 @@
   <pkg>dynlm</pkg>
   <pkg>earlywarnings</pkg>
   <pkg>Ecdat</pkg>
+  <pkg>ecp</pkg>
   <pkg>EMD</pkg>
   <pkg>ensembleBMA</pkg>
   <pkg>EvalEst</pkg>
