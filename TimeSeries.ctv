@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2015-10-16</version>
+<version>2015-10-28</version>
 
 <info>
 <p>
@@ -224,7 +224,7 @@
       tests. The <pkg>fUnitRoots</pkg> package also provides the MacKinnon test.
       <pkg>CADFtest</pkg> provides implementations of both the standard ADF
       and a covariate-augmented ADF (CADF) test.</li>
-  <li><i>Local stationarity</i>:  <pkg>locits</pkg> provides a test of local stationarity and computes the localized autocovariance. Time series costationarity determination is provided by <pkg>costat</pkg>. 
+  <li><i>Local stationarity</i>:  <pkg>locits</pkg> provides a test of local stationarity and computes the localized autocovariance. Time series costationarity determination is provided by <pkg>costat</pkg>. <pkg>LSTS</pkg> has functions for locally stationary time series analysis.
   Locally stationary wavelet models for nonstationary time series are implemented in <pkg>wavethresh</pkg> (including estimation, plotting, and simulation functionality for time-varying spectrums).</li>
   <li><i>Cointegration</i>: The Engle-Granger two-step method with the Phillips-Ouliaris
       cointegration test is implemented in <pkg>tseries</pkg> and <pkg>urca</pkg>.
@@ -313,6 +313,7 @@
 <ul>
   <li><i>Time series clustering</i> is implemented in <pkg>TSclust</pkg>, <pkg>dtwclust</pkg> and <pkg>BNPTSclust</pkg>.  </li>
   <li><pkg>TSdist</pkg> provides distance measures for time series data.</li>
+  <li><pkg>jmotif</pkg> implements tools based on time series symbolic discretization for finding motifs in time series and facilitates interpretable time series classification.</li>
   <li>Methods for plotting and forecasting collections of hierarchical and grouped time series are provided by <pkg>hts</pkg>. An alternative approach to reconciling forecasts of hierarchical time series is provided by <pkg>gtop</pkg>.</li>
 </ul>
 
@@ -466,12 +467,14 @@
   <pkg>hwwntest</pkg>
   <pkg>imputeTS</pkg>
   <pkg>its</pkg>
+  <pkg>jmotif</pkg>
   <pkg>KFAS</pkg>
   <pkg>KFKSDS</pkg>
   <pkg>kza</pkg>
   <pkg>locits</pkg>
   <pkg>lomb</pkg>
   <pkg>LPStimeSeries</pkg>
+  <pkg>LSTS</pkg>
   <pkg>ltsa</pkg>
   <pkg>lubridate</pkg>
   <pkg>MAPA</pkg>
