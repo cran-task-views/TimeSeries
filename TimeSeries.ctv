@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2015-12-02</version>
+<version>2016-01-22</version>
 
 <info>
 <p>
@@ -32,7 +32,7 @@
       <pkg>SDD</pkg> provides more general serial dependence diagrams.
       Seasonal displays are obtained using
       <code>monthplot()</code> in stats and <code>seasonplot</code> in <pkg>forecast</pkg>. <pkg>Wats</pkg> implements wrap-around time series graphics.
-      <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library.
+      <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library.  <pkg>ZRA</pkg> plots forecast objects from the <pkg>forecast</pkg> package using dygraphs.
       Basic fan plots of forecast distributions are provided by <pkg>forecast</pkg> and <pkg>vars</pkg>. More flexible fan plots of any sequential distributions are implemented in <pkg>fanplot</pkg>.
       </li>
 </ul>
@@ -148,7 +148,7 @@
     include <pkg>fGarch</pkg> which implements ARIMA models with a wide class of GARCH innovations. There are many more GARCH packages described in the <view>Finance</view> task view.   </li>
     <li><i>Stochastic volatility</i> models are handled by <pkg>stochvol</pkg> in a Bayesian framework.</li>
     <li><i>Count time series</i> models are handled in the <pkg>tscount</pkg> and <pkg>acp</pkg> packages. <pkg>ZIM</pkg> provides for Zero-Inflated Models for count time series.  <pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series. </li>
-    <li><i>Censored time series</i> can be modelled using <pkg>cents</pkg>.</li>
+    <li><i>Censored time series</i> can be modelled using <pkg>cents</pkg> and <pkg>carx</pkg>.</li>
   <li><i>Portmanteau tests</i> are provided via <code>Box.test()</code> in the stats package. Additional tests are given by <pkg>portes</pkg> and <pkg>WeightedPortTest</pkg>.</li>
   <li><i>Change point detection</i> is provided in <pkg>strucchange</pkg> (using linear regression models), in <pkg>trend</pkg> (using nonparametric tests), and in <pkg>wbsts</pkg> (using wild binary segmentation).
   The <pkg>changepoint</pkg> package provides many popular changepoint methods, and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
@@ -184,13 +184,13 @@
 </ul>
 <p><strong>Decomposition and Filtering</strong></p>
 <ul>
-  <li><i>Filters</i>: <code>filter()</code> in stats
+  <li><i>Filters and smoothing</i>: <code>filter()</code> in stats
       provides autoregressive and moving average linear filtering of
       multiple univariate time series. The <pkg>robfilter</pkg>
       package provides several robust time series filters, while
       <pkg>mFilter</pkg> includes miscellaneous time series filters
       useful for smoothing and extracting trend and cyclical
-      components.</li>
+      components. <code>smooth()</code> from the stats package computes Tukey's running median smoothers, 3RS3R, 3RSS, 3R, etc. <pkg>sleekts</pkg> computes the 4253H twice smoothing method.</li>
   <li><i>Decomposition</i>: Classical (seasonal/trend) decomposition
       is provided via <code>decompose()</code>, more advanced and flexible
       decomposition is available using <code>stl()</code>, both from
@@ -204,7 +204,8 @@
 <p><strong>Seasonality</strong></p>
 <ul>
   <li><i>Seasonal decomposition</i>: the stats package provides classical
-      decomposition in <code>decompose()</code>, and STL decomposition in <code>stl()</code>.</li>
+      decomposition in <code>decompose()</code>, and STL decomposition in <code>stl()</code>. Enhanced STL decomposition is available in <pkg>stlplus</pkg>.
+      </li>
   <li> <pkg>x12</pkg> provides a wrapper for the <a href="http://www.census.gov/srd/www/x12a/">X12 binaries</a> which have to be installed first. <pkg>x12GUI</pkg> provides a graphical user interface for <pkg>x12</pkg>.
   An R interface to the later <a href="http://www.census.gov/srd/www/x13as/x13down_pc.html">X-13ARIMA-SEATS binaries</a>
   is given by <pkg>seasonal</pkg>.</li>
@@ -286,7 +287,7 @@
       are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>,
       <code>estVARXls()</code> in <pkg>dse</pkg>, and a Bayesian approach is available in <pkg>MSBVAR</pkg>. Another implementation with
       bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
-      <pkg>mlVAR</pkg> provides multi-level  vector autoregression.
+      <pkg>mlVAR</pkg> provides multi-level  vector autoregression. <pkg>VARsignR</pkg> provides routines for identifying structural shocks in VAR models using sign restrictions.
     </li>
   <li><i>VARIMA models</i> and <i>state space models</i> are provided
       in the <pkg>dse</pkg> package. <pkg>EvalEst</pkg> facilitates Monte Carlo experiments to
@@ -347,7 +348,7 @@
       with exponential smoothing</i>  are in the <pkg>expsmooth</pkg> package.</li>
   <li>Data from Hyndman and Athanasopoulos (2013) <i>Forecasting: principles and practice</i>
       are in the <pkg>fpp</pkg> package.</li>
-  <li>Data from the M-competition and M3-competition are provided in the <pkg>Mcomp</pkg> package.</li>
+  <li>Data from the M-competition and M3-competition are provided in the <pkg>Mcomp</pkg> package. Data from the M4 competition are given in <pkg>M4comp</pkg>.</li>
   <li><pkg>pdfetch</pkg> provides facilities for downloading economic and financial time series from public sources.</li>
   <li>Data from the Quandl online portal to financial, economical and social datasets can
       be queried interactively using the <pkg>Quandl</pkg> package.</li>
@@ -412,6 +413,7 @@
   <pkg>bspec</pkg>
   <pkg>bsts</pkg>
   <pkg>CADFtest</pkg>
+  <pkg>carx</pkg>
   <pkg>cents</pkg>
   <pkg>changepoint</pkg>
   <pkg>chron</pkg>
@@ -480,6 +482,7 @@
   <pkg>LSTS</pkg>
   <pkg>ltsa</pkg>
   <pkg>lubridate</pkg>
+  <pkg>M4comp</pkg>
   <pkg>MAPA</pkg>
   <pkg>MAR1</pkg>
   <pkg>mar1s</pkg>
@@ -531,8 +534,10 @@
   <pkg>season</pkg>
   <pkg>seasonal</pkg>
   <pkg>Sim.DiffProc</pkg>
+  <pkg>sleekts</pkg>
   <pkg>spectral.methods</pkg>
   <pkg>spTimer</pkg>
+  <pkg>stlplus</pkg>
   <pkg>stochvol</pkg>
   <pkg>strucchange</pkg>
   <pkg>stsm.class</pkg>
@@ -571,6 +576,7 @@
   <pkg>urca</pkg>
   <pkg>VAR.etp</pkg>
   <pkg>vars</pkg>
+  <pkg>VARsignR</pkg>
   <pkg>Wats</pkg>
   <pkg>wavelets</pkg>
   <pkg>waveslim</pkg>
@@ -584,6 +590,7 @@
   <pkg>xts</pkg>
   <pkg>yuima</pkg>
   <pkg>ZIM</pkg>
+  <pkg>ZRA</pkg>
   <pkg priority="core">zoo</pkg>
 </packagelist>
 
