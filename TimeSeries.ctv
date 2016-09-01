@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2016-08-18</version>
+<version>2016-09-01</version>
 
 <info>
 <p>
@@ -163,7 +163,7 @@
     There are many more GARCH packages described in the <view>Finance</view> task view.
   </li>
   <li><i>Stochastic volatility</i> models 
-    are handled by <pkg>stochvol</pkg> in a Bayesian framework.
+    are handled by <pkg>stochvol</pkg> in a Bayesian framework. 
   </li>
   <li><i>Count time series</i> models 
     are handled in the <pkg>tscount</pkg> and <pkg>acp</pkg> packages. 
@@ -183,6 +183,7 @@
     and in <pkg>wbsts</pkg> (using wild binary segmentation).
     The <pkg>changepoint</pkg> package provides many popular changepoint methods, 
     and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
+    Online change point detection for univariate and multivariate time series is provided by <pkg>onlineCPD</pkg>.
   </li>
   <li><i>Time series imputation</i> 
     is provided by the <pkg>imputeTS</pkg> package. 
@@ -238,8 +239,7 @@
     <pkg>sleekts</pkg> computes the 4253H twice smoothing method.
   </li>
   <li><i>Decomposition</i>: 
-    Classical (seasonal/trend) decomposition is provided via <code>decompose()</code>, 
-    more advanced and flexible decomposition is available using <code>stl()</code>, both from the basic stats package.
+    Seasonal decomposition is discussed below.
     Autoregressive-based decomposition is provided by <pkg>ArDec</pkg>. 
     <pkg>rmaf</pkg> uses a refined moving average filter for decomposition.
   </li>
@@ -256,9 +256,9 @@
 <p><strong>Seasonality</strong></p>
 <ul>
   <li><i>Seasonal decomposition</i>: 
-    the stats package provides classical decomposition in <code>decompose()</code>, 
-    and STL decomposition in <code>stl()</code>. 
+    the stats package provides classical decomposition in <code>decompose()</code>, and STL decomposition in <code>stl()</code>. 
     Enhanced STL decomposition is available in <pkg>stlplus</pkg>.
+    <pkg>stR</pkg> provides Seasonal-Trend decomposition based on Regression.
   </li>
   <li> <pkg>x12</pkg> 
     provides a wrapper for the <a href="http://www.census.gov/srd/www/x12a/">X12 binaries</a> which must be installed first. 
@@ -392,6 +392,7 @@
   <li><i>Partially-observed Markov processes</i> 
     are a generalization of the usual linear multivariate state space models, allowing non-Gaussian and nonlinear models. These are implemented in the <pkg>pomp</pkg> package.
   </li>
+  <li>Multivariate stochastic volatility models (using latent factors) are provided by <pkg>factorstochvol</pkg>.</li>
 </ul>
 
 <p><strong>Analysis of large groups of time series</strong></p>
@@ -607,6 +608,7 @@
   <pkg>EvalEst</pkg>
   <pkg>events</pkg>
   <pkg>expsmooth</pkg>
+  <pkg>factorstochvol</pkg>
   <pkg>fame</pkg>
   <pkg>fanplot</pkg>
   <pkg>fArma</pkg>
@@ -673,6 +675,7 @@
   <pkg>nlts</pkg>
   <pkg>nonlinearTseries</pkg>
   <pkg>npst</pkg>
+  <pkg>onlineCPD</pkg>
   <pkg>opera</pkg>
   <pkg>orderedLasso</pkg>
   <pkg>paleoTS</pkg>
@@ -715,6 +718,7 @@
   <pkg>spTimer</pkg>
   <pkg>stlplus</pkg>
   <pkg>stochvol</pkg>
+  <pkg>stR</pkg>
   <pkg>strucchange</pkg>
   <pkg>stsm.class</pkg>
   <pkg>stsm</pkg>
