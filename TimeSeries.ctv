@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2016-09-01</version>
+<version>2016-09-09</version>
 
 <info>
 <p>
@@ -551,10 +551,6 @@
   <li><pkg>tsModel</pkg>: 
     Time series modeling for air pollution and health.
   </li>
-  <li><pkg>wq</pkg>: 
-    Exploring water quality time series.
-  </li>
-
 </ul>
 
 </info>
@@ -765,7 +761,6 @@
   <pkg>wbsts</pkg>
   <pkg>WeightedPortTest</pkg>
   <pkg>wmtsa</pkg>
-  <pkg>wq</pkg>
   <pkg>x12</pkg>
   <pkg>x12GUI</pkg>
   <pkg>x13binary</pkg>
