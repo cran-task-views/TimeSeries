@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2016-10-09</version>
+<version>2016-11-01</version>
 
 <info>
 <p>
@@ -185,6 +185,7 @@
     The <pkg>changepoint</pkg> package provides many popular changepoint methods, 
     and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
     Online change point detection for univariate and multivariate time series is provided by <pkg>onlineCPD</pkg>.
+    <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
   </li>
   <li><i>Time series imputation</i> 
     is provided by the <pkg>imputeTS</pkg> package. 
@@ -364,6 +365,7 @@
     <pkg>MTS</pkg> is an all-purpose toolkit for analyzing multivariate time series including VAR, VARMA, seasonal VARMA, VAR models with exogenous variables, multivariate regression with time series errors, and much more.
     Possibly non-stationary VAR models are fitted in the <pkg>mAr</pkg> package, which also allows VAR models in principal component space.
     <pkg>sparsevar</pkg> allows estimation of sparse VAR and VECM models,
+    <pkg>ecm</pkg> provides functions for building VECM models, 
     while <pkg>BigVAR</pkg> estimates VAR and VARX models with structured lasso penalties.
     Automated VAR models and networks are available in <pkg>autovarCore</pkg>.
     More elaborate models are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>, <code>estVARXls()</code> in <pkg>dse</pkg>, and a Bayesian approach is available in <pkg>MSBVAR</pkg>. 
@@ -453,7 +455,7 @@
     <i>Forecasting: principles and practice</i> are in the <pkg>fpp</pkg> package.
   </li>
   <li>Data from the M-competition and M3-competition 
-      are provided in the <pkg>Mcomp</pkg> package. Data from the M4 competition are given in <pkg>M4comp</pkg>.
+      are provided in the <pkg>Mcomp</pkg> package. Data from the M4 competition are given in <pkg>M4comp</pkg>, while <pkg>Tcomp</pkg> provides data from the 2010 IJF Tourism Forecasting Competition.
   </li>
   <li><pkg>pdfetch</pkg> 
     provides facilities for downloading economic and financial time series from public sources.
@@ -602,6 +604,7 @@
   <pkg>dynr</pkg>
   <pkg>earlywarnings</pkg>
   <pkg>Ecdat</pkg>
+  <pkg>ecm</pkg>
   <pkg>ecp</pkg>
   <pkg>EMD</pkg>
   <pkg>ensembleBMA</pkg>
@@ -643,6 +646,7 @@
   <pkg>hts</pkg>
   <pkg>hwwntest</pkg>
   <pkg>imputeTS</pkg>
+  <pkg>InspectChangepoint</pkg>
   <pkg>its</pkg>
   <pkg>jmotif</pkg>
   <pkg>KFAS</pkg>
@@ -725,6 +729,7 @@
   <pkg>stsm.class</pkg>
   <pkg>stsm</pkg>
   <pkg>surveillance</pkg>
+  <pkg>Tcomp</pkg>
   <pkg>TED</pkg>
   <pkg>tempdisagg</pkg>
   <pkg>tframe</pkg>
