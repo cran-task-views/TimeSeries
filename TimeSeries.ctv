@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2016-11-01</version>
+<version>2016-12-01</version>
 
 <info>
 <p>
@@ -70,6 +70,8 @@
   <li>The <pkg>tempdisagg</pkg> package 
     includes methods for temporal disaggregation and interpolation of a low frequency time series to a higher frequency series.
   </li>
+  <li>Time series disaggregation is also provided by <pkg>tsdisagg2</pkg>.
+  </li>
   <li><pkg>TimeProjection</pkg> 
     extracts useful time components of a date object, such as day of week, weekend, holiday, day of month, etc, and put it in a data frame.
   </li>
@@ -113,8 +115,9 @@
   <li><i>Exponential smoothing</i>: 
     <code>HoltWinters()</code> in stats provides some basic models with partial optimization,
     <code>ets()</code> from the <pkg>forecast</pkg> package provides a larger set of models and facilities with full optimization. 
-    The <pkg>MAPA</pkg> package combines exponential smoothing models at different levels of temporal aggregation to improve forecast accuracy.
+    <pkg>robets</pkg> provides a robust alternative to the <code>ets()</code> function.
     <pkg>smooth</pkg> implements some generalizations of exponential smoothing.
+    The <pkg>MAPA</pkg> package combines exponential smoothing models at different levels of temporal aggregation to improve forecast accuracy.
   </li>
   <li>The theta method 
     is implemented in the <code>thetaf</code> function from the <pkg>forecast</pkg> package. 
@@ -194,6 +197,7 @@
   <li>Forecasts can be combined 
     using <pkg>ForecastCombinations</pkg> which supports the most frequently used methods to combine forecasts. 
     <pkg>forecastHybrid</pkg> provides functions for ensemble forecasts, combining approaches from the <pkg>forecast</pkg> package. 
+    <pkg>GeomComb</pkg> provides eigenvector-based (geometric) forecast combination methods, as well as other approaches.
     <pkg>opera</pkg> has facilities for online predictions based on combinations of forecasts provided by the user.
   </li>
   <li>Forecast evaluation
@@ -372,6 +376,8 @@
     Another implementation with bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
     <pkg>mlVAR</pkg> provides multi-level vector autoregression. 
     <pkg>VARsignR</pkg> provides routines for identifying structural shocks in VAR models using sign restrictions.
+    <pkg>gdpc</pkg> implements generalized dynamic principal components.
+    <pkg>pcdpca</pkg> extends dynamic principal components to periodically correlated multivariate time series.
   </li>
   <li><i>VARIMA models</i> and <i>state space models</i> 
     are provided in the <pkg>dse</pkg> package. 
@@ -636,6 +642,8 @@
   <pkg>fts</pkg>
   <pkg>fUnitRoots</pkg>
   <pkg>GAS</pkg>
+  <pkg>gdpc</pkg>
+  <pkg>GeomComb</pkg>
   <pkg>ggseas</pkg>
   <pkg>glarma</pkg>
   <pkg>GMDH</pkg>
@@ -686,6 +694,7 @@
   <pkg>partsm</pkg>
   <pkg>pastecs</pkg>
   <pkg>PCA4TS</pkg>
+  <pkg>pcdpca</pkg>
   <pkg>pdc</pkg>
   <pkg>pdfetch</pkg>
   <pkg>pear</pkg>
@@ -701,6 +710,7 @@
   <pkg>Rlibeemd</pkg>
   <pkg>rmaf</pkg>
   <pkg>RMAWGEN</pkg>
+  <pkg>robets</pkg>
   <pkg>robfilter</pkg>
   <pkg>roll</pkg>
   <pkg>RSEIS</pkg>
@@ -749,6 +759,7 @@
   <pkg>TSclust</pkg>
   <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
+  <pkg>tsdisagg2</pkg>
   <pkg>TSdist</pkg>
   <pkg>tsDyn</pkg>
   <pkg priority="core">tseries</pkg>
