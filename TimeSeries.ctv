@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2016-12-01</version>
+<version>2016-12-15</version>
 
 <info>
 <p>
@@ -92,7 +92,6 @@
   </li>
   <li>Various packages implement irregular time series 
     based on <code>"POSIXct"</code> time stamps, intended especially for financial applications. These include
-    <code>"its"</code> from <pkg>its</pkg>, 
     <code>"irts"</code> from <pkg>tseries</pkg>, 
     and <code>"fts"</code> from <pkg>fts</pkg>.
   </li>
@@ -655,7 +654,6 @@
   <pkg>hwwntest</pkg>
   <pkg>imputeTS</pkg>
   <pkg>InspectChangepoint</pkg>
-  <pkg>its</pkg>
   <pkg>jmotif</pkg>
   <pkg>KFAS</pkg>
   <pkg>KFKSDS</pkg>
