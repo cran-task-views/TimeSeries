@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2017-01-02</version>
+<version>2017-02-01</version>
 
 <info>
 <p>
@@ -248,6 +248,7 @@
   <li><i>Decomposition</i>:
     Seasonal decomposition is discussed below.
     Autoregressive-based decomposition is provided by <pkg>ArDec</pkg>.
+    <pkg>tsdecomp</pkg> implements ARIMA-based decomposition of quarterly and monthly data.
     <pkg>rmaf</pkg> uses a refined moving average filter for decomposition.
   </li>
   <li><i>Singular Spectrum Analysis</i>
@@ -769,6 +770,7 @@
   <pkg>TSclust</pkg>
   <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
+  <pkg>tsdecomp</pkg>
   <pkg>tsdisagg2</pkg>
   <pkg>TSdist</pkg>
   <pkg>tsDyn</pkg>
