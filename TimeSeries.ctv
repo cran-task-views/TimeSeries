@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2017-03-01</version>
+<version>2017-03-26</version>
 
 <info>
 <p>
@@ -190,7 +190,6 @@
     and in <pkg>wbsts</pkg> (using wild binary segmentation).
     The <pkg>changepoint</pkg> package provides many popular changepoint methods,
     and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
-    Online change point detection for univariate and multivariate time series is provided by <pkg>onlineCPD</pkg>.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
   </li>
   <li><i>Time series imputation</i>
@@ -707,7 +706,6 @@
   <pkg>nlts</pkg>
   <pkg>nonlinearTseries</pkg>
   <pkg>npst</pkg>
-  <pkg>onlineCPD</pkg>
   <pkg>opera</pkg>
   <pkg>orderedLasso</pkg>
   <pkg>paleoTS</pkg>
