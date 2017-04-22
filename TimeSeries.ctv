@@ -779,7 +779,6 @@
   <pkg>TSA</pkg>
   <pkg>tsbugs</pkg>
   <pkg>TSclust</pkg>
-  <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsdecomp</pkg>
   <pkg>tsdisagg2</pkg>
