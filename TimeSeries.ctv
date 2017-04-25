@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2017-04-22</version>
+<version>2017-04-25</version>
 
 <info>
 <p>
@@ -299,8 +299,7 @@
   <li><i>Stationarity and unit roots</i>:
     <pkg>tseries</pkg> provides various stationarity and unit root tests including Augmented Dickey-Fuller, Phillips-Perron, and KPSS.
     Alternative implementations of the ADF and KPSS tests are in the <pkg>urca</pkg> package, which also includes further methods such as Elliott-Rothenberg-Stock, Schmidt-Phillips and Zivot-Andrews tests.
-    The <pkg>fUnitRoots</pkg> package also provides the MacKinnon test,
-    while <pkg>uroot</pkg> provides seasonal unit root tests.
+    <pkg>uroot</pkg> provides seasonal unit root tests.
     <pkg>CADFtest</pkg> provides implementations of both the standard ADF and a covariate-augmented ADF (CADF) test.
   </li>
   <li><i>Local stationarity</i>:
@@ -659,7 +658,6 @@
   <pkg>fractal</pkg>
   <pkg>fractalrock</pkg>
   <pkg>fts</pkg>
-  <pkg>fUnitRoots</pkg>
   <pkg>GAS</pkg>
   <pkg>gdpc</pkg>
   <pkg>GeomComb</pkg>
