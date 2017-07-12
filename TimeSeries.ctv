@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2017-06-07</version>
+<version>2017-07-12</version>
 
 <info>
 <p>
@@ -211,6 +211,7 @@
     is provided in the <code>accuracy()</code> function from <pkg>forecast</pkg>.
     Distributional forecast evaluation using scoring rules is available in <pkg>scoringRules</pkg>
   </li>
+  <li>Tidy tools for forecasting are provided by <pkg>sweep</pkg>, converting objects produced in <pkg>forecast</pkg> to "tidy" data frames.</li>
   <li><i>Miscellaneous</i>:
     <pkg>ltsa</pkg> contains methods for linear time series analysis,
     <pkg>timsac</pkg> for time series analysis and control,
@@ -764,6 +765,7 @@
   <pkg>stsm.class</pkg>
   <pkg>stsm</pkg>
   <pkg>surveillance</pkg>
+  <pkg>sweep</pkg>
   <pkg>Tcomp</pkg>
   <pkg>TED</pkg>
   <pkg>tempdisagg</pkg>
