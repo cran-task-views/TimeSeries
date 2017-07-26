@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2017-07-12</version>
+<version>2017-07-26</version>
 
 <info>
 <p>
@@ -54,7 +54,7 @@
     However, the time zone computations require some care and might be system-dependent.
     Internally, <code>"POSIXct"</code> objects are the number of seconds since 1970-01-01 00:00:00 GMT.
     Package <pkg>lubridate</pkg> provides functions that facilitate certain POSIX-based computations.
-    The <pkg>timekit</pkg> package contains a collection of tools for working with time series including coercing between time-based tibbles, xts, zoo and ts objects.
+    The <pkg>timetk</pkg> package contains a collection of tools for working with time series including coercing between time-based tibbles, xts, zoo and ts objects.
     <pkg>wktmo</pkg> converts weekly data to monthly data in several different ways.
   </li>
   <li>Class <code>"timeDate"</code>
@@ -774,11 +774,11 @@
   <pkg>Tides</pkg>
   <pkg>tiger</pkg>
   <pkg>timeDate</pkg>
-  <pkg>timekit</pkg>
   <pkg>TimeProjection</pkg>
   <pkg>timesboot</pkg>
   <pkg>timeSeries</pkg>
   <pkg>timsac</pkg>
+  <pkg>timetk</pkg>
   <pkg>tis</pkg>
   <pkg>tpr</pkg>
   <pkg>trend</pkg>
