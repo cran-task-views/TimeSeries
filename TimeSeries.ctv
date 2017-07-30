@@ -479,7 +479,7 @@
   <li><pkg>pdfetch</pkg>
     provides facilities for downloading economic and financial time series from public sources.
   </li>
-  <li>Data from the <a href="http://www.qandl.com">Quandl</a> online portal
+  <li>Data from the <a href="http://www.quandl.com">Quandl</a> online portal
       to financial, economical and social datasets can be queried interactively using the <pkg>Quandl</pkg> package.
   </li>
   <li>Data from the <a href="http://datamarket.com/data/">Datamarket</a> online portal
