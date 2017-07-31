@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2017-07-26</version>
+<version>2017-07-31</version>
 
 <info>
 <p>
@@ -496,9 +496,6 @@
   <li>Data from Shumway and Stoffer (2011)
   	  are in the <pkg>astsa</pkg> package.
   </li>
-  <li>Data from Tsay (2005) <i>Analysis of financial time series</i>
-      are in the <pkg>FinTS</pkg> package, along with some functions and script files required to work some of the examples.
-  </li>
   <li><pkg>tswge</pkg>
       accompanies the text <i>Applied Time Series Analysis with R</i>, 2nd edition by Woodward, Gray, and Elliott.
   </li>
@@ -647,7 +644,6 @@
   <pkg>FeedbackTS</pkg>
   <pkg>fGarch</pkg>
   <pkg>FGN</pkg>
-  <pkg>FinTS</pkg>
   <pkg>FitAR</pkg>
   <pkg>FitARMA</pkg>
   <pkg>FKF</pkg>
