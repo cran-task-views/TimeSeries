@@ -278,7 +278,7 @@
     <pkg>stR</pkg> provides Seasonal-Trend decomposition based on Regression.
   </li>
   <li> <pkg>x12</pkg>
-    provides a wrapper for the <a href="http://www.census.gov/srd/www/x12a/">X12 binaries</a> which must be installed first.
+    provides a wrapper for the X12 binaries which must be installed first.
     <pkg>x12GUI</pkg> provides a graphical user interface for <pkg>x12</pkg>.
     X-13-ARIMA-SEATS binaries are provided in the <pkg>x13binary</pkg> package,
     with <pkg>seasonal</pkg> providing an R interface and <pkg>seasonalview</pkg> providing a GUI.
