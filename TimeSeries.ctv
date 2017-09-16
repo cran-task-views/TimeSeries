@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2017-09-12</version>
+<version>2017-09-16</version>
 
 <info>
 <p>
@@ -276,11 +276,9 @@
     Enhanced STL decomposition is available in <pkg>stlplus</pkg>.
     <pkg>stR</pkg> provides Seasonal-Trend decomposition based on Regression.
   </li>
-  <li> <pkg>x12</pkg>
-    provides a wrapper for the X12 binaries which must be installed first.
-    <pkg>x12GUI</pkg> provides a graphical user interface for <pkg>x12</pkg>.
-    X-13-ARIMA-SEATS binaries are provided in the <pkg>x13binary</pkg> package,
+  <li> X-13-ARIMA-SEATS binaries are provided in the <pkg>x13binary</pkg> package,
     with <pkg>seasonal</pkg> providing an R interface and <pkg>seasonalview</pkg> providing a GUI.
+    An alternative interface is provided by <pkg>x12</pkg>, with an associated alternative GUI provided by <pkg>x12GUI</pkg>.
   </li>
   <li><i>Analysis of seasonality</i>:
     the <pkg>bfast</pkg> package provides methods for detecting and characterizing abrupt changes within the trend and seasonal components obtained from a decomposition.
@@ -398,6 +396,8 @@
     Time series factor analysis is provided in <pkg>tsfa</pkg>.
     <pkg>ForeCA</pkg> implements forecatable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.
     <pkg>PCA4TS</pkg> finds a linear transformation of a multivariate time series giving lower-dimensional subseries that are uncorrelated with each other.
+    One-sided dynamic principal components are computed in <pkg>odpc</pkg>.
+    Frequency-domain-based dynamic PCA is implemented in <pkg>freqdom</pkg>.
   </li>
   <li><i>Multivariate state space models</i>
     are implemented in the <pkg>FKF</pkg> (Fast Kalman Filter) package. This provides relatively flexible state space models via the <code>fkf()</code> function: state-space parameters are allowed to be time-varying and intercepts are included in both equations.
@@ -433,6 +433,14 @@
     are provided by <pkg>hts</pkg>.
     <pkg>thief</pkg> uses hierarchical methods to reconcile forecasts of temporally aggregated time series.
     An alternative approach to reconciling forecasts of hierarchical time series is provided by <pkg>gtop</pkg>. <pkg>thief</pkg>
+  </li>
+</ul>
+
+<p><strong>Functional time series</strong></p>
+<ul>
+  <li>Tools for visualizing, modeling, forecasting and analysis of functional time series are implemented in <pkg>ftsa</pkg>.
+  </li>
+  <li><pkg>freqdom.fda</pkg> provides implements of dynamical functional principal components for functional time series.
   </li>
 </ul>
 
@@ -472,6 +480,9 @@
   <li>Data from Hyndman and Athanasopoulos (2013)
     <i>Forecasting: principles and practice</i> are in the <pkg>fpp</pkg> package.
   </li>
+  <li>Data from Hyndman and Athanasopoulos (2017)
+    <i>Forecasting: principles and practice</i> (2nd ed) are in the <pkg>fpp2</pkg> package.
+  </li>
   <li>Data from the M-competition and M3-competition
       are provided in the <pkg>Mcomp</pkg> package. Data from the M4 competition are given in <pkg>M4comp</pkg>, while <pkg>Tcomp</pkg> provides data from the 2010 IJF Tourism Forecasting Competition.
   </li>
@@ -503,6 +514,9 @@
   </li>
   <li><pkg>fame</pkg>
     provides an interface for FAME time series databases
+  </li>
+  <li><pkg>influxdbr</pkg>
+    provides an interface to the InfluxDB time series database.
   </li>
   <li><pkg>AER</pkg> and <pkg>Ecdat</pkg>
     both contain many data sets (including time series data) from many econometrics text books
@@ -653,10 +667,14 @@
   <pkg>forecastHybrid</pkg>
   <pkg>forecTheta</pkg>
   <pkg>fpp</pkg>
+  <pkg>fpp2</pkg>
   <pkg>fracdiff</pkg>
   <pkg>fractal</pkg>
   <pkg>fractalrock</pkg>
+  <pkg>freqdom</pkg>
+  <pkg>freqdom.fda</pkg>
   <pkg>fts</pkg>
+  <pkg>ftsa</pkg>
   <pkg>funtimes</pkg>
   <pkg>GAS</pkg>
   <pkg>gdpc</pkg>
@@ -671,6 +689,7 @@
   <pkg>hts</pkg>
   <pkg>hwwntest</pkg>
   <pkg>imputeTS</pkg>
+  <pkg>influxdbr</pkg>
   <pkg>InspectChangepoint</pkg>
   <pkg>jmotif</pkg>
   <pkg>KFAS</pkg>
@@ -704,6 +723,7 @@
   <pkg>nlts</pkg>
   <pkg>nonlinearTseries</pkg>
   <pkg>npst</pkg>
+  <pkg>odpc</pkg>
   <pkg>opera</pkg>
   <pkg>orderedLasso</pkg>
   <pkg>paleoTS</pkg>
