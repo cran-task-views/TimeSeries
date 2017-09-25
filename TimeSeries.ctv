@@ -233,7 +233,7 @@
   <li><i>Wavelet methods</i>:
     The <pkg>wavelets</pkg> package includes computing wavelet filters, wavelet transforms and multiresolution analyses.
     Wavelet methods for time series analysis based on Percival and Walden (2000) are given in <pkg>wmtsa</pkg>.
-    <pkg>WaveletComp</pkg> provides some tools for wavelet-based analysis of univariate and bivariate time series including cross-wavelets, phase-difference and significanc tests.
+    <pkg>WaveletComp</pkg> provides some tools for wavelet-based analysis of univariate and bivariate time series including cross-wavelets, phase-difference and significance tests.
     <pkg>biwavelet</pkg> can be used to plot and compute the wavelet spectra, cross-wavelet spectra, and wavelet coherence of non-stationary time series. It also includes functions to cluster time series based on the (dis)similarities in their spectrum.
     Tests of white noise using wavelets are provided by <pkg>hwwntest</pkg>.
     Further wavelet methods can be found in the packages <pkg>brainwaver</pkg>, <pkg>rwt</pkg>, <pkg>waveslim</pkg>, <pkg>wavethresh</pkg> and <pkg>mvcwt</pkg>.
@@ -308,7 +308,7 @@
     <pkg>locits</pkg> provides a test of local stationarity and computes the localized autocovariance.
     Time series costationarity determination is provided by <pkg>costat</pkg>.
     <pkg>LSTS</pkg> has functions for locally stationary time series analysis.
-    Locally stationary wavelet models for nonstationary time series are implemented in <pkg>wavethresh</pkg> (including estimation, plotting, and simulation functionality for time-varying spectrums).
+    Locally stationary wavelet models for nonstationary time series are implemented in <pkg>wavethresh</pkg> (including estimation, plotting, and simulation functionality for time-varying spectra).
   </li>
   <li><i>Cointegration</i>:
     The Engle-Granger two-step method with the Phillips-Ouliaris cointegration test is implemented in <pkg>tseries</pkg>
@@ -394,7 +394,7 @@
   </li>
   <li><i>Time series component analysis</i>:
     Time series factor analysis is provided in <pkg>tsfa</pkg>.
-    <pkg>ForeCA</pkg> implements forecatable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.
+    <pkg>ForeCA</pkg> implements forecastable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.
     <pkg>PCA4TS</pkg> finds a linear transformation of a multivariate time series giving lower-dimensional subseries that are uncorrelated with each other.
     One-sided dynamic principal components are computed in <pkg>odpc</pkg>.
     Frequency-domain-based dynamic PCA is implemented in <pkg>freqdom</pkg>.
@@ -464,7 +464,7 @@
     <code>tsbootstrap()</code> from <pkg>tseries</pkg> provides fast stationary and block bootstrapping.
     Maximum entropy bootstrap for time series is available in <pkg>meboot</pkg>.
     <pkg>timesboot</pkg> computes the bootstrap CI for the sample ACF and periodogram.
-    <pkg>BootPR</pkg> computes bias-corrected forecasting and boostrap prediction intervals for autoregressive time series.
+    <pkg>BootPR</pkg> computes bias-corrected forecasting and bootstrap prediction intervals for autoregressive time series.
   </li>
 </ul>
 
