@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2017-09-16</version>
+<version>2017-10-19</version>
 
 <info>
 <p>
@@ -174,7 +174,7 @@
     are handled by <pkg>stochvol</pkg> in a Bayesian framework.
   </li>
   <li><i>Count time series</i> models
-    are handled in the <pkg>acp</pkg> package.
+    are handled in the <pkg>tscount</pkg> and <pkg>acp</pkg> packages.
     <pkg>ZIM</pkg> provides for Zero-Inflated Models for count time series.
     <pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series.
   </li>
@@ -354,6 +354,7 @@
     More advanced dynamic system equations can be fitted using <pkg>dse</pkg>.
     Gaussian linear state space models can be fitted using <pkg>dlm</pkg> (via maximum likelihood, Kalman filtering/smoothing and Bayesian methods),
     or using <pkg>bsts</pkg> which uses MCMC.
+    <pkg>dLagM</pkg> provides time series regression with distributed lags. 
     Functions for distributed lag non-linear modelling are provided in <pkg>dlnm</pkg>.
   </li>
   <li><i>Time-varying parameter</i> models
@@ -631,6 +632,7 @@
   <pkg>depmix</pkg>
   <pkg>depmixS4</pkg>
   <pkg>deseasonalize</pkg>
+  <pkg>dLagM</pkg>
   <pkg>dlm</pkg>
   <pkg>dlmodeler</pkg>
   <pkg>dlnm</pkg>
@@ -799,6 +801,7 @@
   <pkg>TSA</pkg>
   <pkg>tsbugs</pkg>
   <pkg>TSclust</pkg>
+  <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsdecomp</pkg>
   <pkg>tsdisagg2</pkg>
