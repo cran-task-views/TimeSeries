@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2017-10-19</version>
+<version>2017-12-10</version>
 
 <info>
 <p>
@@ -323,6 +323,7 @@
 <ul>
   <li><i>Nonlinear autoregression</i>:
     Various forms of nonlinear autoregression are available in <pkg>tsDyn</pkg> including additive AR, neural nets, SETAR and LSTAR models, threshold VAR and VECM. Neural network autoregression is also provided in <pkg>GMDH</pkg>.
+    <pkg>nnfor</pkg> provides time series forecasting with neural networks.
     <pkg>bentcableAR</pkg> implements Bent-Cable autoregression.
     <pkg>BAYSTAR</pkg> provides Bayesian analysis of threshold autoregressive models.
   </li>
@@ -375,8 +376,8 @@
     <pkg>MTS</pkg> is an all-purpose toolkit for analyzing multivariate time series including VAR, VARMA, seasonal VARMA, VAR models with exogenous variables, multivariate regression with time series errors, and much more.
     Possibly non-stationary VAR models are fitted in the <pkg>mAr</pkg> package, which also allows VAR models in principal component space.
     <pkg>sparsevar</pkg> allows estimation of sparse VAR and VECM models,
-    <pkg>ecm</pkg> provides functions for building VECM models,
-    while <pkg>BigVAR</pkg> estimates VAR and VARX models with structured lasso penalties.
+    <pkg>bigtime</pkg> estimates large sparse VAR, VARX and VARMA models,
+    while <pkg>BigVAR</pkg> estimates VAR and VARX models with structured lasso penalties and  <pkg>svars</pkg> implements data-driven structural VARs.
     Automated VAR models and networks are available in <pkg>autovarCore</pkg>.
     More elaborate models are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>, <code>estVARXls()</code> in <pkg>dse</pkg>, and a Bayesian approach is available in <pkg>MSBVAR</pkg>.
     Another implementation with bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
@@ -390,8 +391,7 @@
     <pkg>EvalEst</pkg> facilitates Monte Carlo experiments to evaluate the associated estimation methods.
   </li>
   <li><i>Vector error correction models</i>
-    are available via the <pkg>urca</pkg>, <pkg>vars</pkg> and <pkg>tsDyn</pkg>
-      packages, including versions with structural constraints and thresholding.
+    are available via the <pkg>urca</pkg>, <pkg>ecm</pkg>, <pkg>vars</pkg>, <pkg>tsDyn</pkg> packages, including versions with structural constraints and thresholding.
   </li>
   <li><i>Time series component analysis</i>:
     Time series factor analysis is provided in <pkg>tsfa</pkg>.
@@ -448,7 +448,7 @@
 <p><strong>Continuous time models</strong></p>
 <ul>
 	<li><i>Continuous time autoregressive modelling</i>
-    is provided in <pkg>cts</pkg>.
+    is provided in <pkg>cts</pkg>, while <pkg>carfima</pkg> allows for continuous-time ARFIMA models.
   </li>
   <li><pkg>Sim.DiffProc</pkg>
     simulates and models stochastic differential equations.
@@ -556,6 +556,9 @@
   <li><pkg>pastecs</pkg>:
     Regulation, decomposition and analysis of space-time series.
   </li>
+  <li><pkg>PSF</pkg>:
+    Forecasting univariate time series using pattern-sequences.
+  </li> 
   <li><pkg>ptw</pkg>:
     Parametric time warping.
   </li>
@@ -610,6 +613,7 @@
   <pkg>bentcableAR</pkg>
   <pkg>BETS</pkg>
   <pkg>bfast</pkg>
+  <pkg>bigtime</pkg>
   <pkg>BigVAR</pkg>
   <pkg>biwavelet</pkg>
   <pkg>BNPTSclust</pkg>
@@ -619,6 +623,7 @@
   <pkg>bspec</pkg>
   <pkg>bsts</pkg>
   <pkg>CADFtest</pkg>
+  <pkg>carfima</pkg>
   <pkg>carx</pkg>
   <pkg>cents</pkg>
   <pkg>changepoint</pkg>
@@ -723,6 +728,7 @@
   <pkg>mvcwt</pkg>
   <pkg>nets</pkg>
   <pkg>nlts</pkg>
+  <pkg>nnfor</pkg>
   <pkg>nonlinearTseries</pkg>
   <pkg>npst</pkg>
   <pkg>odpc</pkg>
@@ -741,6 +747,7 @@
   <pkg>portes</pkg>
   <pkg>prophet</pkg>
   <pkg>psd</pkg>
+  <pkg>PSF</pkg>
   <pkg>ptw</pkg>
   <pkg>Quandl</pkg>
   <pkg>quantspec</pkg>
@@ -781,6 +788,7 @@
   <pkg>stsm.class</pkg>
   <pkg>stsm</pkg>
   <pkg>surveillance</pkg>
+  <pkg>svars</pkg>
   <pkg>sweep</pkg>
   <pkg>Tcomp</pkg>
   <pkg>TED</pkg>
