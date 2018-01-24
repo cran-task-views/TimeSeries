@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2017-12-10</version>
+<version>2018-01-24</version>
 
 <info>
 <p>
@@ -200,9 +200,8 @@
     Some more limited facilities are available using <code>na.interp()</code> from the <pkg>forecast</pkg> package.
   </li>
   <li>Forecasts can be combined
-    using <pkg>ForecastCombinations</pkg> which supports the most frequently used methods to combine forecasts.
+    using <pkg>ForecastComb</pkg> which supports many forecast combination methods including simple, geometric and regression-based combinations.
     <pkg>forecastHybrid</pkg> provides functions for ensemble forecasts, combining approaches from the <pkg>forecast</pkg> package.
-    <pkg>GeomComb</pkg> provides eigenvector-based (geometric) forecast combination methods, as well as other approaches.
     <pkg>opera</pkg> has facilities for online predictions based on combinations of forecasts provided by the user.
     <pkg>mafs</pkg> fits several forecast models and selects the best one according to an error metric.
   </li>
@@ -669,7 +668,7 @@
   <pkg>fma</pkg>
   <pkg>fNonlinear</pkg>
   <pkg>ForeCA</pkg>
-  <pkg>ForecastCombinations</pkg>
+  <pkg>ForecastComb</pkg>
   <pkg priority="core">forecast</pkg>
   <pkg>forecastHybrid</pkg>
   <pkg>forecTheta</pkg>
@@ -685,7 +684,6 @@
   <pkg>funtimes</pkg>
   <pkg>GAS</pkg>
   <pkg>gdpc</pkg>
-  <pkg>GeomComb</pkg>
   <pkg>ggseas</pkg>
   <pkg>glarma</pkg>
   <pkg>GMDH</pkg>
