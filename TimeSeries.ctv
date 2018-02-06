@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-01-24</version>
+<version>2018-02-06</version>
 
 <info>
 <p>
@@ -233,7 +233,6 @@
     The <pkg>wavelets</pkg> package includes computing wavelet filters, wavelet transforms and multiresolution analyses.
     Wavelet methods for time series analysis based on Percival and Walden (2000) are given in <pkg>wmtsa</pkg>.
     <pkg>WaveletComp</pkg> provides some tools for wavelet-based analysis of univariate and bivariate time series including cross-wavelets, phase-difference and significance tests.
-    <pkg>biwavelet</pkg> can be used to plot and compute the wavelet spectra, cross-wavelet spectra, and wavelet coherence of non-stationary time series. It also includes functions to cluster time series based on the (dis)similarities in their spectrum.
     Tests of white noise using wavelets are provided by <pkg>hwwntest</pkg>.
     Further wavelet methods can be found in the packages <pkg>brainwaver</pkg>, <pkg>rwt</pkg>, <pkg>waveslim</pkg>, <pkg>wavethresh</pkg> and <pkg>mvcwt</pkg>.
   </li>
@@ -614,7 +613,6 @@
   <pkg>bfast</pkg>
   <pkg>bigtime</pkg>
   <pkg>BigVAR</pkg>
-  <pkg>biwavelet</pkg>
   <pkg>BNPTSclust</pkg>
   <pkg>boot</pkg>
   <pkg>BootPR</pkg>
