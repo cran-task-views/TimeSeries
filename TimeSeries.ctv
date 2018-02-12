@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-02-06</version>
+<version>2018-02-12</version>
 
 <info>
 <p>
@@ -187,8 +187,7 @@
   </li>
   <li><i>Change point detection</i>
     is provided in <pkg>strucchange</pkg> (using linear regression models),
-    in <pkg>trend</pkg> (using nonparametric tests),
-    and in <pkg>wbsts</pkg> (using wild binary segmentation).
+    and in <pkg>trend</pkg> (using nonparametric tests).
     The <pkg>changepoint</pkg> package provides many popular changepoint methods,
     and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
@@ -483,7 +482,7 @@
     <i>Forecasting: principles and practice</i> (2nd ed) are in the <pkg>fpp2</pkg> package.
   </li>
   <li>Data from the M-competition and M3-competition
-      are provided in the <pkg>Mcomp</pkg> package. Data from the M4 competition are given in <pkg>M4comp</pkg>, while <pkg>Tcomp</pkg> provides data from the 2010 IJF Tourism Forecasting Competition.
+      are provided in the <pkg>Mcomp</pkg> package. <pkg>Tcomp</pkg> provides data from the 2010 IJF Tourism Forecasting Competition.
   </li>
   <li><pkg>pdfetch</pkg>
     provides facilities for downloading economic and financial time series from public sources.
@@ -704,7 +703,6 @@
   <pkg>LSTS</pkg>
   <pkg>ltsa</pkg>
   <pkg>lubridate</pkg>
-  <pkg>M4comp</pkg>
   <pkg>mafs</pkg>
   <pkg>MAPA</pkg>
   <pkg>MAR1</pkg>
@@ -832,7 +830,6 @@
   <pkg>wavelets</pkg>
   <pkg>waveslim</pkg>
   <pkg>wavethresh</pkg>
-  <pkg>wbsts</pkg>
   <pkg>WeightedPortTest</pkg>
   <pkg>wktmo</pkg>
   <pkg>wmtsa</pkg>
