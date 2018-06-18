@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-06-02</version>
+<version>2018-06-18</version>
 
 <info>
 <p>
@@ -415,7 +415,6 @@
   <li><i>Multivariate state space models</i>
     An implementation is provided by the <pkg>KFAS</pkg> package which provides a fast multivariate Kalman filter, smoother, simulation smoother and forecasting.
     Yet another implementation is given in the <pkg>dlm</pkg> package which also contains tools for converting other multivariate models into state space form.
-    <pkg>dlmodeler</pkg> provides a unified interface for <pkg>dlm</pkg> and <pkg>KFAS</pkg>.
     <pkg>MARSS</pkg> fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm.
     All of these packages assume the observational and state error terms are uncorrelated.
   </li>
@@ -657,7 +656,6 @@
   <pkg>deseasonalize</pkg>
   <pkg>dLagM</pkg>
   <pkg>dlm</pkg>
-  <pkg>dlmodeler</pkg>
   <pkg>dlnm</pkg>
   <pkg>dse</pkg>
   <pkg>dtw</pkg>
