@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2018-06-18</version>
+<version>2018-07-21</version>
 
 <info>
 <p>
@@ -256,8 +256,7 @@
 <ul>
   <li><i>Filters and smoothing</i>:
     <code>filter()</code> in stats provides autoregressive and moving average linear filtering of multiple univariate time series.
-    The <pkg>robfilter</pkg> package provides several robust time series filters,
-    while <pkg>mFilter</pkg> includes miscellaneous time series filters useful for smoothing and extracting trend and cyclical components.
+    The <pkg>robfilter</pkg> package provides several robust time series filters.
     <code>smooth()</code> from the stats package computes Tukey's running median smoothers, 3RS3R, 3RSS, 3R, etc.
     <pkg>sleekts</pkg> computes the 4253H twice smoothing method.
   </li>
@@ -731,7 +730,6 @@
   <pkg>mclcar</pkg>
   <pkg>Mcomp</pkg>
   <pkg>meboot</pkg>
-  <pkg>mFilter</pkg>
   <pkg>mlVAR</pkg>
   <pkg>mondate</pkg>
   <pkg>MSwM</pkg>
