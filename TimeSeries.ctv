@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-03-02</version>
+<version>2019-03-12</version>
 
 <info>
 <p>
@@ -399,9 +399,6 @@
   <li><pkg>orderedLasso</pkg>
     fits a sparse linear model with an order constraint on the coefficients in order to handle lagged regressors where the coefficients decay as the lag increases.
   </li>
-  <li>Dynamic modeling
-    of various kinds is available in <pkg>dynr</pkg> including discrete and continuous time, linear and nonlinear models, and different types of latent variables.
-  </li>
 </ul>
 
 <p><strong>Multivariate Time Series Models</strong></p>
@@ -697,7 +694,6 @@
   <pkg>dygraphs</pkg>
   <pkg>dyn</pkg>
   <pkg>dynlm</pkg>
-  <pkg>dynr</pkg>
   <pkg>earlywarnings</pkg>
   <pkg>Ecdat</pkg>
   <pkg>ecm</pkg>
