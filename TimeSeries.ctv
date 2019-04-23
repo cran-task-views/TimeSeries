@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-04-14</version>
+<version>2019-04-23</version>
 
 <info>
 <p>
@@ -429,7 +429,6 @@
     <pkg>graphicalVAR</pkg> estimates graphical VAR models.
     <pkg>gdpc</pkg> implements generalized dynamic principal components.
     <pkg>pcdpca</pkg> extends dynamic principal components to periodically correlated multivariate time series.
-    <pkg>onlineVAR</pkg> implements online fitting of time-adaptive lasso VARs.
     <pkg>mgm</pkg> estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
   </li>
   <li><i>VARIMA models</i> and <i>state space models</i>
@@ -811,7 +810,6 @@
   <pkg>npst</pkg>
   <pkg>NTS</pkg>
   <pkg>odpc</pkg>
-  <pkg>onlineVAR</pkg>
   <pkg>opera</pkg>
   <pkg>orderedLasso</pkg>
   <pkg>otsad</pkg>
