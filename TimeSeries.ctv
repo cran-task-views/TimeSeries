@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-04-23</version>
+<version>2019-04-27</version>
 
 <info>
 <p>
@@ -336,7 +336,6 @@
   <li><i>Local stationarity</i>:
     <pkg>locits</pkg> provides a test of local stationarity and computes the localized autocovariance.
     Time series costationarity determination is provided by <pkg>costat</pkg>.
-    <pkg>LSTS</pkg> has functions for locally stationary time series analysis.
     Locally stationary wavelet models for nonstationary time series are implemented in <pkg>wavethresh</pkg> (including estimation, plotting, and simulation functionality for time-varying spectra).
   </li>
   <li><i>Cointegration</i>:
@@ -778,7 +777,6 @@
   <pkg>lomb</pkg>
   <pkg>LongMemoryTS</pkg>
   <pkg>LPStimeSeries</pkg>
-  <pkg>LSTS</pkg>
   <pkg>ltsa</pkg>
   <pkg>lubridate</pkg>
   <pkg>mafs</pkg>
