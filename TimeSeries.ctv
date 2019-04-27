@@ -559,9 +559,6 @@
   </li>
   <li><pkg>BETS</pkg> provides access to the most important economic time series in Brazil.
   </li>
-  <li>Data from the <a href="http://datamarket.com/data/">Datamarket</a> online portal
-      can be fetched using the <pkg>rdatamarket</pkg> package.
-  </li>
   <li>Data from Switzerland via <a href="http://dataseries.org">dataseries.org</a>
       can be downloaded and imported using <pkg>dataseries</pkg>.
   </li>
@@ -828,7 +825,6 @@
   <pkg>ptw</pkg>
   <pkg>Quandl</pkg>
   <pkg>quantspec</pkg>
-  <pkg>rdatamarket</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>
   <pkg>RJDemetra</pkg>
