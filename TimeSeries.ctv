@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-07-14</version>
+<version>2019-07-19</version>
 
 <info>
 <p>
@@ -29,8 +29,6 @@
     <pkg>SDD</pkg> provides more general serial dependence diagrams, while <pkg>dCovTS</pkg> computes and plots the distance covariance and correlation functions of time series.
     Seasonal displays are obtained using <code>monthplot()</code> in stats and <code>seasonplot</code> in <pkg>forecast</pkg>.
     <pkg>tstools</pkg> provides plotting tools designed for official statistics.
-    <pkg>Wats</pkg> implements wrap-around time series graphics.
-    Some facilities for ggplot2 graphics are provided in <pkg>forecast</pkg> including <code>autoplot()</code>, <code>ggAcf()</code>, <code>ggPacf()</code>, <code>ggseasonplot()</code> and <code>ggsubseriesplot</code>.
     <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
     <pkg>ggTimeSeries</pkg> provides further visualizations including calendar heat maps, while
     calendar plots are implemented in <pkg>sugrrants</pkg>.
@@ -952,7 +950,6 @@
   <pkg>VAR.etp</pkg>
   <pkg>vars</pkg>
   <pkg>VARsignR</pkg>
-  <pkg>Wats</pkg>
   <pkg>WaveletComp</pkg>
   <pkg>wavelets</pkg>
   <pkg>waveslim</pkg>
