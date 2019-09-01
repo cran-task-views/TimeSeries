@@ -849,6 +849,7 @@
   <pkg>ptw</pkg>
   <pkg>Quandl</pkg>
   <pkg>quantspec</pkg>
+  <pkg>Rbeast</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>
   <pkg>RJDemetra</pkg>
