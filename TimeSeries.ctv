@@ -511,8 +511,7 @@
 
 <p><strong>Continuous time models</strong></p>
 <ul>
-  <li><i>Continuous time autoregressive modelling</i>
-    is provided in <pkg>cts</pkg>, while <pkg>carfima</pkg> allows for continuous-time ARFIMA models.
+  <li><pkg>carfima</pkg> allows for continuous-time ARFIMA models.
   </li>
   <li><pkg>Sim.DiffProc</pkg>
     simulates and models stochastic differential equations.
@@ -719,7 +718,6 @@
   <pkg>cointReg</pkg>
   <pkg>CommonTrend</pkg>
   <pkg>costat</pkg>
-  <pkg>cts</pkg>
   <pkg>dataseries</pkg>
   <pkg>DChaos</pkg>
   <pkg>dCovTS</pkg>
