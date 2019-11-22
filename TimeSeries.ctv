@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-10-29</version>
+<version>2019-11-22</version>
 
 <info>
 <p>
@@ -20,7 +20,6 @@
     <pkg>tsibble</pkg> provides <code>slide()</code> for rolling statistics, <code>tile()</code> for non-overlapping sliding windows, and <code>stretch()</code> for expanding windows.
     <pkg>tbrf</pkg> provides rolling functions based on date and time windows instead of n-lagged observations.
     <pkg>roll</pkg>  provides parallel functions for computing rolling statistics.
-    Fast rolling and expanding window regressions are provided by <pkg>rollRegres</pkg>.
     <pkg>runstats</pkg> provides fast computational methods for some running sample statistics.
   </li>
   <li><i>Graphics</i>:
@@ -872,7 +871,6 @@
   <pkg>robfilter</pkg>
   <pkg>robustarima</pkg>
   <pkg>roll</pkg>
-  <pkg>rollRegres</pkg>
   <pkg>RSEIS</pkg>
   <pkg>Rssa</pkg>
   <pkg>RTransferEntropy</pkg>
