@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-11-22</version>
+<version>2019-12-02</version>
 
 <info>
 <p>
@@ -485,9 +485,6 @@
     provides distance measures for time series data.
   </li>
   <li><pkg>TSrepr</pkg> includes methods for representing time series using dimension reduction and feature extraction.</li>
-  <li><pkg>jmotif</pkg>
-    implements tools based on time series symbolic discretization for finding motifs in time series and facilitates interpretable time series classification.
-  </li>
   <li><pkg>rucrdtw</pkg>
     provides R bindings for functions from the UCR Suite to enable ultrafast subsequence search for a best match under Dynamic Time Warping and Euclidean Distance.
     <pkg>IncDTW</pkg> provides incremental calculation of dynamic time warping for streaming time series.
@@ -795,7 +792,6 @@
   <pkg>influxdbr</pkg>
   <pkg>InspectChangepoint</pkg>
   <pkg>itsmr</pkg>
-  <pkg>jmotif</pkg>
   <pkg>KFAS</pkg>
   <pkg>KFKSDS</pkg>
   <pkg>kza</pkg>
