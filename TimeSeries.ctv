@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2019-12-02</version>
+<version>2019-12-22</version>
 
 <info>
 <p>
@@ -429,7 +429,6 @@
     <pkg>bigtime</pkg> estimates large sparse VAR, VARX and VARMA models,
     while <pkg>BigVAR</pkg> estimates VAR and VARX models with structured lasso penalties and  <pkg>svars</pkg> implements data-driven structural VARs.
     Shrinkage estimation methods for VARs are implemented in <pkg>VARshrink</pkg>.
-    Automated VAR models and networks are available in <pkg>autovarCore</pkg>.
     More elaborate models are provided in package <pkg>vars</pkg>, <pkg>tsDyn</pkg>, <code>estVARXls()</code> in <pkg>dse</pkg>.
     Another implementation with bootstrapped prediction intervals is given in <pkg>VAR.etp</pkg>.
     <pkg>bvartools</pkg> assists in the set-up of Bayesian VAR models, while
@@ -686,7 +685,6 @@
   <pkg>arfima</pkg>
   <pkg>ASSA</pkg>
   <pkg>astsa</pkg>
-  <pkg>autovarCore</pkg>
   <pkg>BAYSTAR</pkg>
   <pkg>bentcableAR</pkg>
   <pkg>BETS</pkg>
