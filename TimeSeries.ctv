@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-01-02</version>
+<version>2020-01-12</version>
 
 <info>
 <p>
@@ -507,8 +507,6 @@
 
 <p><strong>Continuous time models</strong></p>
 <ul>
-  <li><pkg>carfima</pkg> allows for continuous-time ARFIMA models.
-  </li>
   <li><pkg>Sim.DiffProc</pkg>
     simulates and models stochastic differential equations.
   </li>
@@ -703,7 +701,6 @@
   <pkg>BVAR</pkg>
   <pkg>bvartools</pkg>
   <pkg>CADFtest</pkg>
-  <pkg>carfima</pkg>
   <pkg>carx</pkg>
   <pkg>cents</pkg>
   <pkg>changepoint.mv</pkg>
