@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-01-14</version>
+<version>2020-01-17</version>
 
 <info>
 <p>
@@ -233,7 +233,6 @@
   <li>Forecasts can be combined in the <pkg>fable</pkg> package using simple linear expressions.
     <pkg>ForecastComb</pkg> supports many forecast combination methods including simple, geometric and regression-based combinations.
     <pkg>forecastHybrid</pkg> provides functions for ensemble forecasts, combining approaches from the <pkg>forecast</pkg> package.
-    <pkg>opera</pkg> has facilities for online predictions based on combinations of forecasts provided by the user.
     <pkg>mafs</pkg> fits several forecast models and selects the best one according to an error metric.
   </li>
   <li>Forecast evaluation
@@ -833,7 +832,6 @@
   <pkg>NTS</pkg>
   <pkg>odpc</pkg>
   <pkg>onlineVAR</pkg>
-  <pkg>opera</pkg>
   <pkg>orderedLasso</pkg>
   <pkg>otsad</pkg>
   <pkg>paleoTS</pkg>
