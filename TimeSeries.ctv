@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-01-17</version>
+<version>2020-01-22</version>
 
 <info>
 <p>
@@ -656,9 +656,6 @@
   <li><pkg>surveillance</pkg>:
     Temporal and spatio-temporal modeling and monitoring of epidemic phenomena.
   </li>
-  <li><pkg>TED</pkg>:
-    Turbulence time series Event Detection and classification.
-  </li>
   <li><pkg>Tides</pkg>:
     Functions to calculate characteristics of quasi periodic time series, e.g. observed estuarine water levels.
   </li>
@@ -903,7 +900,6 @@
   <pkg>sym.arma</pkg>
   <pkg>tbrf</pkg>
   <pkg>Tcomp</pkg>
-  <pkg>TED</pkg>
   <pkg>tempdisagg</pkg>
   <pkg>tframe</pkg>
   <pkg>thief</pkg>
