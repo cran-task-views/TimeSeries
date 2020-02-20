@@ -197,7 +197,7 @@
     are handled by <pkg>stochvol</pkg> in a Bayesian framework.
   </li>
   <li><i>Count time series</i> models
-    are handled in the <pkg>tscount</pkg> and <pkg>acp</pkg> packages.
+    are handled in the <pkg>acp</pkg> package.
     <pkg>ZIM</pkg> provides for Zero-Inflated Models for count time series.
     <pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series.
   </li>
@@ -922,7 +922,6 @@
   <pkg>TSA</pkg>
   <pkg>tsbox</pkg>
   <pkg>TSclust</pkg>
-  <pkg>tscount</pkg>
   <pkg>TSdbi</pkg>
   <pkg>tsdecomp</pkg>
   <pkg>tsdisagg2</pkg>
