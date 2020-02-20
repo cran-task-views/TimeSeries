@@ -650,9 +650,6 @@
   <li><pkg>rts</pkg>:
     Raster time series analysis (e.g., time series of satellite images).
   </li>
-  <li><pkg>sae2</pkg>:
-    Time series models for small area estimation.
-  </li>
   <li><pkg>spTimer</pkg>:
     Spatio-temporal Bayesian modelling.
   </li>
@@ -876,7 +873,6 @@
   <pkg>runner</pkg>
   <pkg>runstats</pkg>
   <pkg>rwt</pkg>
-  <pkg>sae2</pkg>
   <pkg>sazedR</pkg>
   <pkg>scoringRules</pkg>
   <pkg>SDD</pkg>
