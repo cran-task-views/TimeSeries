@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-03-18</version>
+<version>2020-04-14</version>
 
 <info>
 <p>
@@ -392,7 +392,6 @@
   </li>
   <li>Fractal time series modeling and analysis
     is provided by <pkg>fractal</pkg>.
-    <pkg>fractalrock</pkg> generates fractal time series with non-normal returns distributions.
   </li>
 </ul>
 
@@ -762,7 +761,6 @@
   <pkg>fpp3</pkg>
   <pkg>fracdiff</pkg>
   <pkg>fractal</pkg>
-  <pkg>fractalrock</pkg>
   <pkg>freqdom.fda</pkg>
   <pkg>freqdom</pkg>
   <pkg>fts</pkg>
