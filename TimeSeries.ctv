@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-04-24</version>
+<version>2020-04-29</version>
 
 <info>
 <p>
@@ -141,6 +141,9 @@
     <pkg>smooth</pkg> implements some generalizations of exponential smoothing.
     The <pkg>MAPA</pkg> package combines exponential smoothing models at different levels of temporal aggregation to improve forecast accuracy.
     Some Bayesian extensions of exponential smoothing are contained in <pkg>Rlgt</pkg>.
+  </li>
+  <li><pkg>prophet</pkg>
+    forecasts time series based on an additive model where nonlinear trends are fit with yearly and weekly seasonality, plus holidays. It works best with daily data.
   </li>
   <li>The theta method
     is implemented in the <code>THETA()</code> function from <pkg>fable</pkg> and <code>thetaf()</code> function from <pkg>forecast</pkg>.
@@ -840,6 +843,7 @@
   <pkg>perARMA</pkg>
   <pkg>pomp</pkg>
   <pkg>portes</pkg>
+  <pkg>prophet</pkg>
   <pkg>psd</pkg>
   <pkg>PSF</pkg>
   <pkg>ptw</pkg>
