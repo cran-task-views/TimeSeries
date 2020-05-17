@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-05-05</version>
+<version>2020-05-17</version>
 
 <info>
 <p>
@@ -207,7 +207,7 @@
   </li>
   <li><i>Portmanteau tests</i>
     are provided via <code>Box.test()</code> in the stats package.
-    Additional tests are given by <pkg>portes</pkg> and <pkg>WeightedPortTest</pkg>.
+    Additional tests are given by <pkg>WeightedPortTest</pkg>.
   </li>
   <li>Outlier detection
     following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.
@@ -838,7 +838,6 @@
   <pkg>pear</pkg>
   <pkg>perARMA</pkg>
   <pkg>pomp</pkg>
-  <pkg>portes</pkg>
   <pkg>prophet</pkg>
   <pkg>psd</pkg>
   <pkg>PSF</pkg>
