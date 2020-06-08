@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-05-17</version>
+<version>2020-06-08</version>
 
 <info>
 <p>
@@ -109,6 +109,9 @@
     <pkg>tsbox</pkg> is another toolkit for converting between various time series data classes.
   </li>
   <li>Some manipulation tools for time series are available in <pkg>data.table</pkg> including <code>shift()</code> for lead/lag operations.
+  Further basic time series functionalities are offered by <pkg>DTSg</pkg> which is based on <pkg>data.table</pkg>.
+  </li>
+  <li><pkg>collapse</pkg> provides fast computation of several time series functions such as lead/lag operations and ACF/PACF/CCF estimation.
   </li>
   <li>Various packages implement irregular time series
     based on <code>"POSIXct"</code> time stamps, intended especially for financial applications. These include
@@ -153,13 +156,14 @@
     <code>ar()</code> in stats (with model selection) and <pkg>FitAR</pkg> for subset AR models.
   </li>
   <li><i>ARIMA models</i>:
-    <code>arima()</code> in stats is the basic function for ARIMA, SARIMA, ARIMAX, and subset ARIMA models.
+    <code>arima()</code> in stats is the basic function for ARIMA, SARIMA, RegARIMA, and subset ARIMA models.
     It is enhanced in the <pkg>fable</pkg> package via the <code>ARIMA()</code> function which allows for automatic modelling. Similar functionality is provided in  the <pkg>forecast</pkg> package via the <code>auto.arima()</code> function.
     <code>arma()</code> in the <pkg>tseries</pkg> package provides different algorithms for ARMA and subset ARMA models.
     Other estimation methods including the innovations algorithm are provided by <pkg>itsmr</pkg>.
     <pkg>FitARMA</pkg> implements a fast MLE algorithm for ARMA models.
     Package <pkg>gsarima</pkg> contains functionality for Generalized SARIMA time series simulation.
     Robust ARIMA modeling is provided in the <pkg>robustarima</pkg> package.
+    <pkg>BayesARIMAX</pkg> implements Bayesian estimation of ARIMAX models.
     The <pkg>mar1s</pkg> package handles multiplicative AR(1) with seasonal processes.
     <pkg>TSTutorial</pkg> provides an interactive tutorial for Box-Jenkins modelling.
     Improved prediction intervals for ARIMA and structural time series models are provided by <pkg>tsPI</pkg>.
@@ -179,10 +183,11 @@
   <li><i>Structural models</i>
     are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>.
     <pkg>KFKSDS</pkg> provides a naive implementation of the Kalman filter and smoothers for univariate state space models.
+    <pkg>statespacer</pkg> implements univariate state space models including structural and SARIMA models.
     Bayesian structural time series models are implemented in <pkg>bsts</pkg>
   </li>
   <li>Non-Gaussian time series
-    can be handled with GLARMA state space models via <pkg>glarma</pkg>.
+    can be handled with GLARMA state space models via <pkg>glarma</pkg>, and using Generalized Autoregressive Score models in the <pkg>GAS</pkg> package.
     Conditional Auto-Regression models using Monte Carlo Likelihood methods are implemented in <pkg>mclcar</pkg>.
     Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in <pkg>bssm</pkg>.
     Non-Gaussian state space models with exact marginal likelihood are given by <pkg>NGSSEML</pkg>.
@@ -207,7 +212,7 @@
   </li>
   <li><i>Portmanteau tests</i>
     are provided via <code>Box.test()</code> in the stats package.
-    Additional tests are given by <pkg>WeightedPortTest</pkg>.
+    Additional tests are given by <pkg>WeightedPortTest</pkg> and <pkg>testcorr</pkg>.
   </li>
   <li>Outlier detection
     following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.
@@ -220,8 +225,9 @@
     and in <pkg>trend</pkg> (using nonparametric tests).
     The <pkg>changepoint</pkg> package provides many popular changepoint methods,
     and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
-    <pkg>changepoint.np</pkg> implements the nonparametric PELT algorithm, while
-    <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series.
+    <pkg>changepoint.np</pkg> implements the nonparametric PELT algorithm,
+    <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series, while
+    <pkg>changepoint.geo</pkg> implements the high-dimensional changepoint detection method GeomCP.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
     <pkg>robcp</pkg> provides robust change-point detection using Huberized cusum tests, and <pkg>Rbeast</pkg> provides Bayesian change-point detection and time series decomposition.
   </li>
@@ -238,6 +244,7 @@
   <li>Forecasts can be combined in the <pkg>fable</pkg> package using simple linear expressions.
     <pkg>ForecastComb</pkg> supports many forecast combination methods including simple, geometric and regression-based combinations.
     <pkg>forecastHybrid</pkg> provides functions for ensemble forecasts, combining approaches from the <pkg>forecast</pkg> package.
+    <pkg>opera</pkg> has facilities for online predictions based on combinations of forecasts provided by the user.
     <pkg>mafs</pkg> fits several forecast models and selects the best one according to an error metric.
   </li>
   <li>Forecast evaluation
@@ -259,6 +266,7 @@
   <li><i>Spectral density estimation</i>
     is provided by <code>spectrum()</code> in the stats package, including the periodogram, smoothed periodogram and AR estimates.
     Bayesian spectral inference is provided by <pkg>bspec</pkg> and <pkg>regspec</pkg>.
+    <pkg>quantspec</pkg> includes methods to compute and plot Laplace periodograms for univariate time series.
     The Lomb-Scargle periodogram for unevenly sampled time series is computed by <pkg>lomb</pkg>.
     <pkg>spectral</pkg> uses Fourier and Hilbert transforms for spectral filtering.
     <pkg>psd</pkg> produces adaptive, sine-multitaper spectral density estimates.
@@ -480,7 +488,7 @@
 <p><strong>Analysis of large groups of time series</strong></p>
 <ul>
   <li><i>Time series features</i>
-    are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own.
+    are computed in <pkg>feasts</pkg> for time series in <code>tsibble</code> format. They are computed using <pkg>tsfeatures</pkg> for a list or matrix of time series in <code>ts</code> format. In both packages, many built-in feature functions are included, and users can add their own. <pkg>fsMTS</pkg> implements feature selection routines for multivariate time series.
   </li>
   <li><i>Time series clustering</i>
     is implemented in <pkg>TSclust</pkg>, <pkg>dtwclust</pkg>, <pkg>BNPTSclust</pkg> and <pkg>pdc</pkg>.
@@ -514,6 +522,8 @@
 
 <p><strong>Continuous time models</strong></p>
 <ul>
+  <li><pkg>carfima</pkg> allows for continuous-time ARFIMA models.
+  </li>
   <li><pkg>Sim.DiffProc</pkg>
     simulates and models stochastic differential equations.
   </li>
@@ -601,6 +611,9 @@
   <li><pkg>dtw</pkg>:
     Dynamic time warping algorithms for computing and plotting pairwise alignments between time series.
   </li>
+  <li><pkg>EBMAforecast</pkg>:
+    Ensemble Bayesian model averaging forecasts using Gibbs sampling or EM algorithms.
+  </li>
   <li><pkg>ensembleBMA</pkg>:
     Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.
   </li>
@@ -680,6 +693,7 @@
   <pkg>arfima</pkg>
   <pkg>ASSA</pkg>
   <pkg>astsa</pkg>
+  <pkg>BayesARIMAX</pkg>
   <pkg>BAYSTAR</pkg>
   <pkg>bentcableAR</pkg>
   <pkg>BETS</pkg>
@@ -698,13 +712,16 @@
   <pkg>BVAR</pkg>
   <pkg>bvartools</pkg>
   <pkg>CADFtest</pkg>
+  <pkg>carfima</pkg>
   <pkg>carx</pkg>
   <pkg>cents</pkg>
+  <pkg>changepoint.geo</pkg>
   <pkg>changepoint.mv</pkg>
   <pkg>changepoint.np</pkg>
   <pkg>changepoint</pkg>
   <pkg>chron</pkg>
   <pkg>cointReg</pkg>
+  <pkg>collapse</pkg>
   <pkg>CommonTrend</pkg>
   <pkg>costat</pkg>
   <pkg>data.table</pkg>
@@ -719,12 +736,14 @@
   <pkg>dlnm</pkg>
   <pkg>dsa</pkg>
   <pkg>dse</pkg>
+  <pkg>DTSg</pkg>
   <pkg>dtw</pkg>
   <pkg>dtwclust</pkg>
   <pkg>dygraphs</pkg>
   <pkg>dyn</pkg>
   <pkg>dynlm</pkg>
   <pkg>earlywarnings</pkg>
+  <pkg>EBMAforecast</pkg>
   <pkg>Ecdat</pkg>
   <pkg>ecm</pkg>
   <pkg>ecp</pkg>
@@ -759,9 +778,11 @@
   <pkg>fractal</pkg>
   <pkg>freqdom.fda</pkg>
   <pkg>freqdom</pkg>
+  <pkg>fsMTS</pkg>
   <pkg>fts</pkg>
   <pkg>ftsa</pkg>
   <pkg>funtimes</pkg>
+  <pkg>GAS</pkg>
   <pkg>gdpc</pkg>
   <pkg>ggdemetra</pkg>
   <pkg>ggseas</pkg>
@@ -826,6 +847,7 @@
   <pkg>NTS</pkg>
   <pkg>odpc</pkg>
   <pkg>onlineVAR</pkg>
+  <pkg>opera</pkg>
   <pkg>otsad</pkg>
   <pkg>paleoTS</pkg>
   <pkg>partsm</pkg>
@@ -843,6 +865,7 @@
   <pkg>PSF</pkg>
   <pkg>ptw</pkg>
   <pkg>Quandl</pkg>
+  <pkg>quantspec</pkg>
   <pkg>Rbeast</pkg>
   <pkg>regspec</pkg>
   <pkg>RGENERATE</pkg>
@@ -883,6 +906,7 @@
   <pkg>spectral.methods</pkg>
   <pkg>spectral</pkg>
   <pkg>spTimer</pkg>
+  <pkg>statespacer</pkg>
   <pkg>stlplus</pkg>
   <pkg>stochvol</pkg>
   <pkg>stR</pkg>
@@ -897,6 +921,7 @@
   <pkg>tbrf</pkg>
   <pkg>Tcomp</pkg>
   <pkg>tempdisagg</pkg>
+  <pkg>testcorr</pkg>
   <pkg>tframe</pkg>
   <pkg>thief</pkg>
   <pkg>Tides</pkg>
