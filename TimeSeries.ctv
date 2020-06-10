@@ -398,9 +398,6 @@
   <li>Additional functions for nonlinear time series
     are available in <pkg>nlts</pkg> and <pkg>nonlinearTseries</pkg>.
   </li>
-  <li>Fractal time series modeling and analysis
-    is provided by <pkg>fractal</pkg>.
-  </li>
 </ul>
 
 <p><strong>Entropy</strong></p>
@@ -775,7 +772,6 @@
   <pkg>fpp2</pkg>
   <pkg>fpp3</pkg>
   <pkg>fracdiff</pkg>
-  <pkg>fractal</pkg>
   <pkg>freqdom.fda</pkg>
   <pkg>freqdom</pkg>
   <pkg>fsMTS</pkg>
