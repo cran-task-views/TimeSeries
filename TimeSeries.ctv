@@ -487,9 +487,6 @@
   <li><i>Time series clustering</i>
     is implemented in <pkg>dtwclust</pkg>, <pkg>BNPTSclust</pkg> and <pkg>pdc</pkg>.
   </li>
-  <li><pkg>TSdist</pkg>
-    provides distance measures for time series data.
-  </li>
   <li><pkg>TSrepr</pkg> includes methods for representing time series using dimension reduction and feature extraction.</li>
   <li><pkg>rucrdtw</pkg>
     provides R bindings for functions from the UCR Suite to enable ultrafast subsequence search for a best match under Dynamic Time Warping and Euclidean Distance.
@@ -934,7 +931,6 @@
   <pkg>TSdbi</pkg>
   <pkg>tsdecomp</pkg>
   <pkg>tsdisagg2</pkg>
-  <pkg>TSdist</pkg>
   <pkg>tsDyn</pkg>
   <pkg priority="core">tseries</pkg>
   <pkg>TSEntropies</pkg>
