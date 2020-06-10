@@ -402,7 +402,6 @@
 
 <p><strong>Entropy</strong></p>
 <ul>
-  <li>Shannon entropy based on the spectral density is computed using <pkg>ForeCA</pkg>. </li>
   <li><pkg>RTransferEntropy</pkg> measures information flow between time series with Shannon and Renyi transfer entropy.
   </li>
   <li>An entropy measure based on the Bhattacharya-Hellinger-Matusita distance is implemented in <pkg>tseriesEntropy</pkg>.
@@ -461,7 +460,6 @@
   </li>
   <li><i>Time series component analysis</i>:
     Time series factor analysis is provided in <pkg>tsfa</pkg>.
-    <pkg>ForeCA</pkg> implements forecastable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.
     <pkg>PCA4TS</pkg> finds a linear transformation of a multivariate time series giving lower-dimensional subseries that are uncorrelated with each other.
     One-sided dynamic principal components are computed in <pkg>odpc</pkg>.
     Frequency-domain-based dynamic PCA is implemented in <pkg>freqdom</pkg>.
@@ -763,7 +761,6 @@
   <pkg>FKF</pkg>
   <pkg>fma</pkg>
   <pkg>fNonlinear</pkg>
-  <pkg>ForeCA</pkg>
   <pkg priority="core">forecast</pkg>
   <pkg>ForecastComb</pkg>
   <pkg>forecastHybrid</pkg>
