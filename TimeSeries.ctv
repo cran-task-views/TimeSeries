@@ -275,7 +275,6 @@
   </li>
   <li><i>Wavelet methods</i>:
     The <pkg>wavelets</pkg> package includes computing wavelet filters, wavelet transforms and multiresolution analyses.
-    Wavelet methods for time series analysis based on Percival and Walden (2000) are given in <pkg>wmtsa</pkg>.
     <pkg>WaveletComp</pkg> provides some tools for wavelet-based analysis of univariate and bivariate time series including cross-wavelets, phase-difference and significance tests.
     <pkg>biwavelet</pkg> is a port of the WTC Matlab package for univariate and bivariate wavelet analyses.
     Multivariate, locally stationary wavelet analysis tools are provided by <pkg>mvLSW</pkg>.
@@ -970,7 +969,6 @@
   <pkg>wavScalogram</pkg>
   <pkg>WeightedPortTest</pkg>
   <pkg>wktmo</pkg>
-  <pkg>wmtsa</pkg>
   <pkg>wwntests</pkg>
   <pkg>x12</pkg>
   <pkg>x12GUI</pkg>
