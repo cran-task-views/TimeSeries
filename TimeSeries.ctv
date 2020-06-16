@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-06-10</version>
+<version>2020-06-16</version>
 
 <info>
 <p>
@@ -217,7 +217,6 @@
   <li>Outlier detection
     following the Chen-Liu approach is provided by <pkg>tsoutliers</pkg>.
     The <code>tsoutliers</code> and <code>tsclean</code> functions in the <pkg>forecast</pkg> package provide some simple heuristic methods for identifying and correcting outliers.
-    <pkg>anomalize</pkg> provides some additional outlier detection methods in a tidy data framework.
     <pkg>otsad</pkg> implements a set of online anomaly detectors for time series.
   </li>
   <li><i>Change point detection</i>
@@ -678,7 +677,6 @@
 <packagelist>
   <pkg>acp</pkg>
   <pkg>AER</pkg>
-  <pkg>anomalize</pkg>
   <pkg>ARCensReg</pkg>
   <pkg>ArDec</pkg>
   <pkg>arfima</pkg>
