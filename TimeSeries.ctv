@@ -365,7 +365,6 @@
     The Engle-Granger two-step method with the Phillips-Ouliaris cointegration test is implemented in <pkg>tseries</pkg>
     and <pkg>urca</pkg>. The latter additionally contains functionality for the Johansen trace and lambda-max tests.
     <pkg>tsDyn</pkg> provides Johansen's test and AIC/BIC simultaneous rank-lag selection.
-    <pkg>CommonTrend</pkg> provides tools to extract and plot common trends from a cointegration system.
     Parameter estimation and inference in a cointegrating regression are implemented in <pkg>cointReg</pkg>.
     <pkg>nardl</pkg> estimates nonlinear cointegrating autoregressive distributed lag models.
   </li>
@@ -711,7 +710,6 @@
   <pkg>chron</pkg>
   <pkg>cointReg</pkg>
   <pkg>collapse</pkg>
-  <pkg>CommonTrend</pkg>
   <pkg>costat</pkg>
   <pkg>data.table</pkg>
   <pkg>dataseries</pkg>
