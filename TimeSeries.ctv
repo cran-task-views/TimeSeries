@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-06-16</version>
+<version>2020-06-22</version>
 
 <info>
 <p>
@@ -35,7 +35,6 @@
     <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
     <pkg>ggTimeSeries</pkg> provides further visualizations including calendar heat maps, while
     calendar plots are implemented in <pkg>sugrrants</pkg>.
-    <pkg>gravitas</pkg> allows for visualizing probability distributions conditional on bivariate temporal granularities.
     <pkg>dygraphs</pkg> provides an interface to the Dygraphs interactive time series charting library.
     <pkg>TSstudio</pkg> provides some interactive visualization tools for time series.
     <pkg>ZRA</pkg> plots forecast objects from the <pkg>forecast</pkg> package using dygraphs.
@@ -777,7 +776,6 @@
   <pkg>gmvarkit</pkg>
   <pkg>GNAR</pkg>
   <pkg>graphicalVAR</pkg>
-  <pkg>gravitas</pkg>
   <pkg>gsarima</pkg>
   <pkg>gtop</pkg>
   <pkg>HarmonicRegression</pkg>
