@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-06-22</version>
+<version>2020-07-06</version>
 
 <info>
 <p>
@@ -303,7 +303,7 @@
     <pkg>rmaf</pkg> uses a refined moving average filter for decomposition.
   </li>
   <li><i>Singular Spectrum Analysis</i>
-    is implemented in <pkg>Rssa</pkg>, <pkg>ASSA</pkg> and <pkg>spectral.methods</pkg>.
+    is implemented in <pkg>Rssa</pkg> and <pkg>ASSA</pkg>.
   </li>
   <li><i>Empirical Mode Decomposition</i> (EMD)
     and Hilbert spectral analysis is provided by <pkg>EMD</pkg>.
@@ -886,7 +886,6 @@
   <pkg>smooth</pkg>
   <pkg>smoots</pkg>
   <pkg>sparsevar</pkg>
-  <pkg>spectral.methods</pkg>
   <pkg>spectral</pkg>
   <pkg>spTimer</pkg>
   <pkg>statespacer</pkg>
