@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-07-26</version>
+<version>2020-08-02</version>
 
 <info>
 <p>
@@ -226,7 +226,6 @@
     The <pkg>changepoint</pkg> package provides many popular changepoint methods,
     and <pkg>ecp</pkg> does nonparametric changepoint detection for univariate and multivariate series.
     <pkg>changepoint.np</pkg> implements the nonparametric PELT algorithm,
-    <pkg>changepoint.mv</pkg> detects changepoints in multivariate time series, while
     <pkg>changepoint.geo</pkg> implements the high-dimensional changepoint detection method GeomCP.
     <pkg>InspectChangepoint</pkg> uses sparse projection to estimate changepoints in high-dimensional time series.
     <pkg>robcp</pkg> provides robust change-point detection using Huberized cusum tests, and <pkg>Rbeast</pkg> provides Bayesian change-point detection and time series decomposition.
@@ -713,7 +712,6 @@
   <pkg>carx</pkg>
   <pkg>cents</pkg>
   <pkg>changepoint.geo</pkg>
-  <pkg>changepoint.mv</pkg>
   <pkg>changepoint.np</pkg>
   <pkg>changepoint</pkg>
   <pkg>chron</pkg>
