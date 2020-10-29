@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-10-24</version>
+<version>2020-10-29</version>
 
 <info>
 <p>
@@ -169,7 +169,7 @@
     Improved prediction intervals for ARIMA and structural time series models are provided by <pkg>tsPI</pkg>.
   </li>
   <li><i>Periodic ARMA models</i>:
-    <pkg>pear</pkg> and <pkg>partsm</pkg> for periodic autoregressive time series models, and <pkg>perARMA</pkg> and <pkg>pcts</pkg> for periodic ARMA modelling and other procedures for periodic time series analysis.
+    <pkg>partsm</pkg> for periodic autoregressive time series models, and <pkg>perARMA</pkg> and <pkg>pcts</pkg> for periodic ARMA modelling and other procedures for periodic time series analysis.
   </li>
   <li><i>Long memory models</i>:
     Some facilities for fractional differenced ARFIMA models are provided in the <pkg>fracdiff</pkg> package.
@@ -873,7 +873,6 @@
   <pkg>pcts</pkg>
   <pkg>pdc</pkg>
   <pkg>pdfetch</pkg>
-  <pkg>pear</pkg>
   <pkg>perARMA</pkg>
   <pkg>pomp</pkg>
   <pkg>ProbReco</pkg>
