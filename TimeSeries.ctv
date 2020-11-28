@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2020-11-05</version>
+<version>2020-11-27</version>
 
 <info>
 <p>
@@ -210,7 +210,7 @@
     <pkg>tsintermittent</pkg> implements various models for analysing and forecasting intermittent demand time series.
   </li>
   <li><i>Censored time series</i>
-   can be modelled using <pkg>cents</pkg> and <pkg>carx</pkg>.
+   can be modelled using <pkg>carx</pkg>.
    <pkg>ARCensReg</pkg> fits univariate censored regression models with autoregressive errors.
   </li>
   <li><i>Portmanteau tests</i>
@@ -722,7 +722,6 @@
   <pkg>CADFtest</pkg>
   <pkg>carfima</pkg>
   <pkg>carx</pkg>
-  <pkg>cents</pkg>
   <pkg>changepoint.geo</pkg>
   <pkg>changepoint.mv</pkg>
   <pkg>changepoint.np</pkg>
