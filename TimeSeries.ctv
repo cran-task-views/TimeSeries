@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-01-29</version>
+<version>2021-02-16</version>
 
 <info>
 <p>
@@ -184,7 +184,7 @@
     are provided by the <code>arfima</code> function in the <pkg>arfima</pkg> and the <pkg>tfarima</pkg> packages.
   </li>
   <li><i>Structural (or unobserved component) models</i>
-    are implemented in <code>StructTS()</code> in stats, and in <pkg>stsm</pkg> and <pkg>stsm.class</pkg>, while
+    are implemented in <code>StructTS()</code> in stats and in <pkg>stsm</pkg>, while
     automatic modelling and forecasting are provided by <pkg>UComp</pkg> and <pkg>autostsm</pkg>.
     <pkg>KFKSDS</pkg> provides a naive implementation of the Kalman filter and smoothers for univariate state space models.
     <pkg>statespacer</pkg> implements univariate state space models including structural and SARIMA models.
@@ -958,7 +958,6 @@
   <pkg>stochvol</pkg>
   <pkg>stR</pkg>
   <pkg>strucchange</pkg>
-  <pkg>stsm.class</pkg>
   <pkg>stsm</pkg>
   <pkg>sugrrants</pkg>
   <pkg>surveillance</pkg>
