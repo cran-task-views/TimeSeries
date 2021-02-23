@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-02-16</version>
+<version>2021-02-23</version>
 
 <info>
 <p>
@@ -32,7 +32,6 @@
     <pkg>feasts</pkg> provides various time series graphics for tsibble objects including time plots, season plots, subseries plots, ACF and PACF plots, and some combination displays.
     Interactive graphics for tsibbles using htmlwidgets are provided by <pkg>tsibbletalk</pkg>.
     <pkg>SDD</pkg> provides more general serial dependence diagrams, while <pkg>dCovTS</pkg> computes and plots the distance covariance and correlation functions of time series.
-    <pkg>tstools</pkg> provides plotting tools designed for official statistics.
     <pkg>ggseas</pkg> provides additional ggplot2 graphics for seasonally adjusted series and rolling statistics.
     <pkg>ggTimeSeries</pkg> provides further visualizations including calendar heat maps, while
     calendar plots are implemented in <pkg>sugrrants</pkg>.
@@ -1010,7 +1009,6 @@
   <pkg>tsPI</pkg>
   <pkg>TSrepr</pkg>
   <pkg>TSstudio</pkg>
-  <pkg>tstools</pkg>
   <pkg>TSTutorial</pkg>
   <pkg>tsutils</pkg>
   <pkg>tswge</pkg>
