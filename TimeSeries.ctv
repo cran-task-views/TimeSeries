@@ -3,7 +3,7 @@
 <name>TimeSeries</name>
 <topic>Time Series Analysis</topic>
 <maintainer email="Rob.Hyndman@monash.edu">Rob J Hyndman</maintainer>
-<version>2021-02-23</version>
+<version>2021-03-01</version>
 
 <info>
 <p>
@@ -474,7 +474,6 @@
   <li><i>Vector exponential smoothing</i> is provided by <pkg>smooth</pkg>.
   </li>
   <li><i>Time series component analysis</i>:
-    Time series factor analysis is provided in <pkg>tsfa</pkg>.
     <pkg>ForeCA</pkg> implements forecastable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.
     <pkg>PCA4TS</pkg> finds a linear transformation of a multivariate time series giving lower-dimensional subseries that are uncorrelated with each other.
     One-sided dynamic principal components are computed in <pkg>odpc</pkg>.
@@ -996,7 +995,6 @@
   <pkg>TSEntropies</pkg>
   <pkg>tseriesChaos</pkg>
   <pkg>tseriesEntropy</pkg>
-  <pkg>tsfa</pkg>
   <pkg>tsfeatures</pkg>
   <pkg>tsfknn</pkg>
   <pkg priority="core">tsibble</pkg>
