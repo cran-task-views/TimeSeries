@@ -466,7 +466,6 @@
   </li>
   <li><i>VARIMA models</i> and <i>state space models</i>
     are provided in the <pkg>dse</pkg> package.
-    <pkg>EvalEst</pkg> facilitates Monte Carlo experiments to evaluate the associated estimation methods.
   </li>
   <li><i>Vector error correction models</i>
     are available via the <pkg>urca</pkg>, <pkg>ecm</pkg>, <pkg>vars</pkg>, <pkg>tsDyn</pkg> packages, including versions with structural constraints and thresholding.
@@ -779,7 +778,6 @@
   <pkg>ecp</pkg>
   <pkg>EMD</pkg>
   <pkg>ensembleBMA</pkg>
-  <pkg>EvalEst</pkg>
   <pkg>events</pkg>
   <pkg>expsmooth</pkg>
   <pkg priority="core">fable</pkg>
