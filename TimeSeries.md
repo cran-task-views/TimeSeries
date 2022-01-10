@@ -7,13 +7,13 @@ version: 2021-12-29
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
-
 Base R ships with a lot of functionality useful for time series, in
 particular in the stats package. This is complemented by many packages
-on CRAN, which are briefly summarized below. There is also a
-considerable overlap between the tools for time series and those in the
-`r view("Econometrics")` and `r view("Finance")`
-task views. The packages in this view can be roughly structured into the
+on CRAN, which are briefly summarized below. There is overlap between
+the tools for time series and those designed for specific domains including
+`r view("Econometrics")`, `r view("Finance")` and `r view("Environmentrics")`.
+
+The packages in this view can be roughly structured into the
 following topics. If you think that some package is missing from the
 list, please let us know, either via e-mail to the maintainer or by
 submitting an issue or pull request in the GitHub repository linked above.
