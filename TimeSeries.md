@@ -265,7 +265,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     models including structural and SARIMA models. Bayesian structural
     time series models are implemented in `r pkg("bsts")`
     Robust Kalman filtering is provided by `r pkg("RobKF")`.
--   Non-Gaussian time series can be handled with GLARMA state space
+-   *Non-Gaussian time series* can be handled with GLARMA state space
     models via `r pkg("glarma")`, and using Generalized
     Autoregressive Score models in the `r pkg("GAS")`
     package. `r pkg("GlarmaVarSel")` provides variable
@@ -276,6 +276,13 @@ submitting an issue or pull request in the GitHub repository linked above.
     provided in `r pkg("bssm")`. Non-Gaussian state space
     models with exact marginal likelihood are given by
     `r pkg("NGSSEML")`.
+    `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
+-   *Count time series* models are handled in the
+    `r pkg("tscount")` and `r pkg("acp")`
+    packages. `r pkg("ZIM")` provides for Zero-Inflated
+    Models for count time series. `r pkg("tsintermittent")`
+    implements various models for analysing and forecasting intermittent
+    demand time series.
 -   *GARCH models* : `garch()` from `r pkg("tseries")` fits
     basic GARCH models. Many variations on GARCH models are provided by
     `r pkg("rugarch")`. Other univariate GARCH packages
@@ -287,12 +294,6 @@ submitting an issue or pull request in the GitHub repository linked above.
     task view.
 -   *Stochastic volatility* models are handled by
     `r pkg("stochvol")` in a Bayesian framework.
--   *Count time series* models are handled in the
-    `r pkg("tscount")` and `r pkg("acp")`
-    packages. `r pkg("ZIM")` provides for Zero-Inflated
-    Models for count time series. `r pkg("tsintermittent")`
-    implements various models for analysing and forecasting intermittent
-    demand time series.
 -   *Censored time series* can be modelled using
     `r pkg("carx")`. `r pkg("ARCensReg")` fits
     univariate censored regression models with autoregressive errors.
