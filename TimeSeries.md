@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman
 email: Rob.Hyndman@monash.edu
-version: 2022-02-08
+version: 2022-02-22
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -331,8 +331,6 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition".
     `r pkg("breakfast")` includes methods for fast multiple
     change-point detection and estimation.
--   Tests for possibly non-monotonic trends are provided by
-    `r pkg("funtimes")`.
 -   *Time series imputation* is provided by the
     `r pkg("imputeTS")` package. Some more limited
     facilities are available using `na.interp()` from the
