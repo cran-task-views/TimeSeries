@@ -680,8 +680,6 @@ submitting an issue or pull request in the GitHub repository linked above.
     functions are included, and users can add their own.
     `r pkg("Rcatch22")` provides fast computation of 22
     features identified as particularly useful.
-    `r pkg("fsMTS")` implements feature selection routines
-    for multivariate time series.
 -   *Time series clustering* is implemented in
     `r pkg("TSclust")`, `r pkg("dtwclust")`,
     `r pkg("BNPTSclust")` and `r pkg("pdc")`.
