@@ -328,7 +328,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     multiple changes in structural VAR models.
     `r pkg("InspectChangepoint")` uses sparse projection to
     estimate changepoints in high-dimensional time series.
-    `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition".
+    `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
     `r pkg("breakfast")` includes methods for fast multiple
     change-point detection and estimation.
 -   Tests for possibly non-monotonic trends are provided by
