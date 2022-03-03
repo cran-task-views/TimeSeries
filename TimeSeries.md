@@ -1,7 +1,7 @@
 ---
 name: TimeSeries
 topic: Time Series Analysis
-maintainer: Rob J Hyndman
+maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
 version: 2022-03-02
 source: https://github.com/cran-task-views/TimeSeries/
