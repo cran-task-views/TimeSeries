@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-03-02
+version: 2022-03-07
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -219,8 +219,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("tseries")` package provides different algorithms
     for ARMA and subset ARMA models. Other estimation methods including
     the innovations algorithm are provided by
-    `r pkg("itsmr")`. `r pkg("FitARMA")`
-    implements a fast MLE algorithm for ARMA models. Package
+    `r pkg("itsmr")`. Package
     `r pkg("gsarima")` contains functionality for
     Generalized SARIMA time series simulation. Robust ARIMA modeling is
     provided in the `r pkg("robustarima")` package.
