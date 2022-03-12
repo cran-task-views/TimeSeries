@@ -837,8 +837,6 @@ submitting an issue or pull request in the GitHub repository linked above.
     directionality to investigate feedback in time series.
 -   `r pkg("gsignal")` is an R implementation of the Octave
     package "signal", containing a variety of signal processing tools.
--   `r pkg("imputePSF")`: imputes missing data using pattern
-    sequences.
 -   `r pkg("LPStimeSeries")` aims to find "learned pattern
     similarity" for time series.
 -   `r pkg("nets")`: routines for the estimation of sparse
