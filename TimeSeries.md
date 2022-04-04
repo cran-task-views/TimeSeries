@@ -151,8 +151,8 @@ submitting an issue or pull request in the GitHub repository linked above.
 -   Some manipulation tools for time series are available in
     `r pkg("data.table")` including `shift()` for lead/lag
     operations. Further basic time series functionalities are offered by
-    `r pkg("DTSg")` which is based on
-    `r pkg("data.table")`.
+    `r pkg("DTSg")` which is based on `r pkg("data.table")`.
+    `r pkg("dtts")` provides high-frequency time series support via `r pkg("nanotime")` and `r pkg("data.table")`.
 -   `r pkg("collapse")` provides fast computation of several
     time series functions such as lead/lag operations, (quasi-, log-)
     differences and growth rates on time-series and panel data, and
