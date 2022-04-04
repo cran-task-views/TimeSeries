@@ -587,11 +587,8 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 -   *Vector autoregressive (VAR) models* are provided via `ar()` in the
     basic stats package including order selection via the AIC. These
-    models are restricted to be stationary. `r pkg("MTS")`
-    is an all-purpose toolkit for analyzing multivariate time series
-    including VAR, VARMA, seasonal VARMA, VAR models with exogenous
-    variables, multivariate regression with time series errors, and much
-    more. Possibly non-stationary VAR models are fitted in the
+    models are restricted to be stationary. 
+    Possibly non-stationary VAR models are fitted in the
     `r pkg("mAr")` package, which also allows VAR models in
     principal component space. `r pkg("sparsevar")` allows
     estimation of sparse VAR and VECM models,
