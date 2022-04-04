@@ -323,8 +323,6 @@ submitting an issue or pull request in the GitHub repository linked above.
     detects changepoints in multivariate time series, while
     `r pkg("changepoint.geo")` implements the
     high-dimensional changepoint detection method GeomCP.
-    `r pkg("VARDetect")` implements algorithms for detecting
-    multiple changes in structural VAR models.
     `r pkg("InspectChangepoint")` uses sparse projection to
     estimate changepoints in high-dimensional time series.
     `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
