@@ -361,10 +361,8 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("fable")`, `r pkg("scoringRules")`
     and `r pkg("scoringutils")`. The Diebold-Mariano test
     for comparing the forecast accuracy of two models is implemented in
-    the `dm.test()` function in `r pkg("forecast")`. A
-    multivariate version of the Diebold-Mariano test is provided by
-    `r pkg("multDM")`. `r pkg("tsutils")`
-    implements the Nemenyi test for comparing forecasts.
+    the `dm.test()` function in `r pkg("forecast")`. 
+    `r pkg("tsutils")` implements the Nemenyi test for comparing forecasts.
     `r pkg("greybox")` provides `ro()` for general rolling
     origin evaluation of forecasts.
 -   Tidy tools for forecasting are provided by
