@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-03-07
+version: 2022-04-04
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -400,13 +400,12 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("WaveletComp")` provides some tools for
     wavelet-based analysis of univariate and bivariate time series
     including cross-wavelets, phase-difference and significance tests.
-    `r pkg("biwavelet")` is a port of the WTC Matlab package
-    for univariate and bivariate wavelet analyses.
-    `r pkg("mvLSW")` provides tools for multivariate locally
-    stationary wavelet processes. Tests of white noise using wavelets
-    are provided by `r pkg("hwwntest")`. Wavelet scalogram
-    tools are contained in `r pkg("wavScalogram")`. Further
-    wavelet methods can be found in the packages
+    `r pkg("biwavelet")` is a port of the WTC Matlab package for univariate and bivariate wavelet analyses.
+    `r pkg("mvLSW")` provides tools for multivariate locally stationary wavelet processes. 
+    `r pkg("LSWPlib")` contains functions for simulation and spectral estimation of locally stationary wavelet packet processes.
+    Tests of white noise using wavelets are provided by `r pkg("hwwntest")`. 
+    Wavelet scalogram tools are contained in `r pkg("wavScalogram")`. 
+    Further wavelet methods can be found in the packages
     `r pkg("rwt")`, `r pkg("waveslim")`,
     `r pkg("wavethresh")`.
 -   *Harmonic regression* using Fourier terms is implemented in
