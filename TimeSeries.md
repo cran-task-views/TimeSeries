@@ -323,6 +323,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     detects changepoints in multivariate time series, while
     `r pkg("changepoint.geo")` implements the
     high-dimensional changepoint detection method GeomCP.
+    Factor-augmented VAR (FAVAR) models are estimated by a Bayesian method with `r pkg("FAVAR")`.
     `r pkg("InspectChangepoint")` uses sparse projection to
     estimate changepoints in high-dimensional time series.
     `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
