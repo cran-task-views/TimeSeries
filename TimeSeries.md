@@ -378,7 +378,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 -   *Spectral density estimation* is provided by `spectrum()` in the
     stats package, including the periodogram, smoothed periodogram and
     AR estimates. Bayesian spectral inference is provided by
-    `r pkg("bspec")` and `r pkg("regspec")`.
+    `r pkg("bspec")`, `r pkg("beyondWhittle")` and `r pkg("regspec")`.
     `r pkg("quantspec")` includes methods to compute and
     plot Laplace periodograms for univariate time series. The
     Lomb-Scargle periodogram for unevenly sampled time series is
@@ -673,6 +673,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     functions are included, and users can add their own.
     `r pkg("Rcatch22")` provides fast computation of 22
     features identified as particularly useful.
+    `r pkg("theft")` calculates time series features from various R and Python packages.
     `r pkg("fsMTS")` implements feature selection routines
     for multivariate time series.
 -   *Time series clustering* is implemented in
@@ -853,6 +854,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 -   `r pkg("RSEIS")`: Seismic time series analysis tools.
 -   `r pkg("rts")`: Raster time series analysis (e.g., time
     series of satellite images).
+-   `r pkg("SLBDD")`: Functions for analyzing large-scale time series, based on the book "Statistical Learning with Big Dependent Data" (Pena & Tsay, 2021).
 -   `r pkg("spTimer")`: Spatio-temporal Bayesian modelling.
 -   `r pkg("surveillance")`: Temporal and spatio-temporal
     modeling and monitoring of epidemic phenomena.
