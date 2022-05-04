@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-04-04
+version: 2022-05-04
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -360,7 +360,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("fable")`, `r pkg("scoringRules")`
     and `r pkg("scoringutils")`. The Diebold-Mariano test
     for comparing the forecast accuracy of two models is implemented in
-    the `dm.test()` function in `r pkg("forecast")`. 
+    the `dm.test()` function in `r pkg("forecast")`.
     `r pkg("tsutils")` implements the Nemenyi test for comparing forecasts.
     `r pkg("greybox")` provides `ro()` for general rolling
     origin evaluation of forecasts.
@@ -401,10 +401,10 @@ submitting an issue or pull request in the GitHub repository linked above.
     wavelet-based analysis of univariate and bivariate time series
     including cross-wavelets, phase-difference and significance tests.
     `r pkg("biwavelet")` is a port of the WTC Matlab package for univariate and bivariate wavelet analyses.
-    `r pkg("mvLSW")` provides tools for multivariate locally stationary wavelet processes. 
+    `r pkg("mvLSW")` provides tools for multivariate locally stationary wavelet processes.
     `r pkg("LSWPlib")` contains functions for simulation and spectral estimation of locally stationary wavelet packet processes.
-    Tests of white noise using wavelets are provided by `r pkg("hwwntest")`. 
-    Wavelet scalogram tools are contained in `r pkg("wavScalogram")`. 
+    Tests of white noise using wavelets are provided by `r pkg("hwwntest")`.
+    Wavelet scalogram tools are contained in `r pkg("wavScalogram")`.
     Further wavelet methods can be found in the packages
     `r pkg("rwt")`, `r pkg("waveslim")`,
     `r pkg("wavethresh")`.
@@ -583,7 +583,8 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 -   *Vector autoregressive (VAR) models* are provided via `ar()` in the
     basic stats package including order selection via the AIC. These
-    models are restricted to be stationary. 
+    models are restricted to be stationary.
+     `r pkg("MTS")` is an all-purpose toolkit for analyzing multivariate time series including VAR, VARMA, seasonal VARMA, VAR models with exogenous variables, multivariate regression with time series errors, and much more.
     Possibly non-stationary VAR models are fitted in the
     `r pkg("mAr")` package, which also allows VAR models in
     principal component space. `r pkg("sparsevar")` allows
@@ -672,6 +673,8 @@ submitting an issue or pull request in the GitHub repository linked above.
     functions are included, and users can add their own.
     `r pkg("Rcatch22")` provides fast computation of 22
     features identified as particularly useful.
+    `r pkg("fsMTS")` implements feature selection routines
+    for multivariate time series.
 -   *Time series clustering* is implemented in
     `r pkg("TSclust")`, `r pkg("dtwclust")`,
     `r pkg("BNPTSclust")` and `r pkg("pdc")`.
