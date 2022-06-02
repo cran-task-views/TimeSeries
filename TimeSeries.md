@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-05-04
+version: 2022-06-02
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -123,8 +123,8 @@ submitting an issue or pull request in the GitHub repository linked above.
 -   The `r pkg("tempdisagg")` package includes methods for
     temporal disaggregation and interpolation of a low frequency time
     series to a higher frequency series.
--   Time series disaggregation is also provided by
-    `r pkg("tsdisagg2")` and `r pkg("disaggR")`.
+    Time series disaggregation is also provided by
+    `r pkg("TSdisaggregation")`, `r pkg("tsdisagg2")` and `r pkg("disaggR")`.
 -   `r pkg("TimeProjection")` extracts useful time
     components of a date object, such as day of week, weekend, holiday,
     day of month, etc, and put it in a data frame.
@@ -277,11 +277,10 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("NGSSEML")`.
     `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
 -   *Count time series* models are handled in the
-    `r pkg("tscount")` and `r pkg("acp")`
-    packages. `r pkg("ZIM")` provides for Zero-Inflated
-    Models for count time series. `r pkg("tsintermittent")`
-    implements various models for analysing and forecasting intermittent
-    demand time series.
+    `r pkg("tscount")` and `r pkg("acp")` packages.
+    `r pkg("tsintermittent")` implements various models for analysing and forecasting intermittent demand time series.
+    `r pkg("ZIM")` provides for Zero-Inflated models for count time series.
+    Zero-inflated INAR models can be handled with the `r pkg("ZINARp")` package.
 -   *GARCH models* : `garch()` from `r pkg("tseries")` fits
     basic GARCH models. Many variations on GARCH models are provided by
     `r pkg("rugarch")`. Other univariate GARCH packages
@@ -323,9 +322,9 @@ submitting an issue or pull request in the GitHub repository linked above.
     detects changepoints in multivariate time series, while
     `r pkg("changepoint.geo")` implements the
     high-dimensional changepoint detection method GeomCP.
-    Factor-augmented VAR (FAVAR) models are estimated by a Bayesian method with `r pkg("FAVAR")`.
     `r pkg("InspectChangepoint")` uses sparse projection to
     estimate changepoints in high-dimensional time series.
+    `r pkg("VARDetect")` implements multiple change point detection in structural VAR models.
     `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
     `r pkg("breakfast")` includes methods for fast multiple
     change-point detection and estimation.
@@ -369,6 +368,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("forecast")` to "tidy" data frames.
 -   Multi-step-ahead direct forecasting with several machine learning
     approaches are provided in `r pkg("forecastML")`.
+-   `r pkg("onlineforecast")` provides a framework for fitting adaptive forecasting models, allowing forecasts to be used as inputs to models, and models to be updated as new data arrives.
 -   *Miscellaneous* : `r pkg("ltsa")` contains methods for
     linear time series analysis, `r pkg("timsac")` for time
     series analysis and control.
@@ -600,11 +600,12 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("dse")`. Another implementation with bootstrapped
     prediction intervals is given in `r pkg("VAR.etp")`.
     `r pkg("bvartools")` assists in the set-up of Bayesian
-    VAR models, while `r pkg("BMTAR")` implements Baysian
+    VAR models, while `r pkg("BMTAR")` implements Bayesian
     Multivariate Threshold AR models with missing data.
     `r pkg("mfbvar")` includes tools for estimating
     mixed-frequency Bayesian VAR models. `r pkg("BVAR")`
     provides a toolkit for hierarchical Bayesian VAR models.
+    Factor-augmented VAR (FAVAR) models are estimated by a Bayesian method with `r pkg("FAVAR")`.
     `r pkg("BGVAR")` implements Bayesian Global VAR models.
     `r pkg("mlVAR")` provides multi-level vector
     autoregression. `r pkg("VARsignR")` provides routines
