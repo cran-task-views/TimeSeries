@@ -57,8 +57,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     for tsibble objects including time plots, season plots, subseries
     plots, ACF and PACF plots, and some combination displays.
     Interactive graphics for tsibbles using htmlwidgets are provided by
-    `r pkg("tsibbletalk")`. `r pkg("SDD")`
-    provides more general serial dependence diagrams, while
+    `r pkg("tsibbletalk")`.
     `r pkg("dCovTS")` computes and plots the distance
     covariance and correlation functions of time series.
     `r pkg("ggseas")` provides additional ggplot2 graphics
@@ -125,9 +124,6 @@ submitting an issue or pull request in the GitHub repository linked above.
     series to a higher frequency series.
     Time series disaggregation is also provided by
     `r pkg("TSdisaggregation")`, `r pkg("tsdisagg2")` and `r pkg("disaggR")`.
--   `r pkg("TimeProjection")` extracts useful time
-    components of a date object, such as day of week, weekend, holiday,
-    day of month, etc, and put it in a data frame.
 
 ### Time Series Classes
 
@@ -160,8 +156,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 -   Various packages implement irregular time series based on
     `"POSIXct"` time stamps, intended especially for financial
     applications. These include `"irts"` from
-    `r pkg("tseries", priority = "core")`, and `"fts"` from
-    `r pkg("fts")`.
+    `r pkg("tseries", priority = "core")`.
 -   The class `"timeSeries"` in `r pkg("timeSeries")`
     (previously: fSeries) implements time series with `"timeDate"` time
     stamps.
@@ -208,8 +203,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("forecast")`, and `theta()` from
     `r pkg("tsutils")`. An alternative and extended
     implementation is provided in `r pkg("forecTheta")`.
--   *Autoregressive models* : `ar()` in stats (with model selection) and
-    `r pkg("FitAR")` for subset AR models.
+-   *Autoregressive models* : `ar()` in stats (with model selection).
 -   *ARIMA models* : `arima()` in stats is the basic function for ARIMA,
     SARIMA, RegARIMA, and subset ARIMA models. It is enhanced in the
     `r pkg("fable")` package via the `ARIMA()` function
@@ -236,8 +230,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("tfarima")` and `r pkg("smooth")`.
 -   *Periodic ARMA models* : `r pkg("partsm")` for periodic
     autoregressive time series models, and
-    `r pkg("perARMA")` and `r pkg("pcts")` for
-    periodic ARMA modelling and other procedures for periodic time
+    `r pkg("pcts")` for periodic ARMA modelling and other procedures for periodic time
     series analysis.
 -   *Long memory models* : Some facilities for fractional differenced
     ARFIMA models are provided in the `r pkg("fracdiff")`
@@ -255,11 +248,9 @@ submitting an issue or pull request in the GitHub repository linked above.
     the `r pkg("arfima")` and the
     `r pkg("tfarima")` packages.
 -   *Structural (or unobserved component) models* are implemented in
-    `StructTS()` in stats and in `r pkg("stsm")`, while
+    `StructTS()` in stats, while
     automatic modelling and forecasting are provided by
     `r pkg("UComp")` and `r pkg("autostsm")`.
-    `r pkg("KFKSDS")` provides a naive implementation of the
-    Kalman filter and smoothers for univariate state space models.
     `r pkg("statespacer")` implements univariate state space
     models including structural and SARIMA models. Bayesian structural
     time series models are implemented in `r pkg("bsts")`
@@ -278,7 +269,6 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
 -   *Count time series* models are handled in the
     `r pkg("tscount")` and `r pkg("acp")` packages.
-    `r pkg("tsintermittent")` implements various models for analysing and forecasting intermittent demand time series.
     `r pkg("ZIM")` provides for Zero-Inflated models for count time series.
     Zero-inflated INAR models can be handled with the `r pkg("ZINARp")` package.
 -   *GARCH models* : `garch()` from `r pkg("tseries")` fits
@@ -298,10 +288,8 @@ submitting an issue or pull request in the GitHub repository linked above.
 -   *Diffusion models* such as Bass and Gompertz curves are provided by
     `r pkg("diffusion")`.
 -   *Portmanteau tests* are provided via `Box.test()` in the stats
-    package. Additional tests are given by
-    `r pkg("portes")`,
-    `r pkg("WeightedPortTest")` and
-    `r pkg("testcorr")`.
+    package.
+    Additional tests are given by `r pkg("testcorr")`.
 -   Outlier detection following the Chen-Liu approach is provided by
     `r pkg("tsoutliers")`. The `tsoutliers` and `tsclean`
     functions in the `r pkg("forecast")` package provide
@@ -409,11 +397,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("rwt")`, `r pkg("waveslim")`,
     `r pkg("wavethresh")`.
 -   *Harmonic regression* using Fourier terms is implemented in
-    `r pkg("HarmonicRegression")`. The
-    `r pkg("fable")` and `r pkg("forecast")`
-    packages also provide some simple harmonic regression facilities via
-    the `fourier` function.
-
+    `r pkg("fable")` and `r pkg("forecast")` packages via the `fourier` function.
 ### Decomposition and Filtering
 
 -   *Filters and smoothing* : `filter()` in stats provides
@@ -431,8 +415,6 @@ submitting an issue or pull request in the GitHub repository linked above.
     Autoregressive-based decomposition is provided by
     `r pkg("ArDec")`. `r pkg("tsdecomp")`
     implements ARIMA-based decomposition of quarterly and monthly data.
-    `r pkg("rmaf")` uses a refined moving average filter for
-    decomposition.
 -   *Singular Spectrum Analysis* is implemented in
     `r pkg("Rssa")` and `r pkg("ASSA")`.
 -   *Empirical Mode Decomposition* (EMD) and Hilbert spectral analysis
@@ -465,15 +447,12 @@ submitting an issue or pull request in the GitHub repository linked above.
 -   *Analysis of seasonality* : the `r pkg("bfast")` package
     provides methods for detecting and characterizing abrupt changes
     within the trend and seasonal components obtained from a
-    decomposition. `r pkg("npst")` provides a generalization
-    of Hewitt's seasonality test.
+    decomposition.
 -   `r pkg("season")`: Seasonal analysis of health data
     including regression models, time-stratified case-crossover,
     plotting functions and residual checks.
 -   `r pkg("seas")`: Seasonal analysis and graphics,
     especially for climatology.
--   `r pkg("deseasonalize")`: Optimal deseasonalization for
-    geophysical time series using AR fitting.
 -   `r pkg("sazedR")`: Method to estimate the period of a
     seasonal time series.
 
@@ -617,10 +596,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     implements generalized dynamic principal components.
     `r pkg("pcdpca")` extends dynamic principal components
     to periodically correlated multivariate time series.
-    `r pkg("onlineVAR")` implements online fitting of
-    time-adaptive lasso VARs. `r pkg("mgm")` estimates
-    time-varying mixed graphical models and mixed VAR models via
-    regularized regression.
+    `r pkg("mgm")` estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
 -   *VARIMA models* and *state space models* are provided in the
     `r pkg("dse")` package.
 -   *Vector error correction models* are available via the
@@ -716,8 +692,6 @@ submitting an issue or pull request in the GitHub repository linked above.
     functional principal components for functional time series.
 -   `r pkg("STFTS")` contains stationarity, trend and unit
     root tests for functional time series.
--   `r pkg("wwntests")` provides an array of white noise
-    hypothesis tests for functional data.
 
 ### Matrix and tensor-valued time series
 
@@ -742,10 +716,8 @@ submitting an issue or pull request in the GitHub repository linked above.
     bootstrap with several variants. `r pkg("blocklength")`
     allows for selecting the optimal block-length for a dependent
     bootstrap. `tsbootstrap()` from `r pkg("tseries")`
-    provides fast stationary and block bootstrapping. Maximum entropy
-    bootstrap for time series is available in
-    `r pkg("meboot")`. `r pkg("timesboot")`
-    computes the bootstrap CI for the sample ACF and periodogram.
+    provides fast stationary and block bootstrapping.
+    Maximum entropy bootstrap for time series is available in `r pkg("meboot")`.
     `r pkg("BootPR")` computes bias-corrected forecasting
     and bootstrap prediction intervals for autoregressive time series.
     `r pkg("bootUR")` implements bootstrap unit root tests.
@@ -829,14 +801,10 @@ submitting an issue or pull request in the GitHub repository linked above.
 -   `r pkg("ensembleBMA")`: Bayesian Model Averaging to
     create probabilistic forecasts from ensemble forecasts and weather
     observations.
--   `r pkg("earlywarnings")`: Early warnings signals toolbox
-    for detecting critical transitions in time series
 -   `r pkg("FeedbackTS")`: Analysis of fragmented time
     directionality to investigate feedback in time series.
 -   `r pkg("gsignal")` is an R implementation of the Octave
     package "signal", containing a variety of signal processing tools.
--   `r pkg("LPStimeSeries")` aims to find "learned pattern
-    similarity" for time series.
 -   `r pkg("nets")`: routines for the estimation of sparse
     long run partial correlation networks for time series data.
 -   `r pkg("paleoTS")`: Modeling evolution in
@@ -861,13 +829,8 @@ submitting an issue or pull request in the GitHub repository linked above.
     modeling and monitoring of epidemic phenomena.
 -   `r pkg("Tides")`: Functions to calculate characteristics
     of quasi periodic time series, e.g. observed estuarine water levels.
--   `r pkg("tiger")`: Temporally resolved groups of typical
-    differences (errors) between two time series are determined and
-    visualized.
 -   `r pkg("tsfknn")`: Time series forecasting with
     k-nearest-neighbours.
--   `r pkg("TSMining")`: Mining Univariate and Multivariate
-    Motifs in Time-Series Data.
 -   `r pkg("tsModel")`: Time series modeling for air
     pollution and health.
 
