@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-06-02
+version: 2022-07-19
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -269,6 +269,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
 -   *Count time series* models are handled in the
     `r pkg("tscount")` and `r pkg("acp")` packages.
+    `r pkg("tsintermittent")` implements various models for analysing and forecasting intermittent demand time series.
     `r pkg("ZIM")` provides for Zero-Inflated models for count time series.
     Zero-inflated INAR models can be handled with the `r pkg("ZINARp")` package.
 -   *GARCH models* : `garch()` from `r pkg("tseries")` fits
@@ -348,6 +349,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     and `r pkg("scoringutils")`. The Diebold-Mariano test
     for comparing the forecast accuracy of two models is implemented in
     the `dm.test()` function in `r pkg("forecast")`.
+    A multivariate version of the Diebold-Mariano test is provided by `r pkg("multDM")`.
     `r pkg("tsutils")` implements the Nemenyi test for comparing forecasts.
     `r pkg("greybox")` provides `ro()` for general rolling
     origin evaluation of forecasts.
