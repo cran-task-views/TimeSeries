@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-07-19
+version: 2022-09-04
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -583,6 +583,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("bvartools")` assists in the set-up of Bayesian
     VAR models, while `r pkg("BMTAR")` implements Bayesian
     Multivariate Threshold AR models with missing data.
+    `r pkg("bsvars")` implements efficient algorithms for Bayesian estimation of structural VAR models.
     `r pkg("mfbvar")` includes tools for estimating
     mixed-frequency Bayesian VAR models. `r pkg("BVAR")`
     provides a toolkit for hierarchical Bayesian VAR models.
@@ -626,7 +627,9 @@ submitting an issue or pull request in the GitHub repository linked above.
     forecasting. `r pkg("FKF")` provides a fast and flexible
     implementation of the Kalman filter, which can deal with missing
     values. `r pkg("FKF.SP")` implements fast Kalman
-    filtering through sequential processing. Another implementation is
+    filtering through sequential processing.
+    `r pkg("kalmanfilter")` provides an 'Rcpp' implementation of the multivariate Kalman filter for state space models that can handle missing values and exogenous data in the observation and state equations.
+    Another implementation is
     given in the `r pkg("dlm")` package which also contains
     tools for converting other multivariate models into state space
     form. `r pkg("mssm")` also provides methods for
@@ -642,6 +645,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("pomp")` package.
 -   Multivariate stochastic volatility models (using latent factors) are
     provided by `r pkg("factorstochvol")`.
+-   High-dimensional sparse multivariate GLARMA models are handled by `r pkg("MultiGlarmaVarSel")` including variable selection.
 
 ### Analysis of large groups of time series
 
