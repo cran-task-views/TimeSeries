@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-09-04
+version: 2022-09-12
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -307,8 +307,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     popular changepoint methods, and `r pkg("ecp")` does
     nonparametric changepoint detection for univariate and multivariate
     series. `r pkg("changepoint.np")` implements the
-    nonparametric PELT algorithm, `r pkg("changepoint.mv")`
-    detects changepoints in multivariate time series, while
+    nonparametric PELT algorithm, while
     `r pkg("changepoint.geo")` implements the
     high-dimensional changepoint detection method GeomCP.
     `r pkg("InspectChangepoint")` uses sparse projection to
@@ -590,9 +589,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     Factor-augmented VAR (FAVAR) models are estimated by a Bayesian method with `r pkg("FAVAR")`.
     `r pkg("BGVAR")` implements Bayesian Global VAR models.
     `r pkg("mlVAR")` provides multi-level vector
-    autoregression. `r pkg("VARsignR")` provides routines
-    for identifying structural shocks in VAR models using sign
-    restrictions. `r pkg("gmvarkit")` estimates Gaussian
+    autoregression. `r pkg("gmvarkit")` estimates Gaussian
     mixture VAR models. `r pkg("GNAR")` provides methods for
     fitting network AR models, while `r pkg("graphicalVAR")`
     estimates graphical VAR models. `r pkg("gdpc")`
@@ -757,9 +754,10 @@ submitting an issue or pull request in the GitHub repository linked above.
 -   `r pkg("AER")` and `r pkg("Ecdat")` both
     contain many data sets (including time series data) from many
     econometrics text books
--   Data from the M-competition and M3-competition are provided in the
-    `r pkg("Mcomp")` package. `r pkg("Tcomp")`
-    provides data from the 2010 IJF Tourism Forecasting Competition.
+-   Data from the M and M3 forecasting competitions are provided in the `r pkg("Mcomp")` package.
+    `r pkg("Tcomp")` provides data from the 2010 IJF Tourism Forecasting Competition.
+    The M4 competition data are available from `r github("carlanetto/M4comp2018")`.
+    Data from the M5 forecasting competition can be downloaded using `r pkg("m5")`.
 -   *National time series data:* `r pkg("readabs")`
     downloads, imports and tidies time series data from the
     [*Australian* Bureau of Statistics](https://www.abs.gov.au).
