@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-09-12
+version: 2022-09-13
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -287,7 +287,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("carx")`. `r pkg("ARCensReg")` fits
     univariate censored regression models with autoregressive errors.
 -   *Diffusion models* such as Bass and Gompertz curves are provided by
-    `r pkg("diffusion")`.
+    `r pkg("diffusion")` and `r pkg("DIMORA")`.
 -   *Portmanteau tests* are provided via `Box.test()` in the stats
     package.
     Additional tests are given by `r pkg("testcorr")`.
