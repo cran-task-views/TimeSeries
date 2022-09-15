@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-09-13
+version: 2022-09-15
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -115,6 +115,9 @@ submitting an issue or pull request in the GitHub repository linked above.
     does all computations in GMT only. Calendar functionality, e.g.,
     including information about weekends and holidays for various stock
     exchanges, is also included.
+-   To convert between the Gregorian and the Vedic calendars, use `r pkg("VedicDateTime")`,
+    while `r pkg("jalcal")` provides conversions between the Gregorian and Persian Jalali (or Solar Hijri) calendars.
+    For year-based time series, `r pkg("era")` provides for many year numbering systems used in contemporary and historic calendars (e.g. Common Era, Islamic 'Hijri' years), as well as year-based time scales used in archaeology, astronomy, geology, and other palaeosciences.
 -   The `r pkg("tis")` package provides the `"ti"` class for
     time/date information.
 -   The `"mondate"` class from the `r pkg("mondate")`
