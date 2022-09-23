@@ -586,9 +586,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     VAR models, while `r pkg("BMTAR")` implements Bayesian
     Multivariate Threshold AR models with missing data.
     `r pkg("bsvars")` implements efficient algorithms for Bayesian estimation of structural VAR models.
-    `r pkg("mfbvar")` includes tools for estimating
-    mixed-frequency Bayesian VAR models. `r pkg("BVAR")`
-    provides a toolkit for hierarchical Bayesian VAR models.
+    `r pkg("BVAR")` provides a toolkit for hierarchical Bayesian VAR models.
     Factor-augmented VAR (FAVAR) models are estimated by a Bayesian method with `r pkg("FAVAR")`.
     `r pkg("BGVAR")` implements Bayesian Global VAR models.
     `r pkg("mlVAR")` provides multi-level vector
