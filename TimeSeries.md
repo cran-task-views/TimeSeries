@@ -510,7 +510,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("nnfor")`. `r pkg("NlinTS")` includes neural
     network VAR, and a nonlinear version of the Granger causality test
     based on feedforward neural networks.
-    `r pkg("TSLSTM")` provides forecasts using a Long Short Term Memory (LSTM) model.
+    `r pkg("TSLSTM")` provides forecasts using a Long Short Term Memory (LSTM) model, while `r pkg("TSdeeplearning")` implements LSTM and GRU networks.
     `r pkg("TSANN")` automatically identifies an artificial neural network
     based on forecasting accuracy.
 -   `r pkg("tseriesChaos")` provides an R implementation of
