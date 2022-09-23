@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-09-15
+version: 2022-09-23
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -260,8 +260,8 @@ submitting an issue or pull request in the GitHub repository linked above.
     Robust Kalman filtering is provided by `r pkg("RobKF")`.
 -   *Non-Gaussian time series* can be handled with GLARMA state space
     models via `r pkg("glarma")`, and using Generalized
-    Autoregressive Score models in the `r pkg("GAS")`
-    package. `r pkg("GlarmaVarSel")` provides variable
+    Autoregressive Score models in the `r pkg("GAS")` and `r pkg("gasmodel")`
+    packages. `r pkg("GlarmaVarSel")` provides variable
     selection in high-dimensional sparse GLARMA models. Conditional
     Auto-Regression models using Monte Carlo Likelihood methods are
     implemented in `r pkg("mclcar")`. Efficient Bayesian
