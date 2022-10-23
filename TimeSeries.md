@@ -286,8 +286,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     task view.
 -   *Stochastic volatility* models are handled by
     `r pkg("stochvol")` in a Bayesian framework.
--   *Censored time series* can be modelled using
-    `r pkg("carx")`. `r pkg("ARCensReg")` fits
+-   *Censored time series* can be modelled using `r pkg("ARCensReg")`, which fits
     univariate censored regression models with autoregressive errors.
 -   *Diffusion models* such as Bass and Gompertz curves are provided by
     `r pkg("diffusion")` and `r pkg("DIMORA")`.
