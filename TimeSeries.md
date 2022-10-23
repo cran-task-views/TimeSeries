@@ -492,6 +492,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     implemented in `r pkg("cointReg")`.
     `r pkg("nardl")` estimates nonlinear cointegrating
     autoregressive distributed lag models.
+    Quantile cointegration in the autoregressive distributed lag framework is provided by `r pkg("Qardl")`.
 
 ### Nonlinear Time Series Analysis
 
