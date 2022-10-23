@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-09-23
+version: 2022-10-23
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -607,6 +607,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     including versions with structural constraints and thresholding.
 -   *Vector exponential smoothing* is provided by
     `r pkg("smooth")`.
+-   *Dynamic factor models* are available in the `r pkg("dfms")` package using EM or two step estimation. Bayesian dynamic factor analysis is implemented in `r pkg("bayesdfa")` and `r pkg("bvartools")`.
 -   *Time series component analysis* : `r pkg("ForeCA")`
     implements forecastable component analysis by searching for the best
     linear transformations that make a multivariate time series as
