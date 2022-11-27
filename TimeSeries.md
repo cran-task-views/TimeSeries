@@ -785,8 +785,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     [Quandl](http://www.quandl.com) online portal to financial,
     economical and social datasets can be queried interactively using
     the `r pkg("Quandl")` package.
-    `r pkg("TSdbi")` provides a common interface to time
-    series databases. `r pkg("tsdb")` implements a simple
+    `r pkg("tsdb")` implements a simple
     data base for numerical time series.
 -   *Synthetic data* are produced by `simulate()` in
     `r pkg("forecast")` package or `generate()` in
