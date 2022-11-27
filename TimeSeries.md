@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-10-23
+version: 2022-11-27
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -489,7 +489,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     Johansen's test and AIC/BIC simultaneous rank-lag selection.
     Parameter estimation and inference in a cointegrating regression are
     implemented in `r pkg("cointReg")`.
-    `r pkg("nardl")` estimates nonlinear cointegrating
+    `r pkg("nardl")` and `r pkg("ardl.nardl")` both estimate nonlinear cointegrating
     autoregressive distributed lag models.
     Quantile cointegration in the autoregressive distributed lag framework is provided by `r pkg("Qardl")`.
 
@@ -703,6 +703,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 -   `r pkg("tensorTS")` provides functions for estimation,
     simulation and prediction of factor and autoregressive models for
     matrix and tensor valued time series.
+-   Time series tensor factor models are implemented in `r pkg("TensorPreAve")`.
 
 ### Continuous time models
 
