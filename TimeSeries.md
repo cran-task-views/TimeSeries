@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2022-11-27
+version: 2022-12-15
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -300,7 +300,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     outliers. `r pkg("otsad")` implements a set of online
     anomaly detectors for time series. `r pkg("tsrobprep")`
     provides methods for replacing missing values and outliers using a
-    model-based approach.
+    model-based approach. `r pkg("ctbi")` implements a procedure to clean, decompose and aggregate time series.
 -   *Change point detection* is provided in
     `r pkg("strucchange")` and
     `r pkg("strucchangeRcpp")` (using linear regression
