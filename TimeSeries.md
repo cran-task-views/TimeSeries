@@ -400,6 +400,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("wavethresh")`.
 -   *Harmonic regression* using Fourier terms is implemented in
     `r pkg("fable")` and `r pkg("forecast")` packages via the `fourier` function.
+
 ### Decomposition and Filtering
 
 -   *Filters and smoothing* : `filter()` in stats provides
@@ -835,4 +836,5 @@ submitting an issue or pull request in the GitHub repository linked above.
     pollution and health.
 
 ### Links
+
 -   [TISEAN Project](http://www.mpipks-dresden.mpg.de/~tisean/)
