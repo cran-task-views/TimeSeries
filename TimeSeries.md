@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-01-31
+version: 2023-02-01
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -596,6 +596,8 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("pcdpca")` extends dynamic principal components
     to periodically correlated multivariate time series.
     `r pkg("mgm")` estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
+-   `r pkg("nets")` provides estimation of sparse VARs using long run partial correlation networks for time series data.
+    Factor-adjusted VARs using network estimation and forecasting for high-dimensional time series is implemented in `r pkg("fnets")`.
 -   *VARIMA models* and *state space models* are provided in the
     `r pkg("dse")` package.
 -   *Vector error correction models* are available via the
@@ -808,8 +810,6 @@ submitting an issue or pull request in the GitHub repository linked above.
     directionality to investigate feedback in time series.
 -   `r pkg("gsignal")` is an R implementation of the Octave
     package "signal", containing a variety of signal processing tools.
--   `r pkg("nets")`: routines for the estimation of sparse
-    long run partial correlation networks for time series data.
 -   `r pkg("paleoTS")`: Modeling evolution in
     paleontological time series.
 -   `r pkg("pastecs")`: Regulation, decomposition and
