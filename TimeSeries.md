@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-02-01
+version: 2023-02-26
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -412,6 +412,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     twice smoothing method. `r pkg("mFilter")` implements
     several filters for smoothing and extracting trend and cyclical
     components including Hodrick-Prescott and Butterworth filters.
+    `r pkg("hpfilter")` implements one- and two-sided Hodrick-Prescott filters.
     `r pkg("smoots")` provides nonparametric estimation of
     the time trend and its derivatives.
 -   *Decomposition* : Seasonal decomposition is discussed below.
@@ -447,6 +448,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 -   Seasonal adjustment of daily time series, allowing for day-of-week,
     time-of-month, time-of-year and holiday effects is provided by
     `r pkg("dsa")`.
+-   `r pkg("StructuralDecompose")` decomposes a time series into trend, seasonality and residuals, allowing for level shifts.
 -   *Analysis of seasonality* : the `r pkg("bfast")` package
     provides methods for detecting and characterizing abrupt changes
     within the trend and seasonal components obtained from a
@@ -503,6 +505,8 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("bentcableAR")` implements Bent-Cable autoregression.
     `r pkg("BAYSTAR")` provides Bayesian analysis of threshold autoregressive models.
     Mixture AR models are implemented in `r pkg("mixAR")` and `r pkg("uGMAR")`.
+    `r pkg("setartree")` implements an SETAR tree algorithm, and a SETAR forest.
+    `r pkg("tseriesTARMA")` provides routines for Threshold ARMA model testing fitting and forecasting.
 -   *Neural network autoregression* : Neural network forecasting based on
     lagged inputs are provided by `r pkg("tsDyn")`, `r pkg("GMDH")` and
     `r pkg("nnfor")`. `r pkg("NlinTS")` includes neural
@@ -524,7 +528,8 @@ submitting an issue or pull request in the GitHub repository linked above.
 -   *Tests* : Various tests for nonlinearity are provided in
     `r pkg("fNonlinear")`.
     `r pkg("tseriesEntropy")` tests for nonlinear serial
-    dependence based on entropy metrics.
+    dependence based on entropy metrics, while
+    `r pkg("tseriesTARMA")` provides tests for nonlinearity based on threshold ARMA models.
 -   Additional functions for nonlinear time series are available in
     `r pkg("nlts")` and
     `r pkg("nonlinearTseries")`.
@@ -606,7 +611,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     including versions with structural constraints and thresholding.
 -   *Vector exponential smoothing* is provided by
     `r pkg("smooth")`.
--   *Dynamic factor models* are available in the `r pkg("dfms")` package using EM or two step estimation. Bayesian dynamic factor analysis is implemented in `r pkg("bayesdfa")` and `r pkg("bvartools")`.
+-   *Dynamic factor models* are available in the `r pkg("dfms")` package using EM or two step estimation. Bayesian dynamic factor analysis is implemented in `r pkg("bayesdfa")` and `r pkg("bvartools")`. `r pkg("sufficientForecasting")` implements a factor-based approach to forecasting with dimension reduction and a possibly nonlinear forecasting function.
 -   *Time series component analysis* : `r pkg("ForeCA")`
     implements forecastable component analysis by searching for the best
     linear transformations that make a multivariate time series as
