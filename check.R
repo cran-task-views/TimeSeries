@@ -7,12 +7,12 @@ ctvfile <- here::here(paste0(ctv, ".md"))
 htmlfile <- here::here(paste0(ctv, ".html"))
 
 # Set CRAN mirror
-r <- getOption("repos") 
+r <- getOption("repos")
 r["CRAN"] <- "https://cloud.r-project.org"
 options(repos = r)
 
 # Run the check
-check_ctv_packages(ctvfile) 
+check_ctv_packages(ctvfile)
 
 # Create html file from ctv file
 ctv2html(read.ctv(ctvfile), htmlfile)
