@@ -663,6 +663,7 @@ submitting an issue or pull request in the GitHub repository linked above.
     `r pkg("theft")` calculates time series features from various R and Python packages.
     `r pkg("fsMTS")` implements feature selection routines
     for multivariate time series.
+    Feature extraction for ordinal time series is provided by `r pkg("otsfeatures")`.
 -   *Time series clustering* is implemented in
     `r pkg("TSclust")`, `r pkg("dtwclust")`,
     `r pkg("BNPTSclust")` and `r pkg("pdc")`.
