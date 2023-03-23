@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-03-02
+version: 2023-03-24
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -270,6 +270,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
 - *Count time series* models are handled in the
   `r pkg("tscount")` and `r pkg("acp")` packages.
+  `r pkg("coconots")` provides tools for convolution-closed time series models for low counts.
   `r pkg("tsintermittent")` implements various models for analysing and forecasting intermittent demand time series.
   `r pkg("ZIM")` provides for Zero-Inflated models for count time series.
   Zero-inflated INAR models can be handled with the `r pkg("ZINARp")` package.
@@ -611,7 +612,10 @@ submitting an issue or pull request in the GitHub repository linked above.
   including versions with structural constraints and thresholding.
 - *Vector exponential smoothing* is provided by
   `r pkg("smooth")`.
-- *Dynamic factor models* are available in the `r pkg("dfms")` package using EM or two-step estimation. Bayesian dynamic factor analysis is implemented in `r pkg("bayesdfa")` and `r pkg("bvartools")`. `r pkg("sufficientForecasting")` implements a factor-based approach to forecasting with dimension reduction and a possibly nonlinear forecasting function.
+- *Dynamic factor models* are available in the `r pkg("dfms")` package using EM or two-step estimation.
+  Dynamic factor models with sparse loadings are implemented in `r pkg("sparseDFM")`.
+  Bayesian dynamic factor analysis is implemented in `r pkg("bayesdfa")` and `r pkg("bvartools")`.
+  `r pkg("sufficientForecasting")` implements a factor-based approach to forecasting with dimension reduction and a possibly nonlinear forecasting function.
 - *Time series component analysis* : `r pkg("ForeCA")`
   implements forecastable component analysis by searching for the best
   linear transformations that make a multivariate time series as
