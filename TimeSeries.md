@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-03-24
+version: 2023-04-11
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -713,6 +713,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   simulation and prediction of factor and autoregressive models for
   matrix and tensor valued time series.
 - Time series tensor factor models are implemented in `r pkg("TensorPreAve")`.
+- `r pkg("RTFA")` provides robust factor analysis for tensor time series.
 
 ### Continuous time models
 
