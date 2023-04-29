@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-04-11
+version: 2023-04-29
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -253,9 +253,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   the `r pkg("arfima")` and the
   `r pkg("tfarima")` packages.
 - *Structural (or unobserved component) models* are implemented in
-  `StructTS()` in stats, while
-  automatic modelling and forecasting are provided by
-  `r pkg("UComp")` and `r pkg("autostsm")`.
+  `StructTS()` in stats,
+  while automatic modelling and forecasting are provided by `r pkg("autostsm")`.
   `r pkg("statespacer")` implements univariate state space
   models including structural and SARIMA models. Bayesian structural
   time series models are implemented in `r pkg("bsts")`
@@ -401,9 +400,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("LSWPlib")` contains functions for simulation and spectral estimation of locally stationary wavelet packet processes.
   Tests of white noise using wavelets are provided by `r pkg("hwwntest")`.
   Wavelet scalogram tools are contained in `r pkg("wavScalogram")`.
-  Further wavelet methods can be found in the packages
-  `r pkg("rwt")`, `r pkg("waveslim")`,
-  `r pkg("wavethresh")`.
+  Further wavelet methods can be found in the packages `r pkg("waveslim")` and  `r pkg("wavethresh")`.
 - *Harmonic regression* using Fourier terms is implemented in
   `r pkg("fable")` and `r pkg("forecast")` packages via the `fourier` function.
 
