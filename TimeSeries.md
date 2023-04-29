@@ -103,6 +103,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("clock")` provides a comprehensive library for
   date-time manipulations using a new family of orthogonal date-time
   classes (durations, time points, zoned-times, and calendars).
+  Various recurrent calendar calculations are possibly using `r pkg("almanac")`.
   `r pkg("timechange")` allows for efficient manipulation
   of date-times accounting for time zones and daylight saving times.
   `r pkg("wktmo")` converts weekly data to monthly data in
@@ -183,6 +184,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   for `ts` objects, while `r pkg("modeltime")` and
   `r pkg("modeltime.ensemble")` provides time series
   forecasting tools for use with the 'tidymodels' ecosystem.
+  Forecast resampling tools for use with `modeltime` are provided by `r pkg("modeltime.resample")`.
 - *Exponential smoothing* : `HoltWinters()` in stats provides some
   basic models with partial optimization, `ETS()` from
   `r pkg("fable")` and `ets()` from
@@ -274,6 +276,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("tsintermittent")` implements various models for analysing and forecasting intermittent demand time series.
   `r pkg("ZIM")` provides for Zero-Inflated models for count time series.
   Zero-inflated INAR models can be handled with the `r pkg("ZINARp")` package.
+  Semiparametric estimation and bootstrapping of INAR models is provided by the `r pkg("spINAR")` package.
 - *GARCH models* : `garch()` from `r pkg("tseries")` fits
   basic GARCH models. Many variations on GARCH models are provided by
   `r pkg("rugarch")`. Other univariate GARCH packages
@@ -393,6 +396,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   including cross-wavelets, phase-difference and significance tests.
   `r pkg("biwavelet")` is a port of the WTC Matlab package for univariate and bivariate wavelet analyses.
   `r pkg("mvLSW")` provides tools for multivariate locally stationary wavelet processes.
+  Local PACF estimation for locally stationary wavelet processes is provided by `r pkg("lpacf")`.
+  Locally stationary wavelet processes can be forecast using `r pkg("forecastLSW")`.
   `r pkg("LSWPlib")` contains functions for simulation and spectral estimation of locally stationary wavelet packet processes.
   Tests of white noise using wavelets are provided by `r pkg("hwwntest")`.
   Wavelet scalogram tools are contained in `r pkg("wavScalogram")`.
