@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-04-29
+version: 2023-05-05
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -254,7 +254,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("tfarima")` packages.
 - *Structural (or unobserved component) models* are implemented in
   `StructTS()` in stats,
-  while automatic modelling and forecasting are provided by `r pkg("autostsm")`.
+  while automatic modelling and forecasting are provided by `r pkg("UComp")` and `r pkg("autostsm")`.
   `r pkg("statespacer")` implements univariate state space
   models including structural and SARIMA models. Bayesian structural
   time series models are implemented in `r pkg("bsts")`
