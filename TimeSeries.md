@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-05-05
+version: 2023-05-20
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -720,11 +720,11 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 - `r pkg("carfima")` allows for continuous-time ARFIMA
   models.
+- Simulation and inference for stochastic differential equations is
+  provided by `r pkg("sde")` and `r pkg("yuima")`.
 - `r pkg("Sim.DiffProc")` simulates and models stochastic
   differential equations.
-- Simulation and inference for stochastic differential equations is
-  provided by `r pkg("sde")` and
-  `r pkg("yuima")`.
+- `r pkg("resde")` provides maximum likelihood estimation for univariate reducible stochastic differential equation models.
 
 ### Resampling
 
