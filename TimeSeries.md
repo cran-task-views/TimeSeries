@@ -189,8 +189,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   basic models with partial optimization, `ETS()` from
   `r pkg("fable")` and `ets()` from
   `r pkg("forecast")` provide a larger set of models and
-  facilities with full optimization. `r pkg("robets")`
-  provides a robust alternative to the `ets()` function.
+  facilities with full optimization.
   `r pkg("smooth")` implements some generalizations of
   exponential smoothing. `r pkg("legion")` implements
   multivariate versions of exponential smoothing. The
