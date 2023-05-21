@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-05-20
+version: 2023-05-22
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -772,29 +772,23 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("Tcomp")` provides data from the 2010 IJF Tourism Forecasting Competition.
   The M4 competition data are available from `r github("carlanetto/M4comp2018")`.
   Data from the M5 forecasting competition can be downloaded using `r pkg("m5")`.
-- *National time series data:* `r pkg("readabs")`
-  downloads, imports and tidies time series data from the
-  [*Australian* Bureau of Statistics](https://www.abs.gov.au).
-  `r pkg("BETS")` provides access to the most important
-  economic time series in *Brazil*. `r pkg("bundesbank")`
-  allows access to the time series databases of the *German* central
-  bank. Data from *Switzerland* via
-  [dataseries.org](http://dataseries.org) can be downloaded and
-  imported using `r pkg("dataseries")`.
-  `r pkg("ugatsdb")` provides an API to access time series data for *Uganda*.
-- *Time series databases:* `r pkg("fame")` provides an
-  interface for FAME time series databases. Economic time series and
-  other data from FRED (the Federal Reserve Economic Data) can be
-  retrieved using `r pkg("fredr")`.
-  `r pkg("rdbnomics")` provides access to hundreds of
-  millions of time series from [DBnomics](db.nomics.world).
-  `r pkg("influxdbr")` provides an interface to the
-  InfluxDB time series database. `r pkg("pdfetch")`
-  provides facilities for downloading economic and financial time
-  series from public sources. Data from the
-  [Quandl](http://www.quandl.com) online portal to financial,
-  economical and social datasets can be queried interactively using
-  the `r pkg("Quandl")` package.
+- *National time series data:*
+  `r pkg("readabs")` downloads, imports and tidies time series data from the   [*Australian* Bureau of Statistics](https://www.abs.gov.au).
+  `r pkg("BETS")` provides access to the most important economic time series in *Brazil*.
+  Data from the European Central Bank can be accessed via `r pkg("ecb")`.
+  `r pkg("bundesbank")` allows access to the time series databases of the *German* central bank.
+  Data from *Switzerland* via [dataseries.org](http://dataseries.org) can be downloaded and imported using `r pkg("dataseries")`.
+  Macroeconomic time series for Africa can be obtained via `r pkg("africamonitor")`.
+  `r pkg("ugatsdb")` provides an API to access time series data for *Uganda*, while
+  `r pkg("samadb")` does the same for *South Africa*.
+  Economic time series and other data from FRED (the Federal Reserve Economic Data) can be retrieved using `r pkg("fredr")`.
+- *Time series databases:*
+  `r pkg("fame")` provides an interface for FAME time series databases.
+  `r pkg("rdbnomics")` provides access to hundreds of millions of time series from [DBnomics](db.nomics.world).
+  `r pkg("influxdbr")` provides an interface to the InfluxDB time series database.
+  `r pkg("pdfetch")` provides facilities for downloading economic and financial time
+  series from public sources.
+  Data from the [Quandl](http://www.quandl.com) online portal to financial, economical and social datasets can be queried interactively using the `r pkg("Quandl")` package.
   `r pkg("tsdb")` implements a simple database for numerical time series.
 - *Synthetic data* are produced by `simulate()` in
   `r pkg("forecast")` package or `generate()` in
