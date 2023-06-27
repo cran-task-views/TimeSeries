@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-05-22
+version: 2023-06-27
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -222,8 +222,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   the innovations algorithm are provided by
   `r pkg("itsmr")`. Package
   `r pkg("gsarima")` contains functionality for
-  Generalized SARIMA time series simulation. Robust ARIMA modeling is
-  provided in the `r pkg("robustarima")` package.
+  Generalized SARIMA time series simulation.
   `r pkg("bayesforecast")` fits Bayesian time series
   models including seasonal ARIMA and ARIMAX models.
   `r pkg("BayesARIMAX")` implements Bayesian estimation of
@@ -358,9 +357,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("tsutils")` implements the Nemenyi test for comparing forecasts.
   `r pkg("greybox")` provides `ro()` for general rolling
   origin evaluation of forecasts.
-- Tidy tools for forecasting are provided by
-  `r pkg("sweep")`, converting objects produced in
-  `r pkg("forecast")` to "tidy" data frames.
 - Multi-step-ahead direct forecasting with several machine learning
   approaches are provided in `r pkg("forecastML")`.
 - `r pkg("onlineforecast")` provides a framework for fitting adaptive forecasting models, allowing forecasts to be used as inputs to models, and models to be updated as new data arrives.
