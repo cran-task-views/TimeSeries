@@ -295,7 +295,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("diffusion")` and `r pkg("DIMORA")`.
 - *Portmanteau tests* are provided via `Box.test()` in the stats
   package.
-  Additional tests are given by `r pkg("testcorr")`.
+  Additional tests are given by `r pkg("portes")`, `r pkg("WeightedPortTest")`, and `r pkg("testcorr")` .
 - Outlier detection following the Chen-Liu approach is provided by
   `r pkg("tsoutliers")`. The `tsoutliers` and `tsclean`
   functions in the `r pkg("forecast")` package provide
