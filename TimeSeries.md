@@ -779,6 +779,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("readabs")` downloads, imports and tidies time series data from the   [*Australian* Bureau of Statistics](https://www.abs.gov.au).
   `r pkg("BETS")` provides access to the most important economic time series in *Brazil*.
   Data from the European Central Bank can be accessed via `r pkg("ecb")`.
+  Data from the Banque de France can be downloaded using `r pkg("rwebstat")`.
   `r pkg("bundesbank")` allows access to the time series databases of the *German* central bank.
   Data from *Switzerland* via [dataseries.org](http://dataseries.org) can be downloaded and imported using `r pkg("dataseries")`.
   Macroeconomic time series for Africa can be obtained via `r pkg("africamonitor")`.
