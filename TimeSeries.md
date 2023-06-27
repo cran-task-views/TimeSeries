@@ -116,6 +116,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   does all computations in GMT only. Calendar functionality, e.g.,
   including information about weekends and holidays for various stock
   exchanges, is also included.
+- `r pkg("parttime")` provides date time classes that allow for uncertainty and partially missing information.
+- Datetimes with optional UTC offsets and/or heterogeneous time zones are provided by `r pkg("datetimeoffset")`.
 - To convert between the Gregorian and the Vedic calendars, use `r pkg("VedicDateTime")`,
   while `r pkg("jalcal")` provides conversions between the Gregorian and Persian Jalali (or Solar Hijri) calendars.
   For year-based time series, `r pkg("era")` provides for many year numbering systems used in contemporary and historic calendars (e.g. Common Era, Islamic 'Hijri' years), as well as year-based time scales used in archaeology, astronomy, geology, and other palaeosciences.
