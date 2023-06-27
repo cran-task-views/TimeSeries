@@ -691,9 +691,9 @@ submitting an issue or pull request in the GitHub repository linked above.
   time series. `r pkg("FoReco")` provides various forecast
   reconciliation methods for cross-sectional, temporal, and
   cross-temporal constrained time series. An alternative approach to
-  reconciling forecasts of hierarchical time series is provided by
-  `r pkg("gtop")`. `r pkg("ProbReco")`
-  provides tools to train forecast reconciliation weights by
+  reconciling forecasts of hierarchical time series is provided by `r pkg("gtop")`.
+  Probabilistic reconciliation of hierarchical forecasts via conditioning is available in `r pkg("bayesRecon")`.
+  `r pkg("ProbReco")` provides tools to train forecast reconciliation weights by
   optimizing probability scoring functions.
 
 ### Functional time series
