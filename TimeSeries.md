@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-06-27
+version: 2023-07-26
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -678,11 +678,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   series data.
 - `r pkg("TSrepr")` includes methods for representing time
   series using dimension reduction and feature extraction.
-- `r pkg("rucrdtw")` provides R bindings for functions
-  from the UCR Suite to enable ultrafast subsequence search for the best
-  match under Dynamic Time Warping and Euclidean Distance.
-  `r pkg("IncDTW")` provides incremental calculation of
-  dynamic time warping for streaming time series.
 - Methods for plotting and forecasting collections of hierarchical and
   grouped time series are provided by `r pkg("fable")` and
   `r pkg("hts")`. `r pkg("thief")` uses
@@ -692,6 +687,18 @@ submitting an issue or pull request in the GitHub repository linked above.
   cross-temporal constrained time series. An alternative approach to
   reconciling forecasts of hierarchical time series is provided by `r pkg("gtop")`.
   Probabilistic reconciliation of hierarchical forecasts via conditioning is available in `r pkg("bayesRecon")`.
+
+### Dynamic time warping
+
+- Dynamic time warping algorithms are provided by `r pkg("dtw")` for
+  computing and plotting pairwise alignments between time series.
+- Parametric time warping is implemented in `r pkg("ptw")`.
+- `r pkg("rucrdtw")` provides R bindings for functions
+  from the UCR Suite to enable ultrafast subsequence search for the best
+  match under Dynamic Time Warping and Euclidean Distance.
+- `r pkg("IncDTW")` provides incremental calculation of
+  dynamic time warping for streaming time series.
+- Time-weighted dynamic time warping is provided by `r pkg("twdtw")`.
 
 ### Functional time series
 
@@ -803,8 +810,6 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 ### Miscellaneous
 
-- `r pkg("dtw")`: Dynamic time warping algorithms for
-  computing and plotting pairwise alignments between time series.
 - `r pkg("EBMAforecast")`: Ensemble Bayesian model
   averaging forecasts using Gibbs sampling or EM algorithms.
 - `r pkg("ensembleBMA")`: Bayesian Model Averaging to
@@ -820,7 +825,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   analysis of space-time series.
 - `r pkg("PSF")`: Forecasting univariate time series using
   pattern-sequences.
-- `r pkg("ptw")`: Parametric time warping.
 - `r pkg("RGENERATE")` provides tools to generate vector
   time series.
 - `r pkg("RMAWGEN")` is set of S3 and S4 functions for
