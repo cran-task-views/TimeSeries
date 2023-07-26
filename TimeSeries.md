@@ -357,6 +357,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("tsutils")` implements the Nemenyi test for comparing forecasts.
   `r pkg("greybox")` provides `ro()` for general rolling
   origin evaluation of forecasts.
+- Tidy tools for forecasting are provided by `r pkg("sweep")`, converting
+  objects produced in `r pkg("forecast")` to "tidy" data frames.
 - Multi-step-ahead direct forecasting with several machine learning
   approaches are provided in `r pkg("forecastML")`.
 - `r pkg("onlineforecast")` provides a framework for fitting adaptive forecasting models, allowing forecasts to be used as inputs to models, and models to be updated as new data arrives.
