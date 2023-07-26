@@ -692,8 +692,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   cross-temporal constrained time series. An alternative approach to
   reconciling forecasts of hierarchical time series is provided by `r pkg("gtop")`.
   Probabilistic reconciliation of hierarchical forecasts via conditioning is available in `r pkg("bayesRecon")`.
-  `r pkg("ProbReco")` provides tools to train forecast reconciliation weights by
-  optimizing probability scoring functions.
 
 ### Functional time series
 
@@ -786,7 +784,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("samadb")` does the same for *South Africa*.
   Economic time series and other data from FRED (the Federal Reserve Economic Data) can be retrieved using `r pkg("fredr")`.
 - *Time series databases:*
-  `r pkg("fame")` provides an interface for FAME time series databases.
   `r pkg("rdbnomics")` provides access to hundreds of millions of time series from [DBnomics](db.nomics.world).
   `r pkg("influxdbr")` provides an interface to the InfluxDB time series database.
   `r pkg("pdfetch")` provides facilities for downloading economic and financial time
