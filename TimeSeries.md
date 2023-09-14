@@ -52,8 +52,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   displays are obtained using `monthplot()` in stats, `seasonplot` in
   `r pkg("forecast")`, and `seasplot` in
   `r pkg("tsutils")`.
-  `r pkg("feasts", priority = "core")` and
-  `r pkg("brolgar")` provide various time series graphics
+  `r pkg("feasts", priority = "core")` provides various time series graphics
   for tsibble objects including time plots, season plots, subseries
   plots, ACF and PACF plots, and some combination displays.
   Interactive graphics for tsibbles using htmlwidgets are provided by
