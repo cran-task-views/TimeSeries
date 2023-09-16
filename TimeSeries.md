@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-07-26
+version: 2023-09-16
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -125,6 +125,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   time/date information.
 - The `"mondate"` class from the `r pkg("mondate")`
   package facilitates computing with dates in terms of months.
+-  The `r pkg("CFtime")` package encapsulates the CF Metadata Conventions “time” dimension, including all defined calendars. It facilitates the processing of climate change projection data.
 - The `r pkg("tempdisagg")` package includes methods for
   temporal disaggregation and interpolation of a low frequency time
   series to a higher frequency series.
@@ -352,6 +353,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   and `r pkg("scoringutils")`. The Diebold-Mariano test
   for comparing the forecast accuracy of two models is implemented in
   the `dm.test()` function in `r pkg("forecast")`.
+  `r pkg("ForeComp")` generates a size-power tradeoff plot for a given Diebold-Mariano test.
   A multivariate version of the Diebold-Mariano test is provided by `r pkg("multDM")`.
   `r pkg("tsutils")` implements the Nemenyi test for comparing forecasts.
   `r pkg("greybox")` provides `ro()` for general rolling
