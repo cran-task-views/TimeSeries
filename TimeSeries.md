@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-09-16
+version: 2023-09-25
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -503,7 +503,9 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 ### Nonlinear Time Series Analysis
 
-- *Nonlinear autoregression* : Various forms of nonlinear autoregression are available in
+- *Nonlinear autoregression* :
+  Tools for nonlinear time series analysis are provided in `r pkg("NTS")` including threshold autoregressive models, Markov-switching models, convolutional functional autoregressive models, and nonlinearity tests.
+  Various forms of nonlinear autoregression are available in
   `r pkg("tsDyn")` including additive AR, SETAR and LSTAR models,
   threshold VAR and VECM.
   `r pkg("EXPARMA")` provides exponential autoregressive moving average models.
@@ -704,9 +706,9 @@ submitting an issue or pull request in the GitHub repository linked above.
 ### Functional time series
 
 - Tools for visualizing, modeling, forecasting and analysing
-  functional time series are implemented in
-  `r pkg("ftsa")`. Seasonal functional
-  autoregression models are provided by `r pkg("Rsfar")`.
+  functional time series are implemented in pkg("ftsa")`.
+  `r pkg("NTS")` also implements functional autoregressive models.
+  Seasonal functional autoregression models are provided by `r pkg("Rsfar")`.
   `r pkg("fpcb")` implements predictive confidence bands
   for functional time series.
 - `r pkg("fdaACF")` estimates the autocorrelation function
