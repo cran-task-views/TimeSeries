@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-09-25
+version: 2023-09-26
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -495,6 +495,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Johansen's test and AIC/BIC simultaneous rank-lag selection.
   Parameter estimation and inference in a cointegrating regression are
   implemented in `r pkg("cointReg")`.
+  Fractionally cointegrated VAR models are handled by `r pkg("FCVAR")`.
 - *Autoregressive distributed lag (ARDL) models* are provided by `r pkg("ARDL")`, which constructs
   the underlying error correction model automatically.
   `r pkg("nardl")` and `r pkg("ardl.nardl")` both estimate nonlinear cointegrating
@@ -579,12 +580,11 @@ submitting an issue or pull request in the GitHub repository linked above.
   models are restricted to be stationary.
    `r pkg("MTS")` is an all-purpose toolkit for analysing multivariate time series including VAR, VARMA, seasonal VARMA, VAR models with exogenous variables, multivariate regression with time series errors, and much more.
   Possibly non-stationary VAR models are fitted in the
-  `r pkg("mAr")` package, which also allows VAR models in
-  principal component space. `r pkg("sparsevar")` allows
-  estimation of sparse VAR and VECM models,
-  `r pkg("bigtime")` estimates large sparse VAR, VARX and
-  VARMA models, while `r pkg("BigVAR")` estimates VAR and
-  VARX models with structured lasso penalties and
+  `r pkg("mAr")` package, which also allows VAR models in principal component space.
+  Fractionally cointegrated VAR models are handled by `r pkg("FCVAR")`.
+  `r pkg("sparsevar")` allows estimation of sparse VAR and VECM models,
+  `r pkg("bigtime")` estimates large sparse VAR, VARX and VARMA models, while
+  `r pkg("BigVAR")` estimates VAR and VARX models with structured lasso penalties and
   `r pkg("svars")` implements data-driven structural VARs.
   Shrinkage estimation methods for VARs are implemented in
   `r pkg("VARshrink")`. More elaborate models are provided
