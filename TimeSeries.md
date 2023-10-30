@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-09-26
+version: 2023-10-30
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -218,7 +218,9 @@ submitting an issue or pull request in the GitHub repository linked above.
   provided in the `r pkg("forecast")` package via the
   `auto.arima()` function. `arma()` in the
   `r pkg("tseries")` package provides different algorithms
-  for ARMA and subset ARMA models. Other estimation methods including
+  for ARMA and subset ARMA models.
+  `r pkg("arima2")` provides a random-restart estimation algorithm to replace `stats::arima()`.
+  Other estimation methods including
   the innovations algorithm are provided by
   `r pkg("itsmr")`. Package
   `r pkg("gsarima")` contains functionality for
