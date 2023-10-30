@@ -454,6 +454,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 - Seasonal adjustment of daily time series, allowing for day-of-week,
   time-of-month, time-of-year and holiday effects is provided by
   `r pkg("dsa")`.
+  Seasonal adjustment of weekly data is provided by `r pkg("boiwsa")`.
 - `r pkg("StructuralDecompose")` decomposes a time series into trend, seasonality and residuals, allowing for level shifts.
 - *Analysis of seasonality* : the `r pkg("bfast")` package
   provides methods for detecting and characterizing abrupt changes
