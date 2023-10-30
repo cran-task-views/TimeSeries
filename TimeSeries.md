@@ -628,9 +628,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 - *Time series component analysis* : `r pkg("ForeCA")`
   implements forecastable component analysis by searching for the best
   linear transformations that make a multivariate time series as
-  forecastable as possible. `r pkg("PCA4TS")` finds a
-  linear transformation of a multivariate time series giving
-  lower-dimensional subseries that are uncorrelated with each other.
+  forecastable as possible.
   `r pkg("HDTSA")` provides procedures for several
   high-dimensional time series analysis tools. One-sided dynamic
   principal components are computed in `r pkg("odpc")`.
