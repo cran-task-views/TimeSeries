@@ -267,10 +267,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Autoregressive Score models in the `r pkg("GAS")` and `r pkg("gasmodel")`
   packages. `r pkg("GlarmaVarSel")` provides variable
   selection in high-dimensional sparse GLARMA models. Conditional
-  Auto-Regression models using Monte Carlo Likelihood methods are
-  implemented in `r pkg("mclcar")`. Efficient Bayesian
-  inference for nonlinear and non-Gaussian state space models is
-  provided in `r pkg("bssm")`.
+  Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in `r pkg("bssm")`.
   `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
 - *Count time series* models are handled in the
   `r pkg("tscount")` and `r pkg("acp")` packages.
