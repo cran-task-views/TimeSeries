@@ -319,7 +319,9 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("VARDetect")` implements multiple change point detection in structural VAR models.
   `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
   `r pkg("breakfast")` includes methods for fast multiple
-  change-point detection and estimation.
+  change-point detection and estimation. `r pkg("fastcpd")` provides flexible
+  and fast change point detection for regression type data, time series (ARIMA, VAR and GARCH) and
+  any other data with a custom cost function using Sequential Gradient Descent with PELT.
 - Tests for possibly non-monotonic trends are provided by
   `r pkg("funtimes")`.
 - *Time series imputation* is provided by the
