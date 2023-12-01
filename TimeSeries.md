@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-10-30
+version: 2023-12-01
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -236,9 +236,9 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("tsPI")`.
 - ARIMA models with multiple seasonal periods can be handled with
   `r pkg("tfarima")` and `r pkg("smooth")`.
-- *Periodic ARMA models* : `r pkg("partsm")` for periodic
-  autoregressive time series models, and
-  `r pkg("pcts")` for periodic ARMA modelling and other procedures for periodic time
+- *Periodic ARMA models* : `r pkg("partsm")` provides for periodic
+  autoregressive time series models, while
+  `r pkg("perARMA")` and  `r pkg("pcts")` implement periodic ARMA modelling and other procedures for periodic time
   series analysis.
 - *Long memory models* : Some facilities for fractional differenced
   ARFIMA models are provided in the `r pkg("fracdiff")`
@@ -318,6 +318,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   high-dimensional changepoint detection method GeomCP.
   `r pkg("InspectChangepoint")` uses sparse projection to
   estimate changepoints in high-dimensional time series.
+  The nonparametric moving sum procedure for detecting multiple changepoints in multivariate time series is provided by `r pkg("CptNonPar")`.
   `r pkg("VARDetect")` implements multiple change point detection in structural VAR models.
   `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
   `r pkg("breakfast")` includes methods for fast multiple
@@ -333,6 +334,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   implements an EM algorithm for imputing missing values in
   multivariate normal time series, accounting for spatial and temporal
   correlations.
+  Imputation methods for multivariate locally stationary time series are in `r pkg("mvLSWimpute")`.
 - The `r pkg("seer")` package implements a framework for
   feature-based forecast model selection.
 - A standardized time series forecasting framework including many models is provided by `r pkg("finnts")`, designed for financial time series.
@@ -404,6 +406,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Tests of white noise using wavelets are provided by `r pkg("hwwntest")`.
   Wavelet scalogram tools are contained in `r pkg("wavScalogram")`.
   Further wavelet methods can be found in the packages `r pkg("waveslim")` and  `r pkg("wavethresh")`.
+  Complex-valued wavelet spectral procedures are provided in `r pkg("CNLTtsa")`.
 - *Harmonic regression* using Fourier terms is implemented in
   `r pkg("fable")` and `r pkg("forecast")` packages via the `fourier` function.
 
@@ -451,6 +454,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   provided by `r pkg("RJDemetra")`.
   `r pkg("ggdemetra")` provides associated ggplot2
   functions.
+- `r pkg("deseats")` includes a locally weighted regression approach, and the Berlin method.
 - Seasonal adjustment of daily time series, allowing for day-of-week,
   time-of-month, time-of-year and holiday effects is provided by
   `r pkg("dsa")`.
@@ -523,7 +527,9 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("nnfor")`. `r pkg("NlinTS")` includes neural
   network VAR, and a nonlinear version of the Granger causality test
   based on feedforward neural networks.
-  `r pkg("TSLSTM")` provides forecasts using a Long Short Term Memory (LSTM) model, while `r pkg("TSdeeplearning")` implements LSTM and GRU networks.
+  `r pkg("TSLSTM")` provides forecasts using a Long Short Term Memory (LSTM) model, while
+  an enhanced version is implemented in `r pkg("TSLSTMplus")`.
+  `r pkg("TSdeeplearning")` implements LSTM and GRU networks.
   `r pkg("TSANN")` automatically identifies an artificial neural network
   based on forecasting accuracy.
 - `r pkg("tseriesChaos")` provides an R implementation of
