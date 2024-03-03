@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-12-01
+version: 2023-03-04
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -115,6 +115,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   does all computations in GMT only. Calendar functionality, e.g.,
   including information about weekends and holidays for various stock
   exchanges, is also included.
+  `r pkg("qlcal")` allows access to various financial exchange calendars via QuantLib.
 - `r pkg("parttime")` provides date time classes that allow for uncertainty and partially missing information.
 - Datetimes with optional UTC offsets and/or heterogeneous time zones are provided by `r pkg("datetimeoffset")`.
 - To convert between the Gregorian and the Vedic calendars, use `r pkg("VedicDateTime")`,
@@ -253,8 +254,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("esemifar")` provides tools for nonparametric
   smoothing of long-memory time series.
 - *Transfer function* models are provided by the `arfima` function in
-  the `r pkg("arfima")` and the
-  `r pkg("tfarima")` packages.
+  the `r pkg("arfima")` and the `r pkg("tfarima")` packages.
 - *Structural (or unobserved component) models* are implemented in
   `StructTS()` in stats,
   while automatic modelling and forecasting are provided by `r pkg("UComp")` and `r pkg("autostsm")`.
@@ -313,6 +313,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   nonparametric PELT algorithm, while
   `r pkg("changepoint.geo")` implements the
   high-dimensional changepoint detection method GeomCP.
+  `r pkg("mosum")` provides a moving sum procedure for detecting multiple changepoints in univariate time series.
   `r pkg("InspectChangepoint")` uses sparse projection to
   estimate changepoints in high-dimensional time series.
   The nonparametric moving sum procedure for detecting multiple changepoints in multivariate time series is provided by `r pkg("CptNonPar")`.
@@ -366,6 +367,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 - Multi-step-ahead direct forecasting with several machine learning
   approaches are provided in `r pkg("forecastML")`.
 - `r pkg("onlineforecast")` provides a framework for fitting adaptive forecasting models, allowing forecasts to be used as inputs to models, and models to be updated as new data arrives.
+- Data leakage is a problem that can occur in forecasting competitions, and the `r pkg("tsdataleaks")` package provides tools for detecting data leakage in such settings.
 - *Miscellaneous* : `r pkg("ltsa")` contains methods for
   linear time series analysis, `r pkg("timsac")` for time
   series analysis and control.
@@ -574,6 +576,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("dLagM")` provides time series regression with
   distributed lags. Functions for distributed lag nonlinear modelling
   are provided in `r pkg("dlnm")`.
+  `r pkg("fastTS")` implements sparsity-ranked lasso methods for time series with exogenous features and/or complex seasonality.
   `r pkg("sym.arma")` will fit ARMA models with regressors
   where the observations follow a conditional symmetric distribution.
 - *Time-varying parameter* models can be fitted using the
@@ -594,35 +597,28 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("bigtime")` estimates large sparse VAR, VARX and VARMA models, while
   `r pkg("BigVAR")` estimates VAR and VARX models with structured lasso penalties and
   `r pkg("svars")` implements data-driven structural VARs.
-  Shrinkage estimation methods for VARs are implemented in
-  `r pkg("VARshrink")`. More elaborate models are provided
-  in package `r pkg("vars")`,
-  `r pkg("tsDyn")`, `estVARXls()` in
-  `r pkg("dse")`. Another implementation with bootstrapped
-  prediction intervals is given in `r pkg("VAR.etp")`.
-  `r pkg("bvartools")` assists in the set-up of Bayesian
-  VAR models, while `r pkg("BMTAR")` implements Bayesian
-  Multivariate Threshold AR models with missing data.
-  `r pkg("bsvars")` implements efficient algorithms for Bayesian estimation of structural VAR models.
+  Shrinkage estimation methods for VARs are implemented in `r pkg("VARshrink")`.
+  More elaborate models are provided in package `r pkg("vars")`, `r pkg("tsDyn")`, and `estVARXls()` in `r pkg("dse")`.
+  Another implementation with bootstrapped prediction intervals is given in `r pkg("VAR.etp")`.
+  `r pkg("bvartools")` assists in the set-up of Bayesian VAR models, while
+  `r pkg("bsvars")` and `r pkg("bayesianVARs")` include efficient algorithms for estimating Bayesian models.
   `r pkg("BVAR")` provides a toolkit for hierarchical Bayesian VAR models.
+  `r pkg("BMTAR")` implements Bayesian Multivariate Threshold AR models with missing data.
   Factor-augmented VAR (FAVAR) models are estimated by a Bayesian method with `r pkg("FAVAR")`.
   `r pkg("BGVAR")` implements Bayesian Global VAR models.
-  `r pkg("mlVAR")` provides multi-level vector
-  autoregression. `r pkg("gmvarkit")` estimates Gaussian
-  mixture VAR models. `r pkg("GNAR")` provides methods for
-  fitting network AR models, while `r pkg("graphicalVAR")`
-  estimates graphical VAR models. `r pkg("gdpc")`
-  implements generalized dynamic principal components.
-  `r pkg("pcdpca")` extends dynamic principal components
-  to periodically correlated multivariate time series.
+  `r pkg("mlVAR")` provides multi-level vector autoregression.
+  `r pkg("gmvarkit")` estimates Gaussian mixture VAR models.
+  `r pkg("GNAR")` provides methods for fitting network AR models, while
+  `r pkg("graphicalVAR")` and `r pkg("tsnet")` both estimate graphical VAR models.
+  `r pkg("gdpc")` implements generalized dynamic principal components.
+  `r pkg("pcdpca")` extends dynamic principal components to periodically correlated multivariate time series.
   `r pkg("mgm")` estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
-- `r pkg("nets")` provides estimation of sparse VARs using long run partial correlation networks for time series data.
+  `r pkg("nets")` provides estimation of sparse VARs using long run partial correlation networks for time series data.
   Factor-adjusted VARs using network estimation and forecasting for high-dimensional time series is implemented in `r pkg("fnets")`.
-- *VARIMA models* and *state space models* are provided in the
-  `r pkg("dse")` package.
+- *Nonlinear VAR models* are provided by `r pkg("NVAR")`.
+- *VARIMA models* and *state space models* are provided in the `r pkg("dse")` package.
 - *Vector error correction models* are available via the
-  `r pkg("urca")`, `r pkg("ecm")`,
-  `r pkg("vars")`, `r pkg("tsDyn")` packages,
+  `r pkg("urca")`, `r pkg("ecm")`, `r pkg("vars")`, `r pkg("tsDyn")` packages,
   including versions with structural constraints and thresholding.
 - *Vector exponential smoothing* is provided by
   `r pkg("smooth")`.
@@ -630,6 +626,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Dynamic factor models with sparse loadings are implemented in `r pkg("sparseDFM")`.
   Bayesian dynamic factor analysis is implemented in `r pkg("bayesdfa")` and `r pkg("bvartools")`.
   `r pkg("sufficientForecasting")` implements a factor-based approach to forecasting with dimension reduction and a possibly nonlinear forecasting function.
+- *Forecast Linear Augmented Projection* (FLAP) methods are implemented in `r pkg("flap")`.
 - *Time series component analysis* : `r pkg("ForeCA")`
   implements forecastable component analysis by searching for the best
   linear transformations that make a multivariate time series as
