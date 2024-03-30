@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-03-06
+version: 2023-03-30
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -32,9 +32,9 @@ submitting an issue or pull request in the GitHub repository linked above.
   rolling statistics functions. `r pkg("slider")`
   calculates a diverse and comprehensive set of type-stable running
   functions for any R data types.
-  `r pkg("tsibble", priority = "core")` provides `slide()`
-  for rolling statistics, `tile()` for non-overlapping sliding
-  windows, and `stretch()` for expanding windows.
+  `r pkg("tsibble", priority = "core")` provides `slide_tsibble()`
+  for rolling statistics, `tile_tsibble()` for non-overlapping sliding
+  windows, and `stretch_tsibble()` for expanding windows.
   `r pkg("tbrf")` provides rolling functions based on date
   and time windows instead of n-lagged observations.
   `r pkg("roll")` provides parallel functions for
