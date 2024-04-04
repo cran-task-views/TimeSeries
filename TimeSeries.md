@@ -644,16 +644,10 @@ submitting an issue or pull request in the GitHub repository linked above.
   values. `r pkg("FKF.SP")` implements fast Kalman
   filtering through sequential processing.
   `r pkg("kalmanfilter")` provides an 'Rcpp' implementation of the multivariate Kalman filter for state space models that can handle missing values and exogenous data in the observation and state equations.
-  Another implementation is
-  given in the `r pkg("dlm")` package which also contains
-  tools for converting other multivariate models into state space
-  form. `r pkg("mssm")` also provides methods for
-  multivariate state space models. `r pkg("MARSS")` fits
-  constrained and unconstrained multivariate autoregressive
-  state-space models using an EM algorithm.
-  `r pkg("mbsts")` provides tools for multivariate
-  Bayesian structural time series models. All of these packages assume
-  the observational and state error terms are uncorrelated.
+  Another implementation is given in the `r pkg("dlm")` package which also contains tools for converting other multivariate models into state space form.
+  `r pkg("MARSS")` fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm.
+  `r pkg("mbsts")` provides tools for multivariate Bayesian structural time series models.
+  All of these packages assume the observational and state error terms are uncorrelated.
 - *Partially-observed Markov processes* are a generalization of the
   usual linear multivariate state space models, allowing non-Gaussian
   and nonlinear models. These are implemented in the
