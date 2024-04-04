@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-03-30
+version: 2023-04-04
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -629,17 +629,13 @@ submitting an issue or pull request in the GitHub repository linked above.
   Bayesian dynamic factor analysis is implemented in `r pkg("bayesdfa")` and `r pkg("bvartools")`.
   `r pkg("sufficientForecasting")` implements a factor-based approach to forecasting with dimension reduction and a possibly nonlinear forecasting function.
 - *Forecast Linear Augmented Projection* (FLAP) methods are implemented in `r pkg("flap")`.
-- *Time series component analysis* : `r pkg("ForeCA")`
-  implements forecastable component analysis by searching for the best
-  linear transformations that make a multivariate time series as
-  forecastable as possible.
-  `r pkg("HDTSA")` provides procedures for several
-  high-dimensional time series analysis tools. One-sided dynamic
-  principal components are computed in `r pkg("odpc")`.
-  Frequency-domain-based dynamic PCA is implemented in
-  `r pkg("freqdom")`. `r pkg("tsBSS")`
-  provides blind source separation and supervised dimension reduction
-  for time series.
+- *Time series component analysis* :
+  `r pkg("ForeCA")` implements forecastable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.
+  `r pkg("HDTSA")` provides procedures for several high-dimensional time series analysis tools.
+  One-sided dynamic principal components are computed in `r pkg("odpc")`.
+  Frequency-domain-based dynamic PCA is implemented in `r pkg("freqdom")`.
+  `r pkg("tsBSS")` provides blind source separation and supervised dimension reduction for time series.
+  `r pkg("sdrt")` estimates sufficient dimension reduction subspaces for time series.
 - *Multivariate state space models* An implementation is provided by
   the `r pkg("KFAS")` package which provides a fast
   multivariate Kalman filter, smoother, simulation smoother and
