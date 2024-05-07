@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-04-04
+version: 2023-05-08
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -273,20 +273,17 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
 - *Count time series* models are handled in the
   `r pkg("tscount")` and `r pkg("acp")` packages.
+  `r pkg("fableCount")` provides a tidy interface to the INGARCH model from `r pkg("tscount")` and the GLARMA model from `r pkg("glarma")`.
   `r pkg("coconots")` provides tools for convolution-closed time series models for low counts.
   `r pkg("tsintermittent")` implements various models for analysing and forecasting intermittent demand time series.
   `r pkg("ZIM")` provides for Zero-Inflated models for count time series.
   Zero-inflated INAR models can be handled with the `r pkg("ZINARp")` package.
   Semiparametric estimation and bootstrapping of INAR models is provided by the `r pkg("spINAR")` package.
-- *GARCH models* : `garch()` from `r pkg("tseries")` fits
-  basic GARCH models. Many variations on GARCH models are provided by
-  `r pkg("rugarch")`. Other univariate GARCH packages
-  include `r pkg("fGarch")` which implements ARIMA models
-  with a wide class of GARCH innovations.
-  `r pkg("bayesforecast")` fits Bayesian time series
-  models including several variations of GARCH models. There are many
-  more GARCH packages described in the `r view("Finance")`
-  task view.
+- *GARCH models* : `garch()` from `r pkg("tseries")` fits basic GARCH models.
+  Many variations on GARCH models are provided by `r pkg("rugarch")` and `r pkg("tsgarch")`.
+  Other univariate GARCH packages include `r pkg("fGarch")` which implements ARIMA models with a wide class of GARCH innovations.
+  `r pkg("bayesforecast")` fits Bayesian time series models including several variations of GARCH models.
+  There are many more GARCH packages described in the `r view("Finance")` task view.
 - *Stochastic volatility* models are handled by
   `r pkg("stochvol")` in a Bayesian framework.
 - *Censored time series* can be modelled using `r pkg("ARCensReg")`, which fits
@@ -384,6 +381,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   plot Laplace periodograms for univariate time series. The
   Lomb-Scargle periodogram for unevenly sampled time series is
   computed by `r pkg("lomb")`.
+  `r pkg("peacots")` provides inference for periodograms using an Ornstein-Uhlenbeck state space model.
   `r pkg("spectral")` uses Fourier and Hilbert transforms
   for spectral filtering. `r pkg("psd")` produces
   adaptive, sine-multitaper spectral density estimates.
@@ -605,7 +603,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("bvartools")` assists in the set-up of Bayesian VAR models, while
   `r pkg("bsvars")` and `r pkg("bayesianVARs")` include efficient algorithms for estimating Bayesian models.
   `r pkg("BVAR")` provides a toolkit for hierarchical Bayesian VAR models.
-  `r pkg("BMTAR")` implements Bayesian Multivariate Threshold AR models with missing data.
+  `r pkg("BMTAR")` and `r pkg("mtarm")` implement Bayesian Multivariate Threshold AR models.
   Factor-augmented VAR (FAVAR) models are estimated by a Bayesian method with `r pkg("FAVAR")`.
   `r pkg("BGVAR")` implements Bayesian Global VAR models.
   `r pkg("mlVAR")` provides multi-level vector autoregression.
@@ -747,6 +745,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 - Various data sets in `r pkg("tsibble")` format are
   provided by `r pkg("tsibbledata")`.
+- `r pkg("gratis")` generates new time series with diverse and controllable characteristics using mixture autoregression models.
 - Data from Cryer and Chan (2010, 2nd ed) *Time series analysis with
   applications in R* are in the `r pkg("TSA")` package.
 - Data from Hyndman and Athanasopoulos (2018, 2nd ed) *Forecasting:
@@ -807,6 +806,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 ### Miscellaneous
 
+- `r pkg("complex")` implements functions for complex-valued time series analysis and forecasting.
 - `r pkg("EBMAforecast")`: Ensemble Bayesian model
   averaging forecasts using Gibbs sampling or EM algorithms.
 - `r pkg("ensembleBMA")`: Bayesian Model Averaging to
@@ -835,12 +835,10 @@ submitting an issue or pull request in the GitHub repository linked above.
 - `r pkg("spTimer")`: Spatio-temporal Bayesian modelling.
 - `r pkg("surveillance")`: Temporal and spatio-temporal
   modeling and monitoring of epidemic phenomena.
-- `r pkg("Tides")`: Functions to calculate characteristics
-  of quasi periodic time series, e.g. observed estuarine water levels.
-- `r pkg("tsfknn")`: Time series forecasting with
-  k-nearest-neighbours.
-- `r pkg("tsModel")`: Time series modeling for air
-  pollution and health.
+- `r pkg("Tides")`: Functions to calculate characteristics of quasi periodic time series, e.g. observed estuarine water levels.
+- `r pkg("TSEAL")`: Multivariate time series classification based on a Discrete Wavelet Transform.
+- `r pkg("tsfknn")`: Time series forecasting with k-nearest-neighbours.
+- `r pkg("tsModel")`: Time series modeling for air pollution and health.
 
 ### Links
 
