@@ -627,7 +627,6 @@ submitting an issue or pull request in the GitHub repository linked above.
 - *Time series component analysis* :
   `r pkg("ForeCA")` implements forecastable component analysis by searching for the best linear transformations that make a multivariate time series as forecastable as possible.
   `r pkg("HDTSA")` provides procedures for several high-dimensional time series analysis tools.
-  One-sided dynamic principal components are computed in `r pkg("odpc")`.
   Frequency-domain-based dynamic PCA is implemented in `r pkg("freqdom")`.
   `r pkg("tsBSS")` provides blind source separation and supervised dimension reduction for time series.
   `r pkg("sdrt")` estimates sufficient dimension reduction subspaces for time series.
