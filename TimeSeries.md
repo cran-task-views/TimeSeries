@@ -566,8 +566,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   regression models via OLS is available in
   `r pkg("dynlm")`; an enhanced approach that also works
   with other regression functions and more time series classes is
-  implemented in `r pkg("dyn")`. More advanced dynamic
-  system equations can be fitted using `r pkg("dse")`.
+  implemented in `r pkg("dyn")`.
   Gaussian linear state space models can be fitted using
   `r pkg("dlm")` (via maximum likelihood, Kalman
   filtering/smoothing and Bayesian methods), or using
@@ -597,7 +596,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("BigVAR")` estimates VAR and VARX models with structured lasso penalties and
   `r pkg("svars")` implements data-driven structural VARs.
   Shrinkage estimation methods for VARs are implemented in `r pkg("VARshrink")`.
-  More elaborate models are provided in package `r pkg("vars")`, `r pkg("tsDyn")`, and `estVARXls()` in `r pkg("dse")`.
+  More elaborate models are provided in package `r pkg("vars")` and `r pkg("tsDyn")`.
   Another implementation with bootstrapped prediction intervals is given in `r pkg("VAR.etp")`.
   `r pkg("bvartools")` assists in the set-up of Bayesian VAR models, while
   `r pkg("bsvars")` and `r pkg("bayesianVARs")` include efficient algorithms for estimating Bayesian models.
@@ -615,7 +614,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("nets")` provides estimation of sparse VARs using long run partial correlation networks for time series data.
   Factor-adjusted VARs using network estimation and forecasting for high-dimensional time series is implemented in `r pkg("fnets")`.
 - *Nonlinear VAR models* are provided by `r pkg("NVAR")`.
-- *VARIMA models* and *state space models* are provided in the `r pkg("dse")` package.
 - *Vector error correction models* are available via the
   `r pkg("urca")`, `r pkg("ecm")`, `r pkg("vars")`, `r pkg("tsDyn")` packages,
   including versions with structural constraints and thresholding.
