@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-05-09
+version: 2023-06-06
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -267,6 +267,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 - *Non-Gaussian time series* can be handled with GLARMA state space models via `r pkg("glarma")`,
   and using Generalized Autoregressive Score models in the `r pkg("GAS")` and `r pkg("gasmodel")`  packages.
   `r pkg("GlarmaVarSel")` provides variable selection in high-dimensional sparse GLARMA models.
+  Dynamic Generalized Linear Models are provided by `r pkg(kDGLM)`, while
   Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`.
   Conditional Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in `r pkg("bssm")`.
   `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
@@ -348,18 +349,16 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("profoc")` combines probabilistic forecasts using
   CRPS learning.
 - Point forecast evaluation is provided in the `accuracy()` function
-  from the `r pkg("fable")` and
-  `r pkg("forecast")` packages. Distributional forecast
-  evaluation using scoring rules is available in
-  `r pkg("fable")`, `r pkg("scoringRules")`
-  and `r pkg("scoringutils")`. The Diebold-Mariano test
-  for comparing the forecast accuracy of two models is implemented in
+  from the `r pkg("fable")` and `r pkg("forecast")` packages.
+  Distributional forecast evaluation using scoring rules is available in
+  `r pkg("fable")`, `r pkg("scoringRules")` and `r pkg("scoringutils")`.
+  The Diebold-Mariano test for comparing the forecast accuracy of two models is implemented in
   the `dm.test()` function in `r pkg("forecast")`.
   `r pkg("ForeComp")` generates a size-power tradeoff plot for a given Diebold-Mariano test.
   A multivariate version of the Diebold-Mariano test is provided by `r pkg("multDM")`.
   `r pkg("tsutils")` implements the Nemenyi test for comparing forecasts.
-  `r pkg("greybox")` provides `ro()` for general rolling
-  origin evaluation of forecasts.
+  `r pkg("greybox")` provides `ro()` for general rolling origin evaluation of forecasts.
+  `r pkg("tstests")` implements several tests for time series goodness of fit and forecast evaluation.
 - Tidy tools for forecasting are provided by `r pkg("sweep")`, converting
   objects produced in `r pkg("forecast")` to "tidy" data frames.
 - Multi-step-ahead direct forecasting with several machine learning
@@ -516,7 +515,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   Various forms of nonlinear autoregression are available in
   `r pkg("tsDyn")` including additive AR, SETAR and LSTAR models,
   threshold VAR and VECM.
-  `r pkg("EXPARMA")` provides exponential autoregressive moving average models.
+  `r pkg("EXPAR") provides exponential AR models, while
+  `r pkg("EXPARMA")` provides exponential ARMA models.
   `r pkg("bentcableAR")` implements Bent-Cable autoregression.
   `r pkg("BAYSTAR")` provides Bayesian analysis of threshold autoregressive models.
   Mixture AR models are implemented in `r pkg("mixAR")` and `r pkg("uGMAR")`.
@@ -571,10 +571,11 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("dlm")` (via maximum likelihood, Kalman
   filtering/smoothing and Bayesian methods), or using
   `r pkg("bsts")` which uses MCMC.
-  `r pkg("dLagM")` provides time series regression with
-  distributed lags. Functions for distributed lag nonlinear modelling
-  are provided in `r pkg("dlnm")`.
+  `r pkg("dLagM")` provides time series regression with distributed lags.
+  Functions for distributed lag nonlinear modelling are provided in `r pkg("dlnm")`.
   `r pkg("fastTS")` implements sparsity-ranked lasso methods for time series with exogenous features and/or complex seasonality.
+  `r pkg("crosslag")` provides linear and nonlinear cross lag analysis.
+  Distributed lag models based on Bayesian additive regression trees are implemented in `r pkg("dlmtree")`.
   `r pkg("sym.arma")` will fit ARMA models with regressors
   where the observations follow a conditional symmetric distribution.
 - *Time-varying parameter* models can be fitted using the
@@ -595,6 +596,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("bigtime")` estimates large sparse VAR, VARX and VARMA models, while
   `r pkg("BigVAR")` estimates VAR and VARX models with structured lasso penalties and
   `r pkg("svars")` implements data-driven structural VARs.
+  `r pkg("sstvars")` provides a toolkit for reduced form and structural smooth transition VARs.
   Shrinkage estimation methods for VARs are implemented in `r pkg("VARshrink")`.
   More elaborate models are provided in package `r pkg("vars")` and `r pkg("tsDyn")`.
   Another implementation with bootstrapped prediction intervals is given in `r pkg("VAR.etp")`.
@@ -661,8 +663,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("Rcatch22")` provides fast computation of 22
   features identified as particularly useful.
   `r pkg("theft")` calculates time series features from various R and Python packages.
-  `r pkg("fsMTS")` implements feature selection routines
-  for multivariate time series.
   Feature extraction for ordinal time series is provided by `r pkg("otsfeatures")`.
 - *Time series clustering* is implemented in
   `r pkg("TSclust")`, `r pkg("dtwclust")`,
