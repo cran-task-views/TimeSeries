@@ -515,7 +515,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Various forms of nonlinear autoregression are available in
   `r pkg("tsDyn")` including additive AR, SETAR and LSTAR models,
   threshold VAR and VECM.
-  `r pkg("EXPAR") provides exponential AR models, while
+  `r pkg("EXPAR")` provides exponential AR models, while
   `r pkg("EXPARMA")` provides exponential ARMA models.
   `r pkg("bentcableAR")` implements Bent-Cable autoregression.
   `r pkg("BAYSTAR")` provides Bayesian analysis of threshold autoregressive models.
