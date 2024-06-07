@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2023-06-06
+version: 2024-06-06
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -267,7 +267,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 - *Non-Gaussian time series* can be handled with GLARMA state space models via `r pkg("glarma")`,
   and using Generalized Autoregressive Score models in the `r pkg("GAS")` and `r pkg("gasmodel")`  packages.
   `r pkg("GlarmaVarSel")` provides variable selection in high-dimensional sparse GLARMA models.
-  Dynamic Generalized Linear Models are provided by `r pkg(kDGLM)`, while
+  Dynamic Generalized Linear Models are provided by `r pkg("kDGLM")`, while
   Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`.
   Conditional Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in `r pkg("bssm")`.
   `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
