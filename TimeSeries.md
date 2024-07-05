@@ -580,6 +580,10 @@ submitting an issue or pull request in the GitHub repository linked above.
 - `r pkg("greybox")` provides several tools for modelling
   and forecasting with dynamic regression models.
 
+### Pre-trained transformer models
+
+- `r pkg("nixtlar")` allows users to interact with Nixtla's TimeGPT via the API.
+
 ### Multivariate Time Series Models
 
 - *Vector autoregressive (VAR) models* are provided via `ar()` in the
@@ -706,6 +710,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 ### Matrix and tensor-valued time series
 
+- `r pkg("MEFM")` implements main effect matrix factor models for matrix time series.
 - `r pkg("tensorTS")` provides functions for estimation,
   simulation and prediction of factor and autoregressive models for
   matrix and tensor valued time series.
@@ -782,6 +787,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Economic time series and other data from FRED (the Federal Reserve Economic Data) can be retrieved using `r pkg("fredr")`.
 - *Time series databases:*
   `r pkg("rdbnomics")` provides access to hundreds of millions of time series from [DBnomics](db.nomics.world).
+  `r pkg("ifo")` is a client for downloading time series data from the Ifo Institute.
   `r pkg("influxdbr")` provides an interface to the InfluxDB time series database.
   `r pkg("pdfetch")` provides facilities for downloading economic and financial time
   series from public sources.
