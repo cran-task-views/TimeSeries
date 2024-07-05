@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2024-06-06
+version: 2024-07-05
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -186,10 +186,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   time series must be in the `tsibble` format.
   `r pkg("fabletools")` provides tools for extending the
   `r pkg("fable")` framework.
-- The `r pkg("forecast")` package provides similar tools
-  for `ts` objects, while `r pkg("modeltime")` and
-  `r pkg("modeltime.ensemble")` provides time series
-  forecasting tools for use with the 'tidymodels' ecosystem.
+- The `r pkg("forecast")` package provides similar tools for `ts` objects, 
+  while `r pkg("modeltime")` provides time series forecasting tools for use with the 'tidymodels' ecosystem.
   Forecast resampling tools for use with `modeltime` are provided by `r pkg("modeltime.resample")`.
 - *Exponential smoothing* : `HoltWinters()` in stats provides some
   basic models with partial optimization, `ETS()` from
@@ -506,7 +504,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   the underlying error correction model automatically.
   `r pkg("nardl")` and `r pkg("ardl.nardl")` both estimate nonlinear cointegrating
   autoregressive distributed lag models.
-  Quantile cointegration in the autoregressive distributed lag framework is provided by `r pkg("Qardl")`.
 
 ### Nonlinear Time Series Analysis
 
