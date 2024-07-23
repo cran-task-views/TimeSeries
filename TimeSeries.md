@@ -601,9 +601,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   Shrinkage estimation methods for VARs are implemented in `r pkg("VARshrink")`.
   More elaborate models are provided in package `r pkg("vars")` and `r pkg("tsDyn")`.
   Another implementation with bootstrapped prediction intervals is given in `r pkg("VAR.etp")`.
-  `r pkg("bvartools")` assists in the set-up of Bayesian VAR models, while
-  `r pkg("bsvars")` and `r pkg("bayesianVARs")` include efficient algorithms for estimating Bayesian models.
-  `r pkg("BVAR")` and `r pkg("bayesianVARs")` provide toolkits for hierarchical Bayesian VAR models.
+  `r pkg("bvartools")` assists in the set-up of Bayesian VAR models, while `r pkg("BVAR")` and `r pkg("bayesianVARs")` provide toolkits for hierarchical Bayesian VAR models.
+  `r pkg("bsvars")`, `r pkg("bsvarSIGNs")`, and `r pkg("bvarsv")` include efficient algorithms for estimating Bayesian Structural VAR models.
   `r pkg("BMTAR")` and `r pkg("mtarm")` implement Bayesian Multivariate Threshold AR models.
   Factor-augmented VAR (FAVAR) models are estimated by a Bayesian method with `r pkg("FAVAR")`.
   `r pkg("BGVAR")` implements Bayesian Global VAR models.
