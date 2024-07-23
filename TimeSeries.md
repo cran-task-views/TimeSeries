@@ -603,7 +603,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Another implementation with bootstrapped prediction intervals is given in `r pkg("VAR.etp")`.
   `r pkg("bvartools")` assists in the set-up of Bayesian VAR models, while
   `r pkg("bsvars")` and `r pkg("bayesianVARs")` include efficient algorithms for estimating Bayesian models.
-  `r pkg("BVAR")` provides a toolkit for hierarchical Bayesian VAR models.
+  `r pkg("BVAR")` and `r pkg("bayesianVARs")` provide toolkits for hierarchical Bayesian VAR models.
   `r pkg("BMTAR")` and `r pkg("mtarm")` implement Bayesian Multivariate Threshold AR models.
   Factor-augmented VAR (FAVAR) models are estimated by a Bayesian method with `r pkg("FAVAR")`.
   `r pkg("BGVAR")` implements Bayesian Global VAR models.
