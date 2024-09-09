@@ -324,6 +324,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("binsegRcpp")` provides an efficient C++ implementation of the popular binary segmentation heuristic (univariate data, Gaussian/Poisson/L1/Laplace losses, computes sequence of models from 1 segment to a given max number of segments).
   `r pkg("jointseg")` provides `Fpsn()` which implements a "Functional pruning segment neighborhood" dynamic programming algorithm (univariate data, square loss, computes best model for a certain number of changes/segments).
   `r pkg("fpop")` provides `Fpop()` which implements a "Functional pruning optimal partitioning" dynamic programming algorithm (univariate data, square loss, computes best model for a certain penalty for each change), as well as `multiBinSeg()` which is an efficient implementation of the popular binary segmentation heuristic (multi-variate data, Gaussian loss, computes sequence of models from 1 segment to a given max number of segments).
+  A tidy framework for several changepoint detection algorithms is implemented in `r pkg("tidychangepoint")`.
 - Tests for possibly non-monotonic trends are provided by
   `r pkg("funtimes")`.
 - *Time series imputation* is provided by the
