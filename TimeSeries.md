@@ -292,14 +292,10 @@ submitting an issue or pull request in the GitHub repository linked above.
 - *Portmanteau tests* are provided via `Box.test()` in the stats
   package.
   Additional tests are given by `r pkg("portes")`, `r pkg("WeightedPortTest")`, and `r pkg("testcorr")` .
-- Outlier detection following the Chen-Liu approach is provided by
-  `r pkg("tsoutliers")`. The `tsoutliers` and `tsclean`
-  functions in the `r pkg("forecast")` package provide
-  some simple heuristic methods for identifying and correcting
-  outliers. `r pkg("otsad")` implements a set of online
-  anomaly detectors for time series. `r pkg("tsrobprep")`
-  provides methods for replacing missing values and outliers using a
-  model-based approach. `r pkg("ctbi")` implements a procedure to clean, decompose and aggregate time series.
+- Outlier detection following the Chen-Liu approach is provided by `r pkg("tsoutliers")`.
+- The `tsoutliers` and `tsclean` functions in the `r pkg("forecast")` package provide some simple heuristic methods for identifying and correcting outliers.
+  `r pkg("tsrobprep")` provides methods for replacing missing values and outliers using a model-based approach.
+  `r pkg("ctbi")` implements a procedure to clean, decompose and aggregate time series.
 - *Change point detection* is provided in
   `r pkg("strucchange")` and
   `r pkg("strucchangeRcpp")` (using linear regression
