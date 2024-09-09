@@ -288,6 +288,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   univariate censored regression models with autoregressive errors.
 - *Diffusion models* such as Bass and Gompertz curves are provided by
   `r pkg("diffusion")` and `r pkg("DIMORA")`.
+  Dynamic Gompertz models for time series growth curves are implemented in `r pkg("tsgc")`.
 - *Portmanteau tests* are provided via `Box.test()` in the stats
   package.
   Additional tests are given by `r pkg("portes")`, `r pkg("WeightedPortTest")`, and `r pkg("testcorr")` .
