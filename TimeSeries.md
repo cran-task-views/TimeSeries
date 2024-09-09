@@ -186,7 +186,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   time series must be in the `tsibble` format.
   `r pkg("fabletools")` provides tools for extending the
   `r pkg("fable")` framework.
-- The `r pkg("forecast")` package provides similar tools for `ts` objects, 
+- The `r pkg("forecast")` package provides similar tools for `ts` objects,
   while `r pkg("modeltime")` provides time series forecasting tools for use with the 'tidymodels' ecosystem.
   Forecast resampling tools for use with `modeltime` are provided by `r pkg("modeltime.resample")`.
 - *Exponential smoothing* : `HoltWinters()` in stats provides some
@@ -298,24 +298,19 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("ctbi")` implements a procedure to clean, decompose and aggregate time series.
 - *Change point detection* is provided in
   `r pkg("strucchange")` and
-  `r pkg("strucchangeRcpp")` (using linear regression
-  models) and in `r pkg("trend")` (using nonparametric
-  tests). The `r pkg("changepoint")` package provides many
-  popular changepoint methods, and `r pkg("ecp")` does
-  nonparametric changepoint detection for univariate and multivariate
-  series. `r pkg("changepoint.np")` implements the
-  nonparametric PELT algorithm, while
-  `r pkg("changepoint.geo")` implements the
-  high-dimensional changepoint detection method GeomCP.
+  `r pkg("strucchangeRcpp")` (using linear regression) and in
+  `r pkg("trend")` (using nonparametric tests).
+  The `r pkg("changepoint")` package provides many popular changepoint methods, and
+  `r pkg("ecp")` does nonparametric changepoint detection for univariate and multivariate series.
+  `r pkg("changepoint.np")` implements the nonparametric PELT algorithm, while
+  `r pkg("changepoint.geo")` implements the high-dimensional changepoint detection method GeomCP.
   `r pkg("mosum")` provides a moving sum procedure for detecting multiple changepoints in univariate time series.
-  `r pkg("InspectChangepoint")` uses sparse projection to
-  estimate changepoints in high-dimensional time series.
+  `r pkg("InspectChangepoint")` uses sparse projection to estimate changepoints in high-dimensional time series.
   The nonparametric moving sum procedure for detecting multiple changepoints in multivariate time series is provided by `r pkg("CptNonPar")`.
   `r pkg("VARDetect")` implements multiple change point detection in structural VAR models.
   `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
-  `r pkg("breakfast")` includes methods for fast multiple
-  change-point detection and estimation. `r pkg("fastcpd")` provides flexible
-  and fast change point detection for regression type data, time series (ARIMA, VAR and GARCH) and
+  `r pkg("breakfast")` includes methods for fast multiple change-point detection and estimation.
+  `r pkg("fastcpd")` provides flexible and fast change point detection for regression type data, time series (ARIMA, VAR and GARCH) and
   any other data with a custom cost function using Sequential Gradient Descent with PELT.
   `r pkg("binsegRcpp")` provides an efficient C++ implementation of the popular binary segmentation heuristic (univariate data, Gaussian/Poisson/L1/Laplace losses, computes sequence of models from 1 segment to a given max number of segments).
   `r pkg("jointseg")` provides `Fpsn()` which implements a "Functional pruning segment neighborhood" dynamic programming algorithm (univariate data, square loss, computes best model for a certain number of changes/segments).
