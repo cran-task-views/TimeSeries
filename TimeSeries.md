@@ -230,7 +230,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   autoregressive time series models, while
   `r pkg("perARMA")` and  `r pkg("pcts")` implement periodic ARMA modelling and other procedures for periodic time
   series analysis.
-- *Long memory models* : Some facilities for fractional differenced
+  - *Long memory models* : Some facilities for fractional differenced
   ARFIMA models are provided in the `r pkg("fracdiff")`
   package. The `r pkg("arfima")` package has more advanced
   and general facilities for ARFIMA and ARIMA models, including
@@ -753,10 +753,11 @@ submitting an issue or pull request in the GitHub repository linked above.
   Data from the M5 forecasting competition can be downloaded using `r pkg("m5")`.
 - *National time series data:*
   `r pkg("readabs")` downloads, imports and tidies time series data from the   [*Australian* Bureau of Statistics](https://www.abs.gov.au).
+  `r pkg("bbk")` provides access to the *German* Deutsche Bundesbank and European Central Bank time series data.
+  `r pkg("bundesbank")` also allows access to the time series databases of the Deutsche Bundesbank, while
+  data from the European Central Bank can also be accessed via `r pkg("ecb")`.
   `r pkg("BETS")` provides access to the most important economic time series in *Brazil*.
-  Data from the European Central Bank can be accessed via `r pkg("ecb")`.
   Data from the Banque de France can be downloaded using `r pkg("rwebstat")`.
-  `r pkg("bundesbank")` allows access to the time series databases of the *German* central bank.
   Data from *Switzerland* via [dataseries.org](http://dataseries.org) can be downloaded and imported using `r pkg("dataseries")`.
   Macroeconomic time series for Africa can be obtained via `r pkg("africamonitor")`.
   `r pkg("ugatsdb")` provides an API to access time series data for *Uganda*, while
