@@ -394,29 +394,22 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 ### Decomposition and Filtering
 
-- *Filters and smoothing* : `filter()` in stats provides
-  autoregressive and moving average linear filtering of multiple
-  univariate time series. The `r pkg("robfilter")` package
-  provides several robust time series filters. `smooth()` from the
-  stats package computes Tukey's running median smoothers, 3RS3R,
-  3RSS, 3R, etc. `r pkg("sleekts")` computes the 4253H
-  twice smoothing method. `r pkg("mFilter")` implements
-  several filters for smoothing and extracting trend and cyclical
-  components including Hodrick-Prescott and Butterworth filters.
+- *Filters and smoothing* :
+  `filter()` in stats provides autoregressive and moving average linear filtering of multiple univariate time series.
+  The `r pkg("robfilter")` package provides several robust time series filters.
+  `smooth()` from the stats package computes Tukey's running median smoothers, 3RS3R, 3RSS, 3R, etc.
+  `r pkg("sleekts")` computes the 4253H twice smoothing method.
+  `r pkg("mFilter")` implements several filters for smoothing and extracting trend and cyclical components including Hodrick-Prescott and Butterworth filters.
+  Several filters are provided by `r pkg("signal")` including a Butterworth filter and a Savitsky-Golay filter.
   `r pkg("hpfilter")` implements one- and two-sided Hodrick-Prescott filters.
-  `r pkg("smoots")` provides nonparametric estimation of
-  the time trend and its derivatives.
+  `r pkg("smoots")` provides nonparametric estimation of the time trend and its derivatives.
 - *Decomposition* : Seasonal decomposition is discussed below.
-  Autoregressive-based decomposition is provided by
-  `r pkg("ArDec")`. `r pkg("tsdecomp")`
-  implements ARIMA-based decomposition of quarterly and monthly data.
-- *Singular Spectrum Analysis* is implemented in
-  `r pkg("Rssa")` and `r pkg("ASSA")`.
-- *Empirical Mode Decomposition* (EMD) and Hilbert spectral analysis
-  is provided by `r pkg("EMD")`. Additional tools,
-  including ensemble EMD, are available in `r pkg("hht")`.
-  An alternative implementation of ensemble EMD and its complete
-  variant are available in `r pkg("Rlibeemd")`.
+  Autoregressive-based decomposition is provided by `r pkg("ArDec")`.
+  `r pkg("tsdecomp")` implements ARIMA-based decomposition of quarterly and monthly data.
+- *Singular Spectrum Analysis* is implemented in `r pkg("Rssa")` and `r pkg("ASSA")`.
+- *Empirical Mode Decomposition* (EMD) and Hilbert spectral analysis is provided by `r pkg("EMD")`.
+  Additional tools, including ensemble EMD, are available in `r pkg("hht")`.
+  An alternative implementation of ensemble EMD and its complete variant are available in `r pkg("Rlibeemd")`.
 
 ### Seasonality
 
