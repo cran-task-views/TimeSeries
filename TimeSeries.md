@@ -212,31 +212,20 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("tsutils")`. An alternative and extended
   implementation is provided in `r pkg("forecTheta")`.
 - *Autoregressive models* : `ar()` in stats (with model selection).
-- *ARIMA models* : `arima()` in stats is the basic function for ARIMA,
-  SARIMA, RegARIMA, and subset ARIMA models. It is enhanced in the
-  `r pkg("fable")` package via the `ARIMA()` function
-  which allows for automatic modelling. Similar functionality is
-  provided in the `r pkg("forecast")` package via the
-  `auto.arima()` function. `arma()` in the
-  `r pkg("tseries")` package provides different algorithms
-  for ARMA and subset ARMA models.
+- *ARIMA models* : `arima()` in stats is the basic function for ARIMA, SARIMA, RegARIMA, and subset ARIMA models.
+  It is enhanced in the `r pkg("fable")` package via the `ARIMA()` function which allows for automatic modelling.
+  Similar functionality is provided in the `r pkg("forecast")` package via the `auto.arima()` function.
+  `arma()` in the `r pkg("tseries")` package provides different algorithms for ARMA and subset ARMA models.
   `r pkg("arima2")` provides a random-restart estimation algorithm to replace `stats::arima()`.
-  Other estimation methods including
-  the innovations algorithm are provided by
-  `r pkg("itsmr")`. Package
-  `r pkg("gsarima")` contains functionality for
-  Generalized SARIMA time series simulation.
-  `r pkg("bayesforecast")` fits Bayesian time series
-  models including seasonal ARIMA and ARIMAX models.
-  `r pkg("BayesARIMAX")` implements Bayesian estimation of
-  ARIMAX models. The `r pkg("mar1s")` package handles
-  multiplicative AR(1) with seasonal processes.
-  `r pkg("TSTutorial")` provides an interactive tutorial
-  for Box-Jenkins modelling. Improved prediction intervals for ARIMA
-  and structural time series models are provided by
-  `r pkg("tsPI")`.
-- ARIMA models with multiple seasonal periods can be handled with
-  `r pkg("tfarima")` and `r pkg("smooth")`.
+  Other estimation methods including the innovations algorithm are provided by `r pkg("itsmr")`. Package
+  `r pkg("gsarima")` contains functionality for Generalized SARIMA time series simulation.
+  `r pkg("bayesforecast")` fits Bayesian time series models including seasonal ARIMA and ARIMAX models.
+  `r pkg("BayesARIMAX")` implements Bayesian estimation of ARIMAX models.
+  Robust ARIMA modeling is provided in the `r pkg("robustarima")` package.
+  The `r pkg("mar1s")` package handles multiplicative AR(1) with seasonal processes.
+  `r pkg("TSTutorial")` provides an interactive tutorial for Box-Jenkins modelling.
+  Improved prediction intervals for ARIMA and structural time series models are provided by `r pkg("tsPI")`.
+  ARIMA models with multiple seasonal periods can be handled with `r pkg("tfarima")` and `r pkg("smooth")`.
 - *Periodic ARMA models* : `r pkg("partsm")` provides for periodic
   autoregressive time series models, while
   `r pkg("perARMA")` and  `r pkg("pcts")` implement periodic ARMA modelling and other procedures for periodic time
