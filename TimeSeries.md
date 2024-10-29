@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2024-10-02
+version: 2024-10-30
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -640,7 +640,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   functions are included, and users can add their own.
   `r pkg("Rcatch22")` provides fast computation of 22
   features identified as particularly useful.
-  `r pkg("theft")` calculates time series features from various R and Python packages.
+  `r pkg("theft")` calculates time series features from various R and Python packages,
+  while `r pkg("theftdlc")` is a companion package providing analysis and visualization functions.
   Feature extraction for ordinal time series is provided by `r pkg("otsfeatures")`.
 - *Time series clustering* is implemented in
   `r pkg("TSclust")`, `r pkg("dtwclust")`,
