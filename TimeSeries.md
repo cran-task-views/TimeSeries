@@ -102,8 +102,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("clock")` provides a comprehensive library for
   date-time manipulations using a new family of orthogonal date-time
   classes (durations, time points, zoned-times, and calendars).
-  A general purpose date/time converter is provided by `r pkg("timeless")`,
-  while `r pkg("anytime")` converts various inputs into `POSIXct` or `Date` objects.
+  The `r pkg("anytime")` package converts various inputs into `POSIXct` or `Date` objects.
   Various recurrent calendar calculations are possibly using `r pkg("almanac")`.
   `r pkg("timechange")` allows for efficient manipulation
   of date-times accounting for time zones and daylight saving times.
