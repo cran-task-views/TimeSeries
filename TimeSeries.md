@@ -626,8 +626,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   usual linear multivariate state space models, allowing non-Gaussian
   and nonlinear models. These are implemented in the
   `r pkg("pomp")` package.
-- Multivariate stochastic volatility models (using latent factors) are
-  provided by `r pkg("factorstochvol")`.
+- Multivariate stochastic volatility models (using latent factors) are provided by `r pkg("factorstochvol")`.
+  Multivariate ARCH models are implemented in `r pkg("tsmarch")`.
 - High-dimensional sparse multivariate GLARMA models are handled by `r pkg("MultiGlarmaVarSel")` including variable selection.
 - Multivariate Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`.
 
