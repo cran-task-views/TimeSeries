@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2024-10-30
+version: 2024-11-30
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -400,7 +400,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("sleekts")` computes the 4253H twice smoothing method.
   `r pkg("mFilter")` implements several filters for smoothing and extracting trend and cyclical components including Hodrick-Prescott and Butterworth filters.
   Several filters are provided by `r pkg("signal")` including a Butterworth filter and a Savitsky-Golay filter.
-  `r pkg("hpfilter")` implements one- and two-sided Hodrick-Prescott filters.
+  `r pkg("hpfilter")` implements one- and two-sided Hodrick-Prescott filters, while
+  `r pkg("corbouli")` implements Corbae-Ouliaris frequency domain filtering
   `r pkg("smoots")` provides nonparametric estimation of the time trend and its derivatives.
 - *Decomposition* : Seasonal decomposition is discussed below.
   Autoregressive-based decomposition is provided by `r pkg("ArDec")`.
