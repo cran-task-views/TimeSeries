@@ -659,6 +659,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   reconciliation methods for cross-sectional, temporal, and
   cross-temporal constrained time series. Probabilistic reconciliation of
   hierarchical forecasts via conditioning is available in `r pkg("bayesRecon")`.
+  Degenerate hierarchical structures are handled by `r pkg("htsDegenerateR")`.
 
 ### Dynamic time warping
 
