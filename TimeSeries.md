@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2024-11-30
+version: 2024-12-22
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -460,6 +460,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   implementations of both the standard ADF and a covariate-augmented
   ADF (CADF) test. `r pkg("MultipleBubbles")` tests for
   the existence of bubbles based on Phillips-Shi-Yu (2015).
+  Simulation-based unit root tests are provided by `r pkg("sTSD")`.
 - *Local stationarity* : `r pkg("locits")` provides a test
   of local stationarity and computes the localized autocovariance.
   Time series costationarity determination is provided by
