@@ -515,8 +515,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   detecting chaotic signals inside univariate time series.
 - Autoregression Markov switching models are provided in
   `r pkg("MSwM")`, while dependent mixtures of latent
-  Markov models are given in `r pkg("depmix")` and
-  `r pkg("depmixS4")` for categorical and continuous time
+  Markov models are given in `r pkg("depmixS4")` for categorical and continuous time
   series.
 - *Tests* : Various tests for nonlinearity are provided in
   `r pkg("fNonlinear")`.
