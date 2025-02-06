@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2024-12-22
+version: 2025-02-07
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -66,7 +66,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   distributions conditional on bivariate temporal granularities.
   `r pkg("dygraphs")` provides an interface to the
   Dygraphs interactive time series charting library.
-  `r pkg("TSstudio")` provides some interactive
+  Alternative interactive time series visualizations using the vis.js Timeline library are provided by `r pkg("linevis")`.
+  `r pkg("TSstudio")` also provides some interactive
   visualization tools for time series. `r pkg("ZRA")`
   plots forecast objects from the `r pkg("forecast")`
   package using dygraphs. Basic fan plots of forecast distributions
@@ -296,6 +297,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("InspectChangepoint")` uses sparse projection to estimate changepoints in high-dimensional time series.
   The nonparametric moving sum procedure for detecting multiple changepoints in multivariate time series is provided by `r pkg("CptNonPar")`.
   `r pkg("VARDetect")` implements multiple change point detection in structural VAR models.
+  Sequential Change Point Detection for High-Dimensional VAR Models is implemented in `r pkg("VARcpDetectOnline")`.
   `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
   `r pkg("breakfast")` includes methods for fast multiple change-point detection and estimation.
   `r pkg("fastcpd")` provides flexible and fast change point detection for regression type data, time series (ARIMA, VAR and GARCH) and
@@ -686,6 +688,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   functional principal components for functional time series.
 - `r pkg("STFTS")` contains stationarity, trend and unit
   root tests for functional time series.
+- `r pkg("hdftsa")` offers methods for visualizing, modelling, and forecasting high-dimensional functional time series.
 
 ### Matrix and tensor-valued time series
 
