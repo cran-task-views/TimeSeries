@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2025-02-07
+version: 2025-03-11
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -293,12 +293,14 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("ecp")` does nonparametric changepoint detection for univariate and multivariate series.
   `r pkg("changepoint.np")` implements the nonparametric PELT algorithm, while
   `r pkg("changepoint.geo")` implements the high-dimensional changepoint detection method GeomCP.
+  `r pkg("changepointGA")` performs changepoint detection using a genetic algorithm.
   `r pkg("mosum")` provides a moving sum procedure for detecting multiple changepoints in univariate time series.
   `r pkg("InspectChangepoint")` uses sparse projection to estimate changepoints in high-dimensional time series.
   The nonparametric moving sum procedure for detecting multiple changepoints in multivariate time series is provided by `r pkg("CptNonPar")`.
   `r pkg("VARDetect")` implements multiple change point detection in structural VAR models.
   Sequential Change Point Detection for High-Dimensional VAR Models is implemented in `r pkg("VARcpDetectOnline")`.
   `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
+   Another Bayesian change-point detection package is `r pkg("BayesChange")`, which also clusters data based on common structural changes.
   `r pkg("breakfast")` includes methods for fast multiple change-point detection and estimation.
   `r pkg("fastcpd")` provides flexible and fast change point detection for regression type data, time series (ARIMA, VAR and GARCH) and
   any other data with a custom cost function using Sequential Gradient Descent with PELT.
@@ -510,6 +512,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("TSdeeplearning")` implements LSTM and GRU networks.
   `r pkg("TSANN")` automatically identifies an artificial neural network
   based on forecasting accuracy.
+  Forecasts based on echo state networks can be obtained using `r pkg("echos")`.
 - `r pkg("tseriesChaos")` provides an R implementation of
   the algorithms from the
   *[TISEAN](http://www.mpipks-dresden.mpg.de/~tisean/) project*.
@@ -595,7 +598,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("mgm")` estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
   `r pkg("nets")` provides estimation of sparse VARs using long run partial correlation networks for time series data.
   Factor-adjusted VARs using network estimation and forecasting for high-dimensional time series is implemented in `r pkg("fnets")`.
-- *Nonlinear VAR models* are provided by `r pkg("NVAR")`.
+- *Nonlinear VAR models* are provided by `r pkg("NVAR")`, while 
+  quadratic VARs are implemented in `r pkg("quadVAR")`.
 - *Vector error correction models* are available via the
   `r pkg("urca")`, `r pkg("ecm")`, `r pkg("vars")`, `r pkg("tsDyn")` packages,
   including versions with structural constraints and thresholding.
