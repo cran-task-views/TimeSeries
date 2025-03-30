@@ -285,29 +285,6 @@ submitting an issue or pull request in the GitHub repository linked above.
 - The `tsoutliers` and `tsclean` functions in the `r pkg("forecast")` package provide some simple heuristic methods for identifying and correcting outliers.
   `r pkg("tsrobprep")` provides methods for replacing missing values and outliers using a model-based approach.
   `r pkg("ctbi")` implements a procedure to clean, decompose and aggregate time series.
-- *Change point detection* is provided in
-  `r pkg("strucchange")` and
-  `r pkg("strucchangeRcpp")` (using linear regression) and in
-  `r pkg("trend")` (using nonparametric tests).
-  The `r pkg("changepoint")` package provides many popular changepoint methods, and
-  `r pkg("ecp")` does nonparametric changepoint detection for univariate and multivariate series.
-  `r pkg("changepoint.np")` implements the nonparametric PELT algorithm, while
-  `r pkg("changepoint.geo")` implements the high-dimensional changepoint detection method GeomCP.
-  `r pkg("changepointGA")` performs changepoint detection using a genetic algorithm.
-  `r pkg("mosum")` provides a moving sum procedure for detecting multiple changepoints in univariate time series.
-  `r pkg("InspectChangepoint")` uses sparse projection to estimate changepoints in high-dimensional time series.
-  The nonparametric moving sum procedure for detecting multiple changepoints in multivariate time series is provided by `r pkg("CptNonPar")`.
-  `r pkg("VARDetect")` implements multiple change point detection in structural VAR models.
-  Sequential Change Point Detection for High-Dimensional VAR Models is implemented in `r pkg("VARcpDetectOnline")`.
-  `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
-   Another Bayesian change-point detection package is `r pkg("BayesChange")`, which also clusters data based on common structural changes.
-  `r pkg("breakfast")` includes methods for fast multiple change-point detection and estimation.
-  `r pkg("fastcpd")` provides flexible and fast change point detection for regression type data, time series (ARIMA, VAR and GARCH) and
-  any other data with a custom cost function using Sequential Gradient Descent with PELT.
-  `r pkg("binsegRcpp")` provides an efficient C++ implementation of the popular binary segmentation heuristic (univariate data, Gaussian/Poisson/L1/Laplace losses, computes sequence of models from 1 segment to a given max number of segments).
-  `r pkg("jointseg")` provides `Fpsn()` which implements a "Functional pruning segment neighborhood" dynamic programming algorithm (univariate data, square loss, computes best model for a certain number of changes/segments).
-  `r pkg("fpop")` provides `Fpop()` which implements a "Functional pruning optimal partitioning" dynamic programming algorithm (univariate data, square loss, computes best model for a certain penalty for each change), as well as `multiBinSeg()` which is an efficient implementation of the popular binary segmentation heuristic (multi-variate data, Gaussian loss, computes sequence of models from 1 segment to a given max number of segments).
-  A tidy framework for several changepoint detection algorithms is implemented in `r pkg("tidychangepoint")`.
 - Tests for possibly non-monotonic trends are provided by
   `r pkg("funtimes")`.
 - *Time series imputation* is provided by the
@@ -354,6 +331,32 @@ submitting an issue or pull request in the GitHub repository linked above.
 - *Miscellaneous* : `r pkg("ltsa")` contains methods for
   linear time series analysis, `r pkg("timsac")` for time
   series analysis and control.
+
+### Change point detection
+
+- *Change point detection* is provided in
+  `r pkg("strucchange")` and
+  `r pkg("strucchangeRcpp")` (using linear regression) and in
+  `r pkg("trend")` (using nonparametric tests).
+  The `r pkg("changepoint")` package provides many popular changepoint methods, and
+  `r pkg("ecp")` does nonparametric changepoint detection for univariate and multivariate series.
+  `r pkg("changepoint.np")` implements the nonparametric PELT algorithm, while
+  `r pkg("changepoint.geo")` implements the high-dimensional changepoint detection method GeomCP.
+  `r pkg("changepointGA")` performs changepoint detection using a genetic algorithm.
+  `r pkg("mosum")` provides a moving sum procedure for detecting multiple changepoints in univariate time series.
+  `r pkg("InspectChangepoint")` uses sparse projection to estimate changepoints in high-dimensional time series.
+  The nonparametric moving sum procedure for detecting multiple changepoints in multivariate time series is provided by `r pkg("CptNonPar")`.
+  `r pkg("VARDetect")` implements multiple change point detection in structural VAR models.
+  Sequential Change Point Detection for High-Dimensional VAR Models is implemented in `r pkg("VARcpDetectOnline")`.
+  `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
+   Another Bayesian change-point detection package is `r pkg("BayesChange")`, which also clusters data based on common structural changes.
+  `r pkg("breakfast")` includes methods for fast multiple change-point detection and estimation.
+  `r pkg("fastcpd")` provides flexible and fast change point detection for regression type data, time series (ARIMA, VAR and GARCH) and
+  any other data with a custom cost function using Sequential Gradient Descent with PELT.
+  `r pkg("binsegRcpp")` provides an efficient C++ implementation of the popular binary segmentation heuristic (univariate data, Gaussian/Poisson/L1/Laplace losses, computes sequence of models from 1 segment to a given max number of segments).
+  `r pkg("jointseg")` provides `Fpsn()` which implements a "Functional pruning segment neighborhood" dynamic programming algorithm (univariate data, square loss, computes best model for a certain number of changes/segments).
+  `r pkg("fpop")` provides `Fpop()` which implements a "Functional pruning optimal partitioning" dynamic programming algorithm (univariate data, square loss, computes best model for a certain penalty for each change), as well as `multiBinSeg()` which is an efficient implementation of the popular binary segmentation heuristic (multi-variate data, Gaussian loss, computes sequence of models from 1 segment to a given max number of segments).
+  A tidy framework for several changepoint detection algorithms is implemented in `r pkg("tidychangepoint")`.
 
 ### Frequency analysis
 
