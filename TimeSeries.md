@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2025-03-11
+version: 2025-03-31
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -405,7 +405,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("mFilter")` implements several filters for smoothing and extracting trend and cyclical components including Hodrick-Prescott and Butterworth filters.
   Several filters are provided by `r pkg("signal")` including a Butterworth filter and a Savitsky-Golay filter.
   `r pkg("hpfilter")` implements one- and two-sided Hodrick-Prescott filters, while
-  `r pkg("corbouli")` implements Corbae-Ouliaris frequency domain filtering.
+  `r pkg("jumps")` provides a Hodrick-Prescott filter with automatically selected jumps.
+  Corbae-Ouliaris requency domain filtering is implemented in `r pkg("corbouli")`.
   `r pkg("smoots")` provides nonparametric estimation of the time trend and its derivatives.
 - *Decomposition* : Seasonal decomposition is discussed below.
   Autoregressive-based decomposition is provided by `r pkg("ArDec")`.
@@ -502,6 +503,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Mixture AR models are implemented in `r pkg("mixAR")` and `r pkg("uGMAR")`.
   `r pkg("setartree")` implements an SETAR tree algorithm, and a SETAR forest.
   `r pkg("tseriesTARMA")` provides routines for Threshold ARMA model testing fitting and forecasting.
+  Probabilistic forecasts with XGBoost and conformal inference are provided by `r pkg("xpect")`.
 - *Neural network autoregression* : Neural network forecasting based on
   lagged inputs are provided by `r pkg("tsDyn")`, `r pkg("GMDH")` and
   `r pkg("nnfor")`. `r pkg("NlinTS")` includes neural
