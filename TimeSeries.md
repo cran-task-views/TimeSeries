@@ -37,8 +37,10 @@ submitting an issue or pull request in the GitHub repository linked above.
   windows, and `stretch_tsibble()` for expanding windows.
   `r pkg("tbrf")` provides rolling functions based on date
   and time windows instead of n-lagged observations.
-  `r pkg("roll")` provides parallel functions for
-  computing rolling statistics. `r pkg("runner")` provides
+  `r pkg("roll")` provides fast and efficient computation of rolling
+  and expanding statistics for time-series data using online algorithms
+  and parallelized C++ code with support for weights and missing values.
+   `r pkg("runner")` provides
   tools for running any R function in rolling windows or date windows.
   `r pkg("runstats")` provides fast computational methods
   for some running sample statistics. For
@@ -346,7 +348,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("mosum")` provides a moving sum procedure for detecting multiple changepoints in univariate time series.
   `r pkg("InspectChangepoint")` uses sparse projection to estimate changepoints in high-dimensional time series.
   The nonparametric moving sum procedure for detecting multiple changepoints in multivariate time series is provided by `r pkg("CptNonPar")`.
-  `r pkg("VARDetect")` implements multiple change point detection in structural VAR models.
   Sequential Change Point Detection for High-Dimensional VAR Models is implemented in `r pkg("VARcpDetectOnline")`.
   `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
    Another Bayesian change-point detection package is `r pkg("BayesChange")`, which also clusters data based on common structural changes.
@@ -581,7 +582,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   Possibly non-stationary VAR models are fitted in the
   `r pkg("mAr")` package, which also allows VAR models in principal component space.
   Fractionally cointegrated VAR models are handled by `r pkg("FCVAR")`.
-  `r pkg("sparsevar")` allows estimation of sparse VAR and VECM models,
   `r pkg("bigtime")` estimates large sparse VAR, VARX and VARMA models, while
   `r pkg("BigVAR")` estimates VAR and VARX models with structured lasso penalties and
   `r pkg("svars")` implements data-driven structural VARs.
@@ -798,7 +798,6 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 ### Miscellaneous
 
-- `r pkg("complex")` implements functions for complex-valued time series analysis and forecasting.
 - `r pkg("EBMAforecast")`: Ensemble Bayesian model
   averaging forecasts using Gibbs sampling or EM algorithms.
 - `r pkg("ensembleBMA")`: Bayesian Model Averaging to
