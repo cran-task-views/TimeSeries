@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2025-03-31
+version: 2025-05-04
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -203,6 +203,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   models at different levels of temporal aggregation to improve
   forecast accuracy. Some Bayesian extensions of exponential smoothing
   are contained in `r pkg("Rlgt")`.
+- TBATS models are available in `r pkg("forecast")` and `r pkg("tsissm")`.
 - `r pkg("prophet")` forecasts time series based on an
   additive model where nonlinear trends are fit with yearly and weekly
   seasonality, plus holidays. It works best with daily data.
@@ -249,9 +250,8 @@ submitting an issue or pull request in the GitHub repository linked above.
 - *Structural (or unobserved component) models* are implemented in
   `StructTS()` in stats,
   while automatic modelling and forecasting are provided by `r pkg("UComp")` and `r pkg("autostsm")`.
-  `r pkg("statespacer")` implements univariate state space
-  models including structural and SARIMA models. Bayesian structural
-  time series models are implemented in `r pkg("bsts")`
+  `r pkg("statespacer")` implements univariate state space models including structural and SARIMA models.
+  Bayesian structural time series models are implemented in `r pkg("bsts")` and `r pkg("bayesSSM")`.
   Robust Kalman filtering is provided by `r pkg("RobKF")`.
 - *Non-Gaussian time series* can be handled with GLARMA state space models via `r pkg("glarma")`,
   and using Generalized Autoregressive Score models in the `r pkg("GAS")` and `r pkg("gasmodel")`  packages.
@@ -270,11 +270,11 @@ submitting an issue or pull request in the GitHub repository linked above.
   Semiparametric estimation and bootstrapping of INAR models is provided by the `r pkg("spINAR")` package.
 - *GARCH models* : `garch()` from `r pkg("tseries")` fits basic GARCH models.
   Many variations on GARCH models are provided by `r pkg("rugarch")` and `r pkg("tsgarch")`.
-  Other univariate GARCH packages include `r pkg("fGarch")` which implements ARIMA models with a wide class of GARCH innovations.
+  Other univariate GARCH packages include `r pkg("fGarch")` which implements ARIMA models with a wide class of GARCH innovations and
+  `r pkg("robustGarch")` which provides robust GARCH(1,1) models.
   `r pkg("bayesforecast")` fits Bayesian time series models including several variations of GARCH models.
   There are many more GARCH packages described in the `r view("Finance")` task view.
-- *Stochastic volatility* models are handled by
-  `r pkg("stochvol")` in a Bayesian framework.
+- *Stochastic volatility* models are handled by `r pkg("stochvol")` in a Bayesian framework.
 - *Censored time series* can be modelled using `r pkg("ARCensReg")`, which fits
   univariate censored regression models with autoregressive errors.
 - *Diffusion models* such as Bass and Gompertz curves are provided by
@@ -603,7 +603,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("mgm")` estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
   `r pkg("nets")` provides estimation of sparse VARs using long run partial correlation networks for time series data.
   Factor-adjusted VARs using network estimation and forecasting for high-dimensional time series is implemented in `r pkg("fnets")`.
-- *Nonlinear VAR models* are provided by `r pkg("NVAR")`, while 
+- *Nonlinear VAR models* are provided by `r pkg("NVAR")`, while
   quadratic VARs are implemented in `r pkg("quadVAR")`.
 - *Vector error correction models* are available via the
   `r pkg("urca")`, `r pkg("ecm")`, `r pkg("vars")`, `r pkg("tsDyn")` packages,
