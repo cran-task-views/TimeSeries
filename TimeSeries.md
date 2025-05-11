@@ -62,8 +62,10 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("dCovTS")` computes and plots the distance
   covariance and correlation functions of time series.
   `r pkg("ggseas")` provides additional ggplot2 graphics
-  for seasonally adjusted series and rolling statistics. Calendar
-  plots are implemented in `r pkg("sugrrants")`.
+  for seasonally adjusted series and rolling statistics.
+  `r pkg("gglinedensity")` provides a ggplot2 statistic
+  for DenseLines heatmaps of time series normalized by arc length.
+  Calendar plots are implemented in `r pkg("sugrrants")`.
   `r pkg("gravitas")` allows for visualizing probability
   distributions conditional on bivariate temporal granularities.
   `r pkg("dygraphs")` provides an interface to the
