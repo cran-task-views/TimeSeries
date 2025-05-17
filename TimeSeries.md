@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2025-05-04
+version: 2025-05-17
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -221,6 +221,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   It is enhanced in the `r pkg("fable")` package via the `ARIMA()` function which allows for automatic modelling.
   Similar functionality is provided in the `r pkg("forecast")` package via the `auto.arima()` function.
   `arma()` in the `r pkg("tseries")` package provides different algorithms for ARMA and subset ARMA models.
+  Other estimation methods including the innovations algorithm are provided by `r pkg("itsmr")`.
   `r pkg("arima2")` provides a random-restart estimation algorithm to replace `stats::arima()`.
   Other estimation methods including the innovations algorithm are provided by `r pkg("itsmr")`. Package
   `r pkg("gsarima")` contains functionality for Generalized SARIMA time series simulation.
@@ -255,6 +256,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("statespacer")` implements univariate state space models including structural and SARIMA models.
   Bayesian structural time series models are implemented in `r pkg("bsts")` and `r pkg("bayesSSM")`.
   Robust Kalman filtering is provided by `r pkg("RobKF")`.
+  Exact observation weights for the Kalman filter and smoother are available using `r pkg("wex")`.
 - *Non-Gaussian time series* can be handled with GLARMA state space models via `r pkg("glarma")`,
   and using Generalized Autoregressive Score models in the `r pkg("GAS")` and `r pkg("gasmodel")`  packages.
   `r pkg("GlarmaVarSel")` provides variable selection in high-dimensional sparse GLARMA models.
