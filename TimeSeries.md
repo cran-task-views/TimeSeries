@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2025-05-17
+version: 2025-07-07
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -671,7 +671,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   hierarchical methods to reconcile forecasts of temporally aggregated
   time series. `r pkg("FoReco")` provides various forecast
   reconciliation methods for cross-sectional, temporal, and
-  cross-temporal constrained time series. Probabilistic reconciliation of
+  cross-temporal constrained time series. Coherent forecast combination for linearly constrained multiple time series is implemented in `r pkg("FoCo2")`. 
+  Probabilistic reconciliation of
   hierarchical forecasts via conditioning is available in `r pkg("bayesRecon")`.
   Degenerate hierarchical structures are handled by `r pkg("htsDegenerateR")`.
 
@@ -799,6 +800,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   nonlinear and chaotic systems. `r pkg("tssim")` flexibly
   simulates daily or monthly time series using seasonal, calendar, and
   outlier components.
+- *Data revisions*: `r pkg("butterfly")` provides verification of continually updating time series data where we expect new values, but want to ensure previous data remains unchanged. 
+- *Data coherence*: `r pkg("gseries")` implements Statistics Canada's generalized system for benchmarking and reconciliation of time series.
 
 ### Miscellaneous
 
