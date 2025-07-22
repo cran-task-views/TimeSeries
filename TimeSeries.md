@@ -776,7 +776,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("bundesbank")` also allows access to the time series databases of the Deutsche Bundesbank, while
   data from the European Central Bank can also be accessed via `r pkg("ecb")`.
   `r pkg("BETS")` provides access to the most important economic time series in *Brazil*.
-  Data from the Banque de France can be downloaded using `r pkg("rwebstat")`.
   Data from *Switzerland* via [dataseries.org](http://dataseries.org) can be downloaded and imported using `r pkg("dataseries")`.
   Macroeconomic time series for Africa can be obtained via `r pkg("africamonitor")`.
   `r pkg("ugatsdb")` provides an API to access time series data for *Uganda*, while
