@@ -61,8 +61,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("tsibbletalk")`.
   `r pkg("dCovTS")` computes and plots the distance
   covariance and correlation functions of time series.
-  `r pkg("ggseas")` provides additional ggplot2 graphics
-  for seasonally adjusted series and rolling statistics.
   `r pkg("gglinedensity")` provides a ggplot2 statistic
   for DenseLines heatmaps of time series normalized by arc length.
   Calendar plots are implemented in `r pkg("sugrrants")`.
@@ -308,9 +306,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 - A standardized time series forecasting framework including many models is provided by `r pkg("finnts")`, designed for financial time series.
 - Forecasts can be combined in the `r pkg("fable")`
   package using simple linear expressions.
-  `r pkg("ForecastComb")` supports many forecast
-  combination methods including simple, geometric and regression-based
-  combinations. `r pkg("forecastHybrid")` provides
+  `r pkg("forecastHybrid")` provides
   functions for ensemble forecasts, combining approaches from the
   `r pkg("forecast")` package.
   `r pkg("opera")` has facilities for online predictions
@@ -384,21 +380,18 @@ submitting an issue or pull request in the GitHub repository linked above.
   spectral analysis is implemented in `r pkg("rhosa")`,
   including bispectrum, bicoherence, cross-bispectrum and
   cross-bicoherence.
-- *Wavelet methods* : The `r pkg("wavelets")` package
-  includes computing wavelet filters, wavelet transforms and
-  multiresolution analyses. Multiresolution forecasting using wavelets
-  is also implemented in `r pkg("mrf")`.
+- *Wavelet methods* : The `r pkg("wavelets")`, `r pkg("wavethresh")` and `r pkg("waveslim")`
+  packages include computing wavelet filters, wavelet transforms and multiresolution analyses. 
   `r pkg("WaveletComp")` provides some tools for
   wavelet-based analysis of univariate and bivariate time series
   including cross-wavelets, phase-difference and significance tests.
   `r pkg("biwavelet")` is a port of the WTC Matlab package for univariate and bivariate wavelet analyses.
   `r pkg("mvLSW")` provides tools for multivariate locally stationary wavelet processes.
-  Local PACF estimation for locally stationary wavelet processes is provided by `r pkg("lpacf")`.
+  Local ACF estimation is provided by `r pkg("locits")` and PACF estimation by `r pkg("lpacf")`.
   Locally stationary wavelet processes can be forecast using `r pkg("forecastLSW")`.
   `r pkg("LSWPlib")` contains functions for simulation and spectral estimation of locally stationary wavelet packet processes.
   Tests of white noise using wavelets are provided by `r pkg("hwwntest")`.
   Wavelet scalogram tools are contained in `r pkg("wavScalogram")`.
-  Further wavelet methods can be found in the packages `r pkg("waveslim")` and  `r pkg("wavethresh")`.
   Complex-valued wavelet spectral procedures are provided in `r pkg("CNLTtsa")`.
 - *Harmonic regression* using Fourier terms is implemented in
   `r pkg("fable")` and `r pkg("forecast")` packages via the `fourier` function.
@@ -482,7 +475,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   stationary wavelet models for nonstationary time series are
   implemented in `r pkg("wavethresh")` (including
   estimation, plotting, and simulation functionality for time-varying
-  spectra).
+  spectra) and `r pkg("ForecastLSW")` for forecasting. `r pkg("TrendLSW")` extends
+  the locally stationary wavelet models to include time varying trends.
 - *Cointegration* : The Engle-Granger two-step method with the
   Phillips-Ouliaris cointegration test is implemented in
   `r pkg("tseries")` and `r pkg("urca")`. The
@@ -595,7 +589,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Another implementation with bootstrapped prediction intervals is given in `r pkg("VAR.etp")`.
   `r pkg("bvartools")` assists in the set-up of Bayesian VAR models, while `r pkg("BVAR")` and `r pkg("bayesianVARs")` provide toolkits for hierarchical Bayesian VAR models.
   `r pkg("bsvars")`, `r pkg("bsvarSIGNs")`, and `r pkg("bvarsv")` include efficient algorithms for estimating Bayesian Structural VAR models.
-  `r pkg("BMTAR")` and `r pkg("mtarm")` implement Bayesian Multivariate Threshold AR models.
+  `r pkg("mtarm")` implements Bayesian Multivariate Threshold AR models.
   Factor-augmented VAR (FAVAR) models are estimated by a Bayesian method with `r pkg("FAVAR")`.
   `r pkg("BGVAR")` implements Bayesian Global VAR models.
   `r pkg("mlVAR")` provides multi-level vector autoregression.
@@ -603,7 +597,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("GNAR")` provides methods for fitting network AR models, while
   `r pkg("graphicalVAR")` and `r pkg("tsnet")` both estimate graphical VAR models.
   `r pkg("gdpc")` implements generalized dynamic principal components.
-  `r pkg("pcdpca")` extends dynamic principal components to periodically correlated multivariate time series.
   `r pkg("mgm")` estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
   `r pkg("nets")` provides estimation of sparse VARs using long run partial correlation networks for time series data.
   Factor-adjusted VARs using network estimation and forecasting for high-dimensional time series is implemented in `r pkg("fnets")`.
@@ -694,8 +687,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   functional time series are implemented in pkg("ftsa")`.
   `r pkg("NTS")` also implements functional autoregressive models.
   Seasonal functional autoregression models are provided by `r pkg("Rsfar")`.
-  `r pkg("fpcb")` implements predictive confidence bands
-  for functional time series.
 - `r pkg("fdaACF")` estimates the autocorrelation function
   for functional time series.
 - `r pkg("freqdom.fda")` provides implements of dynamical
@@ -769,7 +760,6 @@ submitting an issue or pull request in the GitHub repository linked above.
 - Data from the M and M3 forecasting competitions are provided in the `r pkg("Mcomp")` package.
   `r pkg("Tcomp")` provides data from the 2010 IJF Tourism Forecasting Competition.
   The M4 competition data are available from `r github("carlanetto/M4comp2018")`.
-  Data from the M5 forecasting competition can be downloaded using `r pkg("m5")`.
 - *National time series data:*
   `r pkg("readabs")` downloads, imports and tidies time series data from the   [*Australian* Bureau of Statistics](https://www.abs.gov.au).
   `r pkg("bbk")` provides access to the *German* Deutsche Bundesbank and European Central Bank time series data.
