@@ -475,7 +475,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   stationary wavelet models for nonstationary time series are
   implemented in `r pkg("wavethresh")` (including
   estimation, plotting, and simulation functionality for time-varying
-  spectra) and `r pkg("ForecastLSW")` for forecasting. `r pkg("TrendLSW")` extends
+  spectra) and `r pkg("forecastLSW")` for forecasting. `r pkg("TrendLSW")` extends
   the locally stationary wavelet models to include time varying trends.
 - *Cointegration* : The Engle-Granger two-step method with the
   Phillips-Ouliaris cointegration test is implemented in
