@@ -134,8 +134,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 - The `r pkg("tempdisagg")` package includes methods for
   temporal disaggregation and interpolation of a low frequency time
   series to a higher frequency series.
-  Time series disaggregation is also provided by
-  `r pkg("TSdisaggregation")`, `r pkg("tsdisagg2")` and `r pkg("disaggR")`.
+  Time series disaggregation is also provided by `r pkg("TSdisaggregation")` and `r pkg("tsdisagg2")`.
 
 ### Time Series Classes
 
@@ -240,10 +239,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   and general facilities for ARFIMA and ARIMA models, including
   dynamic regression (transfer function) models. Additional methods
   for fitting and simulating non-stationary ARFIMA models are in
-  `r pkg("nsarfima")`. `r pkg("LongMemoryTS")`
-  provides a collection of functions for analysing long memory time
-  series. Fractionally differenced Gegenbaur ARMA processes are
-  handled by `r pkg("garma")`.
+  `r pkg("nsarfima")`. 
+  Fractionally differenced Gegenbaur ARMA processes are handled by `r pkg("garma")`.
   `r pkg("esemifar")` provides tools for nonparametric
   smoothing of long-memory time series.
 - *Transfer function* models are provided by the `arfima` function in
@@ -309,10 +306,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("forecastHybrid")` provides
   functions for ensemble forecasts, combining approaches from the
   `r pkg("forecast")` package.
-  `r pkg("opera")` has facilities for online predictions
-  based on combinations of forecasts provided by the user.
-  `r pkg("profoc")` combines probabilistic forecasts using
-  CRPS learning.
+  `r pkg("profoc")` combines probabilistic forecasts using CRPS learning.
 - Point forecast evaluation is provided in the `accuracy()` function
   from the `r pkg("fable")` and `r pkg("forecast")` packages.
   Distributional forecast evaluation using scoring rules is available in
@@ -799,8 +793,6 @@ submitting an issue or pull request in the GitHub repository linked above.
 - `r pkg("ensembleBMA")`: Bayesian Model Averaging to
   create probabilistic forecasts from ensemble forecasts and weather
   observations.
-- `r pkg("FeedbackTS")`: Analysis of fragmented time
-  directionality to investigate feedback in time series.
 - `r pkg("gsignal")` is an R implementation of the Octave
   package "signal", containing a variety of signal processing tools.
 - `r pkg("paleoTS")`: Modeling evolution in
