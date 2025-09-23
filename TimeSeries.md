@@ -819,6 +819,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 - `r pkg("TSEAL")`: Multivariate time series classification based on a Discrete Wavelet Transform.
 - `r pkg("tsfknn")`: Time series forecasting with k-nearest-neighbours.
 - `r pkg("tsModel")`: Time series modeling for air pollution and health.
+- `r pkg("CovEsts")`: Nonparametric autocovariance function estimation, correction and comparison of estimates, and block bootstrap confidence intervals, for univariate time series.
 
 ### Links
 
