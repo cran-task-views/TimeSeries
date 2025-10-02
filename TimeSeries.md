@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2025-09-04
+version: 2025-10-02
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -452,15 +452,11 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 - *Stationarity and unit roots* : `r pkg("tseries")`
   provides various stationarity and unit root tests including
-  Augmented Dickey-Fuller, Phillips-Perron, and KPSS. Alternative
-  implementations of the ADF and KPSS tests are in the
-  `r pkg("urca")` package, which also includes further
-  methods such as Elliott-Rothenberg-Stock, Schmidt-Phillips and
-  Zivot-Andrews tests. `r pkg("uroot")` provides seasonal
-  unit root tests. `r pkg("CADFtest")` provides
-  implementations of both the standard ADF and a covariate-augmented
-  ADF (CADF) test. `r pkg("MultipleBubbles")` tests for
-  the existence of bubbles based on Phillips-Shi-Yu (2015).
+  Augmented Dickey-Fuller, Phillips-Perron, and KPSS. 
+  Alternative implementations of the ADF and KPSS tests are in the `r pkg("urca")` package, which also includes further methods such as Elliott-Rothenberg-Stock, Schmidt-Phillips and Zivot-Andrews tests. `r pkg("uroot")` provides seasonal unit root tests. 
+  Unit root tests with structural breaks and full-modified estimators are provided by `r pkg("COINT")`.
+  `r pkg("CADFtest")` provides implementations of both the standard ADF and a covariate-augmented ADF (CADF) test. 
+  `r pkg("MultipleBubbles")` tests for the existence of bubbles based on Phillips-Shi-Yu (2015).
   Simulation-based unit root tests are provided by `r pkg("sTSD")`.
 - *Local stationarity* : `r pkg("locits")` provides a test
   of local stationarity and computes the localized autocovariance.
@@ -502,10 +498,9 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("tseriesTARMA")` provides routines for Threshold ARMA model testing fitting and forecasting.
   Probabilistic forecasts with XGBoost and conformal inference are provided by `r pkg("xpect")`.
 - *Neural network autoregression* : Neural network forecasting based on
-  lagged inputs are provided by `r pkg("tsDyn")`, `r pkg("GMDH")` and
-  `r pkg("nnfor")`. `r pkg("NlinTS")` includes neural
-  network VAR, and a nonlinear version of the Granger causality test
-  based on feedforward neural networks.
+  lagged inputs are provided by `r pkg("tsDyn")`, `r pkg("GMDH")` and `r pkg("nnfor")`. 
+  Neural networks with fractional differencing are implemented in `r pkg("narfima")`.
+  `r pkg("NlinTS")` includes neural network VAR, and a nonlinear version of the Granger causality test based on feedforward neural networks.
   `r pkg("TSLSTM")` provides forecasts using a Long Short Term Memory (LSTM) model, while
   an enhanced version is implemented in `r pkg("TSLSTMplus")`.
   `r pkg("TSdeeplearning")` implements LSTM and GRU networks.
@@ -589,8 +584,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("BGVAR")` implements Bayesian Global VAR models.
   `r pkg("mlVAR")` provides multi-level vector autoregression.
   `r pkg("gmvarkit")` estimates Gaussian mixture VAR models.
-  `r pkg("GNAR")` provides methods for fitting network AR models, while
-  `r pkg("graphicalVAR")` and `r pkg("tsnet")` both estimate graphical VAR models.
+  Network or graphical VAR models can be fitted in
+  `r pkg("GNAR")`, `r pkg("graphicalVAR")`, `r pkg("NetVAR")` and `r pkg("tsnet")`.
   `r pkg("gdpc")` implements generalized dynamic principal components.
   `r pkg("mgm")` estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
   `r pkg("nets")` provides estimation of sparse VARs using long run partial correlation networks for time series data.
