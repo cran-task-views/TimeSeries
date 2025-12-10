@@ -340,6 +340,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("changepoint.geo")` implements the high-dimensional changepoint detection method GeomCP.
   `r pkg("changepointGA")` performs changepoint detection using a genetic algorithm.
   `r pkg("mosum")` provides a moving sum procedure for detecting multiple changepoints in univariate time series.
+  Estimation of changepoints using an "S-curve" approximation is provided by `r pkg("changeS")`.
   `r pkg("InspectChangepoint")` uses sparse projection to estimate changepoints in high-dimensional time series.
   The nonparametric moving sum procedure for detecting multiple changepoints in multivariate time series is provided by `r pkg("CptNonPar")`.
   Sequential Change Point Detection for High-Dimensional VAR Models is implemented in `r pkg("VARcpDetectOnline")`.
@@ -348,6 +349,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("breakfast")` includes methods for fast multiple change-point detection and estimation.
   `r pkg("fastcpd")` provides flexible and fast change point detection for regression type data, time series (ARIMA, VAR and GARCH) and
   any other data with a custom cost function using Sequential Gradient Descent with PELT.
+  Efficient implementations of several popular changepoint detection algorithms are provided by `r pkg("rupturesRcpp")`. 
   `r pkg("binsegRcpp")` provides an efficient C++ implementation of the popular binary segmentation heuristic (univariate data, Gaussian/Poisson/L1/Laplace losses, computes sequence of models from 1 segment to a given max number of segments).
   `r pkg("jointseg")` provides `Fpsn()` which implements a "Functional pruning segment neighborhood" dynamic programming algorithm (univariate data, square loss, computes best model for a certain number of changes/segments).
   `r pkg("fpop")` provides `Fpop()` which implements a "Functional pruning optimal partitioning" dynamic programming algorithm (univariate data, square loss, computes best model for a certain penalty for each change), as well as `multiBinSeg()` which is an efficient implementation of the popular binary segmentation heuristic (multi-variate data, Gaussian loss, computes sequence of models from 1 segment to a given max number of segments).
