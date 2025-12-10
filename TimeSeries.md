@@ -504,7 +504,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("NlinTS")` includes neural network VAR, and a nonlinear version of the Granger causality test based on feedforward neural networks.
   `r pkg("TSLSTM")` provides forecasts using a Long Short Term Memory (LSTM) model, while
   an enhanced version is implemented in `r pkg("TSLSTMplus")`.
-  `r pkg("TSdeeplearning")` implements LSTM and GRU networks.
   `r pkg("TSANN")` automatically identifies an artificial neural network
   based on forecasting accuracy.
   Forecasts based on echo state networks can be obtained using `r pkg("echos")`.
@@ -680,8 +679,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   Seasonal functional autoregression models are provided by `r pkg("Rsfar")`.
 - `r pkg("fdaACF")` estimates the autocorrelation function
   for functional time series.
-- `r pkg("freqdom.fda")` provides implements of dynamical
-  functional principal components for functional time series.
 - `r pkg("STFTS")` contains stationarity, trend and unit
   root tests for functional time series.
 - `r pkg("hdftsa")` offers methods for visualizing, modelling, and forecasting high-dimensional functional time series.
