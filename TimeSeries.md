@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2025-10-02
+version: 2025-12-10
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -468,14 +468,12 @@ submitting an issue or pull request in the GitHub repository linked above.
   estimation, plotting, and simulation functionality for time-varying
   spectra) and `r pkg("forecastLSW")` for forecasting. `r pkg("TrendLSW")` extends
   the locally stationary wavelet models to include time varying trends.
-- *Cointegration* : The Engle-Granger two-step method with the
-  Phillips-Ouliaris cointegration test is implemented in
-  `r pkg("tseries")` and `r pkg("urca")`. The
-  latter additionally contains functionality for the Johansen trace
-  and lambda-max tests. `r pkg("tsDyn")` provides
-  Johansen's test and AIC/BIC simultaneous rank-lag selection.
-  Parameter estimation and inference in a cointegrating regression are
-  implemented in `r pkg("cointReg")`.
+- *Cointegration* : 
+  The Engle-Granger two-step method with the Phillips-Ouliaris cointegration test is implemented in `r pkg("tseries")` and `r pkg("urca")`. The latter additionally contains functionality for the Johansen trace and maximum-eigenvalue tests on the cointegration rank. 
+  `r pkg("pvars")` provides Johansen and Saikkonen-Luetkepohl test procedures which approximate p-values by the gamma distribution and can account for breaks in the deterministic terms.
+  `r pkg("tsDyn")` provides Johansen's test and AIC/BIC simultaneous rank-lag selection.
+  Parameter estimation and inference in a cointegrating regression are implemented in `r pkg("cointReg")`.
+  `r pkg("ecm")` provides functions for building error correction models for time series regression.
   Fractionally cointegrated VAR models are handled by `r pkg("FCVAR")`.
 - *Autoregressive distributed lag (ARDL) models* are provided by `r pkg("ARDL")`, which constructs
   the underlying error correction model automatically.
@@ -572,7 +570,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Fractionally cointegrated VAR models are handled by `r pkg("FCVAR")`.
   `r pkg("bigtime")` estimates large sparse VAR, VARX and VARMA models, while
   `r pkg("BigVAR")` estimates VAR and VARX models with structured lasso penalties and
-  `r pkg("svars")` implements data-driven structural VARs.
+  `r pkg("svars")` and `r pkg("pvars")` implement methods for the data-driven identification of structural VARs.
   `r pkg("sstvars")` provides a toolkit for reduced form and structural smooth transition VARs.
   Shrinkage estimation methods for VARs are implemented in `r pkg("VARshrink")`.
   More elaborate models are provided in package `r pkg("vars")` and `r pkg("tsDyn")`.
@@ -593,7 +591,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 - *Nonlinear VAR models* are provided by `r pkg("NVAR")`, while
   quadratic VARs are implemented in `r pkg("quadVAR")`.
 - *Vector error correction models* are available via the
-  `r pkg("urca")`, `r pkg("ecm")`, `r pkg("vars")`, `r pkg("tsDyn")` packages,
+  `r pkg("urca")`, `r pkg("vars")`, `r pkg("pvars")`, and `r pkg("tsDyn")` packages,
   including versions with structural constraints and thresholding.
 - *Vector exponential smoothing* is provided by
   `r pkg("smooth")`.
