@@ -404,6 +404,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   An alternative to Hodrick-Prescott filtering is provided by `r pkg("neverhpfilter")`.
   Corbae-Ouliaris frequency domain filtering is implemented in `r pkg("corbouli")`.
   `r pkg("smoots")` provides nonparametric estimation of the time trend and its derivatives.
+  Many trend estimation methods are implemented in `r pkg("trendseries")`, providing a pipe-friendly interface when working with data frames.
 - *Decomposition* : Seasonal decomposition is discussed below.
   Autoregressive-based decomposition is provided by `r pkg("ArDec")`.
   `r pkg("tsdecomp")` implements ARIMA-based decomposition of quarterly and monthly data.
