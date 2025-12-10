@@ -11,7 +11,7 @@ Base R ships with a lot of functionality useful for time series, in
 particular in the stats package. This is complemented by many packages
 on CRAN, which are briefly summarized below. There is overlap between
 the tools for time series and those designed for specific domains including
-`r view("Econometrics")`, `r view("Finance")` and `r view("Environmetrics")`.
+`r view("Econometrics")`, `r view("Finance")` and `r view("Environmetrics")`, or specific problems such as `r view("AnomalyDetection")`.
 
 The packages in this view can be roughly structured into the
 following topics. If you think that some package is missing from the
