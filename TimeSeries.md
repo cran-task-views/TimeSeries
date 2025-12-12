@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2025-12-10
+version: 2025-12-12
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -578,7 +578,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   More elaborate models are provided in package `r pkg("vars")` and `r pkg("tsDyn")`.
   Another implementation with bootstrapped prediction intervals is given in `r pkg("VAR.etp")`.
   `r pkg("bvartools")` assists in the set-up of Bayesian VAR models, while `r pkg("BVAR")` and `r pkg("bayesianVARs")` provide toolkits for hierarchical Bayesian VAR models.
-  `r pkg("bsvars")`, `r pkg("bsvarSIGNs")`, and `r pkg("bvarsv")` include efficient algorithms for estimating Bayesian Structural VAR models.
+  `r pkg("bsvars")` and `r pkg("bsvarSIGNs")` include efficient algorithms for estimating Bayesian Structural VAR models, while `r pkg("bpvars")` provides forecasting of panel data using Bayesian panel VARs.
+  Bayesian VARs with stochastic volatility and time-varying parameters is provided by `r pkg("bvarsv")`.
   `r pkg("mtarm")` implements Bayesian Multivariate Threshold AR models.
   Factor-augmented VAR (FAVAR) models are estimated by a Bayesian method with `r pkg("FAVAR")`.
   `r pkg("BGVAR")` implements Bayesian Global VAR models.
