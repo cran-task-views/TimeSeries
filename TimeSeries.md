@@ -45,7 +45,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("runstats")` provides fast computational methods
   for some running sample statistics. For
   `r pkg("data.table")`, `froll()` can be used for
-  high-performance rolling statistics.
+  high-performance rolling statistics. Functions are provided for many special cases such as `frollmean()`, `frollmedian()`, `fromsd()`, etc
 - *Graphics* : Time series plots are obtained with `plot()` applied to
   `ts` objects. (Partial) autocorrelation functions plots are
   implemented in `acf()` and `pacf()`. Alternative versions are
