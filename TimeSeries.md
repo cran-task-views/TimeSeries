@@ -472,9 +472,10 @@ submitting an issue or pull request in the GitHub repository linked above.
   estimation, plotting, and simulation functionality for time-varying
   spectra) and `r pkg("forecastLSW")` for forecasting. `r pkg("TrendLSW")` extends
   the locally stationary wavelet models to include time varying trends.
-- *Cointegration* : 
-  The Engle-Granger two-step method with the Phillips-Ouliaris cointegration test is implemented in `r pkg("tseries")` and `r pkg("urca")`. The latter additionally contains functionality for the Johansen trace and maximum-eigenvalue tests on the cointegration rank. 
+- *Cointegration* :
+  The Engle-Granger two-step method with the Phillips-Ouliaris cointegration test is implemented in `r pkg("tseries")` and `r pkg("urca")`. The latter additionally contains functionality for the Johansen trace and maximum-eigenvalue tests on the cointegration rank.
   `r pkg("pvars")` provides Johansen and Saikkonen-Luetkepohl test procedures which approximate p-values by the gamma distribution and can account for breaks in the deterministic terms.
+  The Maki cointegration test with structural breaks is implemented in `r pkg("makicoint")`.
   `r pkg("tsDyn")` provides Johansen's test and AIC/BIC simultaneous rank-lag selection.
   Parameter estimation and inference in a cointegrating regression are implemented in `r pkg("cointReg")`.
   `r pkg("ecm")` provides functions for building error correction models for time series regression.
