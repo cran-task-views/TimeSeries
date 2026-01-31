@@ -240,7 +240,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   and general facilities for ARFIMA and ARIMA models, including
   dynamic regression (transfer function) models. Additional methods
   for fitting and simulating non-stationary ARFIMA models are in
-  `r pkg("nsarfima")`. 
+  `r pkg("nsarfima")`.
   Fractionally differenced Gegenbaur ARMA processes are handled by `r pkg("garma")`.
   `r pkg("esemifar")` provides tools for nonparametric
   smoothing of long-memory time series.
@@ -254,9 +254,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   Robust Kalman filtering is provided by `r pkg("RobKF")`.
   Exact observation weights for the Kalman filter and smoother are available using `r pkg("wex")`.
 - *Non-Gaussian time series* can be handled with GLARMA state space models via `r pkg("glarma")`,
-  and using Generalized Autoregressive Score models in the `r pkg("GAS")` and `r pkg("gasmodel")`  packages.
+  and using Generalized Autoregressive Score models in the `r pkg("gasmodel")` package.
   `r pkg("GlarmaVarSel")` provides variable selection in high-dimensional sparse GLARMA models.
-  Dynamic Generalized Linear Models are provided by `r pkg("kDGLM")`, while
   Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`.
   Conditional Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in `r pkg("bssm")`.
   `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
@@ -351,7 +350,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("breakfast")` includes methods for fast multiple change-point detection and estimation.
   `r pkg("fastcpd")` provides flexible and fast change point detection for regression type data, time series (ARIMA, VAR and GARCH) and
   any other data with a custom cost function using Sequential Gradient Descent with PELT.
-  Efficient implementations of several popular changepoint detection algorithms are provided by `r pkg("rupturesRcpp")`. 
+  Efficient implementations of several popular changepoint detection algorithms are provided by `r pkg("rupturesRcpp")`.
   `r pkg("binsegRcpp")` provides an efficient C++ implementation of the popular binary segmentation heuristic (univariate data, Gaussian/Poisson/L1/Laplace losses, computes sequence of models from 1 segment to a given max number of segments).
   `r pkg("jointseg")` provides `Fpsn()` which implements a "Functional pruning segment neighborhood" dynamic programming algorithm (univariate data, square loss, computes best model for a certain number of changes/segments).
   `r pkg("fpop")` provides `Fpop()` which implements a "Functional pruning optimal partitioning" dynamic programming algorithm (univariate data, square loss, computes best model for a certain penalty for each change), as well as `multiBinSeg()` which is an efficient implementation of the popular binary segmentation heuristic (multi-variate data, Gaussian loss, computes sequence of models from 1 segment to a given max number of segments).
@@ -379,7 +378,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   including bispectrum, bicoherence, cross-bispectrum and
   cross-bicoherence.
 - *Wavelet methods* : The `r pkg("wavelets")`, `r pkg("wavethresh")` and `r pkg("waveslim")`
-  packages include computing wavelet filters, wavelet transforms and multiresolution analyses. 
+  packages include computing wavelet filters, wavelet transforms and multiresolution analyses.
   `r pkg("WaveletComp")` provides some tools for
   wavelet-based analysis of univariate and bivariate time series
   including cross-wavelets, phase-difference and significance tests.
@@ -457,10 +456,10 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 - *Stationarity and unit roots* : `r pkg("tseries")`
   provides various stationarity and unit root tests including
-  Augmented Dickey-Fuller, Phillips-Perron, and KPSS. 
-  Alternative implementations of the ADF and KPSS tests are in the `r pkg("urca")` package, which also includes further methods such as Elliott-Rothenberg-Stock, Schmidt-Phillips and Zivot-Andrews tests. `r pkg("uroot")` provides seasonal unit root tests. 
+  Augmented Dickey-Fuller, Phillips-Perron, and KPSS.
+  Alternative implementations of the ADF and KPSS tests are in the `r pkg("urca")` package, which also includes further methods such as Elliott-Rothenberg-Stock, Schmidt-Phillips and Zivot-Andrews tests. `r pkg("uroot")` provides seasonal unit root tests.
   Unit root tests with structural breaks and full-modified estimators are provided by `r pkg("COINT")`.
-  `r pkg("CADFtest")` provides implementations of both the standard ADF and a covariate-augmented ADF (CADF) test. 
+  `r pkg("CADFtest")` provides implementations of both the standard ADF and a covariate-augmented ADF (CADF) test.
   `r pkg("MultipleBubbles")` tests for the existence of bubbles based on Phillips-Shi-Yu (2015).
   Simulation-based unit root tests are provided by `r pkg("sTSD")`.
 - *Local stationarity* : `r pkg("locits")` provides a test
