@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-01-02
+version: 2026-01-31
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -134,7 +134,8 @@ submitting an issue or pull request in the GitHub repository linked above.
 - The `r pkg("tempdisagg")` package includes methods for
   temporal disaggregation and interpolation of a low frequency time
   series to a higher frequency series.
-  Time series disaggregation is also provided by `r pkg("TSdisaggregation")` and `r pkg("tsdisagg2")`.
+  Time series disaggregation is also provided by `r pkg("TSdisaggregation")` and `r pkg("tsdisagg2")`, while
+  `r pkg("disagmethod")` implements ARIMA-based disaggregation.
 
 ### Time Series Classes
 
