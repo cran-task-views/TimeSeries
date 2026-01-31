@@ -501,7 +501,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("tseriesTARMA")` provides routines for Threshold ARMA model testing fitting and forecasting.
   Probabilistic forecasts with XGBoost and conformal inference are provided by `r pkg("xpect")`.
 - *Neural network autoregression* : Neural network forecasting based on
-  lagged inputs are provided by `r pkg("tsDyn")`, `r pkg("GMDH")` and `r pkg("nnfor")`. 
+  lagged inputs are provided by `r pkg("tsDyn")`, `r pkg("GMDH")` and `r pkg("nnfor")`.
   Neural networks with fractional differencing are implemented in `r pkg("narfima")`.
   `r pkg("NlinTS")` includes neural network VAR, and a nonlinear version of the Granger causality test based on feedforward neural networks.
   `r pkg("TSLSTM")` provides forecasts using a Long Short Term Memory (LSTM) model, while
@@ -554,6 +554,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Distributed lag models based on Bayesian additive regression trees are implemented in `r pkg("dlmtree")`.
   `r pkg("sym.arma")` will fit ARMA models with regressors
   where the observations follow a conditional symmetric distribution.
+  Tools for additive partial linear models with AR symmetric errors are provided in `r pkg("aplms")`.
 - *Time-varying parameter* models can be fitted using the
   `r pkg("tpr")` package.
 - `r pkg("greybox")` provides several tools for modelling
