@@ -659,7 +659,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   hierarchical methods to reconcile forecasts of temporally aggregated
   time series. `r pkg("FoReco")` provides various forecast
   reconciliation methods for cross-sectional, temporal, and
-  cross-temporal constrained time series. Coherent forecast combination for linearly constrained multiple time series is implemented in `r pkg("FoCo2")`. 
+  cross-temporal constrained time series. Coherent forecast combination for linearly constrained multiple time series is implemented in `r pkg("FoCo2")`.
   Probabilistic reconciliation of
   hierarchical forecasts via conditioning is available in `r pkg("bayesRecon")`.
   Degenerate hierarchical structures are handled by `r pkg("htsDegenerateR")`.
@@ -755,15 +755,15 @@ submitting an issue or pull request in the GitHub repository linked above.
   The M4 competition data are available from `r github("carlanetto/M4comp2018")`.
 - *National time series data:*
   `r pkg("readabs")` downloads, imports and tidies time series data from the   [*Australian* Bureau of Statistics](https://www.abs.gov.au).
+  `r pkg("BETS")` provides access to the most important economic time series in *Brazil*.
   `r pkg("bbk")` provides access to the *German* Deutsche Bundesbank and European Central Bank time series data.
   `r pkg("bundesbank")` also allows access to the time series databases of the Deutsche Bundesbank, while
-  data from the European Central Bank can also be accessed via `r pkg("ecb")`.
-  `r pkg("BETS")` provides access to the most important economic time series in *Brazil*.
+  data from the *European* Central Bank can also be accessed via `r pkg("ecb")`.
   Data from *Switzerland* via [dataseries.org](http://dataseries.org) can be downloaded and imported using `r pkg("dataseries")`.
-  Macroeconomic time series for Africa can be obtained via `r pkg("africamonitor")`.
+  Macroeconomic time series for *Africa* can be obtained via `r pkg("africamonitor")`.
   `r pkg("ugatsdb")` provides an API to access time series data for *Uganda*, while
   `r pkg("samadb")` does the same for *South Africa*.
-  Economic time series and other data from FRED (the Federal Reserve Economic Data) can be retrieved using `r pkg("fredr")`.
+  For the *United States*, economic time series and other data from FRED (the Federal Reserve Economic Data) can be retrieved using `r pkg("fredr")`. Time series data from the Bureau of Labor Statistics can be downloaded using `r pkg("BLSloadR")`.
 - *Time series databases:*
   `r pkg("rdbnomics")` provides access to hundreds of millions of time series from [DBnomics](db.nomics.world).
   `r pkg("ifo")` is a client for downloading time series data from the Ifo Institute.
@@ -782,7 +782,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   nonlinear and chaotic systems. `r pkg("tssim")` flexibly
   simulates daily or monthly time series using seasonal, calendar, and
   outlier components.
-- *Data revisions*: `r pkg("butterfly")` provides verification of continually updating time series data where we expect new values, but want to ensure previous data remains unchanged. 
+- *Data revisions*: `r pkg("butterfly")` provides verification of continually updating time series data where we expect new values, but want to ensure previous data remains unchanged.
 - *Data coherence*: `r pkg("gseries")` implements Statistics Canada's generalized system for benchmarking and reconciliation of time series.
 
 ### Miscellaneous
