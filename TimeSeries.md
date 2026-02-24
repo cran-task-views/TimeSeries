@@ -431,9 +431,9 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("seasonalview")` providing a GUI. An alternative
   interface is provided by `r pkg("x12")`.
 - An interface to the JDemetra+ seasonal adjustment software is
-  provided by `r pkg("RJDemetra")`.
+  provided by `r pkg("rjd3toolkit")`, `r pkg("rjd3x13")` and `r pkg("rjd3tramoseats")`. 
+  `r pkg("RJDemetra")` provides an interface to JDemetra+ in version 2 and
   `r pkg("ggdemetra")` provides associated ggplot2 functions.
-  An interface to JDemtra+ v3 is provided by `r pkg("rjd3toolkit")` and `r pkg("rjd3tramoseats")`.
 - `r pkg("deseats")` includes a locally weighted regression approach, and the Berlin method.
 - Seasonal adjustment of daily time series, allowing for day-of-week,
   time-of-month, time-of-year and holiday effects is provided by
