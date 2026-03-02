@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-01-31
+version: 2026-03-02
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -322,8 +322,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("tstests")` implements several tests for time series goodness of fit and forecast evaluation.
 - Tidy tools for forecasting are provided by `r pkg("sweep")`, converting
   objects produced in `r pkg("forecast")` to "tidy" data frames.
-- Multi-step-ahead direct forecasting with several machine learning
-  approaches are provided in `r pkg("forecastML")`.
 - `r pkg("onlineforecast")` provides a framework for fitting adaptive forecasting models, allowing forecasts to be used as inputs to models, and models to be updated as new data arrives.
 - Data leakage is a problem that can occur in forecasting competitions, and the `r pkg("tsdataleaks")` package provides tools for detecting data leakage in such settings.
 - *Miscellaneous* : `r pkg("ltsa")` contains methods for
@@ -432,7 +430,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("seasonalview")` providing a GUI. An alternative
   interface is provided by `r pkg("x12")`.
 - An interface to the JDemetra+ seasonal adjustment software is
-  provided by `r pkg("rjd3toolkit")`, `r pkg("rjd3x13")` and `r pkg("rjd3tramoseats")`. 
+  provided by `r pkg("rjd3toolkit")`, `r pkg("rjd3x13")` and `r pkg("rjd3tramoseats")`.
   `r pkg("RJDemetra")` provides an interface to JDemetra+ version 2 and
   `r pkg("ggdemetra")` provides associated ggplot2 functions.
 - `r pkg("deseats")` includes a locally weighted regression approach, and the Berlin method.
@@ -647,11 +645,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("theft")` calculates time series features from various R and Python packages,
   while `r pkg("theftdlc")` is a companion package providing analysis and visualization functions.
   Feature extraction for ordinal time series is provided by `r pkg("otsfeatures")`.
-- *Time series clustering* is implemented in
-  `r pkg("TSclust")`, `r pkg("dtwclust")`,
-  `r pkg("BNPTSclust")` and `r pkg("pdc")`.
-- `r pkg("TSdist")` provides distance measures for time
-  series data.
+- *Time series clustering* is implemented in `r pkg("dtwclust")`, `r pkg("BNPTSclust")` and `r pkg("pdc")`.
 - `r pkg("TSrepr")` includes methods for representing time
   series using dimension reduction and feature extraction.
 - Methods for plotting and forecasting collections of hierarchical and
@@ -771,7 +765,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("influxdbr")` provides an interface to the InfluxDB time series database.
   `r pkg("pdfetch")` provides facilities for downloading economic and financial time
   series from public sources.
-  Data from the [Quandl](http://www.quandl.com) online portal to financial, economical and social datasets can be queried interactively using the `r pkg("Quandl")` package.
   `r pkg("tsdb")` implements a simple database for numerical time series.
 - *Synthetic data* are produced by `simulate()` in
   `r pkg("forecast")` package or `generate()` in
@@ -811,12 +804,10 @@ submitting an issue or pull request in the GitHub repository linked above.
 - `r pkg("RSEIS")`: Seismic time series analysis tools.
 - `r pkg("rts")`: Raster time series analysis (e.g., time
   series of satellite images).
-- `r pkg("SLBDD")`: Functions for analysing large-scale time series, based on the book "Statistical Learning with Big Dependent Data" (Pena & Tsay, 2021).
 - `r pkg("spTimer")`: Spatio-temporal Bayesian modelling.
 - `r pkg("surveillance")`: Temporal and spatio-temporal
   modeling and monitoring of epidemic phenomena.
 - `r pkg("Tides")`: Functions to calculate characteristics of quasi periodic time series, e.g. observed estuarine water levels.
-- `r pkg("TSEAL")`: Multivariate time series classification based on a Discrete Wavelet Transform.
 - `r pkg("tsfknn")`: Time series forecasting with k-nearest-neighbours.
 - `r pkg("tsModel")`: Time series modeling for air pollution and health.
 
