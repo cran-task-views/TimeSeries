@@ -122,12 +122,13 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("qlcal")` allows access to various financial exchange calendars via QuantLib.
 - `r pkg("parttime")` provides date time classes that allow for uncertainty and partially missing information.
 - Datetimes with optional UTC offsets and/or heterogeneous time zones are provided by `r pkg("datetimeoffset")`.
-- To convert between the Gregorian and the Vedic calendars, use `r pkg("VedicDateTime")`,
-  while `r pkg("jalcal")` provides conversions between the Gregorian and Persian Jalali (or Solar Hijri) calendars.
+- `r pkg("calcal")` allows conversion between many different modern and ancient calendars, based on *Calendrical Calculations* (Reingold & Dershowitz). More specific calendar conversions are provided by
+  `r pkg("VedicDateTime")` to convert between the Gregorian and the Vedic calendars,
+  and `r pkg("jalcal")` to convert between the Gregorian and Persian Jalali (or Solar Hijri) calendars.
   For year-based time series, `r pkg("era")` provides for many year numbering systems used in contemporary and historic calendars (e.g. Common Era, Islamic 'Hijri' years), as well as year-based time scales used in archaeology, astronomy, geology, and other palaeosciences.
+  `r pkg("tind")` provides a class for time indices of different types, and includes functions for many calendrical computations.
   `r pkg("aion")` contains a toolkit for handling archaeological time series.
-- The `r pkg("tis")` package provides the `"ti"` class for
-  time/date information.
+- The `r pkg("tis")` package provides the `"ti"` class for time/date information.
 - The `"mondate"` class from the `r pkg("mondate")`
   package facilitates computing with dates in terms of months.
 -  The `r pkg("CFtime")` package encapsulates the CF Metadata Conventions “time” dimension, including all defined calendars. It facilitates the processing of climate change projection data.
