@@ -461,6 +461,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("CADFtest")` provides implementations of both the standard ADF and a covariate-augmented ADF (CADF) test.
   `r pkg("MultipleBubbles")` tests for the existence of bubbles based on Phillips-Shi-Yu (2015).
   Simulation-based unit root tests are provided by `r pkg("sTSD")`.
+  Unit tests for bounded time series are provided by `r pkg("boundedur")`.
 - *Local stationarity* : `r pkg("locits")` provides a test
   of local stationarity and computes the localized autocovariance.
   Time series costationarity determination is provided by
