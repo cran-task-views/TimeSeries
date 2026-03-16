@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-03-02
+version: 2026-03-17
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -177,8 +177,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   series with `"ti"` time stamps.
 - The package `r pkg("tframe")` contains infrastructure
   for setting time frames in different formats.
-- `r pkg("timeseriesdb")` manages time series for official
-  statistics by mapping `ts` objects to PostgreSQL relations.
 
 ### Forecasting and Univariate Modeling
 
