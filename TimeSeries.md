@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-03-17
+version: 2026-03-18
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -693,8 +693,8 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 ### Continuous time models
 
-- `r pkg("carfima")` allows for continuous-time ARFIMA
-  models.
+- Continuous time autoregressive modelling is provided in `r pkg("cts")`, while
+  `r pkg("carfima")` allows for continuous time ARFIMA models.
 - Simulation and inference for stochastic differential equations is
   provided by `r pkg("sde")` and `r pkg("yuima")`.
 - `r pkg("Sim.DiffProc")` simulates and models stochastic
