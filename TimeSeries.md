@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-03-18
+version: 2026-03-30
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -591,7 +591,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("GNAR")`, `r pkg("graphicalVAR")`, `r pkg("NetVAR")` and `r pkg("tsnet")`.
   `r pkg("gdpc")` implements generalized dynamic principal components.
   `r pkg("mgm")` estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
-  `r pkg("nets")` provides estimation of sparse VARs using long run partial correlation networks for time series data.
   Factor-adjusted VARs using network estimation and forecasting for high-dimensional time series is implemented in `r pkg("fnets")`.
 - *Granger causality tests* are provided by `r pkg("grangersearch")`.
 - *Nonlinear VAR models* are provided by `r pkg("NVAR")`, while
