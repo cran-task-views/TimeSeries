@@ -258,6 +258,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`.
   Conditional Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in `r pkg("bssm")`.
   `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
+  Time series between 0 and 1 can be modelled using beta ARMA models in `r pkg("betaARMA")`.
 - *Count time series* models are handled in the
   `r pkg("tscount")` and `r pkg("acp")` packages.
   `r pkg("fableCount")` provides a tidy interface to the INGARCH model from `r pkg("tscount")` and the GLARMA model from `r pkg("glarma")`.
@@ -775,7 +776,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   nonlinear and chaotic systems. `r pkg("tssim")` flexibly
   simulates daily or monthly time series using seasonal, calendar, and
   outlier components.
-- *Data revisions*: `r pkg("butterfly")` provides verification of continually updating time series data where we expect new values, but want to ensure previous data remains unchanged.
+- *Data revisions*: `r pkg("butterfly")` provides verification of continually updating time series data where we expect new values, but want to ensure previous data remains unchanged. `r pkg("reviser")` analyses revisions in real-time time series vintages.
 - *Data coherence*: `r pkg("gseries")` implements Statistics Canada's generalized system for benchmarking and reconciliation of time series.
 
 ### Miscellaneous
