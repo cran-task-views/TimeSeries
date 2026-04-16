@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-03-30
+version: 2026-04-17
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -61,6 +61,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("tsibbletalk")`.
   `r pkg("dCovTS")` computes and plots the distance
   covariance and correlation functions of time series.
+  ACF and CCF variants based on Chatterjee's Xi correlation are provided by `r pkg("xiacf")`.
   `r pkg("gglinedensity")` provides a ggplot2 statistic
   for DenseLines heatmaps of time series normalized by arc length.
   Calendar plots are implemented in `r pkg("sugrrants")`.
@@ -131,7 +132,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 - The `r pkg("tis")` package provides the `"ti"` class for time/date information.
 - The `"mondate"` class from the `r pkg("mondate")`
   package facilitates computing with dates in terms of months.
--  The `r pkg("CFtime")` package encapsulates the CF Metadata Conventions “time” dimension, including all defined calendars. It facilitates the processing of climate change projection data.
+- The `r pkg("CFtime")` package encapsulates the CF Metadata Conventions “time” dimension, including all defined calendars. It facilitates the processing of climate change projection data.
 - The `r pkg("tempdisagg")` package includes methods for
   temporal disaggregation and interpolation of a low frequency time
   series to a higher frequency series.
