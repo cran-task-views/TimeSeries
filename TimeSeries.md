@@ -651,13 +651,12 @@ submitting an issue or pull request in the GitHub repository linked above.
   series using dimension reduction and feature extraction.
 - Methods for plotting and forecasting collections of hierarchical and
   grouped time series are provided by `r pkg("fable")` and
-  `r pkg("hts")`. `r pkg("thief")` uses
-  hierarchical methods to reconcile forecasts of temporally aggregated
-  time series. `r pkg("FoReco")` provides various forecast
-  reconciliation methods for cross-sectional, temporal, and
-  cross-temporal constrained time series. Coherent forecast combination for linearly constrained multiple time series is implemented in `r pkg("FoCo2")`.
-  Probabilistic reconciliation of
-  hierarchical forecasts via conditioning is available in `r pkg("bayesRecon")`.
+  `r pkg("hts")`.
+  `r pkg("thief")` uses hierarchical methods to reconcile forecasts of temporally aggregated time series.
+  `r pkg("FoReco")` provides various forecast reconciliation methods for cross-sectional, temporal, and cross-temporal constrained time series.
+  Coherent forecast combination for linearly constrained multiple time series is implemented in `r pkg("FoCo2")`.
+  `r pkg("FoRecoML")` provides nonlinear forecast reconciliation methods.
+  Probabilistic reconciliation of hierarchical forecasts via conditioning is available in `r pkg("bayesRecon")`.
   Degenerate hierarchical structures are handled by `r pkg("htsDegenerateR")`.
 
 ### Dynamic time warping
