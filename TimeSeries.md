@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-04-22
+version: 2026-04-27
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -781,6 +781,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 
 ### Miscellaneous
 
+- `r pkg("complex")`: Analysis and forecasting of complex-valued time series
 - `r pkg("CovEsts")`: Nonparametric autocovariance function estimation, correction and comparison of estimates, and block bootstrap confidence intervals, for univariate time series.
 - `r pkg("ensembleBMA")`: Bayesian Model Averaging to
   create probabilistic forecasts from ensemble forecasts and weather
