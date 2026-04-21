@@ -431,7 +431,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("seasonalview")` providing a GUI. An alternative
   interface is provided by `r pkg("x12")`.
 - An interface to the JDemetra+ seasonal adjustment software is
-  provided by `r pkg("rjd3toolkit")`, `r pkg("rjd3x13")` and `r pkg("rjd3tramoseats")`.
+  provided by `r pkg("rjd3toolkit")` and related packages in the [rjdverse](https://github.com/rjdverse).
   `r pkg("RJDemetra")` provides an interface to JDemetra+ version 2 and
   `r pkg("ggdemetra")` provides associated ggplot2 functions.
 - `r pkg("deseats")` includes a locally weighted regression approach, and the Berlin method.
@@ -812,3 +812,4 @@ submitting an issue or pull request in the GitHub repository linked above.
 ### Links
 
 - [TISEAN Project](http://www.mpipks-dresden.mpg.de/~tisean/)
+- [rjdverse](https://github.com/rjdverse)
