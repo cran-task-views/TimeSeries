@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-04-17
+version: 2026-04-22
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -215,6 +215,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   `r pkg("tsutils")`. An alternative and extended
   implementation is provided in `r pkg("forecTheta")`.
 - *Autoregressive models* : `ar()` in stats (with model selection).
+  Quantile autoregression with prediction intervals is implemented in `r pkg("qarPI")`.
 - *ARIMA models* : `arima()` in stats is the basic function for ARIMA, SARIMA, RegARIMA, and subset ARIMA models.
   It is enhanced in the `r pkg("fable")` package via the `ARIMA()` function which allows for automatic modelling.
   Similar functionality is provided in the `r pkg("forecast")` package via the `auto.arima()` function.
