@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-04-27
+version: 2026-05-13
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -261,6 +261,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Conditional Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in `r pkg("bssm")`.
   `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
   Time series between 0 and 1 can be modelled using beta ARMA models in `r pkg("betaARMA")`.
+  ARIMA models with the Skewed Distribution family are implemented in `r pkg("ModalForecast")`.
 - *Count time series* models are handled in the
   `r pkg("tscount")` and `r pkg("acp")` packages.
   `r pkg("fableCount")` provides a tidy interface to the INGARCH model from `r pkg("tscount")` and the GLARMA model from `r pkg("glarma")`.
