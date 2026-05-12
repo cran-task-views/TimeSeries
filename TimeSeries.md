@@ -263,7 +263,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Time series between 0 and 1 can be modelled using beta ARMA models in `r pkg("betaARMA")`.
   ARIMA models with the Skewed Distribution family are implemented in `r pkg("ModalForecast")`.
 - *Count time series* models are handled in the
-  `r pkg("tscount")` and `r pkg("acp")` packages.
+  `r pkg("tscount")` package.
   `r pkg("fableCount")` provides a tidy interface to the INGARCH model from `r pkg("tscount")` and the GLARMA model from `r pkg("glarma")`.
   Gaussian copula models for count time series are implemented in `r pkg("gctsc")`.
   `r pkg("coconots")` provides tools for convolution-closed time series models for low counts.
