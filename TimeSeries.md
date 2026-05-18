@@ -251,14 +251,15 @@ submitting an issue or pull request in the GitHub repository linked above.
   `StructTS()` in stats,
   while automatic modelling and forecasting are provided by `r pkg("UComp")` and `r pkg("autostsm")`.
   `r pkg("statespacer")` implements univariate state space models including structural and SARIMA models.
-  Bayesian structural time series models are implemented in `r pkg("bsts")` and `r pkg("bayesSSM")`.
+  Bayesian structural time series models are implemented in `r pkg("bsts")`, `r pkg("bssm")`, and `r pkg("bayesSSM")`.
   Robust Kalman filtering is provided by `r pkg("RobKF")`.
   Exact observation weights for the Kalman filter and smoother are available using `r pkg("wex")`.
 - *Non-Gaussian time series* can be handled with GLARMA state space models via `r pkg("glarma")`,
-  and using Generalized Autoregressive Score models in the `r pkg("gasmodel")` package.
+  and using Generalized Autoregressive Score models in the `r pkg("gasmodel")` package. Univariate and multivariate
+  exponential family state space models are implemented in `r pkg("KFAS")`.
   `r pkg("GlarmaVarSel")` provides variable selection in high-dimensional sparse GLARMA models.
   Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`.
-  Conditional Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in `r pkg("bssm")`.
+  Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in `r pkg("bssm")`.
   `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
   Time series between 0 and 1 can be modelled using beta ARMA models in `r pkg("betaARMA")`.
   ARIMA models with the Skewed Distribution family are implemented in `r pkg("ModalForecast")`.
@@ -548,7 +549,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   Gaussian linear state space models can be fitted using
   `r pkg("dlm")` (via maximum likelihood, Kalman
   filtering/smoothing and Bayesian methods), or using
-  `r pkg("bsts")` which uses MCMC.
+  `r pkg("bsts")` which uses MCMC. Bayesian dynamic regression models for Gaussian, binomial and Poisson responses are available
+  in `r pkg("walker")`.
   `r pkg("dLagM")` provides time series regression with distributed lags.
   Functions for distributed lag nonlinear modelling are provided in `r pkg("dlnm")`.
   `r pkg("fastTS")` implements sparsity-ranked lasso methods for time series with exogenous features and/or complex seasonality.
@@ -634,6 +636,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Multivariate ARCH models are implemented in `r pkg("tsmarch")`.
 - High-dimensional sparse multivariate GLARMA models are handled by `r pkg("MultiGlarmaVarSel")` including variable selection.
 - Multivariate Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`.
+- Bayesian Dynamic Multivariate Panel Models with time-varying coefficients are implemented in `r pkg("dynamite")`.
 
 ### Analysis of large groups of time series
 
