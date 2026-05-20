@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-05-13
+version: 2026-05-20
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -158,6 +158,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   including tsibble, ts, xts, zoo and more.
   `r pkg("timetk")` is another toolkit for converting
   between various time series data classes.
+- `r pkg("mixtime")` provides tools for handling mixed-frequency time series.
 - Some manipulation tools for time series are available in
   `r pkg("data.table")` including `shift()` for lead/lag
   operations. Further basic time series functionalities are offered by
