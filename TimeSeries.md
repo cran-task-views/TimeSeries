@@ -655,12 +655,16 @@ submitting an issue or pull request in the GitHub repository linked above.
 - *Time series clustering* is implemented in `r pkg("dtwclust")`, `r pkg("BNPTSclust")` and `r pkg("pdc")`.
 - `r pkg("TSrepr")` includes methods for representing time
   series using dimension reduction and feature extraction.
+
+### Hierarchical time series
+
 - Methods for plotting and forecasting collections of hierarchical and
   grouped time series are provided by `r pkg("fable")` and
   `r pkg("hts")`.
   `r pkg("thief")` uses hierarchical methods to reconcile forecasts of temporally aggregated time series.
   `r pkg("FoReco")` provides various forecast reconciliation methods for cross-sectional, temporal, and cross-temporal constrained time series.
   Coherent forecast combination for linearly constrained multiple time series is implemented in `r pkg("FoCo2")`.
+  `r pkg("icomb")` implements the information combination approach for forecast reconciliation.
   `r pkg("FoRecoML")` provides nonlinear forecast reconciliation methods.
   Probabilistic reconciliation of hierarchical forecasts via conditioning is available in `r pkg("bayesRecon")`.
   Degenerate hierarchical structures are handled by `r pkg("htsDegenerateR")`.
