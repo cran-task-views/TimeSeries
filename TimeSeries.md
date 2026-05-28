@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-05-28
+version: 2026-05-29
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -661,6 +661,7 @@ submitting an issue or pull request in the GitHub repository linked above.
 - Methods for plotting and forecasting collections of hierarchical and
   grouped time series are provided by `r pkg("fable")` and
   `r pkg("hts")`.
+  Bayesian reconciliation in the `r pkg("fable")` framework is implemented in `r pkg("fable.bayesRecon")`.
   `r pkg("thief")` uses hierarchical methods to reconcile forecasts of temporally aggregated time series.
   `r pkg("FoReco")` provides various forecast reconciliation methods for cross-sectional, temporal, and cross-temporal constrained time series.
   Coherent forecast combination for linearly constrained multiple time series is implemented in `r pkg("FoCo2")`.
