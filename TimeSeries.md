@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-06-09
+version: 2026-06-28
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -264,7 +264,8 @@ submitting an issue or pull request in the GitHub repository linked above.
   ARIMA models with the Skewed Distribution family are implemented in `r pkg("ModalForecast")`.
 - *Count time series* models are handled in the
   `r pkg("tscount")` package.
-  `r pkg("fableCount")` provides a tidy interface to the INGARCH model from `r pkg("tscount")` and the GLARMA model from `r pkg("glarma")`.
+  `r pkg("fableCount")` provides a tidy interface to the INGARCH model from `r pkg("tscount")` and the GLARMA model from `r pkg("glarma")`. 
+  `r pkg("fable.intermittent")` supports forecasting methods for intermittent demand in the fable framework.
   Gaussian copula models for count time series are implemented in `r pkg("gctsc")`.
   `r pkg("coconots")` provides tools for convolution-closed time series models for low counts.
   `r pkg("tsintermittent")` implements various models for analysing and forecasting intermittent demand time series.
