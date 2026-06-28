@@ -226,9 +226,7 @@ submitting an issue or pull request in the GitHub repository linked above.
   Other estimation methods including the innovations algorithm are provided by `r pkg("itsmr")`. Package
   `r pkg("gsarima")` contains functionality for Generalized SARIMA time series simulation.
   `r pkg("bayesforecast")` fits Bayesian time series models including seasonal ARIMA and ARIMAX models.
-  `r pkg("BayesARIMAX")` implements Bayesian estimation of ARIMAX models.
   Robust ARIMA modeling is provided in the `r pkg("robustarima")` package.
-  The `r pkg("mar1s")` package handles multiplicative AR(1) with seasonal processes.
   `r pkg("TSTutorial")` provides an interactive tutorial for Box-Jenkins modelling.
   Improved prediction intervals for ARIMA and structural time series models are provided by `r pkg("tsPI")`.
   ARIMA models with multiple seasonal periods can be handled with `r pkg("tfarima")` and `r pkg("smooth")`.
@@ -761,7 +759,6 @@ submitting an issue or pull request in the GitHub repository linked above.
   The M4 competition data are available from `r github("carlanetto/M4comp2018")`.
 - *National time series data:*
   `r pkg("readabs")` downloads, imports and tidies time series data from the   [*Australian* Bureau of Statistics](https://www.abs.gov.au).
-  `r pkg("BETS")` provides access to the most important economic time series in *Brazil*.
   `r pkg("bbk")` provides access to the *German* Deutsche Bundesbank and European Central Bank time series data.
   `r pkg("bundesbank")` also allows access to the time series databases of the Deutsche Bundesbank, while
   data from the *European* Central Bank can also be accessed via `r pkg("ecb")`.
