@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-07-01
+version: 2026-07-29
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -26,7 +26,6 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("tbrf")` provides rolling functions based on date and time windows instead of n-lagged observations.
   `r pkg("roll")` provides fast and efficient computation of rolling and expanding statistics for time-series data using online algorithms and parallelized C++ code with support for weights and missing values.
   `r pkg("runner")` provides tools for running any R function in rolling windows or date windows.
-  `r pkg("runstats")` provides fast computational methods for some running sample statistics.
   For `r pkg("data.table")`, `froll()` can be used for high-performance rolling statistics.
   Functions are provided for many special cases such as `frollmean()`, `frollmedian()`, `fromsd()`, etc
 - *Graphics* : Time series plots are obtained with `plot()` applied to `ts` objects.
@@ -409,7 +408,6 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("sdrt")` estimates sufficient dimension reduction subspaces for time series.
 - *Multivariate state space models* An implementation is provided by the `r pkg("KFAS")` package which provides a fast multivariate Kalman filter, smoother, simulation smoother and forecasting.
   `r pkg("FKF")` provides a fast and flexible implementation of the Kalman filter, which can deal with missing values.
-  `r pkg("FKF.SP")` implements fast Kalman filtering through sequential processing.
   `r pkg("kalmanfilter")` provides an 'Rcpp' implementation of the multivariate Kalman filter for state space models that can handle missing values and exogenous data in the observation and state equations.
   Another implementation is given in the `r pkg("dlm")` package which also contains tools for converting other multivariate models into state space form.
   `r pkg("MARSS")` fits constrained and unconstrained multivariate autoregressive state-space models using an EM algorithm.
