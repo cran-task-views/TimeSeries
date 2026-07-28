@@ -111,6 +111,7 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("fabletools")` provides tools for extending the `r pkg("fable")` framework.
 - The `r pkg("forecast")` package provides similar tools for `ts` objects, while `r pkg("modeltime")` provides time series forecasting tools for use with the 'tidymodels' ecosystem.
   Forecast resampling tools for use with `modeltime` are provided by `r pkg("modeltime.resample")`.
+  `r pkg("mlr3forecast")` provides time series forecasting tools for use with the `mlr3` ecosystem.
 - *Exponential smoothing* : `HoltWinters()` in stats provides some basic models with partial optimization, `ETS()` from `r pkg("fable")` and `ets()` from `r pkg("forecast")` provide a larger set of models and facilities with full optimization.
   `r pkg("smooth")` implements some generalizations of exponential smoothing.
   `r pkg("legion")` implements multivariate versions of exponential smoothing.
