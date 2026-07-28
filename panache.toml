@@ -1,0 +1,4 @@
+[format]
+wrap = "semantic"
+line-ending = "lf"
+tab-width = 2
