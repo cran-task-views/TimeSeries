@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-07-29
+version: 2026-09-14
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -392,6 +392,7 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("gdpc")` implements generalized dynamic principal components.
   `r pkg("mgm")` estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
   Factor-adjusted VARs using network estimation and forecasting for high-dimensional time series is implemented in `r pkg("fnets")`.
+  Simulation and analysis of Gaussian VARMA models is provided by `r pkg("varmapack")`.
 - *Granger causality tests* are provided by `r pkg("grangersearch")`.
 - *Nonlinear VAR models* are provided by `r pkg("NVAR")`, while quadratic VARs are implemented in `r pkg("quadVAR")`.
 - *Vector error correction models* are available via the `r pkg("urca")`, `r pkg("vars")`, `r pkg("pvars")`, and `r pkg("tsDyn")` packages, including versions with structural constraints and thresholding.
