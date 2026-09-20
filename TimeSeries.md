@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-09-14
+version: 2026-09-21
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -251,6 +251,7 @@ If you think that some package is missing from the list, please let us know, eit
   Wavelet scalogram tools are contained in `r pkg("wavScalogram")`.
   Complex-valued wavelet spectral procedures are provided in `r pkg("CNLTtsa")`.
 - *Harmonic regression* using Fourier terms is implemented in `r pkg("fable")` and `r pkg("forecast")` packages via the `fourier` function.
+- Sparse decomposition of time series signals using Matching Pursuit algorithms is provided by `r pkg("MatchingPursuit")`.
 
 ### Decomposition and Filtering
 
