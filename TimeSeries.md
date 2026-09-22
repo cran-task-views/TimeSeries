@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-09-21
+version: 2026-09-22
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -227,6 +227,7 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("jointseg")` provides `Fpsn()` which implements a "Functional pruning segment neighborhood" dynamic programming algorithm (univariate data, square loss, computes best model for a certain number of changes/segments).
   `r pkg("fpop")` provides `Fpop()` which implements a "Functional pruning optimal partitioning" dynamic programming algorithm (univariate data, square loss, computes best model for a certain penalty for each change), as well as `multiBinSeg()` which is an efficient implementation of the popular binary segmentation heuristic (multi-variate data, Gaussian loss, computes sequence of models from 1 segment to a given max number of segments).
   A tidy framework for several changepoint detection algorithms is implemented in `r pkg("tidychangepoint")`.
+  `r pkg("ggchangepoint")` provides a unified, tidy interface to many changepoint detection methods, along with `ggplot2` plots and geoms.
 
 ### Frequency analysis
 
