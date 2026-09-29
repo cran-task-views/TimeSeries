@@ -3,7 +3,7 @@ name: TimeSeries
 topic: Time Series Analysis
 maintainer: Rob J Hyndman, Rebecca Killick
 email: Rob.Hyndman@monash.edu
-version: 2026-09-22
+version: 2026-09-30
 source: https://github.com/cran-task-views/TimeSeries/
 ---
 
@@ -209,24 +209,29 @@ If you think that some package is missing from the list, please let us know, eit
 
 ### Change point detection
 
-- *Change point detection* is provided in `r pkg("strucchange")` and `r pkg("strucchangeRcpp")` (using linear regression) and in `r pkg("trend")` (using nonparametric tests).
-  The `r pkg("changepoint")` package provides many popular changepoint methods, and `r pkg("ecp")` does nonparametric changepoint detection for univariate and multivariate series.
-  `r pkg("changepoint.np")` implements the nonparametric PELT algorithm, while `r pkg("changepoint.geo")` implements the high-dimensional changepoint detection method GeomCP.
-  `r pkg("changepointGA")` performs changepoint detection using a genetic algorithm.
-  `r pkg("mosum")` provides a moving sum procedure for detecting multiple changepoints in univariate time series.
-  Estimation of changepoints using an "S-curve" approximation is provided by `r pkg("changeS")`.
-  `r pkg("InspectChangepoint")` uses sparse projection to estimate changepoints in high-dimensional time series.
-  The nonparametric moving sum procedure for detecting multiple changepoints in multivariate time series is provided by `r pkg("CptNonPar")`.
-  Sequential Change Point Detection for High-Dimensional VAR Models is implemented in `r pkg("VARcpDetectOnline")`.
-  `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
-  Another Bayesian change-point detection package is `r pkg("BayesChange")`, which also clusters data based on common structural changes.
-  `r pkg("breakfast")` includes methods for fast multiple change-point detection and estimation.
-  `r pkg("fastcpd")` provides flexible and fast change point detection for regression type data, time series (ARIMA, VAR and GARCH) and any other data with a custom cost function using Sequential Gradient Descent with PELT.
-  Efficient implementations of several popular changepoint detection algorithms are provided by `r pkg("rupturesRcpp")`.
+- *Changes in mean and variance* : The `r pkg("changepoint")` package provides many popular changepoint methods, with `cpt.mean()`, `cpt.var()` and `cpt.meanvar()` implementing PELT, binary segmentation and segment neighbourhood search.
   `r pkg("binsegRcpp")` provides an efficient C++ implementation of the popular binary segmentation heuristic (univariate data, Gaussian/Poisson/L1/Laplace losses, computes sequence of models from 1 segment to a given max number of segments).
   `r pkg("jointseg")` provides `Fpsn()` which implements a "Functional pruning segment neighborhood" dynamic programming algorithm (univariate data, square loss, computes best model for a certain number of changes/segments).
   `r pkg("fpop")` provides `Fpop()` which implements a "Functional pruning optimal partitioning" dynamic programming algorithm (univariate data, square loss, computes best model for a certain penalty for each change), as well as `multiBinSeg()` which is an efficient implementation of the popular binary segmentation heuristic (multi-variate data, Gaussian loss, computes sequence of models from 1 segment to a given max number of segments).
-  A tidy framework for several changepoint detection algorithms is implemented in `r pkg("tidychangepoint")`.
+  Efficient implementations of several popular changepoint detection algorithms are provided by `r pkg("rupturesRcpp")`.
+  `r pkg("breakfast")` includes methods for fast multiple change-point detection and estimation.
+  `r pkg("mosum")` provides a moving sum procedure for detecting multiple changepoints in univariate time series.
+  Estimation of changepoints using an "S-curve" approximation is provided by `r pkg("changeS")`.
+  Change point detection using various tests is provided in `r pkg("trend")`.
+- *Changes in distribution* : `r pkg("changepoint.np")` implements the nonparametric PELT algorithm.
+  `r pkg("ecp")` does nonparametric changepoint detection for univariate and multivariate series.
+  The nonparametric moving sum procedure for detecting multiple changepoints in multivariate time series is provided by `r pkg("CptNonPar")`.
+- *Multivariate and high-dimensional series* : `r pkg("changepoint.geo")` implements the high-dimensional changepoint detection method GeomCP.
+  `r pkg("InspectChangepoint")` uses sparse projection to estimate changepoints in high-dimensional time series.
+  `r pkg("BayesChange")` provides Bayesian change-point detection, and also clusters data based on common structural changes.
+  `r pkg("ecp")` and `r pkg("CptNonPar")` also handle multivariate data.
+- *Changes in regression and time series models* : Change point detection using linear regression is provided in `r pkg("strucchange")` and `r pkg("strucchangeRcpp")`.
+  `r pkg("fastcpd")` provides flexible and fast change point detection for regression type data, time series (ARIMA, VAR and GARCH) and any other data with a custom cost function using Sequential Gradient Descent with PELT.
+  `r pkg("changepointGA")` performs changepoint detection using a genetic algorithm.
+  Sequential change point detection for high-dimensional VAR models is implemented in `r pkg("VARcpDetectOnline")`.
+- *Changes in trend and seasonality* : `r pkg("bfast")` applies `r pkg("strucchangeRcpp")` methods to the trend and seasonal components of an STL decomposition to detect abrupt changes.
+  `r pkg("Rbeast")` provides Bayesian change-point detection and time series decomposition.
+- *Unified interfaces* : A tidy framework for several changepoint detection algorithms is implemented in `r pkg("tidychangepoint")`.
   `r pkg("ggchangepoint")` provides a unified, tidy interface to many changepoint detection methods, along with `ggplot2` plots and geoms.
 
 ### Frequency analysis
