@@ -132,7 +132,7 @@ If you think that some package is missing from the list, please let us know, eit
   Other estimation methods including the innovations algorithm are provided by `r pkg("itsmr")`.
   `r pkg("arima2")` provides a random-restart estimation algorithm to replace `stats::arima()`.
   `r pkg("bayesforecast")` fits Bayesian time series models including seasonal ARIMA and ARIMAX models.
-  Robust ARIMA modeling is provided in the `r pkg("robustarima")` package.
+  Robust ARIMA modelling is provided in the `r pkg("robustarima")` package.
   `r pkg("TSTutorial")` provides an interactive tutorial for Box-Jenkins modelling.
   Improved prediction intervals for ARIMA and structural time series models are provided by `r pkg("tsPI")`.
   ARIMA models with multiple seasonal periods can be handled with `r pkg("tfarima")` and `r pkg("smooth")`.
@@ -229,7 +229,7 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("mtsdi")` implements an EM algorithm for imputing missing values in multivariate normal time series, accounting for spatial and temporal correlations.
   Imputation methods for multivariate locally stationary time series are in `r pkg("mvLSWimpute")`.
 
-### Change point detection
+### Change Point Detection
 
 - *Changes in mean and variance* : The `r pkg("changepoint")` package provides many popular changepoint methods, with `cpt.mean()`, `cpt.var()` and `cpt.meanvar()` implementing PELT, binary segmentation and segment neighbourhood search.
   `r pkg("binsegRcpp")` provides an efficient C++ implementation of the popular binary segmentation heuristic (univariate data, Gaussian/Poisson/L1/Laplace losses, computes sequence of models from 1 segment to a given max number of segments).
@@ -257,7 +257,7 @@ If you think that some package is missing from the list, please let us know, eit
 - *Unified interfaces* : A tidy framework for several changepoint detection algorithms is implemented in `r pkg("tidychangepoint")`.
   `r pkg("ggchangepoint")` provides a unified, tidy interface to many changepoint detection methods, along with `ggplot2` plots and geoms.
 
-### Frequency analysis
+### Frequency Analysis
 
 - *Spectral density estimation* is provided by `spectrum()` in the stats package, including the periodogram, smoothed periodogram and AR estimates.
   Bayesian spectral inference is provided by `r pkg("bspec")`, `r pkg("beyondWhittle")` and `r pkg("regspec")`.
@@ -305,7 +305,7 @@ If you think that some package is missing from the list, please let us know, eit
 
 ### Seasonality and Seasonal Adjustment
 
-- *Seasonal decomposition* : the stats package provides classical decomposition in `decompose()`, and STL decomposition in `stl()`.
+- *Seasonal decomposition* : The stats package provides classical decomposition in `decompose()`, and STL decomposition in `stl()`.
   Enhanced STL decomposition is available in `r pkg("stlplus")`.
   `r pkg("stR")` provides Seasonal-Trend decomposition based on Regression.
   `r pkg("smooth")` and `r pkg("tsutils")` implement extended versions of classical decomposition.
@@ -318,10 +318,10 @@ If you think that some package is missing from the list, please let us know, eit
 - Seasonal adjustment of daily time series, allowing for day-of-week, time-of-month, time-of-year and holiday effects is provided by `r pkg("dsa")`.
   Seasonal adjustment of weekly data is provided by `r pkg("boiwsa")`.
 - `r pkg("StructuralDecompose")` decomposes a time series into trend, seasonality and residuals, allowing for level shifts.
-- *Analysis of seasonality* : the `r pkg("bfast")` package provides methods for detecting and characterizing abrupt changes within the trend and seasonal components obtained from a decomposition.
-- `r pkg("season")`: Seasonal analysis of health data including regression models, time-stratified case-crossover, plotting functions and residual checks.
-- `r pkg("seas")`: Seasonal analysis and graphics, especially for climatology.
-- `r pkg("sazedR")`: Method to estimate the period of a seasonal time series.
+- *Analysis of seasonality* : The `r pkg("bfast")` package provides methods for detecting and characterizing abrupt changes within the trend and seasonal components obtained from a decomposition.
+  `r pkg("season")` provides seasonal analysis of health data, including regression models, time-stratified case-crossover, plotting functions and residual checks.
+  `r pkg("seas")` provides seasonal analysis and graphics, especially for climatology.
+  `r pkg("sazedR")` estimates the period of a seasonal time series.
 
 ### Stationarity, Unit Roots, and Cointegration
 
@@ -445,7 +445,7 @@ If you think that some package is missing from the list, please let us know, eit
 - Multivariate Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`.
 - Bayesian Dynamic Multivariate Panel Models with time-varying coefficients are implemented in `r pkg("dynamite")`.
 
-### Analysis of large groups of time series
+### Analysis of Large Groups of Time Series
 
 - *Time series features* are computed in `r pkg("feasts")` for time series in `tsibble` format.
   They are computed using `r pkg("tsfeatures")` for a list or matrix of time series in `ts` format.
@@ -456,7 +456,7 @@ If you think that some package is missing from the list, please let us know, eit
 - *Time series clustering* is implemented in `r pkg("dtwclust")`, `r pkg("BNPTSclust")` and `r pkg("pdc")`.
 - `r pkg("TSrepr")` includes methods for representing time series using dimension reduction and feature extraction.
 
-### Hierarchical time series
+### Hierarchical Time Series
 
 - Methods for plotting and forecasting collections of hierarchical and grouped time series are provided by `r pkg("fable")` and `r pkg("hts")`.
   Bayesian reconciliation in the `r pkg("fable")` framework is implemented in `r pkg("fable.bayesRecon")`.
@@ -475,7 +475,7 @@ If you think that some package is missing from the list, please let us know, eit
 - *Temporal aggregation* : `r pkg("wktmo")` converts weekly data to monthly data in several ways.
 - *Coherence with aggregates* : `r pkg("gseries")` implements Statistics Canada's generalized system for benchmarking and reconciliation of time series.
 
-### Dynamic time warping
+### Dynamic Time Warping
 
 - Dynamic time warping algorithms are provided by `r pkg("dtw")` for computing and plotting pairwise alignments between time series.
 - Parametric time warping is implemented in `r pkg("ptw")`.
@@ -483,23 +483,23 @@ If you think that some package is missing from the list, please let us know, eit
 - `r pkg("IncDTW")` provides incremental calculation of dynamic time warping for streaming time series.
 - Time-weighted dynamic time warping is provided by `r pkg("twdtw")`.
 
-### Functional time series
+### Functional Time Series
 
-- Tools for visualizing, modeling, forecasting and analysing functional time series are implemented in `r pkg("ftsa")`.
+- Tools for visualizing, modelling, forecasting and analysing functional time series are implemented in `r pkg("ftsa")`.
   `r pkg("NTS")` also implements functional autoregressive models.
   Seasonal functional autoregression models are provided by `r pkg("Rsfar")`.
 - `r pkg("fdaACF")` estimates the autocorrelation function for functional time series.
 - `r pkg("STFTS")` contains stationarity, trend and unit root tests for functional time series.
 - `r pkg("hdftsa")` offers methods for visualizing, modelling, and forecasting high-dimensional functional time series.
 
-### Matrix and tensor-valued time series
+### Matrix and Tensor-Valued Time Series
 
 - `r pkg("MEFM")` implements main effect matrix factor models for matrix time series.
 - `r pkg("tensorTS")` provides functions for estimation, simulation and prediction of factor and autoregressive models for matrix and tensor valued time series.
 - Time series tensor factor models are implemented in `r pkg("TensorPreAve")`.
 - `r pkg("RTFA")` provides robust factor analysis for tensor time series.
 
-### Continuous time models
+### Continuous Time Models
 
 - Continuous time autoregressive modelling is provided in `r pkg("cts")`, while `r pkg("carfima")` allows for continuous time ARFIMA models.
 - Simulation and inference for stochastic differential equations is provided by `r pkg("sde")` and `r pkg("yuima")`.
@@ -533,7 +533,7 @@ If you think that some package is missing from the list, please let us know, eit
 
 ### Time Series Data Access and Management
 
-- *National time series data:* `r pkg("readabs")` downloads, imports and tidies time series data from the [*Australian* Bureau of Statistics](https://www.abs.gov.au).
+- *National time series data* : `r pkg("readabs")` downloads, imports and tidies time series data from the [*Australian* Bureau of Statistics](https://www.abs.gov.au).
   `r pkg("bbk")` is a client for the APIs of many central banks, including the *German* Deutsche Bundesbank and the European Central Bank.
   `r pkg("bundesbank")` also allows access to the time series databases of the Deutsche Bundesbank, while data from the *European* Central Bank can also be accessed via `r pkg("ecb")`.
   Data from *Switzerland* via [dataseries.org](http://dataseries.org) can be downloaded and imported using `r pkg("dataseries")`.
@@ -541,12 +541,12 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("ugatsdb")` provides an API to access time series data for *Uganda*, while `r pkg("samadb")` does the same for *South Africa*.
   For the *United States*, economic time series and other data from FRED (the Federal Reserve Economic Data) can be retrieved using `r pkg("fredr")`.
   Time series data from the Bureau of Labor Statistics can be downloaded using `r pkg("BLSloadR")`.
-- *Time series databases:* `r pkg("rdbnomics")` provides access to hundreds of millions of time series from [DBnomics](https://db.nomics.world).
+- *Time series databases* : `r pkg("rdbnomics")` provides access to hundreds of millions of time series from [DBnomics](https://db.nomics.world).
   `r pkg("ifo")` is a client for downloading time series data from the Ifo Institute.
   `r pkg("influxdbr")` provides an interface to the InfluxDB time series database.
   `r pkg("pdfetch")` provides facilities for downloading economic and financial time series from public sources.
   `r pkg("tsdb")` implements a simple database for numerical time series.
-- *Data revisions*: `r pkg("butterfly")` provides verification of continually updating time series data where we expect new values, but want to ensure previous data remains unchanged.
+- *Data revisions* : `r pkg("butterfly")` provides verification of continually updating time series data where we expect new values, but want to ensure previous data remains unchanged.
   `r pkg("reviser")` analyses revisions in real-time time series vintages.
 
 ### Simulating Time Series
@@ -562,12 +562,12 @@ If you think that some package is missing from the list, please let us know, eit
 
 ### Domain-Specific Applications
 
-- `r pkg("paleoTS")`: Modeling evolution in paleontological time series.
-- `r pkg("pastecs")`: Regularisation, decomposition and analysis of space-time series.
-- `r pkg("RSEIS")`: Seismic time series analysis tools.
-- `r pkg("rts")`: Raster time series analysis (e.g., time series of satellite images).
-- `r pkg("spTimer")`: Spatio-temporal Bayesian modelling.
-- `r pkg("Tides")`: Functions to calculate characteristics of quasi periodic time series, e.g. observed estuarine water levels.
+- `r pkg("paleoTS")` models evolution in paleontological time series.
+- `r pkg("pastecs")` provides regularization, decomposition and analysis of space-time series.
+- `r pkg("RSEIS")` provides tools for seismic time series analysis.
+- `r pkg("rts")` provides raster time series analysis (e.g., time series of satellite images).
+- `r pkg("spTimer")` provides spatio-temporal Bayesian modelling.
+- `r pkg("Tides")` calculates characteristics of quasi-periodic time series, e.g. observed estuarine water levels.
 - Further methods for spatio-temporal data are covered in the `r view("SpatioTemporal")` task view.
 
 ### Links
