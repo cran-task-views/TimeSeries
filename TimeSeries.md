@@ -166,6 +166,7 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("ZIM")` provides for Zero-Inflated models for count time series.
   Zero-inflated INAR models can be handled with the `r pkg("ZINARp")` package.
   Semiparametric estimation and bootstrapping of INAR models is provided by the `r pkg("spINAR")` package.
+  `r pkg("surveillance")` provides temporal and spatio-temporal modelling and monitoring of epidemic phenomena, including count time series.
 - *GARCH models* : `garch()` from `r pkg("tseries")` fits basic GARCH models.
   Many variations on GARCH models are provided by `r pkg("rugarch")` and `r pkg("tsgarch")`.
   Other univariate GARCH packages include `r pkg("fGarch")` which implements ARIMA models with a wide class of GARCH innovations and `r pkg("robustGarch")` which provides robust GARCH(1,1) models.
@@ -175,6 +176,7 @@ If you think that some package is missing from the list, please let us know, eit
 - *Censored time series* can be modelled using `r pkg("ARCensReg")`, which fits univariate censored regression models with autoregressive errors.
 - *Diffusion models* such as Bass and Gompertz curves are provided by `r pkg("diffusion")` and `r pkg("DIMORA")`.
   Dynamic Gompertz models for time series growth curves are implemented in `r pkg("tsgc")`.
+- *Complex-valued time series* can be analysed and forecast using `r pkg("complex")`.
 - *Miscellaneous* : `r pkg("ltsa")` contains methods for linear time series analysis, `r pkg("timsac")` for time series analysis and control.
 
 ### Machine Learning and Neural Network Forecasting
@@ -204,6 +206,7 @@ If you think that some package is missing from the list, please let us know, eit
 - Forecasts can be combined in the `r pkg("fable")` package using simple linear expressions.
   `r pkg("forecastHybrid")` provides functions for ensemble forecasts, combining approaches from the `r pkg("forecast")` package.
   `r pkg("profoc")` combines probabilistic forecasts using CRPS learning.
+  `r pkg("ensembleBMA")` uses Bayesian model averaging to create probabilistic forecasts from ensemble forecasts and weather observations.
 - Point forecast evaluation is provided in the `accuracy()` function from the `r pkg("fable")` and `r pkg("forecast")` packages.
   Distributional forecast evaluation using scoring rules is available in `r pkg("fable")`, `r pkg("scoringRules")` and `r pkg("scoringutils")`.
   The Diebold-Mariano test for comparing the forecast accuracy of two models is implemented in the `dm.test()` function in `r pkg("forecast")`.
@@ -287,6 +290,7 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("sleekts")` computes the 4253H twice smoothing method.
   `r pkg("mFilter")` implements several filters for smoothing and extracting trend and cyclical components including Hodrick-Prescott and Butterworth filters.
   Several filters are provided by `r pkg("signal")` including a Butterworth filter and a Savitzky-Golay filter.
+  `r pkg("gsignal")` is an R implementation of the Octave package "signal", containing a variety of signal processing tools.
   `r pkg("hpfilter")` implements one- and two-sided Hodrick-Prescott filters, while `r pkg("jumps")` provides a Hodrick-Prescott filter with automatically selected jumps.
   An alternative to Hodrick-Prescott filtering is provided by `r pkg("neverhpfilter")`.
   Corbae-Ouliaris frequency domain filtering is implemented in `r pkg("corbouli")`.
@@ -375,6 +379,7 @@ If you think that some package is missing from the list, please let us know, eit
   Bayesian dynamic regression models for Gaussian, binomial and Poisson responses are available in `r pkg("walker")`.
   `r pkg("dLagM")` provides time series regression with distributed lags.
   Functions for distributed lag nonlinear modelling are provided in `r pkg("dlnm")`.
+  `r pkg("tsModel")` provides tools for specifying time series regression models for air pollution and health.
   `r pkg("fastTS")` implements sparsity-ranked lasso methods for time series with exogenous features and/or complex seasonality.
   `r pkg("crosslag")` provides linear and nonlinear cross lag analysis.
   Distributed lag models based on Bayesian additive regression trees are implemented in `r pkg("dlmtree")`.
@@ -555,19 +560,15 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("RMAWGEN")` is a set of S3 and S4 functions for spatial multi-site stochastic generation of daily time-series of temperature and precipitation making use of VAR models.
   The package can be used in climatology and statistical hydrology.
 
-### Miscellaneous
+### Domain-Specific Applications
 
-- `r pkg("complex")`: Analysis and forecasting of complex-valued time series.
-- `r pkg("ensembleBMA")`: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.
-- `r pkg("gsignal")` is an R implementation of the Octave package "signal", containing a variety of signal processing tools.
 - `r pkg("paleoTS")`: Modeling evolution in paleontological time series.
 - `r pkg("pastecs")`: Regularisation, decomposition and analysis of space-time series.
 - `r pkg("RSEIS")`: Seismic time series analysis tools.
 - `r pkg("rts")`: Raster time series analysis (e.g., time series of satellite images).
 - `r pkg("spTimer")`: Spatio-temporal Bayesian modelling.
-- `r pkg("surveillance")`: Temporal and spatio-temporal modeling and monitoring of epidemic phenomena.
 - `r pkg("Tides")`: Functions to calculate characteristics of quasi periodic time series, e.g. observed estuarine water levels.
-- `r pkg("tsModel")`: Time series modeling for air pollution and health.
+- Further methods for spatio-temporal data are covered in the `r view("SpatioTemporal")` task view.
 
 ### Links
 
