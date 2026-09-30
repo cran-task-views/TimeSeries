@@ -11,40 +11,28 @@ Base R ships with a lot of functionality useful for time series, in particular i
 This is complemented by many packages on CRAN, which are briefly summarized below.
 There is overlap between the tools for time series and those designed for specific domains including `r view("Econometrics")`, `r view("Finance")` and `r view("Environmetrics")`, or specific problems such as `r view("AnomalyDetection")`.
 
-The packages in this view can be roughly structured into the following topics.
 If you think that some package is missing from the list, please let us know, either via e-mail to the maintainer or by submitting an issue or pull request in the GitHub repository linked above.
 
-### Basics
+### Contents
 
-- *Infrastructure* : Base R contains substantial infrastructure for representing and analysing time series data.
-  The fundamental class is `"ts"` that can represent regularly spaced time series (using numeric time stamps).
-  Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
-- *Rolling statistics* : Moving averages are computed by `ma` from `r pkg("forecast", priority = "core")`, and `rollmean` from `r pkg("zoo", priority = "core")`.
-  The latter also provides a general function `rollapply`, along with other specific rolling statistics functions.
-  `r pkg("slider")` calculates a diverse and comprehensive set of type-stable running functions for any R data types.
-  `r pkg("tsibble", priority = "core")` provides `slide_tsibble()` for rolling statistics, `tile_tsibble()` for non-overlapping sliding windows, and `stretch_tsibble()` for expanding windows.
-  `r pkg("tbrf")` provides rolling functions based on date and time windows instead of n-lagged observations.
-  `r pkg("roll")` provides fast and efficient computation of rolling and expanding statistics for time-series data using online algorithms and parallelized C++ code with support for weights and missing values.
-  `r pkg("runner")` provides tools for running any R function in rolling windows or date windows.
-  For `r pkg("data.table")`, the `froll*()` family of functions can be used for high-performance rolling statistics.
-  Functions are provided for many special cases such as `frollmean()`, `frollmedian()`, `frollsd()`, etc.
-- *Graphics* : Time series plots are obtained with `plot()` applied to `ts` objects.
-  (Partial) autocorrelation functions plots are implemented in `acf()` and `pacf()`.
-  Alternative versions are provided by `Acf()` and `Pacf()` in `r pkg("forecast")`, along with a combination display using `tsdisplay()`.
-  Seasonal displays are obtained using `monthplot()` in stats, `seasonplot` in `r pkg("forecast")`, and `seasplot` in `r pkg("tsutils")`.
-  `r pkg("ggtime")` provides various time series graphics for tsibble objects including time plots, season plots, subseries plots, ACF and PACF plots, and some combination displays.
-  Interactive graphics for tsibbles using htmlwidgets are provided by `r pkg("tsibbletalk")`.
-  `r pkg("gglinedensity")` provides a ggplot2 statistic for DenseLines heatmaps of time series normalized by arc length.
-  Calendar plots are implemented in `r pkg("sugrrants")`.
-  `r pkg("gravitas")` allows for visualizing probability distributions conditional on bivariate temporal granularities.
-  `r pkg("dygraphs")` provides an interface to the Dygraphs interactive time series charting library.
-  Alternative interactive time series visualizations using the vis.js Timeline library are provided by `r pkg("linevis")`.
-  `r pkg("TSstudio")` also provides some interactive visualization tools for time series.
-  `r pkg("ZRA")` plots forecast objects from the `r pkg("forecast")` package using dygraphs.
-  Basic fan plots of forecast distributions are provided by `r pkg("forecast")` and `r pkg("vars")`.
-  More flexible fan plots of any sequential distributions are implemented in `r pkg("fanplot")`.
+- **[Infrastructure](#infrastructure)**: [Times and Dates](#times-and-dates), [Time Series Classes](#time-series-classes), [Rolling Statistics](#rolling-statistics), [Temporal Aggregation and Disaggregation](#temporal-aggregation-and-disaggregation)
+- **[Exploratory Analysis](#exploratory-analysis)**: [Graphics](#graphics), [Autocorrelation and Dependence Measures](#autocorrelation-and-dependence-measures), [Time Series Features](#time-series-features)
+- **[Decomposition and Frequency Analysis](#decomposition-and-frequency-analysis)**: [Filtering, Smoothing and Decomposition](#filtering-smoothing-and-decomposition), [Seasonality and Seasonal Adjustment](#seasonality-and-seasonal-adjustment), [Frequency Analysis](#frequency-analysis)
+- **[Univariate Time Series Models](#univariate-time-series-models)**: [Exponential Smoothing and Related Methods](#exponential-smoothing-and-related-methods), [ARIMA and Related Models](#arima-and-related-models), [Structural and State Space Models](#structural-and-state-space-models), [Non-Gaussian and Count Time Series](#non-gaussian-and-count-time-series), [Volatility Models](#volatility-models), [Nonlinear Time Series Models](#nonlinear-time-series-models), [Dynamic Regression Models](#dynamic-regression-models), [Continuous Time Models](#continuous-time-models), [Other Models](#other-models)
+- **[Forecasting](#forecasting)**: [Forecasting Frameworks](#forecasting-frameworks), [Machine Learning and Neural Network Forecasting](#machine-learning-and-neural-network-forecasting), [Hierarchical and Grouped Forecasting](#hierarchical-and-grouped-forecasting), [Forecast Selection, Combination and Evaluation](#forecast-selection-combination-and-evaluation)
+- **[Testing and Inference](#testing-and-inference)**: [Diagnostic and Trend Tests](#diagnostic-and-trend-tests), [Stationarity and Unit Root Tests](#stationarity-and-unit-root-tests), [Change Point Detection](#change-point-detection), [Outliers and Missing Values](#outliers-and-missing-values), [Bootstrapping](#bootstrapping)
+- **[Multivariate Time Series Models](#multivariate-time-series-models)**: [Vector Autoregressive Models](#vector-autoregressive-models), [Cointegration and Error Correction](#cointegration-and-error-correction), [Factor Models and Dimension Reduction](#factor-models-and-dimension-reduction), [Multivariate State Space Models](#multivariate-state-space-models), [Multivariate Volatility and Other Models](#multivariate-volatility-and-other-models)
+- **[Collections and Complex Data Types](#collections-and-complex-data-types)**: [Clustering and Representation](#clustering-and-representation), [Dynamic Time Warping](#dynamic-time-warping), [Functional Time Series](#functional-time-series), [Matrix and Tensor-Valued Time Series](#matrix-and-tensor-valued-time-series)
+- **[Time Series Data](#time-series-data)**: [Data Sets](#data-sets), [Data Access and Management](#data-access-and-management), [Simulation](#simulation)
+- **[Domain-Specific Applications](#domain-specific-applications)**
 
-### Times and Dates
+### Infrastructure
+
+Base R contains substantial infrastructure for representing and analysing time series data.
+The fundamental class is `"ts"` that can represent regularly spaced time series (using numeric time stamps).
+Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
+
+#### Times and Dates
 
 - Class `"ts"` can only deal with numeric time stamps, but many more classes are available for storing time/date information and computing with it.
   For an overview see *R Help Desk: Date and Time Classes in R* by Gabor Grothendieck and Thomas Petzoldt in [R News 4(1)](https://CRAN.R-project.org/doc/Rnews/Rnews_2004-1.pdf), 29-32.
@@ -78,7 +66,7 @@ If you think that some package is missing from the list, please let us know, eit
 - The `r pkg("CFtime")` package encapsulates the CF Metadata Conventions "time" dimension, including all defined calendars.
   It facilitates the processing of climate change projection data.
 
-### Time Series Classes
+#### Time Series Classes
 
 - As mentioned above, `"ts"` is the basic class for regularly spaced time series using numeric time stamps.
 - The `r pkg("zoo")` package provides infrastructure for regularly and irregularly spaced time series using arbitrary classes for the time stamps (i.e., allowing all classes from the previous section).
@@ -97,22 +85,142 @@ If you think that some package is missing from the list, please let us know, eit
 - The class `"tis"` in `r pkg("tis")` implements time series with `"ti"` time stamps.
 - The package `r pkg("tframe")` contains infrastructure for setting time frames in different formats.
 
-### Forecasting Frameworks
+#### Rolling Statistics
 
-- The `r pkg("fable", priority = "core")` package provides tools for fitting univariate time series models to many series simultaneously including ETS, ARIMA, TSLM and other models.
-  It also provides many functions for computing and analysing forecasts.
-  The time series must be in the `tsibble` format.
-  `r pkg("fabletools")` provides tools for extending the `r pkg("fable")` framework.
-- The `r pkg("forecast")` package provides similar tools for `ts` objects, while `r pkg("modeltime")` provides time series forecasting tools for use with the 'tidymodels' ecosystem.
-  Forecast resampling tools for use with `modeltime` are provided by `r pkg("modeltime.resample")`.
-  `r pkg("mlr3forecast")` provides time series forecasting tools for use with the `mlr3` ecosystem.
-- A standardized time series forecasting framework including many models is provided by `r pkg("finnts")`, designed for financial time series.
-- Tidy tools for forecasting are provided by `r pkg("sweep")`, converting objects produced in `r pkg("forecast")` to "tidy" data frames.
-- `r pkg("onlineforecast")` provides a framework for fitting adaptive forecasting models, allowing forecasts to be used as inputs to models, and models to be updated as new data arrives.
+- Moving averages are computed by `ma` from `r pkg("forecast", priority = "core")`, and `rollmean` from `r pkg("zoo", priority = "core")`.
+  The latter also provides a general function `rollapply`, along with other specific rolling statistics functions.
+- `r pkg("slider")` calculates a diverse and comprehensive set of type-stable running functions for any R data types.
+  `r pkg("tsibble", priority = "core")` provides `slide_tsibble()` for rolling statistics, `tile_tsibble()` for non-overlapping sliding windows, and `stretch_tsibble()` for expanding windows.
+  `r pkg("tbrf")` provides rolling functions based on date and time windows instead of n-lagged observations.
+  `r pkg("runner")` provides tools for running any R function in rolling windows or date windows.
+- `r pkg("roll")` provides fast and efficient computation of rolling and expanding statistics for time-series data using online algorithms and parallelized C++ code with support for weights and missing values.
+  For `r pkg("data.table")`, the `froll*()` family of functions can be used for high-performance rolling statistics.
+  Functions are provided for many special cases such as `frollmean()`, `frollmedian()`, `frollsd()`, etc.
+
+#### Temporal Aggregation and Disaggregation
+
+- *Temporal disaggregation* : The `r pkg("tempdisagg")` package includes methods for temporal disaggregation and interpolation of a low frequency time series to a higher frequency series.
+  Time series disaggregation is also provided by `r pkg("TSdisaggregation")` and `r pkg("tsdisagg2")`, while `r pkg("disagmethod")` implements ARIMA-based disaggregation.
+- *Temporal aggregation* : `r pkg("wktmo")` converts weekly data to monthly data in several ways.
+- *Coherence with aggregates* : `r pkg("gseries")` implements Statistics Canada's generalized system for benchmarking and reconciliation of time series.
+
+### Exploratory Analysis
+
+
+#### Graphics
+
+- Time series plots are obtained with `plot()` applied to `ts` objects.
+  (Partial) autocorrelation functions plots are implemented in `acf()` and `pacf()`.
+  Alternative versions are provided by `Acf()` and `Pacf()` in `r pkg("forecast")`, along with a combination display using `tsdisplay()`.
+  Seasonal displays are obtained using `monthplot()` in stats, `seasonplot` in `r pkg("forecast")`, and `seasplot` in `r pkg("tsutils")`.
+- `r pkg("ggtime")` provides various time series graphics for tsibble objects including time plots, season plots, subseries plots, ACF and PACF plots, and some combination displays.
+  `r pkg("gglinedensity")` provides a ggplot2 statistic for DenseLines heatmaps of time series normalized by arc length.
+  Calendar plots are implemented in `r pkg("sugrrants")`.
+  `r pkg("gravitas")` allows for visualizing probability distributions conditional on bivariate temporal granularities.
+- Interactive graphics for tsibbles using htmlwidgets are provided by `r pkg("tsibbletalk")`.
+  `r pkg("dygraphs")` provides an interface to the Dygraphs interactive time series charting library.
+  Alternative interactive time series visualizations using the vis.js Timeline library are provided by `r pkg("linevis")`.
+  `r pkg("TSstudio")` also provides some interactive visualization tools for time series.
+  `r pkg("ZRA")` plots forecast objects from the `r pkg("forecast")` package using dygraphs.
+- Basic fan plots of forecast distributions are provided by `r pkg("forecast")` and `r pkg("vars")`.
+  More flexible fan plots of any sequential distributions are implemented in `r pkg("fanplot")`.
+
+#### Autocorrelation and Dependence Measures
+
+- *Autocovariance and autocorrelation* : `acf()` and `pacf()` in stats estimate the autocorrelation and partial autocorrelation functions.
+  `ACF()` and `PACF()` from `r pkg("feasts")` provide versions of these for `tsibble` objects.
+  Banded and tapered estimates of the autocorrelation and partial autocorrelation functions are computed by `taperedacf()` and `taperedpacf()` in `r pkg("forecast")`.
+  `r pkg("CovEsts")` provides nonparametric estimation, correction and comparison of autocovariance functions for univariate time series, with block bootstrap confidence intervals.
+  `r pkg("dCovTS")` computes and plots the distance covariance and correlation functions of time series.
+  ACF and CCF variants based on Chatterjee's Xi correlation are provided by `r pkg("xiacf")`.
+- *Entropy* : `r pkg("RTransferEntropy")` measures information flow between time series with Shannon and Renyi transfer entropy.
+  An entropy measure based on the Bhattacharya-Hellinger-Matusita distance is implemented in `r pkg("tseriesEntropy")`.
+  Various approximate and sample entropies are computed using `r pkg("TSEntropies")`.
+
+#### Time Series Features
+
+- Time series features are computed in `r pkg("feasts")` for time series in `tsibble` format.
+  They are computed using `r pkg("tsfeatures")` for a list or matrix of time series in `ts` format.
+  In both packages, many built-in feature functions are included, and users can add their own.
+- `r pkg("Rcatch22")` provides fast computation of 22 features identified as particularly useful.
+  `r pkg("theft")` calculates time series features from various R and Python packages, while `r pkg("theftdlc")` is a companion package providing analysis and visualization functions.
+  Feature extraction for ordinal time series is provided by `r pkg("otsfeatures")`.
+
+### Decomposition and Frequency Analysis
+
+
+#### Filtering, Smoothing and Decomposition
+
+- *Linear and robust filters* : `filter()` in stats provides autoregressive and moving average linear filtering of multiple univariate time series.
+  The `r pkg("robfilter")` package provides several robust time series filters.
+- *Running median smoothers* : `smooth()` from the stats package computes Tukey's running median smoothers, 3RS3R, 3RSS, 3R, etc.
+  `r pkg("sleekts")` computes the 4253H twice smoothing method.
+- *Signal processing filters* : Several filters are provided by `r pkg("signal")` including a Butterworth filter and a Savitzky-Golay filter.
+  `r pkg("gsignal")` is an R implementation of the Octave package "signal", containing a variety of signal processing tools.
+- *Trend and cycle extraction* : `r pkg("mFilter")` implements several filters for smoothing and extracting trend and cyclical components including Hodrick-Prescott and Butterworth filters.
+  `r pkg("hpfilter")` implements one- and two-sided Hodrick-Prescott filters, while `r pkg("jumps")` provides a Hodrick-Prescott filter with automatically selected jumps.
+  An alternative to Hodrick-Prescott filtering is provided by `r pkg("neverhpfilter")`.
+  Corbae-Ouliaris frequency domain filtering is implemented in `r pkg("corbouli")`.
+  `r pkg("smoots")` provides nonparametric estimation of the time trend and its derivatives.
+  Many trend estimation methods are implemented in `r pkg("trendseries")`, providing a pipe-friendly interface when working with data frames.
+- *Model-based decomposition* : Autoregressive-based decomposition is provided by `r pkg("ArDec")`.
+- *Singular Spectrum Analysis* is implemented in `r pkg("Rssa")` and `r pkg("ASSA")`.
+- *Empirical Mode Decomposition* (EMD) and Hilbert spectral analysis is provided by `r pkg("EMD")`.
+  Additional tools, including ensemble EMD, are available in `r pkg("hht")`.
+  An alternative implementation of ensemble EMD and its complete variant are available in `r pkg("Rlibeemd")`.
+- Seasonal decomposition methods, including STL and X-13-ARIMA-SEATS, are covered in the next subsection.
+
+#### Seasonality and Seasonal Adjustment
+
+- *Seasonal decomposition* : The stats package provides classical decomposition in `decompose()`, and STL decomposition in `stl()`.
+  Enhanced STL decomposition is available in `r pkg("stlplus")`.
+  `r pkg("stR")` provides Seasonal-Trend decomposition based on Regression.
+  `r pkg("smooth")` and `r pkg("tsutils")` implement extended versions of classical decomposition.
+  `r pkg("tsdecomp")` implements ARIMA-based decomposition of quarterly and monthly data.
+- X-13-ARIMA-SEATS binaries are provided in the `r pkg("x13binary")` package, with `r pkg("seasonal")` providing an R interface and `r pkg("seasonalview")` providing a GUI.
+  An alternative interface is provided by `r pkg("x12")`.
+- An interface to the JDemetra+ seasonal adjustment software is provided by `r pkg("rjd3toolkit")` and related packages in the [rjdverse](https://github.com/rjdverse).
+  `r pkg("RJDemetra")` provides an interface to JDemetra+ version 2 and `r pkg("ggdemetra")` provides associated ggplot2 functions.
+- `r pkg("deseats")` includes a locally weighted regression approach, and the Berlin method.
+- Seasonal adjustment of daily time series, allowing for day-of-week, time-of-month, time-of-year and holiday effects is provided by `r pkg("dsa")`.
+  Seasonal adjustment of weekly data is provided by `r pkg("boiwsa")`.
+- `r pkg("StructuralDecompose")` decomposes a time series into trend, seasonality and residuals, allowing for level shifts.
+- *Analysis of seasonality* : The `r pkg("bfast")` package provides methods for detecting and characterizing abrupt changes within the trend and seasonal components obtained from a decomposition.
+  `r pkg("season")` provides seasonal analysis of health data, including regression models, time-stratified case-crossover, plotting functions and residual checks.
+  `r pkg("seas")` provides seasonal analysis and graphics, especially for climatology.
+  `r pkg("sazedR")` estimates the period of a seasonal time series.
+
+#### Frequency Analysis
+
+- *Spectral density estimation* is provided by `spectrum()` in the stats package, including the periodogram, smoothed periodogram and AR estimates.
+  Bayesian spectral inference is provided by `r pkg("bspec")`, `r pkg("beyondWhittle")` and `r pkg("regspec")`.
+  `r pkg("quantspec")` includes methods to compute and plot quantile periodograms for univariate and multivariate time series.
+  The Lomb-Scargle periodogram for unevenly sampled time series is computed by `r pkg("lomb")`.
+  `r pkg("peacots")` provides inference for periodograms using an Ornstein-Uhlenbeck state space model.
+  `r pkg("spectral")` uses Fourier and Hilbert transforms for spectral analysis.
+  `r pkg("psd")` produces adaptive, sine-multitaper spectral density estimates.
+  `r pkg("kza")` provides Kolmogorov-Zurbenko Adaptive Filters including break detection, spectral analysis, wavelets and KZ Fourier Transforms.
+  `r pkg("multitaper")` also provides some multitaper spectral analysis tools.
+  Higher-order spectral analysis is implemented in `r pkg("rhosa")`, including bispectrum, bicoherence, cross-bispectrum and cross-bicoherence.
+- *Wavelet methods* : The `r pkg("wavelets")`, `r pkg("wavethresh")` and `r pkg("waveslim")` packages include computing wavelet filters, wavelet transforms and multiresolution analyses.
+  `r pkg("WaveletComp")` provides some tools for wavelet-based analysis of univariate and bivariate time series including cross-wavelets, phase-difference and significance tests.
+  `r pkg("biwavelet")` is a port of the WTC Matlab package for univariate and bivariate wavelet analyses.
+  `r pkg("mvLSW")` provides tools for multivariate locally stationary wavelet processes.
+  Local ACF estimation is provided by `r pkg("locits")` and PACF estimation by `r pkg("lpacf")`.
+  Locally stationary wavelet processes can be forecast using `r pkg("forecastLSW")`.
+  `r pkg("LSWPlib")` contains functions for simulation and spectral estimation of locally stationary wavelet packet processes.
+  Tests of white noise using wavelets are provided by `r pkg("hwwntest")`.
+  Wavelet scalogram tools are contained in `r pkg("wavScalogram")`.
+  Complex-valued wavelet spectral procedures are provided in `r pkg("CNLTtsa")`.
+- *Harmonic regression* using Fourier terms is implemented in `r pkg("fable")` and `r pkg("forecast")` packages via the `fourier` function.
+- Sparse decomposition of time series signals using Matching Pursuit algorithms is provided by `r pkg("MatchingPursuit")`.
 
 ### Univariate Time Series Models
 
-- *Exponential smoothing* : `HoltWinters()` in stats provides some basic models with partial optimization, `ETS()` from `r pkg("fable")` and `ets()` from `r pkg("forecast")` provide a larger set of models and facilities with full optimization.
+
+#### Exponential Smoothing and Related Methods
+
+- `HoltWinters()` in stats provides some basic models with partial optimization, `ETS()` from `r pkg("fable")` and `ets()` from `r pkg("forecast")` provide a larger set of models and facilities with full optimization.
   `r pkg("smooth")` implements some generalizations of exponential smoothing.
   `r pkg("legion")` implements multivariate versions of exponential smoothing.
   The `r pkg("MAPA")` package combines exponential smoothing models at different levels of temporal aggregation to improve forecast accuracy.
@@ -123,6 +231,9 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("fable.prophet")` allows prophet models to be used in the `r pkg("fable")` framework.
 - The theta method is implemented in the `THETA()` function from `r pkg("fable")`, `thetaf()` function from `r pkg("forecast")`, and `theta()` from `r pkg("tsutils")`.
   An alternative and extended implementation is provided in `r pkg("forecTheta")`.
+
+#### ARIMA and Related Models
+
 - *Autoregressive models* : `ar()` in stats (with model selection).
   Quantile autoregression with prediction intervals is implemented in `r pkg("qarPI")`.
 - *ARIMA models* : `arima()` in stats is the basic function for ARIMA, SARIMA, RegARIMA, and subset ARIMA models.
@@ -143,12 +254,18 @@ If you think that some package is missing from the list, please let us know, eit
   Fractionally differenced Gegenbauer ARMA processes are handled by `r pkg("garma")`.
   `r pkg("esemifar")` provides tools for nonparametric smoothing of long-memory time series.
 - *Transfer function* models are provided by the `arfima` function in the `r pkg("arfima")` and the `r pkg("tfarima")` packages.
-- *Structural (or unobserved component) models* are implemented in `StructTS()` in stats, while automatic modelling and forecasting are provided by `r pkg("UComp")` and `r pkg("autostsm")`.
+
+#### Structural and State Space Models
+
+- Structural (or unobserved component) models are implemented in `StructTS()` in stats, while automatic modelling and forecasting are provided by `r pkg("UComp")` and `r pkg("autostsm")`.
   The more general Power/Trend/Seasonal (PTS) state space model framework is provided by `r pkg("muse")`.
   `r pkg("statespacer")` implements univariate state space models including structural and SARIMA models.
-  Bayesian structural time series models are implemented in `r pkg("bsts")`, `r pkg("bssm")`, and `r pkg("bayesSSM")`.
-  Robust Kalman filtering is provided by `r pkg("RobKF")`.
+- Bayesian structural time series models are implemented in `r pkg("bsts")`, `r pkg("bssm")`, and `r pkg("bayesSSM")`.
+- Robust Kalman filtering is provided by `r pkg("RobKF")`.
   Exact observation weights for the Kalman filter and smoother are available using `r pkg("wex")`.
+
+#### Non-Gaussian and Count Time Series
+
 - *Non-Gaussian time series* can be handled with GLARMA state space models via `r pkg("glarma")`, and using Generalized Autoregressive Score models in the `r pkg("gasmodel")` package.
   Univariate and multivariate exponential family state space models are implemented in `r pkg("KFAS")`.
   `r pkg("GlarmaVarSel")` provides variable selection in high-dimensional sparse GLARMA models.
@@ -167,19 +284,79 @@ If you think that some package is missing from the list, please let us know, eit
   Zero-inflated INAR models can be handled with the `r pkg("ZINARp")` package.
   Semiparametric estimation and bootstrapping of INAR models is provided by the `r pkg("spINAR")` package.
   `r pkg("surveillance")` provides temporal and spatio-temporal modelling and monitoring of epidemic phenomena, including count time series.
+
+#### Volatility Models
+
 - *GARCH models* : `garch()` from `r pkg("tseries")` fits basic GARCH models.
   Many variations on GARCH models are provided by `r pkg("rugarch")` and `r pkg("tsgarch")`.
   Other univariate GARCH packages include `r pkg("fGarch")` which implements ARIMA models with a wide class of GARCH innovations and `r pkg("robustGarch")` which provides robust GARCH(1,1) models.
   `r pkg("bayesforecast")` fits Bayesian time series models including several variations of GARCH models.
   There are many more GARCH packages described in the `r view("Finance")` task view.
 - *Stochastic volatility* models are handled by `r pkg("stochvol")` in a Bayesian framework.
+
+#### Nonlinear Time Series Models
+
+- *Nonlinear autoregression* : Tools for nonlinear time series analysis are provided in `r pkg("NTS")` including threshold autoregressive models, Markov-switching models, convolutional functional autoregressive models, and nonlinearity tests.
+  `r pkg("EXPAR")` provides exponential AR models, while `r pkg("EXPARMA")` provides exponential ARMA models.
+  `r pkg("bentcableAR")` implements Bent-Cable autoregression.
+  `r pkg("BAYSTAR")` provides Bayesian analysis of threshold autoregressive models.
+  Mixture AR models are implemented in `r pkg("mixAR")` and `r pkg("uGMAR")`.
+  `r pkg("tseriesTARMA")` provides routines for Threshold ARMA model testing, fitting and forecasting.
+- `r pkg("tseriesChaos")` provides an R implementation of the algorithms from the *[TISEAN](https://www.pks.mpg.de/tisean/) project*.
+  `r pkg("DChaos")` provides several algorithms for detecting chaotic signals inside univariate time series.
+- Autoregressive Markov switching models are provided in `r pkg("MSwM")`, while dependent mixtures of latent Markov models are given in `r pkg("depmixS4")` for categorical and continuous time series.
+- *Tests* : Various tests for nonlinearity are provided in `r pkg("fNonlinear")`.
+  `r pkg("tseriesEntropy")` tests for nonlinear serial dependence based on entropy metrics, while `r pkg("tseriesTARMA")` provides tests for nonlinearity based on threshold ARMA models.
+- Additional functions for nonlinear time series are available in `r pkg("nlts")` and `r pkg("nonlinearTseries")`.
+
+#### Dynamic Regression Models
+
+- *Dynamic linear models* : A convenient interface for fitting dynamic regression models via OLS is available in `r pkg("dynlm")`; an enhanced approach that also works with other regression functions and more time series classes is implemented in `r pkg("dyn")`.
+  Gaussian linear state space models can be fitted using `r pkg("dlm")` (via maximum likelihood, Kalman filtering/smoothing and Bayesian methods), or using `r pkg("bsts")` which uses MCMC.
+  Bayesian dynamic regression models for Gaussian, binomial and Poisson responses are available in `r pkg("walker")`.
+  `r pkg("dLagM")` provides time series regression with distributed lags.
+  Functions for distributed lag nonlinear modelling are provided in `r pkg("dlnm")`.
+  `r pkg("tsModel")` provides tools for specifying time series regression models for air pollution and health.
+  `r pkg("fastTS")` implements sparsity-ranked lasso methods for time series with exogenous features and/or complex seasonality.
+  `r pkg("crosslag")` provides linear and nonlinear cross lag analysis.
+  Distributed lag models based on Bayesian additive regression trees are implemented in `r pkg("dlmtree")`.
+  `r pkg("sym.arma")` will fit ARMA models with regressors where the observations follow a conditional symmetric distribution.
+  Tools for additive partial linear models with AR symmetric errors are provided in `r pkg("aplms")`.
+- *Time-varying parameter* models can be fitted using the `r pkg("tpr")` package.
+- `r pkg("greybox")` provides several tools for modelling and forecasting with dynamic regression models.
+
+#### Continuous Time Models
+
+- Continuous time autoregressive modelling is provided in `r pkg("cts")`, while `r pkg("carfima")` allows for continuous time ARFIMA models.
+- Simulation and inference for stochastic differential equations is provided by `r pkg("sde")` and `r pkg("yuima")`.
+- `r pkg("Sim.DiffProc")` simulates and models stochastic differential equations.
+- `r pkg("resde")` provides maximum likelihood estimation for univariate reducible stochastic differential equation models.
+
+#### Other Models
+
 - *Censored time series* can be modelled using `r pkg("ARCensReg")`, which fits univariate censored regression models with autoregressive errors.
 - *Diffusion models* such as Bass and Gompertz curves are provided by `r pkg("diffusion")` and `r pkg("DIMORA")`.
   Dynamic Gompertz models for time series growth curves are implemented in `r pkg("tsgc")`.
 - *Complex-valued time series* can be analysed and forecast using `r pkg("complex")`.
-- *Miscellaneous* : `r pkg("ltsa")` contains methods for linear time series analysis, `r pkg("timsac")` for time series analysis and control.
+- `r pkg("ltsa")` contains methods for linear time series analysis, `r pkg("timsac")` for time series analysis and control.
 
-### Machine Learning and Neural Network Forecasting
+### Forecasting
+
+
+#### Forecasting Frameworks
+
+- The `r pkg("fable", priority = "core")` package provides tools for fitting univariate time series models to many series simultaneously including ETS, ARIMA, TSLM and other models.
+  It also provides many functions for computing and analysing forecasts.
+  The time series must be in the `tsibble` format.
+  `r pkg("fabletools")` provides tools for extending the `r pkg("fable")` framework.
+- The `r pkg("forecast")` package provides similar tools for `ts` objects, while `r pkg("modeltime")` provides time series forecasting tools for use with the 'tidymodels' ecosystem.
+  Forecast resampling tools for use with `modeltime` are provided by `r pkg("modeltime.resample")`.
+  `r pkg("mlr3forecast")` provides time series forecasting tools for use with the `mlr3` ecosystem.
+- A standardized time series forecasting framework including many models is provided by `r pkg("finnts")`, designed for financial time series.
+- Tidy tools for forecasting are provided by `r pkg("sweep")`, converting objects produced in `r pkg("forecast")` to "tidy" data frames.
+- `r pkg("onlineforecast")` provides a framework for fitting adaptive forecasting models, allowing forecasts to be used as inputs to models, and models to be updated as new data arrives.
+
+#### Machine Learning and Neural Network Forecasting
 
 - *Neural network autoregression* : Neural network forecasting based on lagged inputs is provided by `r pkg("GMDH")` and `r pkg("nnfor")`.
   Neural networks with fractional differencing are implemented in `r pkg("narfima")`.
@@ -193,14 +370,19 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("PSF")` forecasts univariate time series using pattern sequences.
 - *Pre-trained transformer models* : `r pkg("nixtlar")` allows users to interact with Nixtla's TimeGPT via the API.
 
-### Diagnostic and Trend Tests
+#### Hierarchical and Grouped Forecasting
 
-- *Portmanteau tests* are provided via `Box.test()` in the stats package.
-  Additional tests are given by `r pkg("portes")`, `r pkg("WeightedPortTest")`, and `r pkg("testcorr")`.
-- `r pkg("tstests")` implements several tests for time series goodness of fit and forecast evaluation.
-- Tests for possibly non-monotonic trends are provided by `r pkg("funtimes")`.
+- Methods for plotting and forecasting collections of hierarchical and grouped time series are provided by `r pkg("fable")` and `r pkg("hts")`.
+  `r pkg("icomb")` implements the information combination approach for forecast reconciliation.
+  Degenerate hierarchical structures are handled by `r pkg("htsDegenerateR")`.
+- `r pkg("thief")` uses hierarchical methods to reconcile forecasts of temporally aggregated time series.
+  `r pkg("FoReco")` provides various forecast reconciliation methods for cross-sectional, temporal, and cross-temporal constrained time series.
+  `r pkg("FoRecoML")` provides nonlinear forecast reconciliation methods.
+  Coherent forecast combination for linearly constrained multiple time series is implemented in `r pkg("FoCo2")`.
+- Probabilistic reconciliation of hierarchical forecasts via conditioning is available in `r pkg("bayesRecon")`.
+  Bayesian reconciliation in the `r pkg("fable")` framework is implemented in `r pkg("fable.bayesRecon")`.
 
-### Forecast Selection, Combination and Evaluation
+#### Forecast Selection, Combination and Evaluation
 
 - The `r pkg("seer")` package implements a framework for feature-based forecast model selection.
 - Forecasts can be combined in the `r pkg("fable")` package using simple linear expressions.
@@ -217,19 +399,33 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("greybox")` provides `ro()` for general rolling origin evaluation of forecasts.
 - Data leakage is a problem that can occur in forecasting competitions, and the `r pkg("tsdataleaks")` package provides tools for detecting data leakage in such settings.
 
-### Outliers and Missing Values
+### Testing and Inference
 
-- Outlier detection following the Chen-Liu approach is provided by `r pkg("tsoutliers")`.
-- The `tsoutliers` and `tsclean` functions in the `r pkg("forecast")` package provide some simple heuristic methods for identifying and correcting outliers.
-  `r pkg("tsrobprep")` provides methods for replacing missing values and outliers using a model-based approach.
-  `r pkg("ctbi")` implements a procedure to clean, decompose and aggregate time series.
-- *Time series imputation* is provided by the `r pkg("imputeTS")` package.
-  Some more limited facilities are available using `na.interp()` from the `r pkg("forecast")` package.
-  `r pkg("imputeTestbench")` provides tools for testing and comparing imputation methods.
-  `r pkg("mtsdi")` implements an EM algorithm for imputing missing values in multivariate normal time series, accounting for spatial and temporal correlations.
-  Imputation methods for multivariate locally stationary time series are in `r pkg("mvLSWimpute")`.
 
-### Change Point Detection
+#### Diagnostic and Trend Tests
+
+- *Portmanteau tests* are provided via `Box.test()` in the stats package.
+  Additional tests are given by `r pkg("portes")`, `r pkg("WeightedPortTest")`, and `r pkg("testcorr")`.
+- `r pkg("tstests")` implements several tests for time series goodness of fit and forecast evaluation.
+- Tests for possibly non-monotonic trends are provided by `r pkg("funtimes")`.
+
+#### Stationarity and Unit Root Tests
+
+- *Stationarity and unit roots* : `r pkg("tseries")` provides various stationarity and unit root tests including Augmented Dickey-Fuller, Phillips-Perron, and KPSS.
+  Alternative implementations of the ADF and KPSS tests are in the `r pkg("urca")` package, which also includes further methods such as Elliott-Rothenberg-Stock, Schmidt-Phillips and Zivot-Andrews tests.
+  `r pkg("uroot")` provides seasonal unit root tests.
+  Unit root tests with structural breaks and fully-modified estimators are provided by `r pkg("COINT")`.
+  `r pkg("CADFtest")` provides implementations of both the standard ADF and a covariate-augmented ADF (CADF) test.
+  `r pkg("MultipleBubbles")` tests for the existence of bubbles based on Phillips-Shi-Yu (2015).
+  Simulation-based unit root tests are provided by `r pkg("sTSD")`.
+  Unit root tests for bounded time series are provided by `r pkg("boundedur")`.
+- *Local stationarity* : `r pkg("locits")` provides a test of local stationarity and computes the localized autocovariance.
+  Time series costationarity determination is provided by `r pkg("costat")`.
+  `r pkg("LSTS")` has functions for locally stationary time series analysis.
+  Locally stationary wavelet models for nonstationary time series are implemented in `r pkg("wavethresh")` (including estimation, plotting, and simulation functionality for time-varying spectra) and `r pkg("forecastLSW")` for forecasting.
+  `r pkg("TrendLSW")` extends the locally stationary wavelet models to include time varying trends.
+
+#### Change Point Detection
 
 - *Changes in mean and variance* : The `r pkg("changepoint")` package provides many popular changepoint methods, with `cpt.mean()`, `cpt.var()` and `cpt.meanvar()` implementing PELT, binary segmentation and segment neighbourhood search.
   `r pkg("binsegRcpp")` provides an efficient C++ implementation of the popular binary segmentation heuristic (univariate data, Gaussian/Poisson/L1/Laplace losses, computes sequence of models from 1 segment to a given max number of segments).
@@ -256,138 +452,31 @@ If you think that some package is missing from the list, please let us know, eit
 - *Unified interfaces* : A tidy framework for several changepoint detection algorithms is implemented in `r pkg("tidychangepoint")`.
   `r pkg("ggchangepoint")` provides a unified, tidy interface to many changepoint detection methods, along with `ggplot2` plots and geoms.
 
-### Frequency Analysis
+#### Outliers and Missing Values
 
-- *Spectral density estimation* is provided by `spectrum()` in the stats package, including the periodogram, smoothed periodogram and AR estimates.
-  Bayesian spectral inference is provided by `r pkg("bspec")`, `r pkg("beyondWhittle")` and `r pkg("regspec")`.
-  `r pkg("quantspec")` includes methods to compute and plot quantile periodograms for univariate and multivariate time series.
-  The Lomb-Scargle periodogram for unevenly sampled time series is computed by `r pkg("lomb")`.
-  `r pkg("peacots")` provides inference for periodograms using an Ornstein-Uhlenbeck state space model.
-  `r pkg("spectral")` uses Fourier and Hilbert transforms for spectral analysis.
-  `r pkg("psd")` produces adaptive, sine-multitaper spectral density estimates.
-  `r pkg("kza")` provides Kolmogorov-Zurbenko Adaptive Filters including break detection, spectral analysis, wavelets and KZ Fourier Transforms.
-  `r pkg("multitaper")` also provides some multitaper spectral analysis tools.
-  Higher-order spectral analysis is implemented in `r pkg("rhosa")`, including bispectrum, bicoherence, cross-bispectrum and cross-bicoherence.
-- *Wavelet methods* : The `r pkg("wavelets")`, `r pkg("wavethresh")` and `r pkg("waveslim")` packages include computing wavelet filters, wavelet transforms and multiresolution analyses.
-  `r pkg("WaveletComp")` provides some tools for wavelet-based analysis of univariate and bivariate time series including cross-wavelets, phase-difference and significance tests.
-  `r pkg("biwavelet")` is a port of the WTC Matlab package for univariate and bivariate wavelet analyses.
-  `r pkg("mvLSW")` provides tools for multivariate locally stationary wavelet processes.
-  Local ACF estimation is provided by `r pkg("locits")` and PACF estimation by `r pkg("lpacf")`.
-  Locally stationary wavelet processes can be forecast using `r pkg("forecastLSW")`.
-  `r pkg("LSWPlib")` contains functions for simulation and spectral estimation of locally stationary wavelet packet processes.
-  Tests of white noise using wavelets are provided by `r pkg("hwwntest")`.
-  Wavelet scalogram tools are contained in `r pkg("wavScalogram")`.
-  Complex-valued wavelet spectral procedures are provided in `r pkg("CNLTtsa")`.
-- *Harmonic regression* using Fourier terms is implemented in `r pkg("fable")` and `r pkg("forecast")` packages via the `fourier` function.
-- Sparse decomposition of time series signals using Matching Pursuit algorithms is provided by `r pkg("MatchingPursuit")`.
+- Outlier detection following the Chen-Liu approach is provided by `r pkg("tsoutliers")`.
+- The `tsoutliers` and `tsclean` functions in the `r pkg("forecast")` package provide some simple heuristic methods for identifying and correcting outliers.
+  `r pkg("tsrobprep")` provides methods for replacing missing values and outliers using a model-based approach.
+  `r pkg("ctbi")` implements a procedure to clean, decompose and aggregate time series.
+- *Time series imputation* is provided by the `r pkg("imputeTS")` package.
+  Some more limited facilities are available using `na.interp()` from the `r pkg("forecast")` package.
+  `r pkg("imputeTestbench")` provides tools for testing and comparing imputation methods.
+  `r pkg("mtsdi")` implements an EM algorithm for imputing missing values in multivariate normal time series, accounting for spatial and temporal correlations.
+  Imputation methods for multivariate locally stationary time series are in `r pkg("mvLSWimpute")`.
 
-### Filtering, Smoothing and Decomposition
+#### Bootstrapping
 
-- *Linear and robust filters* : `filter()` in stats provides autoregressive and moving average linear filtering of multiple univariate time series.
-  The `r pkg("robfilter")` package provides several robust time series filters.
-- *Running median smoothers* : `smooth()` from the stats package computes Tukey's running median smoothers, 3RS3R, 3RSS, 3R, etc.
-  `r pkg("sleekts")` computes the 4253H twice smoothing method.
-- *Signal processing filters* : Several filters are provided by `r pkg("signal")` including a Butterworth filter and a Savitzky-Golay filter.
-  `r pkg("gsignal")` is an R implementation of the Octave package "signal", containing a variety of signal processing tools.
-- *Trend and cycle extraction* : `r pkg("mFilter")` implements several filters for smoothing and extracting trend and cyclical components including Hodrick-Prescott and Butterworth filters.
-  `r pkg("hpfilter")` implements one- and two-sided Hodrick-Prescott filters, while `r pkg("jumps")` provides a Hodrick-Prescott filter with automatically selected jumps.
-  An alternative to Hodrick-Prescott filtering is provided by `r pkg("neverhpfilter")`.
-  Corbae-Ouliaris frequency domain filtering is implemented in `r pkg("corbouli")`.
-  `r pkg("smoots")` provides nonparametric estimation of the time trend and its derivatives.
-  Many trend estimation methods are implemented in `r pkg("trendseries")`, providing a pipe-friendly interface when working with data frames.
-- *Model-based decomposition* : Autoregressive-based decomposition is provided by `r pkg("ArDec")`.
-- *Singular Spectrum Analysis* is implemented in `r pkg("Rssa")` and `r pkg("ASSA")`.
-- *Empirical Mode Decomposition* (EMD) and Hilbert spectral analysis is provided by `r pkg("EMD")`.
-  Additional tools, including ensemble EMD, are available in `r pkg("hht")`.
-  An alternative implementation of ensemble EMD and its complete variant are available in `r pkg("Rlibeemd")`.
-- Seasonal decomposition methods, including STL and X-13-ARIMA-SEATS, are covered in the next section.
-
-### Seasonality and Seasonal Adjustment
-
-- *Seasonal decomposition* : The stats package provides classical decomposition in `decompose()`, and STL decomposition in `stl()`.
-  Enhanced STL decomposition is available in `r pkg("stlplus")`.
-  `r pkg("stR")` provides Seasonal-Trend decomposition based on Regression.
-  `r pkg("smooth")` and `r pkg("tsutils")` implement extended versions of classical decomposition.
-  `r pkg("tsdecomp")` implements ARIMA-based decomposition of quarterly and monthly data.
-- X-13-ARIMA-SEATS binaries are provided in the `r pkg("x13binary")` package, with `r pkg("seasonal")` providing an R interface and `r pkg("seasonalview")` providing a GUI.
-  An alternative interface is provided by `r pkg("x12")`.
-- An interface to the JDemetra+ seasonal adjustment software is provided by `r pkg("rjd3toolkit")` and related packages in the [rjdverse](https://github.com/rjdverse).
-  `r pkg("RJDemetra")` provides an interface to JDemetra+ version 2 and `r pkg("ggdemetra")` provides associated ggplot2 functions.
-- `r pkg("deseats")` includes a locally weighted regression approach, and the Berlin method.
-- Seasonal adjustment of daily time series, allowing for day-of-week, time-of-month, time-of-year and holiday effects is provided by `r pkg("dsa")`.
-  Seasonal adjustment of weekly data is provided by `r pkg("boiwsa")`.
-- `r pkg("StructuralDecompose")` decomposes a time series into trend, seasonality and residuals, allowing for level shifts.
-- *Analysis of seasonality* : The `r pkg("bfast")` package provides methods for detecting and characterizing abrupt changes within the trend and seasonal components obtained from a decomposition.
-  `r pkg("season")` provides seasonal analysis of health data, including regression models, time-stratified case-crossover, plotting functions and residual checks.
-  `r pkg("seas")` provides seasonal analysis and graphics, especially for climatology.
-  `r pkg("sazedR")` estimates the period of a seasonal time series.
-
-### Stationarity, Unit Roots, and Cointegration
-
-- *Stationarity and unit roots* : `r pkg("tseries")` provides various stationarity and unit root tests including Augmented Dickey-Fuller, Phillips-Perron, and KPSS.
-  Alternative implementations of the ADF and KPSS tests are in the `r pkg("urca")` package, which also includes further methods such as Elliott-Rothenberg-Stock, Schmidt-Phillips and Zivot-Andrews tests.
-  `r pkg("uroot")` provides seasonal unit root tests.
-  Unit root tests with structural breaks and fully-modified estimators are provided by `r pkg("COINT")`.
-  `r pkg("CADFtest")` provides implementations of both the standard ADF and a covariate-augmented ADF (CADF) test.
-  `r pkg("MultipleBubbles")` tests for the existence of bubbles based on Phillips-Shi-Yu (2015).
-  Simulation-based unit root tests are provided by `r pkg("sTSD")`.
-  Unit root tests for bounded time series are provided by `r pkg("boundedur")`.
-- *Local stationarity* : `r pkg("locits")` provides a test of local stationarity and computes the localized autocovariance.
-  Time series costationarity determination is provided by `r pkg("costat")`.
-  `r pkg("LSTS")` has functions for locally stationary time series analysis.
-  Locally stationary wavelet models for nonstationary time series are implemented in `r pkg("wavethresh")` (including estimation, plotting, and simulation functionality for time-varying spectra) and `r pkg("forecastLSW")` for forecasting.
-  `r pkg("TrendLSW")` extends the locally stationary wavelet models to include time varying trends.
-- *Cointegration* : The Engle-Granger two-step method with the Phillips-Ouliaris cointegration test is implemented in `r pkg("tseries")` and `r pkg("urca")`.
-  The latter additionally contains functionality for the Johansen trace and maximum-eigenvalue tests on the cointegration rank.
-  `r pkg("pvars")` provides Johansen and Saikkonen-Luetkepohl test procedures which approximate p-values by the gamma distribution and can account for breaks in the deterministic terms, along with panel versions of these cointegration rank tests.
-  The Maki cointegration test with structural breaks is implemented in `r pkg("makicoint")`.
-  Parameter estimation and inference in a cointegrating regression are implemented in `r pkg("cointReg")`.
-  `r pkg("ecm")` provides functions for building error correction models for time series regression.
-  Fractionally cointegrated VAR models are handled by `r pkg("FCVAR")`.
-- *Autoregressive distributed lag (ARDL) models* are provided by `r pkg("ARDL")`, which constructs the underlying error correction model automatically.
-  `r pkg("nardl")` and `r pkg("ardl.nardl")` both estimate nonlinear cointegrating autoregressive distributed lag models.
-
-### Nonlinear Time Series Analysis
-
-- *Nonlinear autoregression* : Tools for nonlinear time series analysis are provided in `r pkg("NTS")` including threshold autoregressive models, Markov-switching models, convolutional functional autoregressive models, and nonlinearity tests.
-  `r pkg("EXPAR")` provides exponential AR models, while `r pkg("EXPARMA")` provides exponential ARMA models.
-  `r pkg("bentcableAR")` implements Bent-Cable autoregression.
-  `r pkg("BAYSTAR")` provides Bayesian analysis of threshold autoregressive models.
-  Mixture AR models are implemented in `r pkg("mixAR")` and `r pkg("uGMAR")`.
-  `r pkg("tseriesTARMA")` provides routines for Threshold ARMA model testing, fitting and forecasting.
-- `r pkg("tseriesChaos")` provides an R implementation of the algorithms from the *[TISEAN](https://www.pks.mpg.de/tisean/) project*.
-  `r pkg("DChaos")` provides several algorithms for detecting chaotic signals inside univariate time series.
-- Autoregressive Markov switching models are provided in `r pkg("MSwM")`, while dependent mixtures of latent Markov models are given in `r pkg("depmixS4")` for categorical and continuous time series.
-- *Tests* : Various tests for nonlinearity are provided in `r pkg("fNonlinear")`.
-  `r pkg("tseriesEntropy")` tests for nonlinear serial dependence based on entropy metrics, while `r pkg("tseriesTARMA")` provides tests for nonlinearity based on threshold ARMA models.
-- Additional functions for nonlinear time series are available in `r pkg("nlts")` and `r pkg("nonlinearTseries")`.
-
-### Autocorrelation and Dependence Measures
-
-- *Autocovariance and autocorrelation* : `r pkg("CovEsts")` provides nonparametric estimation, correction and comparison of autocovariance functions for univariate time series, with block bootstrap confidence intervals.
-  `r pkg("dCovTS")` computes and plots the distance covariance and correlation functions of time series.
-  ACF and CCF variants based on Chatterjee's Xi correlation are provided by `r pkg("xiacf")`.
-- *Entropy* : `r pkg("RTransferEntropy")` measures information flow between time series with Shannon and Renyi transfer entropy.
-  An entropy measure based on the Bhattacharya-Hellinger-Matusita distance is implemented in `r pkg("tseriesEntropy")`.
-  Various approximate and sample entropies are computed using `r pkg("TSEntropies")`.
-
-### Dynamic Regression Models
-
-- *Dynamic linear models* : A convenient interface for fitting dynamic regression models via OLS is available in `r pkg("dynlm")`; an enhanced approach that also works with other regression functions and more time series classes is implemented in `r pkg("dyn")`.
-  Gaussian linear state space models can be fitted using `r pkg("dlm")` (via maximum likelihood, Kalman filtering/smoothing and Bayesian methods), or using `r pkg("bsts")` which uses MCMC.
-  Bayesian dynamic regression models for Gaussian, binomial and Poisson responses are available in `r pkg("walker")`.
-  `r pkg("dLagM")` provides time series regression with distributed lags.
-  Functions for distributed lag nonlinear modelling are provided in `r pkg("dlnm")`.
-  `r pkg("tsModel")` provides tools for specifying time series regression models for air pollution and health.
-  `r pkg("fastTS")` implements sparsity-ranked lasso methods for time series with exogenous features and/or complex seasonality.
-  `r pkg("crosslag")` provides linear and nonlinear cross lag analysis.
-  Distributed lag models based on Bayesian additive regression trees are implemented in `r pkg("dlmtree")`.
-  `r pkg("sym.arma")` will fit ARMA models with regressors where the observations follow a conditional symmetric distribution.
-  Tools for additive partial linear models with AR symmetric errors are provided in `r pkg("aplms")`.
-- *Time-varying parameter* models can be fitted using the `r pkg("tpr")` package.
-- `r pkg("greybox")` provides several tools for modelling and forecasting with dynamic regression models.
+- The `r pkg("boot")` package provides function `tsboot()` for time series bootstrapping, including block bootstrap with several variants.
+  `r pkg("blocklength")` allows for selecting the optimal block-length for a dependent bootstrap.
+  `tsbootstrap()` from `r pkg("tseries")` provides fast stationary and block bootstrapping.
+  Maximum entropy bootstrap for time series is available in `r pkg("meboot")`.
+- `r pkg("BootPR")` computes bias-corrected forecasting and bootstrap prediction intervals for autoregressive time series.
+  `r pkg("bootUR")` implements bootstrap unit root tests.
 
 ### Multivariate Time Series Models
+
+
+#### Vector Autoregressive Models
 
 - *Vector autoregressive (VAR) models* are provided via `ar()` in the basic stats package including order selection via the AIC.
   These models are restricted to be stationary.
@@ -416,8 +505,22 @@ If you think that some package is missing from the list, please let us know, eit
 - *Network and graphical VARs* : Network or graphical VAR models can be fitted in `r pkg("GNAR")`, `r pkg("graphicalVAR")`, `r pkg("NetVAR")` and `r pkg("tsnet")`.
   `r pkg("mgm")` estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
 - *Granger causality tests* are provided by `r pkg("grangersearch")`.
+
+#### Cointegration and Error Correction
+
+- The Engle-Granger two-step method with the Phillips-Ouliaris cointegration test is implemented in `r pkg("tseries")` and `r pkg("urca")`.
+  The latter additionally contains functionality for the Johansen trace and maximum-eigenvalue tests on the cointegration rank.
+  `r pkg("pvars")` provides Johansen and Saikkonen-Luetkepohl test procedures which approximate p-values by the gamma distribution and can account for breaks in the deterministic terms, along with panel versions of these cointegration rank tests.
+  The Maki cointegration test with structural breaks is implemented in `r pkg("makicoint")`.
+  Parameter estimation and inference in a cointegrating regression are implemented in `r pkg("cointReg")`.
+  `r pkg("ecm")` provides functions for building error correction models for time series regression.
+  Fractionally cointegrated VAR models are handled by `r pkg("FCVAR")`.
 - *Vector error correction models* are available via the `r pkg("urca")`, `r pkg("vars")`, and `r pkg("pvars")` packages, including versions with structural constraints.
-- *Vector exponential smoothing* is provided by `r pkg("smooth")`.
+- *Autoregressive distributed lag (ARDL) models* are provided by `r pkg("ARDL")`, which constructs the underlying error correction model automatically.
+  `r pkg("nardl")` and `r pkg("ardl.nardl")` both estimate nonlinear cointegrating autoregressive distributed lag models.
+
+#### Factor Models and Dimension Reduction
+
 - *Dynamic factor models* are available in the `r pkg("dfms")` package using EM or two-step estimation.
   Dynamic factor models with sparse loadings are implemented in `r pkg("sparseDFM")`.
   Bayesian dynamic factor analysis is implemented in `r pkg("bayesdfa")` and `r pkg("bvartools")`.
@@ -429,7 +532,10 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("tsBSS")` provides blind source separation and supervised dimension reduction for time series.
   `r pkg("sdrt")` estimates sufficient dimension reduction subspaces for time series.
   `r pkg("gdpc")` implements generalized dynamic principal components.
-- *Multivariate state space models* : An implementation is provided by the `r pkg("KFAS")` package which provides a fast multivariate Kalman filter, smoother, simulation smoother and forecasting.
+
+#### Multivariate State Space Models
+
+- The `r pkg("KFAS")` package provides a fast multivariate Kalman filter, smoother, simulation smoother and forecasting.
   `r pkg("FKF")` provides a fast and flexible implementation of the Kalman filter, which can deal with missing values.
   `r pkg("kalmanfilter")` provides an 'Rcpp' implementation of the multivariate Kalman filter for state space models that can handle missing values and exogenous data in the observation and state equations.
   Another implementation is given in the `r pkg("dlm")` package which also contains tools for converting other multivariate models into state space form.
@@ -438,43 +544,25 @@ If you think that some package is missing from the list, please let us know, eit
   All of these packages assume the observational and state error terms are uncorrelated.
 - *Partially-observed Markov processes* are a generalization of the usual linear multivariate state space models, allowing non-Gaussian and nonlinear models.
   These are implemented in the `r pkg("pomp")` package.
+
+#### Multivariate Volatility and Other Models
+
 - Multivariate stochastic volatility models (using latent factors) are provided by `r pkg("factorstochvol")`.
   Multivariate GARCH models, including DCC, copula GARCH and GO-GARCH, are implemented in `r pkg("tsmarch")`.
 - High-dimensional sparse multivariate GLARMA models are handled by `r pkg("MultiGlarmaVarSel")` including variable selection.
 - Multivariate Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`.
 - Bayesian Dynamic Multivariate Panel Models with time-varying coefficients are implemented in `r pkg("dynamite")`.
+- *Vector exponential smoothing* is provided by `r pkg("smooth")`.
 
-### Analysis of Large Groups of Time Series
+### Collections and Complex Data Types
 
-- *Time series features* are computed in `r pkg("feasts")` for time series in `tsibble` format.
-  They are computed using `r pkg("tsfeatures")` for a list or matrix of time series in `ts` format.
-  In both packages, many built-in feature functions are included, and users can add their own.
-  `r pkg("Rcatch22")` provides fast computation of 22 features identified as particularly useful.
-  `r pkg("theft")` calculates time series features from various R and Python packages, while `r pkg("theftdlc")` is a companion package providing analysis and visualization functions.
-  Feature extraction for ordinal time series is provided by `r pkg("otsfeatures")`.
+
+#### Clustering and Representation
+
 - *Time series clustering* is implemented in `r pkg("dtwclust")`, `r pkg("BNPTSclust")` and `r pkg("pdc")`.
 - `r pkg("TSrepr")` includes methods for representing time series using dimension reduction and feature extraction.
 
-### Hierarchical Time Series
-
-- Methods for plotting and forecasting collections of hierarchical and grouped time series are provided by `r pkg("fable")` and `r pkg("hts")`.
-  Bayesian reconciliation in the `r pkg("fable")` framework is implemented in `r pkg("fable.bayesRecon")`.
-  `r pkg("thief")` uses hierarchical methods to reconcile forecasts of temporally aggregated time series.
-  `r pkg("FoReco")` provides various forecast reconciliation methods for cross-sectional, temporal, and cross-temporal constrained time series.
-  Coherent forecast combination for linearly constrained multiple time series is implemented in `r pkg("FoCo2")`.
-  `r pkg("icomb")` implements the information combination approach for forecast reconciliation.
-  `r pkg("FoRecoML")` provides nonlinear forecast reconciliation methods.
-  Probabilistic reconciliation of hierarchical forecasts via conditioning is available in `r pkg("bayesRecon")`.
-  Degenerate hierarchical structures are handled by `r pkg("htsDegenerateR")`.
-
-### Temporal Aggregation and Disaggregation
-
-- *Temporal disaggregation* : The `r pkg("tempdisagg")` package includes methods for temporal disaggregation and interpolation of a low frequency time series to a higher frequency series.
-  Time series disaggregation is also provided by `r pkg("TSdisaggregation")` and `r pkg("tsdisagg2")`, while `r pkg("disagmethod")` implements ARIMA-based disaggregation.
-- *Temporal aggregation* : `r pkg("wktmo")` converts weekly data to monthly data in several ways.
-- *Coherence with aggregates* : `r pkg("gseries")` implements Statistics Canada's generalized system for benchmarking and reconciliation of time series.
-
-### Dynamic Time Warping
+#### Dynamic Time Warping
 
 - Dynamic time warping algorithms are provided by `r pkg("dtw")` for computing and plotting pairwise alignments between time series.
 - Parametric time warping is implemented in `r pkg("ptw")`.
@@ -482,7 +570,7 @@ If you think that some package is missing from the list, please let us know, eit
 - `r pkg("IncDTW")` provides incremental calculation of dynamic time warping for streaming time series.
 - Time-weighted dynamic time warping is provided by `r pkg("twdtw")`.
 
-### Functional Time Series
+#### Functional Time Series
 
 - Tools for visualizing, modelling, forecasting and analysing functional time series are implemented in `r pkg("ftsa")`.
   `r pkg("NTS")` also implements functional autoregressive models.
@@ -491,30 +579,17 @@ If you think that some package is missing from the list, please let us know, eit
 - `r pkg("STFTS")` contains stationarity, trend and unit root tests for functional time series.
 - `r pkg("hdftsa")` offers methods for visualizing, modelling, and forecasting high-dimensional functional time series.
 
-### Matrix and Tensor-Valued Time Series
+#### Matrix and Tensor-Valued Time Series
 
 - `r pkg("MEFM")` implements main effect matrix factor models for matrix time series.
 - `r pkg("tensorTS")` provides functions for estimation, simulation and prediction of factor and autoregressive models for matrix and tensor valued time series.
 - Time series tensor factor models are implemented in `r pkg("TensorPreAve")`.
 - `r pkg("RTFA")` provides robust factor analysis for tensor time series.
 
-### Continuous Time Models
+### Time Series Data
 
-- Continuous time autoregressive modelling is provided in `r pkg("cts")`, while `r pkg("carfima")` allows for continuous time ARFIMA models.
-- Simulation and inference for stochastic differential equations is provided by `r pkg("sde")` and `r pkg("yuima")`.
-- `r pkg("Sim.DiffProc")` simulates and models stochastic differential equations.
-- `r pkg("resde")` provides maximum likelihood estimation for univariate reducible stochastic differential equation models.
 
-### Resampling
-
-- *Bootstrapping* : The `r pkg("boot")` package provides function `tsboot()` for time series bootstrapping, including block bootstrap with several variants.
-  `r pkg("blocklength")` allows for selecting the optimal block-length for a dependent bootstrap.
-  `tsbootstrap()` from `r pkg("tseries")` provides fast stationary and block bootstrapping.
-  Maximum entropy bootstrap for time series is available in `r pkg("meboot")`.
-  `r pkg("BootPR")` computes bias-corrected forecasting and bootstrap prediction intervals for autoregressive time series.
-  `r pkg("bootUR")` implements bootstrap unit root tests.
-
-### Time Series Data Sets
+#### Data Sets
 
 - Various data sets in `r pkg("tsibble")` format are provided by `r pkg("tsibbledata")`.
 - Data from Cryer and Chan (2010, 2nd ed) *Time series analysis with applications in R* are in the `r pkg("TSA")` package.
@@ -530,7 +605,7 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("Tcomp")` provides data from the 2010 IJF Tourism Forecasting Competition.
   The M4 competition data are available from `r github("carlanetto/M4comp2018")`.
 
-### Time Series Data Access and Management
+#### Data Access and Management
 
 - *National time series data* : `r pkg("readabs")` downloads, imports and tidies time series data from the [*Australian* Bureau of Statistics](https://www.abs.gov.au).
   `r pkg("bbk")` is a client for the APIs of many central banks, including the *German* Deutsche Bundesbank and the European Central Bank.
@@ -548,14 +623,14 @@ If you think that some package is missing from the list, please let us know, eit
 - *Data revisions* : `r pkg("butterfly")` provides verification of continually updating time series data where we expect new values, but want to ensure previous data remains unchanged.
   `r pkg("reviser")` analyses revisions in real-time time series vintages.
 
-### Simulating Time Series
+#### Simulation
 
 - *Synthetic data* are produced by `simulate()` in `r pkg("forecast")` package or `generate()` in `r pkg("fable")`, given a specific model.
   Package `r pkg("gsarima")` contains functionality for Generalized SARIMA time series simulation.
-  `r pkg("gratis")` generates new time series with diverse and controllable characteristics using mixture autoregression models.
   `r pkg("synthesis")` generates synthetic time series from commonly used statistical models, including linear, nonlinear and chaotic systems.
+- `r pkg("gratis")` generates new time series with diverse and controllable characteristics using mixture autoregression models.
   `r pkg("tssim")` flexibly simulates daily or monthly time series using seasonal, calendar, and outlier components.
-  `r pkg("RGENERATE")` provides tools to generate vector time series.
+- `r pkg("RGENERATE")` provides tools to generate vector time series.
   `r pkg("RMAWGEN")` is a set of S3 and S4 functions for spatial multi-site stochastic generation of daily time-series of temperature and precipitation making use of VAR models.
   The package can be used in climatology and statistical hydrology.
 
