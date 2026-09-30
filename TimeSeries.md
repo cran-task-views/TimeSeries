@@ -234,7 +234,6 @@ If you think that some package is missing from the list, please let us know, eit
 - *Changes in mean and variance* : The `r pkg("changepoint")` package provides many popular changepoint methods, with `cpt.mean()`, `cpt.var()` and `cpt.meanvar()` implementing PELT, binary segmentation and segment neighbourhood search.
   `r pkg("binsegRcpp")` provides an efficient C++ implementation of the popular binary segmentation heuristic (univariate data, Gaussian/Poisson/L1/Laplace losses, computes sequence of models from 1 segment to a given max number of segments).
   `r pkg("jointseg")` provides `Fpsn()` which implements a "Functional pruning segment neighborhood" dynamic programming algorithm (univariate data, square loss, computes best model for a certain number of changes/segments).
-  `r pkg("fpop")` provides `Fpop()` which implements a "Functional pruning optimal partitioning" dynamic programming algorithm (univariate data, square loss, computes best model for a certain penalty for each change), as well as `multiBinSeg()` which is an efficient implementation of the popular binary segmentation heuristic (multi-variate data, Gaussian loss, computes sequence of models from 1 segment to a given max number of segments).
   Efficient implementations of several popular changepoint detection algorithms are provided by `r pkg("rupturesRcpp")`.
   `r pkg("breakfast")` includes methods for fast multiple change-point detection and estimation.
   `r pkg("mosum")` provides a moving sum procedure for detecting multiple changepoints in univariate time series.
