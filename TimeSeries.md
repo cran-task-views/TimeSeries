@@ -183,6 +183,20 @@ If you think that some package is missing from the list, please let us know, eit
   Dynamic Gompertz models for time series growth curves are implemented in `r pkg("tsgc")`.
 - *Miscellaneous* : `r pkg("ltsa")` contains methods for linear time series analysis, `r pkg("timsac")` for time series analysis and control.
 
+### Machine Learning and Neural Network Forecasting
+
+- *Neural network autoregression* : Neural network forecasting based on lagged inputs is provided by `r pkg("GMDH")` and `r pkg("nnfor")`.
+  Neural networks with fractional differencing are implemented in `r pkg("narfima")`.
+  `r pkg("NlinTS")` includes neural network VAR, and a nonlinear version of the Granger causality test based on feedforward neural networks.
+  `r pkg("TSLSTM")` provides forecasts using a Long Short Term Memory (LSTM) model, while an enhanced version is implemented in `r pkg("TSLSTMplus")`.
+  `r pkg("TSANN")` automatically identifies an artificial neural network based on forecasting accuracy.
+  Forecasts based on echo state networks can be obtained using `r pkg("echos")`.
+- *Other machine learning methods* : `r pkg("setartree")` implements an SETAR tree algorithm, and a SETAR forest.
+  Probabilistic forecasts with XGBoost and conformal inference are provided by `r pkg("xpect")`.
+  `r pkg("tsfknn")` forecasts time series using k-nearest-neighbours regression.
+  `r pkg("PSF")` forecasts univariate time series using pattern sequences.
+- *Pre-trained transformer models* : `r pkg("nixtlar")` allows users to interact with Nixtla's TimeGPT via the API.
+
 ### Diagnostic and Trend Tests
 
 - *Portmanteau tests* are provided via `Box.test()` in the stats package.
@@ -343,15 +357,7 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("bentcableAR")` implements Bent-Cable autoregression.
   `r pkg("BAYSTAR")` provides Bayesian analysis of threshold autoregressive models.
   Mixture AR models are implemented in `r pkg("mixAR")` and `r pkg("uGMAR")`.
-  `r pkg("setartree")` implements an SETAR tree algorithm, and a SETAR forest.
   `r pkg("tseriesTARMA")` provides routines for Threshold ARMA model testing, fitting and forecasting.
-  Probabilistic forecasts with XGBoost and conformal inference are provided by `r pkg("xpect")`.
-- *Neural network autoregression* : Neural network forecasting based on lagged inputs is provided by `r pkg("GMDH")` and `r pkg("nnfor")`.
-  Neural networks with fractional differencing are implemented in `r pkg("narfima")`.
-  `r pkg("NlinTS")` includes neural network VAR, and a nonlinear version of the Granger causality test based on feedforward neural networks.
-  `r pkg("TSLSTM")` provides forecasts using a Long Short Term Memory (LSTM) model, while an enhanced version is implemented in `r pkg("TSLSTMplus")`.
-  `r pkg("TSANN")` automatically identifies an artificial neural network based on forecasting accuracy.
-  Forecasts based on echo state networks can be obtained using `r pkg("echos")`.
 - `r pkg("tseriesChaos")` provides an R implementation of the algorithms from the *[TISEAN](http://www.mpipks-dresden.mpg.de/~tisean/) project*.
   `r pkg("DChaos")` provides several algorithms for detecting chaotic signals inside univariate time series.
 - Autoregressive Markov switching models are provided in `r pkg("MSwM")`, while dependent mixtures of latent Markov models are given in `r pkg("depmixS4")` for categorical and continuous time series.
@@ -379,10 +385,6 @@ If you think that some package is missing from the list, please let us know, eit
   Tools for additive partial linear models with AR symmetric errors are provided in `r pkg("aplms")`.
 - *Time-varying parameter* models can be fitted using the `r pkg("tpr")` package.
 - `r pkg("greybox")` provides several tools for modelling and forecasting with dynamic regression models.
-
-### Pre-trained transformer models
-
-- `r pkg("nixtlar")` allows users to interact with Nixtla's TimeGPT via the API.
 
 ### Multivariate Time Series Models
 
@@ -548,7 +550,6 @@ If you think that some package is missing from the list, please let us know, eit
 - `r pkg("gsignal")` is an R implementation of the Octave package "signal", containing a variety of signal processing tools.
 - `r pkg("paleoTS")`: Modeling evolution in paleontological time series.
 - `r pkg("pastecs")`: Regularisation, decomposition and analysis of space-time series.
-- `r pkg("PSF")`: Forecasting univariate time series using pattern-sequences.
 - `r pkg("RGENERATE")` provides tools to generate vector time series.
 - `r pkg("RMAWGEN")` is a set of S3 and S4 functions for spatial multi-site stochastic generation of daily time-series of temperature and precipitation making use of VAR models.
   The package can be used in climatology and statistical hydrology.
@@ -557,7 +558,6 @@ If you think that some package is missing from the list, please let us know, eit
 - `r pkg("spTimer")`: Spatio-temporal Bayesian modelling.
 - `r pkg("surveillance")`: Temporal and spatio-temporal modeling and monitoring of epidemic phenomena.
 - `r pkg("Tides")`: Functions to calculate characteristics of quasi periodic time series, e.g. observed estuarine water levels.
-- `r pkg("tsfknn")`: Time series forecasting with k-nearest-neighbours.
 - `r pkg("tsModel")`: Time series modeling for air pollution and health.
 
 ### Links
