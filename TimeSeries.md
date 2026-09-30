@@ -282,34 +282,34 @@ If you think that some package is missing from the list, please let us know, eit
 - *Harmonic regression* using Fourier terms is implemented in `r pkg("fable")` and `r pkg("forecast")` packages via the `fourier` function.
 - Sparse decomposition of time series signals using Matching Pursuit algorithms is provided by `r pkg("MatchingPursuit")`.
 
-### Decomposition and Filtering
+### Filtering, Smoothing and Decomposition
 
-- *Filters and smoothing* : `filter()` in stats provides autoregressive and moving average linear filtering of multiple univariate time series.
+- *Linear and robust filters* : `filter()` in stats provides autoregressive and moving average linear filtering of multiple univariate time series.
   The `r pkg("robfilter")` package provides several robust time series filters.
-  `smooth()` from the stats package computes Tukey's running median smoothers, 3RS3R, 3RSS, 3R, etc.
+- *Running median smoothers* : `smooth()` from the stats package computes Tukey's running median smoothers, 3RS3R, 3RSS, 3R, etc.
   `r pkg("sleekts")` computes the 4253H twice smoothing method.
-  `r pkg("mFilter")` implements several filters for smoothing and extracting trend and cyclical components including Hodrick-Prescott and Butterworth filters.
-  Several filters are provided by `r pkg("signal")` including a Butterworth filter and a Savitzky-Golay filter.
+- *Signal processing filters* : Several filters are provided by `r pkg("signal")` including a Butterworth filter and a Savitzky-Golay filter.
   `r pkg("gsignal")` is an R implementation of the Octave package "signal", containing a variety of signal processing tools.
+- *Trend and cycle extraction* : `r pkg("mFilter")` implements several filters for smoothing and extracting trend and cyclical components including Hodrick-Prescott and Butterworth filters.
   `r pkg("hpfilter")` implements one- and two-sided Hodrick-Prescott filters, while `r pkg("jumps")` provides a Hodrick-Prescott filter with automatically selected jumps.
   An alternative to Hodrick-Prescott filtering is provided by `r pkg("neverhpfilter")`.
   Corbae-Ouliaris frequency domain filtering is implemented in `r pkg("corbouli")`.
   `r pkg("smoots")` provides nonparametric estimation of the time trend and its derivatives.
   Many trend estimation methods are implemented in `r pkg("trendseries")`, providing a pipe-friendly interface when working with data frames.
-- *Decomposition* : Seasonal decomposition is discussed below.
-  Autoregressive-based decomposition is provided by `r pkg("ArDec")`.
-  `r pkg("tsdecomp")` implements ARIMA-based decomposition of quarterly and monthly data.
+- *Model-based decomposition* : Autoregressive-based decomposition is provided by `r pkg("ArDec")`.
 - *Singular Spectrum Analysis* is implemented in `r pkg("Rssa")` and `r pkg("ASSA")`.
 - *Empirical Mode Decomposition* (EMD) and Hilbert spectral analysis is provided by `r pkg("EMD")`.
   Additional tools, including ensemble EMD, are available in `r pkg("hht")`.
   An alternative implementation of ensemble EMD and its complete variant are available in `r pkg("Rlibeemd")`.
+- Seasonal decomposition methods, including STL and X-13-ARIMA-SEATS, are covered in the next section.
 
-### Seasonality
+### Seasonality and Seasonal Adjustment
 
 - *Seasonal decomposition* : the stats package provides classical decomposition in `decompose()`, and STL decomposition in `stl()`.
   Enhanced STL decomposition is available in `r pkg("stlplus")`.
   `r pkg("stR")` provides Seasonal-Trend decomposition based on Regression.
   `r pkg("smooth")` and `r pkg("tsutils")` implement extended versions of classical decomposition.
+  `r pkg("tsdecomp")` implements ARIMA-based decomposition of quarterly and monthly data.
 - X-13-ARIMA-SEATS binaries are provided in the `r pkg("x13binary")` package, with `r pkg("seasonal")` providing an R interface and `r pkg("seasonalview")` providing a GUI.
   An alternative interface is provided by `r pkg("x12")`.
 - An interface to the JDemetra+ seasonal adjustment software is provided by `r pkg("rjd3toolkit")` and related packages in the [rjdverse](https://github.com/rjdverse).
