@@ -34,8 +34,6 @@ If you think that some package is missing from the list, please let us know, eit
   Seasonal displays are obtained using `monthplot()` in stats, `seasonplot` in `r pkg("forecast")`, and `seasplot` in `r pkg("tsutils")`.
   `r pkg("ggtime")` provides various time series graphics for tsibble objects including time plots, season plots, subseries plots, ACF and PACF plots, and some combination displays.
   Interactive graphics for tsibbles using htmlwidgets are provided by `r pkg("tsibbletalk")`.
-  `r pkg("dCovTS")` computes and plots the distance covariance and correlation functions of time series.
-  ACF and CCF variants based on Chatterjee's Xi correlation are provided by `r pkg("xiacf")`.
   `r pkg("gglinedensity")` provides a ggplot2 statistic for DenseLines heatmaps of time series normalized by arc length.
   Calendar plots are implemented in `r pkg("sugrrants")`.
   `r pkg("gravitas")` allows for visualizing probability distributions conditional on bivariate temporal granularities.
@@ -365,11 +363,14 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("tseriesEntropy")` tests for nonlinear serial dependence based on entropy metrics, while `r pkg("tseriesTARMA")` provides tests for nonlinearity based on threshold ARMA models.
 - Additional functions for nonlinear time series are available in `r pkg("nlts")` and `r pkg("nonlinearTseries")`.
 
-### Entropy
+### Autocorrelation and Dependence Measures
 
-- `r pkg("RTransferEntropy")` measures information flow between time series with Shannon and Renyi transfer entropy.
-- An entropy measure based on the Bhattacharya-Hellinger-Matusita distance is implemented in `r pkg("tseriesEntropy")`.
-- Various approximate and sample entropies are computed using `r pkg("TSEntropies")`.
+- *Autocovariance and autocorrelation* : `r pkg("CovEsts")` provides nonparametric estimation, correction and comparison of autocovariance functions for univariate time series, with block bootstrap confidence intervals.
+  `r pkg("dCovTS")` computes and plots the distance covariance and correlation functions of time series.
+  ACF and CCF variants based on Chatterjee's Xi correlation are provided by `r pkg("xiacf")`.
+- *Entropy* : `r pkg("RTransferEntropy")` measures information flow between time series with Shannon and Renyi transfer entropy.
+  An entropy measure based on the Bhattacharya-Hellinger-Matusita distance is implemented in `r pkg("tseriesEntropy")`.
+  Various approximate and sample entropies are computed using `r pkg("TSEntropies")`.
 
 ### Dynamic Regression Models
 
@@ -545,7 +546,6 @@ If you think that some package is missing from the list, please let us know, eit
 ### Miscellaneous
 
 - `r pkg("complex")`: Analysis and forecasting of complex-valued time series.
-- `r pkg("CovEsts")`: Nonparametric autocovariance function estimation, correction and comparison of estimates, and block bootstrap confidence intervals, for univariate time series.
 - `r pkg("ensembleBMA")`: Bayesian Model Averaging to create probabilistic forecasts from ensemble forecasts and weather observations.
 - `r pkg("gsignal")` is an R implementation of the Octave package "signal", containing a variety of signal processing tools.
 - `r pkg("paleoTS")`: Modeling evolution in paleontological time series.
