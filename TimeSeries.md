@@ -390,30 +390,29 @@ If you think that some package is missing from the list, please let us know, eit
   These models are restricted to be stationary.
   `r pkg("MTS")` is an all-purpose toolkit for analysing multivariate time series including VAR, VARMA, seasonal VARMA, VAR models with exogenous variables, multivariate regression with time series errors, and much more.
   VAR models are fitted by least squares, without a stationarity restriction, in the `r pkg("mAr")` package, which also provides eigen-decomposition of the fitted models and estimation in principal component space.
-  Fractionally cointegrated VAR models are handled by `r pkg("FCVAR")`.
-  `r pkg("bigtime")` estimates large sparse VAR, VARX and VARMA models, while `r pkg("BigVAR")` estimates VAR and VARX models with structured lasso penalties.
-  `r pkg("svars")` implements methods for the data-driven identification of structural VARs, and `r pkg("pvars")` provides similar methods for panels of structural VARs.
-  `r pkg("sstvars")` provides a toolkit for reduced form and structural smooth transition VARs.
-  Shrinkage estimation methods for VARs are implemented in `r pkg("VARshrink")`.
   More elaborate models are provided in package `r pkg("vars")`.
   Another implementation with bootstrapped prediction intervals is given in `r pkg("VAR.etp")`.
-  `r pkg("bvartools")` assists in the set-up of Bayesian VAR models, while `r pkg("BVAR")` and `r pkg("bayesianVARs")` provide toolkits for hierarchical Bayesian VAR models.
+  Fractionally cointegrated VAR models are handled by `r pkg("FCVAR")`.
+  Simulation and analysis of Gaussian VARMA models is provided by `r pkg("varmapack")`.
+- *High-dimensional and sparse VARs* : `r pkg("bigtime")` estimates large sparse VAR, VARX and VARMA models, while `r pkg("BigVAR")` estimates VAR and VARX models with structured lasso penalties.
+  Shrinkage estimation methods for VARs are implemented in `r pkg("VARshrink")`.
+  Network estimation and forecasting for high-dimensional time series using factor-adjusted VARs is implemented in `r pkg("fnets")`.
+- *Bayesian VARs* : `r pkg("bvartools")` assists in the set-up of Bayesian VAR models, while `r pkg("BVAR")` and `r pkg("bayesianVARs")` provide toolkits for hierarchical Bayesian VAR models.
   `r pkg("bsvars")` and `r pkg("bsvarSIGNs")` include efficient algorithms for estimating Bayesian Structural VAR models, while `r pkg("bpvars")` provides forecasting of panel data using Bayesian panel VARs.
   The companion package `r pkg("bvars")` implements fast and efficient Bayesian procedures for large VARs.
-  Bayesian estimation of multilevel VAR models is provided by `r pkg("bvarnet")`.
   Bayesian VARs with stochastic volatility and time-varying parameters are provided by `r pkg("bvarsv")`.
-  `r pkg("mtarm")` implements Bayesian Multivariate Threshold AR models.
   Factor-augmented VAR (FAVAR) models are estimated by a Bayesian method with `r pkg("FAVAR")`.
   `r pkg("BGVAR")` implements Bayesian Global VAR models.
-  `r pkg("mlVAR")` provides multi-level vector autoregression.
-  `r pkg("gmvarkit")` estimates Gaussian mixture VAR models.
-  Network or graphical VAR models can be fitted in `r pkg("GNAR")`, `r pkg("graphicalVAR")`, `r pkg("NetVAR")` and `r pkg("tsnet")`.
-  `r pkg("gdpc")` implements generalized dynamic principal components.
-  `r pkg("mgm")` estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
-  Network estimation and forecasting for high-dimensional time series using factor-adjusted VARs is implemented in `r pkg("fnets")`.
-  Simulation and analysis of Gaussian VARMA models is provided by `r pkg("varmapack")`.
-- *Granger causality tests* are provided by `r pkg("grangersearch")`.
+- *Structural VARs* : `r pkg("svars")` implements methods for the data-driven identification of structural VARs, and `r pkg("pvars")` provides similar methods for panels of structural VARs.
 - *Nonlinear VAR models* are provided by `r pkg("NVAR")`, while quadratic VARs are implemented in `r pkg("quadVAR")`.
+  `r pkg("sstvars")` provides a toolkit for reduced form and structural smooth transition VARs.
+  `r pkg("mtarm")` implements Bayesian Multivariate Threshold AR models.
+  `r pkg("gmvarkit")` estimates Gaussian mixture VAR models.
+- *Multilevel VARs* : `r pkg("mlVAR")` provides multi-level vector autoregression.
+  Bayesian estimation of multilevel VAR models is provided by `r pkg("bvarnet")`.
+- *Network and graphical VARs* : Network or graphical VAR models can be fitted in `r pkg("GNAR")`, `r pkg("graphicalVAR")`, `r pkg("NetVAR")` and `r pkg("tsnet")`.
+  `r pkg("mgm")` estimates time-varying mixed graphical models and mixed VAR models via regularized regression.
+- *Granger causality tests* are provided by `r pkg("grangersearch")`.
 - *Vector error correction models* are available via the `r pkg("urca")`, `r pkg("vars")`, and `r pkg("pvars")` packages, including versions with structural constraints.
 - *Vector exponential smoothing* is provided by `r pkg("smooth")`.
 - *Dynamic factor models* are available in the `r pkg("dfms")` package using EM or two-step estimation.
@@ -426,6 +425,7 @@ If you think that some package is missing from the list, please let us know, eit
   Frequency-domain-based dynamic PCA is implemented in `r pkg("freqdom")`.
   `r pkg("tsBSS")` provides blind source separation and supervised dimension reduction for time series.
   `r pkg("sdrt")` estimates sufficient dimension reduction subspaces for time series.
+  `r pkg("gdpc")` implements generalized dynamic principal components.
 - *Multivariate state space models* : An implementation is provided by the `r pkg("KFAS")` package which provides a fast multivariate Kalman filter, smoother, simulation smoother and forecasting.
   `r pkg("FKF")` provides a fast and flexible implementation of the Kalman filter, which can deal with missing values.
   `r pkg("kalmanfilter")` provides an 'Rcpp' implementation of the multivariate Kalman filter for state space models that can handle missing values and exogenous data in the observation and state equations.
