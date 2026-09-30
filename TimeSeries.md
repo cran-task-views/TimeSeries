@@ -102,7 +102,7 @@ If you think that some package is missing from the list, please let us know, eit
 - The class `"tis"` in `r pkg("tis")` implements time series with `"ti"` time stamps.
 - The package `r pkg("tframe")` contains infrastructure for setting time frames in different formats.
 
-### Forecasting and Univariate Modeling
+### Forecasting Frameworks
 
 - The `r pkg("fable", priority = "core")` package provides tools for fitting univariate time series models to many series simultaneously including ETS, ARIMA, TSLM and other models.
   It also provides many functions for computing and analysing forecasts.
@@ -111,6 +111,12 @@ If you think that some package is missing from the list, please let us know, eit
 - The `r pkg("forecast")` package provides similar tools for `ts` objects, while `r pkg("modeltime")` provides time series forecasting tools for use with the 'tidymodels' ecosystem.
   Forecast resampling tools for use with `modeltime` are provided by `r pkg("modeltime.resample")`.
   `r pkg("mlr3forecast")` provides time series forecasting tools for use with the `mlr3` ecosystem.
+- A standardized time series forecasting framework including many models is provided by `r pkg("finnts")`, designed for financial time series.
+- Tidy tools for forecasting are provided by `r pkg("sweep")`, converting objects produced in `r pkg("forecast")` to "tidy" data frames.
+- `r pkg("onlineforecast")` provides a framework for fitting adaptive forecasting models, allowing forecasts to be used as inputs to models, and models to be updated as new data arrives.
+
+### Univariate Time Series Models
+
 - *Exponential smoothing* : `HoltWinters()` in stats provides some basic models with partial optimization, `ETS()` from `r pkg("fable")` and `ets()` from `r pkg("forecast")` provide a larger set of models and facilities with full optimization.
   `r pkg("smooth")` implements some generalizations of exponential smoothing.
   `r pkg("legion")` implements multivariate versions of exponential smoothing.
@@ -175,20 +181,18 @@ If you think that some package is missing from the list, please let us know, eit
 - *Censored time series* can be modelled using `r pkg("ARCensReg")`, which fits univariate censored regression models with autoregressive errors.
 - *Diffusion models* such as Bass and Gompertz curves are provided by `r pkg("diffusion")` and `r pkg("DIMORA")`.
   Dynamic Gompertz models for time series growth curves are implemented in `r pkg("tsgc")`.
+- *Miscellaneous* : `r pkg("ltsa")` contains methods for linear time series analysis, `r pkg("timsac")` for time series analysis and control.
+
+### Diagnostic and Trend Tests
+
 - *Portmanteau tests* are provided via `Box.test()` in the stats package.
   Additional tests are given by `r pkg("portes")`, `r pkg("WeightedPortTest")`, and `r pkg("testcorr")`.
-- Outlier detection following the Chen-Liu approach is provided by `r pkg("tsoutliers")`.
-- The `tsoutliers` and `tsclean` functions in the `r pkg("forecast")` package provide some simple heuristic methods for identifying and correcting outliers.
-  `r pkg("tsrobprep")` provides methods for replacing missing values and outliers using a model-based approach.
-  `r pkg("ctbi")` implements a procedure to clean, decompose and aggregate time series.
+- `r pkg("tstests")` implements several tests for time series goodness of fit and forecast evaluation.
 - Tests for possibly non-monotonic trends are provided by `r pkg("funtimes")`.
-- *Time series imputation* is provided by the `r pkg("imputeTS")` package.
-  Some more limited facilities are available using `na.interp()` from the `r pkg("forecast")` package.
-  `r pkg("imputeTestbench")` provides tools for testing and comparing imputation methods.
-  `r pkg("mtsdi")` implements an EM algorithm for imputing missing values in multivariate normal time series, accounting for spatial and temporal correlations.
-  Imputation methods for multivariate locally stationary time series are in `r pkg("mvLSWimpute")`.
+
+### Forecast Selection, Combination and Evaluation
+
 - The `r pkg("seer")` package implements a framework for feature-based forecast model selection.
-- A standardized time series forecasting framework including many models is provided by `r pkg("finnts")`, designed for financial time series.
 - Forecasts can be combined in the `r pkg("fable")` package using simple linear expressions.
   `r pkg("forecastHybrid")` provides functions for ensemble forecasts, combining approaches from the `r pkg("forecast")` package.
   `r pkg("profoc")` combines probabilistic forecasts using CRPS learning.
@@ -200,11 +204,19 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("forecastdom")` is a toolkit for forecast dominance testing.
   `r pkg("tsutils")` implements the Nemenyi test for comparing forecasts.
   `r pkg("greybox")` provides `ro()` for general rolling origin evaluation of forecasts.
-  `r pkg("tstests")` implements several tests for time series goodness of fit and forecast evaluation.
-- Tidy tools for forecasting are provided by `r pkg("sweep")`, converting objects produced in `r pkg("forecast")` to "tidy" data frames.
-- `r pkg("onlineforecast")` provides a framework for fitting adaptive forecasting models, allowing forecasts to be used as inputs to models, and models to be updated as new data arrives.
 - Data leakage is a problem that can occur in forecasting competitions, and the `r pkg("tsdataleaks")` package provides tools for detecting data leakage in such settings.
-- *Miscellaneous* : `r pkg("ltsa")` contains methods for linear time series analysis, `r pkg("timsac")` for time series analysis and control.
+
+### Outliers and Missing Values
+
+- Outlier detection following the Chen-Liu approach is provided by `r pkg("tsoutliers")`.
+- The `tsoutliers` and `tsclean` functions in the `r pkg("forecast")` package provide some simple heuristic methods for identifying and correcting outliers.
+  `r pkg("tsrobprep")` provides methods for replacing missing values and outliers using a model-based approach.
+  `r pkg("ctbi")` implements a procedure to clean, decompose and aggregate time series.
+- *Time series imputation* is provided by the `r pkg("imputeTS")` package.
+  Some more limited facilities are available using `na.interp()` from the `r pkg("forecast")` package.
+  `r pkg("imputeTestbench")` provides tools for testing and comparing imputation methods.
+  `r pkg("mtsdi")` implements an EM algorithm for imputing missing values in multivariate normal time series, accounting for spatial and temporal correlations.
+  Imputation methods for multivariate locally stationary time series are in `r pkg("mvLSWimpute")`.
 
 ### Change point detection
 
