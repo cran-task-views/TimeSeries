@@ -47,7 +47,7 @@ If you think that some package is missing from the list, please let us know, eit
 ### Times and Dates
 
 - Class `"ts"` can only deal with numeric time stamps, but many more classes are available for storing time/date information and computing with it.
-  For an overview see *R Help Desk: Date and Time Classes in R* by Gabor Grothendieck and Thomas Petzoldt in [R News 4(1)](http://CRAN.R-project.org/doc/Rnews/Rnews_2004-1.pdf), 29-32.
+  For an overview see *R Help Desk: Date and Time Classes in R* by Gabor Grothendieck and Thomas Petzoldt in [R News 4(1)](https://CRAN.R-project.org/doc/Rnews/Rnews_2004-1.pdf), 29-32.
 - Classes `"yearmon"` and `"yearqtr"` from `r pkg("zoo")` allow for more convenient computation with monthly and quarterly observations, respectively.
 - Class `"Date"` from the base package is the basic class for dealing with dates in daily data.
   The dates are internally stored as the number of days since 1970-01-01.
@@ -355,7 +355,7 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("BAYSTAR")` provides Bayesian analysis of threshold autoregressive models.
   Mixture AR models are implemented in `r pkg("mixAR")` and `r pkg("uGMAR")`.
   `r pkg("tseriesTARMA")` provides routines for Threshold ARMA model testing, fitting and forecasting.
-- `r pkg("tseriesChaos")` provides an R implementation of the algorithms from the *[TISEAN](http://www.mpipks-dresden.mpg.de/~tisean/) project*.
+- `r pkg("tseriesChaos")` provides an R implementation of the algorithms from the *[TISEAN](https://www.pks.mpg.de/tisean/) project*.
   `r pkg("DChaos")` provides several algorithms for detecting chaotic signals inside univariate time series.
 - Autoregressive Markov switching models are provided in `r pkg("MSwM")`, while dependent mixtures of latent Markov models are given in `r pkg("depmixS4")` for categorical and continuous time series.
 - *Tests* : Various tests for nonlinearity are provided in `r pkg("fNonlinear")`.
@@ -535,7 +535,7 @@ If you think that some package is missing from the list, please let us know, eit
 - *National time series data* : `r pkg("readabs")` downloads, imports and tidies time series data from the [*Australian* Bureau of Statistics](https://www.abs.gov.au).
   `r pkg("bbk")` is a client for the APIs of many central banks, including the *German* Deutsche Bundesbank and the European Central Bank.
   `r pkg("bundesbank")` also allows access to the time series databases of the Deutsche Bundesbank, while data from the *European* Central Bank can also be accessed via `r pkg("ecb")`.
-  Data from *Switzerland* via [dataseries.org](http://dataseries.org) can be downloaded and imported using `r pkg("dataseries")`.
+  Data from *Switzerland* via [dataseries.org](https://dataseries.org) can be downloaded and imported using `r pkg("dataseries")`.
   Macroeconomic time series for *Africa* can be obtained via `r pkg("africamonitor")`.
   `r pkg("ugatsdb")` provides an API to access time series data for *Uganda*, while `r pkg("samadb")` does the same for *South Africa*.
   For the *United States*, economic time series and other data from FRED (the Federal Reserve Economic Data) can be retrieved using `r pkg("fredr")`.
@@ -571,5 +571,5 @@ If you think that some package is missing from the list, please let us know, eit
 
 ### Links
 
-- [TISEAN Project](http://www.mpipks-dresden.mpg.de/~tisean/)
+- [TISEAN Project](https://www.pks.mpg.de/tisean/)
 - [rjdverse](https://github.com/rjdverse)
