@@ -131,7 +131,6 @@ If you think that some package is missing from the list, please let us know, eit
   `arma()` in the `r pkg("tseries")` package provides different algorithms for ARMA and subset ARMA models.
   Other estimation methods including the innovations algorithm are provided by `r pkg("itsmr")`.
   `r pkg("arima2")` provides a random-restart estimation algorithm to replace `stats::arima()`.
-  Package `r pkg("gsarima")` contains functionality for Generalized SARIMA time series simulation.
   `r pkg("bayesforecast")` fits Bayesian time series models including seasonal ARIMA and ARIMAX models.
   Robust ARIMA modeling is provided in the `r pkg("robustarima")` package.
   `r pkg("TSTutorial")` provides an interactive tutorial for Box-Jenkins modelling.
@@ -511,7 +510,7 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("BootPR")` computes bias-corrected forecasting and bootstrap prediction intervals for autoregressive time series.
   `r pkg("bootUR")` implements bootstrap unit root tests.
 
-### Time Series Data
+### Time Series Data Sets
 
 - Various data sets in `r pkg("tsibble")` format are provided by `r pkg("tsibbledata")`.
 - Data from Cryer and Chan (2010, 2nd ed) *Time series analysis with applications in R* are in the `r pkg("TSA")` package.
@@ -526,6 +525,9 @@ If you think that some package is missing from the list, please let us know, eit
 - Data from the M and M3 forecasting competitions are provided in the `r pkg("Mcomp")` package.
   `r pkg("Tcomp")` provides data from the 2010 IJF Tourism Forecasting Competition.
   The M4 competition data are available from `r github("carlanetto/M4comp2018")`.
+
+### Time Series Data Access and Management
+
 - *National time series data:* `r pkg("readabs")` downloads, imports and tidies time series data from the [*Australian* Bureau of Statistics](https://www.abs.gov.au).
   `r pkg("bbk")` is a client for the APIs of many central banks, including the *German* Deutsche Bundesbank and the European Central Bank.
   `r pkg("bundesbank")` also allows access to the time series databases of the Deutsche Bundesbank, while data from the *European* Central Bank can also be accessed via `r pkg("ecb")`.
@@ -539,12 +541,19 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("influxdbr")` provides an interface to the InfluxDB time series database.
   `r pkg("pdfetch")` provides facilities for downloading economic and financial time series from public sources.
   `r pkg("tsdb")` implements a simple database for numerical time series.
+- *Data revisions*: `r pkg("butterfly")` provides verification of continually updating time series data where we expect new values, but want to ensure previous data remains unchanged.
+  `r pkg("reviser")` analyses revisions in real-time time series vintages.
+
+### Simulating Time Series
+
 - *Synthetic data* are produced by `simulate()` in `r pkg("forecast")` package or `generate()` in `r pkg("fable")`, given a specific model.
+  Package `r pkg("gsarima")` contains functionality for Generalized SARIMA time series simulation.
   `r pkg("gratis")` generates new time series with diverse and controllable characteristics using mixture autoregression models.
   `r pkg("synthesis")` generates synthetic time series from commonly used statistical models, including linear, nonlinear and chaotic systems.
   `r pkg("tssim")` flexibly simulates daily or monthly time series using seasonal, calendar, and outlier components.
-- *Data revisions*: `r pkg("butterfly")` provides verification of continually updating time series data where we expect new values, but want to ensure previous data remains unchanged.
-  `r pkg("reviser")` analyses revisions in real-time time series vintages.
+  `r pkg("RGENERATE")` provides tools to generate vector time series.
+  `r pkg("RMAWGEN")` is a set of S3 and S4 functions for spatial multi-site stochastic generation of daily time-series of temperature and precipitation making use of VAR models.
+  The package can be used in climatology and statistical hydrology.
 
 ### Miscellaneous
 
@@ -553,9 +562,6 @@ If you think that some package is missing from the list, please let us know, eit
 - `r pkg("gsignal")` is an R implementation of the Octave package "signal", containing a variety of signal processing tools.
 - `r pkg("paleoTS")`: Modeling evolution in paleontological time series.
 - `r pkg("pastecs")`: Regularisation, decomposition and analysis of space-time series.
-- `r pkg("RGENERATE")` provides tools to generate vector time series.
-- `r pkg("RMAWGEN")` is a set of S3 and S4 functions for spatial multi-site stochastic generation of daily time-series of temperature and precipitation making use of VAR models.
-  The package can be used in climatology and statistical hydrology.
 - `r pkg("RSEIS")`: Seismic time series analysis tools.
 - `r pkg("rts")`: Raster time series analysis (e.g., time series of satellite images).
 - `r pkg("spTimer")`: Spatio-temporal Bayesian modelling.
