@@ -221,6 +221,7 @@ If you think that some package is missing from the list, please let us know, eit
 - *Changes in distribution* : `r pkg("changepoint.np")` implements the nonparametric PELT algorithm.
   `r pkg("ecp")` does nonparametric changepoint detection for univariate and multivariate series.
   The nonparametric moving sum procedure for detecting multiple changepoints in multivariate time series is provided by `r pkg("CptNonPar")`.
+  `r pkg("scanr")` detects changes in the distribution, mean or variance of long univariate time series by comparing adjacent windows using the Wasserstein distance, with significance assessed by a block bootstrap.
 - *Multivariate and high-dimensional series* : `r pkg("changepoint.geo")` implements the high-dimensional changepoint detection method GeomCP.
   `r pkg("InspectChangepoint")` uses sparse projection to estimate changepoints in high-dimensional time series.
   `r pkg("BayesChange")` provides Bayesian change-point detection, and also clusters data based on common structural changes.
