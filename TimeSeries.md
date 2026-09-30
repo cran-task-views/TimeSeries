@@ -318,7 +318,6 @@ If you think that some package is missing from the list, please let us know, eit
   The latter additionally contains functionality for the Johansen trace and maximum-eigenvalue tests on the cointegration rank.
   `r pkg("pvars")` provides Johansen and Saikkonen-Luetkepohl test procedures which approximate p-values by the gamma distribution and can account for breaks in the deterministic terms.
   The Maki cointegration test with structural breaks is implemented in `r pkg("makicoint")`.
-  `r pkg("tsDyn")` provides Johansen's test and AIC/BIC simultaneous rank-lag selection.
   Parameter estimation and inference in a cointegrating regression are implemented in `r pkg("cointReg")`.
   `r pkg("ecm")` provides functions for building error correction models for time series regression.
   Fractionally cointegrated VAR models are handled by `r pkg("FCVAR")`.
@@ -328,7 +327,6 @@ If you think that some package is missing from the list, please let us know, eit
 ### Nonlinear Time Series Analysis
 
 - *Nonlinear autoregression* : Tools for nonlinear time series analysis are provided in `r pkg("NTS")` including threshold autoregressive models, Markov-switching models, convolutional functional autoregressive models, and nonlinearity tests.
-  Various forms of nonlinear autoregression are available in `r pkg("tsDyn")` including additive AR, SETAR and LSTAR models, threshold VAR and VECM.
   `r pkg("EXPAR")` provides exponential AR models, while `r pkg("EXPARMA")` provides exponential ARMA models.
   `r pkg("bentcableAR")` implements Bent-Cable autoregression.
   `r pkg("BAYSTAR")` provides Bayesian analysis of threshold autoregressive models.
@@ -336,7 +334,7 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("setartree")` implements an SETAR tree algorithm, and a SETAR forest.
   `r pkg("tseriesTARMA")` provides routines for Threshold ARMA model testing fitting and forecasting.
   Probabilistic forecasts with XGBoost and conformal inference are provided by `r pkg("xpect")`.
-- *Neural network autoregression* : Neural network forecasting based on lagged inputs are provided by `r pkg("tsDyn")`, `r pkg("GMDH")` and `r pkg("nnfor")`.
+- *Neural network autoregression* : Neural network forecasting based on lagged inputs are provided by `r pkg("GMDH")` and `r pkg("nnfor")`.
   Neural networks with fractional differencing are implemented in `r pkg("narfima")`.
   `r pkg("NlinTS")` includes neural network VAR, and a nonlinear version of the Granger causality test based on feedforward neural networks.
   `r pkg("TSLSTM")` provides forecasts using a Long Short Term Memory (LSTM) model, while an enhanced version is implemented in `r pkg("TSLSTMplus")`.
@@ -384,7 +382,7 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("bigtime")` estimates large sparse VAR, VARX and VARMA models, while `r pkg("BigVAR")` estimates VAR and VARX models with structured lasso penalties and `r pkg("svars")` and `r pkg("pvars")` implement methods for the data-driven identification of structural VARs.
   `r pkg("sstvars")` provides a toolkit for reduced form and structural smooth transition VARs.
   Shrinkage estimation methods for VARs are implemented in `r pkg("VARshrink")`.
-  More elaborate models are provided in package `r pkg("vars")` and `r pkg("tsDyn")`.
+  More elaborate models are provided in package `r pkg("vars")`.
   Another implementation with bootstrapped prediction intervals is given in `r pkg("VAR.etp")`.
   `r pkg("bvartools")` assists in the set-up of Bayesian VAR models, while `r pkg("BVAR")` and `r pkg("bayesianVARs")` provide toolkits for hierarchical Bayesian VAR models.
   `r pkg("bsvars")` and `r pkg("bsvarSIGNs")` include efficient algorithms for estimating Bayesian Structural VAR models, while `r pkg("bpvars")` provides forecasting of panel data using Bayesian panel VARs.
@@ -403,7 +401,7 @@ If you think that some package is missing from the list, please let us know, eit
   Simulation and analysis of Gaussian VARMA models is provided by `r pkg("varmapack")`.
 - *Granger causality tests* are provided by `r pkg("grangersearch")`.
 - *Nonlinear VAR models* are provided by `r pkg("NVAR")`, while quadratic VARs are implemented in `r pkg("quadVAR")`.
-- *Vector error correction models* are available via the `r pkg("urca")`, `r pkg("vars")`, `r pkg("pvars")`, and `r pkg("tsDyn")` packages, including versions with structural constraints and thresholding.
+- *Vector error correction models* are available via the `r pkg("urca")`, `r pkg("vars")`, and `r pkg("pvars")` packages, including versions with structural constraints.
 - *Vector exponential smoothing* is provided by `r pkg("smooth")`.
 - *Dynamic factor models* are available in the `r pkg("dfms")` package using EM or two-step estimation.
   Dynamic factor models with sparse loadings are implemented in `r pkg("sparseDFM")`.
