@@ -61,7 +61,6 @@ If you think that some package is missing from the list, please let us know, eit
   The `r pkg("anytime")` package converts various inputs into `POSIXct` or `Date` objects.
   Various recurrent calendar calculations are possible using `r pkg("almanac")`.
   `r pkg("timechange")` allows for efficient manipulation of date-times accounting for time zones and daylight saving times.
-  `r pkg("wktmo")` converts weekly data to monthly data in several ways.
 - Class `"timeDate"` is provided in the `r pkg("timeDate")` package (previously: fCalendar).
   It is aimed at financial time/date information and deals with time zones and daylight savings times via a new concept of "financial centers".
   Internally, it stores all information in `"POSIXct"` and does all computations in GMT only.
@@ -78,8 +77,6 @@ If you think that some package is missing from the list, please let us know, eit
 - The `"mondate"` class from the `r pkg("mondate")` package facilitates computing with dates in terms of months.
 - The `r pkg("CFtime")` package encapsulates the CF Metadata Conventions "time" dimension, including all defined calendars.
   It facilitates the processing of climate change projection data.
-- The `r pkg("tempdisagg")` package includes methods for temporal disaggregation and interpolation of a low frequency time series to a higher frequency series.
-  Time series disaggregation is also provided by `r pkg("TSdisaggregation")` and `r pkg("tsdisagg2")`, while `r pkg("disagmethod")` implements ARIMA-based disaggregation.
 
 ### Time Series Classes
 
@@ -467,6 +464,13 @@ If you think that some package is missing from the list, please let us know, eit
   Probabilistic reconciliation of hierarchical forecasts via conditioning is available in `r pkg("bayesRecon")`.
   Degenerate hierarchical structures are handled by `r pkg("htsDegenerateR")`.
 
+### Temporal Aggregation and Disaggregation
+
+- *Temporal disaggregation* : The `r pkg("tempdisagg")` package includes methods for temporal disaggregation and interpolation of a low frequency time series to a higher frequency series.
+  Time series disaggregation is also provided by `r pkg("TSdisaggregation")` and `r pkg("tsdisagg2")`, while `r pkg("disagmethod")` implements ARIMA-based disaggregation.
+- *Temporal aggregation* : `r pkg("wktmo")` converts weekly data to monthly data in several ways.
+- *Coherence with aggregates* : `r pkg("gseries")` implements Statistics Canada's generalized system for benchmarking and reconciliation of time series.
+
 ### Dynamic time warping
 
 - Dynamic time warping algorithms are provided by `r pkg("dtw")` for computing and plotting pairwise alignments between time series.
@@ -541,7 +545,6 @@ If you think that some package is missing from the list, please let us know, eit
   `r pkg("tssim")` flexibly simulates daily or monthly time series using seasonal, calendar, and outlier components.
 - *Data revisions*: `r pkg("butterfly")` provides verification of continually updating time series data where we expect new values, but want to ensure previous data remains unchanged.
   `r pkg("reviser")` analyses revisions in real-time time series vintages.
-- *Data coherence*: `r pkg("gseries")` implements Statistics Canada's generalized system for benchmarking and reconciliation of time series.
 
 ### Miscellaneous
 
