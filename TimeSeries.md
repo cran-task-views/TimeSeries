@@ -173,7 +173,7 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
 #### Seasonality and Seasonal Adjustment
 
 - *Seasonal decomposition* : The stats package provides classical decomposition in `decompose()`, and STL decomposition in `stl()`.
-  Enhanced STL decomposition is available in `r pkg("stlplus")`.
+  Enhanced STL decomposition is available in `r pkg("stlplus")` and in `r pkg("stlpro")`.
   `r pkg("stR")` provides Seasonal-Trend decomposition based on Regression.
   `r pkg("smooth")` and `r pkg("tsutils")` implement extended versions of classical decomposition.
   `r pkg("tsdecomp")` implements ARIMA-based decomposition of quarterly and monthly data.
@@ -183,7 +183,7 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
   `r pkg("RJDemetra")` provides an interface to JDemetra+ version 2 and `r pkg("ggdemetra")` provides associated ggplot2 functions.
 - `r pkg("deseats")` includes a locally weighted regression approach, and the Berlin method.
 - Seasonal adjustment of daily time series, allowing for day-of-week, time-of-month, time-of-year and holiday effects is provided by `r pkg("dsa")`.
-  Seasonal adjustment of weekly data is provided by `r pkg("boiwsa")`.
+  Seasonal adjustment of weekly data is provided by `r pkg("boiwsa")`. Seasonally adjusting any high-frequency time series is available via `r pkg("rjd3highfreq")`.
 - `r pkg("StructuralDecompose")` decomposes a time series into trend, seasonality and residuals, allowing for level shifts.
 - *Analysis of seasonality* : The `r pkg("bfast")` package provides methods for detecting and characterizing abrupt changes within the trend and seasonal components obtained from a decomposition.
   `r pkg("season")` provides seasonal analysis of health data, including regression models, time-stratified case-crossover, plotting functions and residual checks.
