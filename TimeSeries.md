@@ -100,7 +100,10 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
 #### Temporal Aggregation and Disaggregation
 
 - *Temporal disaggregation* : The `r pkg("tempdisagg")` package includes methods for temporal disaggregation and interpolation of a low frequency time series to a higher frequency series.
+  
   Time series disaggregation is also provided by `r pkg("TSdisaggregation")` and `r pkg("tsdisagg2")`, while `r pkg("disagmethod")` implements ARIMA-based disaggregation.
+  
+  The `\r pkg("rjd3bench")` package provides temporal disaggregation, interpolation, benchmarking, reconciliation, multivariate temporal disaggregation, and calendarization methods through an interface to JDemetra+ 3.x, following the latest European Statistical System (ESS) guidelines on temporal disaggregation, benchmarking and reconciliation.
 - *Temporal aggregation* : `r pkg("wktmo")` converts weekly data to monthly data in several ways.
 - *Coherence with aggregates* : `r pkg("gseries")` implements Statistics Canada's generalized system for benchmarking and reconciliation of time series.
 
