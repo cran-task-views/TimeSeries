@@ -105,7 +105,7 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
   
   The `\r pkg("rjd3bench")` package provides temporal disaggregation, interpolation, benchmarking, reconciliation, multivariate temporal disaggregation, and calendarization methods through an interface to JDemetra+ 3.x, following the latest European Statistical System (ESS) guidelines on temporal disaggregation, benchmarking and reconciliation.
 - *Temporal aggregation* : `r pkg("wktmo")` converts weekly data to monthly data in several ways.
-- *Coherence with aggregates* : `r pkg("gseries")` implements Statistics Canada's generalized system for benchmarking and reconciliation of time series.
+- *Coherence with aggregates* : `r pkg("gseries")` implements Statistics Canada's generalized system for benchmarking and reconciliation of time series. Benchmarking and reconciliation methods are also available in `r pkg("rjd3bench")`.
 
 ### Exploratory Analysis
 
