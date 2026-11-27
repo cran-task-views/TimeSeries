@@ -269,7 +269,7 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
 - *Non-Gaussian time series* can be handled with GLARMA state space models via `r pkg("glarma")`, and using Generalized Autoregressive Score models in the `r pkg("gasmodel")` package.
   Univariate and multivariate exponential family state space models are implemented in `r pkg("KFAS")`.
   `r pkg("GlarmaVarSel")` provides variable selection in high-dimensional sparse GLARMA models.
-  Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`.
+  Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`. A `r pkg("brms")` observation model is paired with a latent State-Space process such as a random walk, an autoregression in discrete or continuous time, a vector autoregression or a dynamic factor model.
   Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in `r pkg("bssm")`.
   `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
   Time series between 0 and 1 can be modelled using beta ARMA models in `r pkg("betaARMA")`.
@@ -550,7 +550,7 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
 - Multivariate stochastic volatility models (using latent factors) are provided by `r pkg("factorstochvol")`.
   Multivariate GARCH models, including DCC, copula GARCH and GO-GARCH, are implemented in `r pkg("tsmarch")`.
 - High-dimensional sparse multivariate GLARMA models are handled by `r pkg("MultiGlarmaVarSel")` including variable selection.
-- Multivariate Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`.
+- Multivariate State-Space models with latent vector autoregressions, hierarchical panel vector autoregressions or dynamic factors are implemented in `r pkg("mvgam")`, with observation models written by `r pkg("brms")`.
 - Bayesian Dynamic Multivariate Panel Models with time-varying coefficients are implemented in `r pkg("dynamite")`.
 - *Vector exponential smoothing* is provided by `r pkg("smooth")`.
 
