@@ -108,7 +108,6 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
 
 ### Exploratory Analysis
 
-
 #### Graphics
 
 - Time series plots are obtained with `plot()` applied to `ts` objects.
@@ -150,7 +149,6 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
 
 ### Decomposition and Frequency Analysis
 
-
 #### Filtering, Smoothing and Decomposition
 
 - *Linear and robust filters* : `filter()` in stats provides autoregressive and moving average linear filtering of multiple univariate time series.
@@ -185,7 +183,8 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
   `r pkg("RJDemetra")` provides an interface to JDemetra+ version 2 and `r pkg("ggdemetra")` provides associated ggplot2 functions.
 - `r pkg("deseats")` includes a locally weighted regression approach, and the Berlin method.
 - Seasonal adjustment of daily time series, allowing for day-of-week, time-of-month, time-of-year and holiday effects is provided by `r pkg("dsa")`.
-  Seasonal adjustment of weekly data is provided by `r pkg("boiwsa")`. Seasonally adjusting any high-frequency time series is available via `r pkg("rjd3highfreq")`.
+  Seasonal adjustment of weekly data is provided by `r pkg("boiwsa")`.
+  Seasonally adjusting any high-frequency time series is available via `r pkg("rjd3highfreq")`.
 - `r pkg("StructuralDecompose")` decomposes a time series into trend, seasonality and residuals, allowing for level shifts.
 - *Analysis of seasonality* : The `r pkg("bfast")` package provides methods for detecting and characterizing abrupt changes within the trend and seasonal components obtained from a decomposition.
   `r pkg("season")` provides seasonal analysis of health data, including regression models, time-stratified case-crossover, plotting functions and residual checks.
@@ -218,7 +217,6 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
 - Sparse decomposition of time series signals using Matching Pursuit algorithms is provided by `r pkg("MatchingPursuit")`.
 
 ### Univariate Time Series Models
-
 
 #### Exponential Smoothing and Related Methods
 
@@ -271,7 +269,8 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
 - *Non-Gaussian time series* can be handled with GLARMA state space models via `r pkg("glarma")`, and using Generalized Autoregressive Score models in the `r pkg("gasmodel")` package.
   Univariate and multivariate exponential family state space models are implemented in `r pkg("KFAS")`.
   `r pkg("GlarmaVarSel")` provides variable selection in high-dimensional sparse GLARMA models.
-  Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`. A `r pkg("brms")` observation model is paired with a latent State-Space process such as a random walk, an autoregression in discrete or continuous time, a vector autoregression or a dynamic factor model.
+  Dynamic Generalized Additive Models are implemented in `r pkg("mvgam")`.
+  A `r pkg("brms")` observation model is paired with a latent State-Space process such as a random walk, an autoregression in discrete or continuous time, a vector autoregression or a dynamic factor model.
   Efficient Bayesian inference for nonlinear and non-Gaussian state space models is provided in `r pkg("bssm")`.
   `r pkg("PTSR")` includes functions to model and forecast a range of regression based dynamic models for positive time series.
   Time series between 0 and 1 can be modelled using beta ARMA models in `r pkg("betaARMA")`.
@@ -344,7 +343,6 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
 
 ### Forecasting
 
-
 #### Forecasting Frameworks
 
 - The `r pkg("fable", priority = "core")` package provides tools for fitting univariate time series models to many series simultaneously including ETS, ARIMA, TSLM and other models.
@@ -402,7 +400,6 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
 - Data leakage is a problem that can occur in forecasting competitions, and the `r pkg("tsdataleaks")` package provides tools for detecting data leakage in such settings.
 
 ### Testing and Inference
-
 
 #### Diagnostic and Trend Tests
 
@@ -476,7 +473,6 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
   `r pkg("bootUR")` implements bootstrap unit root tests.
 
 ### Multivariate Time Series Models
-
 
 #### Vector Autoregressive Models
 
@@ -558,7 +554,6 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
 
 ### Collections and Complex Data Types
 
-
 #### Clustering and Representation
 
 - *Time series clustering* is implemented in `r pkg("dtwclust")`, `r pkg("BNPTSclust")` and `r pkg("pdc")`.
@@ -589,7 +584,6 @@ Hence, it is particularly well-suited for annual, monthly, quarterly data, etc.
 - `r pkg("RTFA")` provides robust factor analysis for tensor time series.
 
 ### Time Series Data
-
 
 #### Data Sets
 
